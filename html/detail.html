@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Detail - 25News</title> <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/detail.css">
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+    <header class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html#home" class="text-2xl font-bold text-blue-600 dark:text-blue-400">25News</a>
+                </div>
+                <div class="flex items-center">
+                     <button id="theme-toggle" class="theme-toggle-button">
+                        <svg id="theme-toggle-dark-icon" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                        <svg id="theme-toggle-light-icon" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m8.66-8.66l-.707.707M4.04 4.04l-.707.707M21 12h-1M4 12H3m15.364 4.636l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                    </button>
+                    <a href="index.html#contact" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-200 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div id="article-detail-content" class="max-w-3xl mx-auto bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-lg shadow-lg">
+            <a href="index.html" class="mb-6 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:text-blue-300 dark:bg-blue-700 dark:hover:bg-blue-600 dark:focus:ring-offset-gray-800">
+                &larr; Back to News Home
+            </a>
+            <h1 id="detail-title" class="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-gray-100">Loading Article...</h1>
+            <div id="detail-image" class="detail-article-image" style="background:#e2e8f0;display:flex;align-items:center;justify-content:center;height:200px;font-size:2rem;font-weight:bold;color:#4a5568;">Loading Image</div>
+            <div id="detail-body" class="prose dark:prose-invert max-w-none text-gray-700 dark:text-gray-300">
+                <p id="detail-desc">Please wait while the article content is being loaded.</p>
+            </div>
+        </div>
+         <div id="article-not-found" class="hidden text-center py-10">
+            <h1 class="text-2xl font-bold text-red-600 dark:text-red-400">Article Not Found</h1>
+            <p class="text-gray-600 dark:text-gray-400 mt-2">Sorry, the article you are looking for could not be found.</p>
+            <a href="index.html" class="mt-4 inline-block text-blue-500 hover:underline">Go to Homepage</a>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 dark:bg-gray-900 text-gray-300 dark:text-gray-400 py-8 mt-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; <span id="current-year"></span> 25News. All rights reserved.</p>
+            <p class="text-sm mt-1">Your reliable source for daily news.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/home/data.js"></script>
+    <script type="module" src="../js/detail/detail.js"></script>
+</body>
+</html>
