@@ -3,18 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>25News - World News</title>
-  <link rel="stylesheet" href="../css/index.css" />
-  <link rel="stylesheet" href="../css/components/navbar.css" />
+  <title>Modern SportsFeed - World News</title>
+  <link rel="stylesheet" href="../css/sport/sport.css" />
+  <link rel="stylesheet" href="../css/world/world.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header id="menu-root"></header>
-  <main id="world-news-root" class="container"></main>
-  <footer>
-    <p>&copy; <span id="current-year"></span> 25News. All rights reserved.</p>
-    <p>Your reliable source for daily news.</p>
-  </footer>
-  <script type="module" src="../js/menu.js"></script>
+  <script src="../js/components/navbar.js"></script>
+
+  <div id="main-content-area">
+    <main class="container">
+      <!-- Content will be dynamically injected here by render.js -->
+    </main>
+  </div>
+  
   <script type="module" src="../js/world/render.js"></script>
+  <script src="../js/sport/sport.js"></script>
+  <script src="../js/components/footer.js"></script>
 </body>
 </html> 
