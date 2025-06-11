@@ -24,7 +24,7 @@ function renderArticle() {
         // Find related articles (same sport, different ID)
         const relatedArticles = allArticlesList
             .filter(a => a.sport === article.sport && a.id !== article.id)
-            .slice(0, 3); // Get up to 3 related articles
+            .slice(0, 3);
 
         articleContentElement.innerHTML = `
             <a href="javascript:history.back()" class="back-link"><i class="fas fa-arrow-left"></i> Back to News</a>
@@ -41,6 +41,15 @@ function renderArticle() {
             <div id="article-body-detailed" class="article-body">
                 ${article.body}
             </div>
+
+            ${article.subimage1 ? `
+                <img src="${article.subimage1}" alt="Additional content image" class="article-subimage">
+                ${article.body2 ? `
+                    <div class="article-body">
+                        ${article.body2}
+                    </div>
+                ` : ''}
+            ` : ''}
 
             ${article.tags && article.tags.length > 0 ? `
                 <div class="tags-section">

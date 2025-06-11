@@ -51,7 +51,7 @@ header {
     background-color: var(--card-background);
     box-shadow: var(--shadow);
     padding: 1rem 0;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 1000;
 }
@@ -351,6 +351,10 @@ body.dark-mode .article-header-detailed .article-category-detailed {
     color: var(--primary-color);
     margin-top: 2rem;
     margin-bottom: 1rem;
+}
+.article-body #said-by{
+    text-align: center;
+    color: #8B8B8B;
 }
 .article-body h2 { font-size: 1.8rem; }
 .article-body h3 { font-size: 1.5rem; }
@@ -716,4 +720,60 @@ body.dark-mode #article-title-detailed {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     transform: translateY(-2px);
+}
+
+.article-subimage {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 2rem auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.article-body-continued {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color, #e0e0e0);
+}
+
+.article-body-continued p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: var(--text-color, #333);
+}
+
+.article-body-continued h2,
+.article-body-continued h3 {
+    margin: 2rem 0 1rem;
+    color: var(--heading-color, #222);
+}
+
+.article-body-continued blockquote {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border-left: 4px solid var(--accent-color, #4a9eff);
+    background-color: var(--blockquote-bg, #f8f9fa);
+    font-style: italic;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+    .article-body-continued {
+        --border-color: #333;
+        --text-color: #e0e0e0;
+        --heading-color: #fff;
+        --blockquote-bg: #1a1a1a;
+    }
+}
+
+/* Light mode styles */
+@media (prefers-color-scheme: light) {
+    .article-body-continued {
+        --border-color: #e0e0e0;
+        --text-color: #333;
+        --heading-color: #222;
+        --blockquote-bg: #f8f9fa;
+    }
 }
