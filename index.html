@@ -5,18 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>25News - Home</title>
     <link rel="stylesheet" href="css/sport/sport.css">
+    <link rel="stylesheet" href="css/components/loading.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- For icons -->
 </head>
 <body>
+    <!-- Loading component -->
+    <div id="loading-container" class="loading-container">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <div class="loading-text">Loading your news...</div>
+            <div class="loading-progress"></div>
+            <div class="loading-dots">
+                <div class="loading-dot"></div>
+                <div class="loading-dot"></div>
+                <div class="loading-dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
     <script src="js/components/navbar.js"></script>
 
+    <!-- Main content -->
     <div id="main-content-area">
         <main class="container">
             <!-- Content will be dynamically injected here by render.js -->
         </main>
     </div>
 
+    <!-- Scripts -->
+    <script src="js/components/loading.js"></script>
     <script type="module" src="js/home/render.js"></script>
     <script src="js/sport/sport.js"></script>
     <script src="js/components/footer.js"></script>

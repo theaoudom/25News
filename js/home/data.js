@@ -125,59 +125,90 @@ export const homePageData = {
     hero: {
         id: 'home-hero-main',
         category: 'Featured Story',
-        title: 'The Future of Sports is Here: A Look at 2024\'s Biggest Trends',
-        summary: 'From AI-driven analytics to sustainable stadiums, explore the innovations shaping the next generation of sports.',
-        imageUrl: 'https://tse4.mm.bing.net/th/id/OIP.VFgguQHmks2dpcmTWOrJ6QHaEK?r=0&rs=1&pid=ImgDetMain',
+        title: 'Carlo Ancelotti Showers Praise on Cristiano Ronaldo After UEFA Nations League Win',
+        summary: 'Carlo Ancelotti praises Cristiano Ronaldo after UEFA Nations League win.',
+        imageUrl: '../../images/ronaldo_win_nation_lauge.webp',
         link: 'html/sport/sport-detail.html',
         authorId: 'jane-doe',
-        date: 'October 27, 2023',
+        date: 'June 11, 2025',
         readTime: '8 min read',
         body: `
-            <p>The world of sports is on the brink of a technological revolution. From the way athletes train to how fans experience the game, innovation is driving change at an unprecedented pace. This year, we're seeing a convergence of technologies that promise to reshape the sporting landscape entirely.</p>
-            <p>One of the most significant trends is the rise of artificial intelligence in player analytics. Coaches and teams are now leveraging complex algorithms to break down performance metrics, identify hidden patterns, and gain a competitive edge. This data-driven approach is moving beyond simple stats, offering deep insights into player fitness, fatigue, and even potential injury risks.</p>
-            <h3>Sustainable Arenas</h3>
-            <p>Beyond the digital realm, the physical spaces of sport are also transforming. The concept of the "green stadium" is gaining momentum, with new venues being built with sustainability at their core. These arenas feature everything from solar panels and rainwater harvesting systems to locally sourced food and comprehensive recycling programs, minimizing their environmental impact while offering a world-class fan experience.</p>
+            <p>Cristiano Ronaldo, 40, continues to prove the doubters wrong, having recently lifted the UEFA Nations League trophy with Portugal. He has now won the tournament twice, making it three trophies for his country (also Euro 2016).</p>
+            <p>Ronaldo was pivotal to Portugal's winning campaign, scoring eight goals in nine appearances. He scored the winner against Germany in the semi-final and the equalizer against Spain in the final.</p>
+            <p>Portugal won 5-3 on penalties after the final ended 2-2 in extra time. Alvaro Morata saw his effort saved by Diogo Costa. Ronaldo has now received high praise from former Real Madrid manager Carlo Ancelotti. The new Brazil boss said in a press conference ahead of the World Cup qualifier against Paraguay:</p>
+            <h2>I’m very happy for him. Cristiano is a football legend and remains one at his age, thanks to his seriousness and professionalism. He’s still performing at the highest level.</h2>
+            <h3 id="said-by">- Carlo Ancelotti</h3>
         `,
         tags: ['Technology', 'AI', 'Sustainability', 'Future of Sport']
     },
     topPicks: [
         {
             id: 'home-article-1',
-            sport: 'basketball',
-            category: 'NBA',
-            title: 'Rookie Sensation\'s Unbelievable Season',
-            imageUrl: 'https://via.placeholder.com/400x250/4682B4/FFFFFF?text=Basketball+Star',
+            sport: 'football',
+            category: 'FOOTBALL',
+            title: 'Liverpool finalising deal for Leverkusen\'s Wirtz',
+            imageUrl: '../../images/wirt_join_liverpool.png',
             link: 'html/sport/sport-detail.html',
             authorId: 'mike-johnson',
-            date: 'October 26, 2023',
+            date: 'June 11, 2025',
             readTime: '4 min read',
-            body: '<p>The league is buzzing about the phenomenal performance of the latest rookie to take the court. Their stats are not just good for a first-year player; they are historic. We dive deep into the plays that are making everyone take notice.</p>',
-            tags: ['Basketball', 'NBA', 'Rookie', 'Player Spotlight']
+            body: `
+                <p>Liverpool's move for Bayer Leverkusen playmaker Florian Wirtz is at an advanced stage, with the clubs in discussions over the structure of a transfer that could be worth £114m.</p>
+                <p>The Reds submitted a third formal bid for the Germany playmaker last week, worth £100m guaranteed and a further £14m of add-ons. If completed, it would smash the club's £75m record signing of captain Virgil van Dijk in 2018.</p>
+                <p>Sources have told BBC Sport that talks are now focused on the structure of the final details of the transfer, including the value of the add-ons and how achievable they are. Leverkusen had valued the midfielder at around £126m.</p>
+                <p>Wirtz, 22, has made it clear that his preference is to move to Anfield following interest from Manchester City and Bayern Munich.</p>
+                <p>He made his debut for Leverkusen at the age of 17 and has scored 57 goals in 197 games for the club.</p>
+                <p>He helped them win the Bundesliga for the first time in 2024 and has scored seven goals in 31 appearances for Germany since making his national debut in 2021.</p>
+                <p>Liverpool have already signed one player from the German club this summer, with full-back Jeremie Frimpong arriving in a £34m deal.</p>
+                
+                <h2 id="sub-title-bold">Wirtz to join £100m club</h2>
+                <p>Wirtz will become the 10th player ever to go for a fee of £100m or more.</p>
+                <p>The British record for an initial fee remains Chelsea's £107m recruit of Benfica midfielder Enzo Fernandez in 2023.</p>
+                <p>Months later the Blues signed Brighton midfielder Moises Caicedo for an initial £100m fee - that could rise to a British club record of £115m.</p>
+                <p>Wirtz's fee would be only half that of the world record, which remains the £200m PSG paid for Neymar in 2017.</p>
+
+            `,
+            tags: ['Basketball', 'Rookie', 'Player Spotlight']
         },
         {
             id: 'home-article-3',
-            sport: 'football',
-            category: 'SOCCER',
-            title: 'Transfer Market Buzz: Who is on the Move?',
-            imageUrl: 'https://via.placeholder.com/400x250/FF8C00/FFFFFF?text=Soccer+Transfer',
+            sport: 'sport',
+            category: 'Formula1',
+            title: 'Aston Martin confirm Stroll to return to action for Canadian Grand Prix',
+            imageUrl: '../../images/aston_martin.png',
             link: 'html/sport/sport-detail.html',
             authorId: 'carlos-rodriguez',
-            date: 'October 25, 2023',
+            date: 'June 11, 2025',
             readTime: '6 min read',
-            body: '<p>The summer transfer window is heating up, with blockbuster deals being rumored across Europe\'s top leagues. Will the star striker make the jump to a rival club? Insiders suggest a record-breaking fee is on the table.</p>',
+            body: `
+                <p>Aston Martin have confirmed that Lance Stroll will be back behind the wheel at the upcoming Canadian Grand Prix weekend, following his withdrawal from the previous race in Spain.</p>
+                <p>The Silverstone-based squad announced a few hours after Qualifying at the Circuit de Barcelona-Catalunya that Stroll would be sitting out Sunday's Grand Prix with the 26-year-old set to undergo a medical procedure after experiencing pain in his hand and wrist.</p>
+                <p>The team went on to say that Stroll's medical consultant believed the pain the driver was experiencing was "in relation to the procedure he underwent in 2023". Stroll sustained fractures and a broken toe after a cycling accident during the 2023 pre-season, which led to him undergoing surgery followed by a process of rehabilitation.</p>
+                <p>However, after his latest procedure, Stroll will be back driving the AMR25 in front of his home crowd in Montreal less than a fortnight on from that weekend in Spain.</p>
+            `,
+            subimage1: '../../images/fomular_sub.png',
+            body2: `
+                <p>“I am excited to get back behind the wheel with the team for my home Grand Prix this weekend," Stroll said. "I was always going to fight hard to be ready to race in front of the Montreal crowd.</p>
+                <p>"I’m feeling good after my procedure and put some laps in at Paul Ricard this week to prepare. Thanks for all the support, see you guys this weekend!”</p>
+            `,
             tags: ['Football', 'Soccer', 'Transfers', 'Europe']
         },
         {
             id: 'home-article-4',
             sport: 'esports',
             category: 'E-SPORTS',
-            title: 'Inside the Mind of a Champion Gamer',
-            imageUrl: 'https://via.placeholder.com/400x250/8A2BE2/FFFFFF?text=Pro+Gamer',
+            title: 'Korean footballer Son Heung-Min to join the Fortnite Icon Series',
+            imageUrl: '../../images/son_esport.png',
             link: 'html/sport/sport-detail.html',
             authorId: 'emily-white',
-            date: 'October 24, 2023',
+            date: 'June 11, 2025',
             readTime: '7 min read',
-            body: '<p>What does it take to compete at the highest level of e-sports? We sit down with a world champion to discuss the intense training, mental fortitude, and lightning-fast reflexes required to be the best in the world.</p>',
+            body: `
+                </p>Epic Games Korea has announced that Tottenham footballer Son Heung-Min is coming to Fortnite’s Icon Series. Here’s what we know!</p>
+                </p>An unlikely story developed overnight by Epic Games Korea, who confirmed that Tottenham footballer Son Heung-Min will be the next Fortnite Icon Series member. This collaboration arrives on the heels of Hotspur's 2025 UEFA Europa League Championship victory over Manchester United.</p>
+                </pWhen the Son Heung-Min skin launches on June 21, he will become the fifth footballer to grace the game's Icon Series collection, joining Harry Kane, Marco Reus, Neymar, and Lionel Messi. Here's everything we know about the situation.</p>   
+     
+                `,
             tags: ['E-Sports', 'Gaming', 'Champion', 'Interview']
         },
         {
