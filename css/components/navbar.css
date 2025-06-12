@@ -1,0 +1,10 @@
+#logo {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}

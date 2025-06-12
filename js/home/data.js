@@ -128,7 +128,7 @@ export const homePageData = {
         title: 'Carlo Ancelotti Showers Praise on Cristiano Ronaldo After UEFA Nations League Win',
         summary: 'Carlo Ancelotti praises Cristiano Ronaldo after UEFA Nations League win.',
         imageUrl: '../../images/ronaldo_win_nation_lauge.webp',
-        link: 'html/sport/sport-detail.html',
+        link: '../../html/sport/sport-detail.html',
         authorId: 'jane-doe',
         date: 'June 11, 2025',
         readTime: '8 min read',
@@ -136,7 +136,7 @@ export const homePageData = {
             <p>Cristiano Ronaldo, 40, continues to prove the doubters wrong, having recently lifted the UEFA Nations League trophy with Portugal. He has now won the tournament twice, making it three trophies for his country (also Euro 2016).</p>
             <p>Ronaldo was pivotal to Portugal's winning campaign, scoring eight goals in nine appearances. He scored the winner against Germany in the semi-final and the equalizer against Spain in the final.</p>
             <p>Portugal won 5-3 on penalties after the final ended 2-2 in extra time. Alvaro Morata saw his effort saved by Diogo Costa. Ronaldo has now received high praise from former Real Madrid manager Carlo Ancelotti. The new Brazil boss said in a press conference ahead of the World Cup qualifier against Paraguay:</p>
-            <h2>I’m very happy for him. Cristiano is a football legend and remains one at his age, thanks to his seriousness and professionalism. He’s still performing at the highest level.</h2>
+            <h2>I'm very happy for him. Cristiano is a football legend and remains one at his age, thanks to his seriousness and professionalism. He's still performing at the highest level.</h2>
             <h3 id="said-by">- Carlo Ancelotti</h3>
         `,
         tags: ['Technology', 'AI', 'Sustainability', 'Future of Sport']
@@ -188,8 +188,8 @@ export const homePageData = {
             `,
             subimage1: '../../images/fomular_sub.png',
             body2: `
-                <p>“I am excited to get back behind the wheel with the team for my home Grand Prix this weekend," Stroll said. "I was always going to fight hard to be ready to race in front of the Montreal crowd.</p>
-                <p>"I’m feeling good after my procedure and put some laps in at Paul Ricard this week to prepare. Thanks for all the support, see you guys this weekend!”</p>
+                <p>"I am excited to get back behind the wheel with the team for my home Grand Prix this weekend," Stroll said. "I was always going to fight hard to be ready to race in front of the Montreal crowd.</p>
+                <p>"I'm feeling good after my procedure and put some laps in at Paul Ricard this week to prepare. Thanks for all the support, see you guys this weekend!"</p>
             `,
             tags: ['Football', 'Soccer', 'Transfers', 'Europe']
         },
@@ -204,7 +204,7 @@ export const homePageData = {
             date: 'June 11, 2025',
             readTime: '7 min read',
             body: `
-                </p>Epic Games Korea has announced that Tottenham footballer Son Heung-Min is coming to Fortnite’s Icon Series. Here’s what we know!</p>
+                </p>Epic Games Korea has announced that Tottenham footballer Son Heung-Min is coming to Fortnite's Icon Series. Here's what we know!</p>
                 </p>An unlikely story developed overnight by Epic Games Korea, who confirmed that Tottenham footballer Son Heung-Min will be the next Fortnite Icon Series member. This collaboration arrives on the heels of Hotspur's 2025 UEFA Europa League Championship victory over Manchester United.</p>
                 </pWhen the Son Heung-Min skin launches on June 21, he will become the fifth footballer to grace the game's Icon Series collection, joining Harry Kane, Marco Reus, Neymar, and Lionel Messi. Here's everything we know about the situation.</p>   
      

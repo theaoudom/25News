@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             <section class="top-picks-section">
                 <h2>Top Picks For You</h2>
                 <div class="articles-container">
-                    ${homePageData.topPicks.map(article => `
+                    ${homePageData.topPicks.slice(0, 6).map(article => `
                         <article class="news-card" data-sport="${article.sport}" data-id="${article.id}">
                             <img src="${article.imageUrl}" alt="${article.title}">
                             <div class="card-content">
@@ -47,14 +47,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             <section class="latest-news-section">
                 <h2>Latest Updates</h2>
                 <div class="latest-news-list">
-                     ${homePageData.latestNews.map(article => `
+                    ${homePageData.latestNews.map(article => `
                         <article class="latest-news-item" data-sport="${article.sport}" data-id="${article.id}">
                             <div class="news-item-content">
                                 <h3>${article.title}</h3>
                                 <p>${article.summary}</p>
                                 <span class="timestamp" data-timestamp="${article.timestamp}">${timeAgo(article.timestamp)}</span>
                             </div>
-                             <a href="${article.link}" class="read-more-link article-link">→</a>
+                            <a href="${article.link}" class="read-more-link article-link">→</a>
                         </article>
                     `).join('')}
                 </div>
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             <section class="spotlight-section">
                 <h2>In the Spotlight</h2>
                 <div class="spotlight-container">
-                     ${homePageData.spotlight.map(player => `
+                    ${homePageData.spotlight.map(player => `
                         <div class="spotlight-card" data-id="${player.id}">
                             <img src="${player.imageUrl}" alt="${player.name}">
                             <div class="spotlight-info">

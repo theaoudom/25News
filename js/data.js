@@ -1,5 +1,7 @@
 import { homePageData, authors } from './home/data.js';
 import { sportPageData } from './sport/data.js';
+import { esportsPageData } from './esports/data.js';
+import { footballPageData } from './football/data.js';
 
 // Combine all articles from different data sources into one map for easy lookup.
 const allArticles = new Map();
@@ -11,7 +13,7 @@ const addArticlesToMap = (articles) => {
             const authorInfo = authors[article.authorId] || {};
             const enrichedArticle = {
                 ...article,
-                author: authorInfo.name || 'Unknown Author',
+                author: authorInfo.name || article.author || 'Unknown Author',
                 authorAvatar: authorInfo.avatar,
                 authorBio: authorInfo.bio
             };
@@ -26,7 +28,7 @@ const enrichAndAddHero = (heroArticle) => {
         const authorInfo = authors[heroArticle.authorId] || {};
         const enrichedArticle = {
             ...heroArticle,
-            author: authorInfo.name || 'Unknown Author',
+            author: authorInfo.name || heroArticle.author || 'Unknown Author',
             authorAvatar: authorInfo.avatar,
             authorBio: authorInfo.bio
         };
@@ -34,14 +36,22 @@ const enrichAndAddHero = (heroArticle) => {
     }
 };
 
-enrichAndAddHero(homePageData.hero);
-enrichAndAddHero(sportPageData.hero);
-
-// Add all other articles
+// Add articles from home page
 addArticlesToMap(homePageData.topPicks);
 addArticlesToMap(homePageData.latestNews);
-addArticlesToMap(sportPageData.articles);
+enrichAndAddHero(homePageData.hero);
 
+// Add articles from sport page
+addArticlesToMap(sportPageData.articles);
+enrichAndAddHero(sportPageData.hero);
+
+// Add articles from esports page
+addArticlesToMap(esportsPageData.articles);
+enrichAndAddHero(esportsPageData.hero);
+
+// Add articles from football page
+addArticlesToMap(footballPageData.articles);
+enrichAndAddHero(footballPageData.hero);
 
 // Export a function to get an article by ID
 export function getArticleById(id) {
