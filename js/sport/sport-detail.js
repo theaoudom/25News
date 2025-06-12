@@ -82,7 +82,7 @@ function renderArticle() {
                                 <div class="card-content">
                                     <span class="category">${related.category}</span>
                                     <h3>${related.title}</h3>
-                                    <a href="${related.link}?id=${related.id}" class="read-more-link article-link">Read More</a>
+                                    <a href="${cleanArticlePath(related.link)}?id=${related.id}" class="read-more-link article-link">Read More</a>
                                 </div>
                             </article>
                         `).join('')}
@@ -90,6 +90,13 @@ function renderArticle() {
                 </section>
             ` : ''}
         `;
+
+        function cleanArticlePath(path) {
+            // Remove duplicate folders
+            path = path.replace('/html/sport/html/sport/', '/html/sport/');
+
+            return path;
+        }
 
         // Add functionality for the copy link button
         const copyButton = articleContentElement.querySelector('.copy-link');
@@ -149,10 +156,19 @@ function handleReadNext() {
         const nextArticle = allArticlesList.find(a => a.sport === currentArticle.sport && a.id !== currentArticle.id);
 
         if (nextArticle) {
+            // Create a URL object to easily manipulate the link
+            const originalUrl = new URL(nextArticle.link, window.location.origin);
+
+            // Extract the pathname: /html/sport/html/sport/sport-detail.html
+            let pathname = originalUrl.pathname;
+
+            // Fix the double folder and remove ".html"
+            pathname = pathname.replace('/html/sport/html/sport/', '/html/sport/');
+
             readNextContainer.innerHTML = `
                 <span class="read-next-header">Read Next</span>
                 <h4 class="read-next-title">${nextArticle.title}</h4>
-                <a href="${nextArticle.link}?id=${nextArticle.id}" class="read-next-link article-link">
+                <a href="${pathname}?id=${nextArticle.id}" class="read-next-link article-link">
                     Continue Reading <i class="fas fa-arrow-right"></i>
                 </a>
             `;

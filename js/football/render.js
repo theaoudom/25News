@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <span class="hero-category">${hero.category}</span>
                 <h2>${hero.title}</h2>
                 <p>${hero.summary}</p>
-                <a href="sport-detail.html?id=${hero.id}" class="read-more-btn article-link">Read More →</a>
+                <a href="../../html/sport/sport-detail.html?id=${hero.id}" class="read-more-btn article-link">Read More →</a>
             </div>
         </section>
 
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <span class="category">${article.category}</span>
                             <h3>${article.title}</h3>
                             <p>${article.summary}</p>
-                            <a href="sport-detail.html?id=${article.id}" class="read-more-link article-link">Full Story</a>
+                            <a href="../../html/sport/sport-detail.html?id=${article.id}" class="read-more-link article-link">Full Story</a>
                         </div>
                     </article>
                 `).join('')}

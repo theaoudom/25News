@@ -77,12 +77,12 @@ document.addEventListener('DOMContentLoaded', () => {
         <section class="gallery-section">
             <h2>Top Plays Gallery</h2>
             <div class="gallery-grid">
-                ${gallery.map(play => `
-                    <div class="gallery-item" data-id="${play.id}">
-                        <img src="${play.imageUrl}" alt="${play.title}">
+                ${gallery.map(item => `
+                    <div class="gallery-item">
+                        <img src="${item.imageUrl}" alt="${item.title}">
                         <div class="gallery-overlay">
-                            <h3>${play.title}</h3>
-                            <p>${play.game}</p>
+                            <h3>${item.title}</h3>
+                            <p>${item.game}</p>
                         </div>
                     </div>
                 `).join('')}

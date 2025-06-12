@@ -5,7 +5,7 @@ export const footballPageData = {
         title: 'Down to the Wire: A Derby for the Ages',
         summary: 'In a match filled with passion, drama, and incredible skill, the city\'s two biggest rivals battled to a stunning draw, leaving fans breathless.',
         imageUrl: 'https://editorial.uefa.com/resources/029a-1dee25206da0-86734201fad9-1000/format/wide1/poresp.jpeg?imwidth=2048',
-        link: 'sport-detail.html',
+        link: '../../html/sport/sport-detail.html',
         author: 'John Tesh',
         date: 'November 4, 2023',
         readTime: '8 min read',
@@ -60,10 +60,20 @@ export const footballPageData = {
             id: 'sport-article-3',
             sport: 'football',
             category: 'Football',
-            title: 'Transfer Window Heats Up: Major Signings Expected',
-            summary: 'Clubs across Europe are scrambling to bolster their squads before the deadline...',
-            imageUrl: 'https://via.placeholder.com/400x250/FF8C00/FFFFFF?text=Soccer+Goal',
-            link: 'sport-detail.html'
+            title: 'Manchester United announce signing of Matheus Cunha from Wolves on five-year deal',
+            summary: 'Manchester United completed the signing of Matheus Cunha from Wolverhampton Wanderers...',
+            imageUrl: 'https://livesport-ott-images.ssl.cdn.cra.cz/r900xfq60/2cc95d71-365f-4df4-9f8b-456b58def0e6.avif',
+            link: '../../html/sport/sport-detail.html', 
+            body: `
+                <h2>Manchester United Complete Signing of Matheus Cunha</h2>
+                <p>Manchester United completed the signing of Matheus Cunha from Wolverhampton Wanderers, United announced on Thursday, with the Brazil forward joining on a five-year contract.</p>
+                <p>United triggered Cunha's release clause, which was worth around 62.5 million pounds, according to a source at the club. The Old Trafford side also have the option of extending his contract by a year.</p>
+                <h2>Matheus Cunha Shares His Dream Come True</h2>
+                <p>"It's hard to put into words my feelings about becoming a Manchester United player," Cunha said.</p>
+                <p>"Ever since I was a child in Brazil watching Premier League games on TV at my grandmother's house, United was my favourite English team, and I dreamed of wearing the red shirt.</p>
+                <p>"I can't wait for the start of pre-season to get to know my teammates and prepare for the season ahead. All my focus is now on working hard to become a valuable part of the team, and helping get this club back to the top."</p>
+
+            `
         },
         {
             id: 'sport-hero-article-1',
@@ -72,7 +82,7 @@ export const footballPageData = {
             title: 'Giants Clinch Playoff Spot in Dramatic Overtime Win!',
             summary: 'A last-minute field goal seals the deal as the Giants overcome the Eagles in a nail-biter...',
             imageUrl: 'https://via.placeholder.com/800x500/FFA500/000000?text=Football+Action',
-            link: 'sport-detail.html'
+            link: '../../html/sport/sport-detail.html'
         },
         {
             id: 'home-article-3',
@@ -81,7 +91,7 @@ export const footballPageData = {
             title: 'Transfer Market Buzz: Who is on the Move?',
             summary: 'Insiders suggest a record-breaking fee is on the table for the star striker.',
             imageUrl: 'https://via.placeholder.com/400x250/FF8C00/FFFFFF?text=Soccer+Transfer',
-            link: 'sport-detail.html'
+            link: '../../html/sport/sport-detail.html'
         }
     ]
 }; 
