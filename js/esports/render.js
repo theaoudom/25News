@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </section>
 
         <section class="gallery-section">
-            <h2>Top Plays Gallery</h2>
+            <h2>Top Players Gallery</h2>
             <div class="gallery-grid">
                 ${gallery.map(item => `
                     <div class="gallery-item">
