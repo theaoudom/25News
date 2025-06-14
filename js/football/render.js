@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const { hero, leagues, topScorers, upcomingFixtures, articles } = footballPageData;
     const leagueKeys = Object.keys(leagues);
 
+    const getColorClass = (a, b) =>
+        a > b ? "green-color" : a < b ? "red-color" : "gray-color";
+
     mainContainer.innerHTML = `
         <section class="hero-section football-hero" data-id="${hero.id}">
             <div class="hero-image">
@@ -105,7 +108,15 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <span class="team-name-fixture">${fixture.homeTeam}</span>
                             </div>
                             <div class="fixture-vs">
-                                <span class="vs-circle">VS</span>
+                                ${
+                                    !fixture.isKickoff ?
+                                    '<span class="vs-circle">VS</span>' :
+                                    `
+                                        <span class="vs-circle ${getColorClass(fixture.homeResult,fixture.awayResult)}">${fixture.homeResult}</span>
+                                        <span class="result-split"> : </span>
+                                        <span class="vs-circle ${getColorClass(fixture.awayResult,fixture.homeResult)}">${fixture.awayResult}</span>
+                                    `
+                                }
                             </div>
                             <div class="fixture-team">
                                 <img src="${fixture.awayLogo}" alt="${fixture.awayTeam}" class="team-logo-large">
