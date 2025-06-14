@@ -52,8 +52,8 @@ export const footballPageData = {
         { rank: 3, name: 'Sam Kerr', team: 'Riverdale Rovers', goals: 11, avatar: 'https://via.placeholder.com/50x50/008000/FFFFFF?text=SK' }
     ],
     upcomingFixtures: [
-        { date: 'Nov 10, 2023', homeTeam: 'Northern United', awayTeam: 'Bay City FC', time: '19:00', homeLogo: 'https://via.placeholder.com/50x50/FF0000/FFFFFF?text=NU', awayLogo: 'https://via.placeholder.com/50x50/0000FF/FFFFFF?text=BC' },
-        { date: 'Nov 12, 2023', homeTeam: 'Summit Strikers', awayTeam: 'Riverdale Rovers', time: '15:00', homeLogo: 'https://via.placeholder.com/50x50/FFA500/000000?text=SS', awayLogo: 'https://via.placeholder.com/50x50/008000/FFFFFF?text=RR' }
+        { eventName: 'FIFA Club World Cup', date: 'June 15, 2025', homeTeam: 'Al Ahly FC', awayTeam: 'Inter Miami CF', time: '07:00 AM', homeLogo: 'https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Al_Ahly_SC_logo.svg/640px-Al_Ahly_SC_logo.svg.png', awayLogo: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/Inter_Miami_CF_logo.svg/1200px-Inter_Miami_CF_logo.svg.png' },
+        { eventName: 'FIFA Club World Cup', date: 'June 15, 2025', homeTeam: 'FC Bayern Munich', awayTeam: 'Auckland City FC', time: '11:00 PM', homeLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg/1200px-FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg.png', awayLogo: 'https://upload.wikimedia.org/wikipedia/en/5/53/New_Auckland_City_FC_logo_%28updated_2022%29.png' }
     ],
     articles: [
         {

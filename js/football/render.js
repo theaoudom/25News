@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 ${upcomingFixtures.map(fixture => `
                     <div class="fixture-card">
                         <div class="fixture-card-header">
-                            <span>${fixture.date} - ${fixture.time}</span>
+                            <span>${fixture.eventName} : ${getRelativeDay(fixture.date)} - ${fixture.time}</span>
                         </div>
                         <div class="fixture-card-body">
                             <div class="fixture-team">
@@ -117,6 +117,30 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         </section>
     `;
+
+    function getRelativeDay(dateString) {
+        const inputDate = new Date(dateString);
+        const today = new Date();
+
+        // Reset time to compare only dates
+        inputDate.setHours(0, 0, 0, 0);
+        today.setHours(0, 0, 0, 0);
+
+        const diffInTime = inputDate.getTime() - today.getTime();
+        const diffInDays = diffInTime / (1000 * 60 * 60 * 24);
+
+        if (diffInDays === 0) {
+            return "Today";
+        } else if (diffInDays === -1) {
+            return "Yesterday";
+        } else if (diffInDays === 1) {
+            return "Tomorrow";
+        } else {
+            // If not yesterday, today, or tomorrow, return formatted date
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            return inputDate.toLocaleDateString('en-US', options);
+        }
+    }
 
     // --- Tab Switching Logic ---
     const tabButtons = document.querySelectorAll('.tab-button');

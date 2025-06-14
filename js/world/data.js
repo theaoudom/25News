@@ -89,21 +89,21 @@ export const worldNewsData = {
             sport: "Gymnastics",
             country: "USA",
             achievement: "Redefining the sport with unparalleled skill and advocacy for mental health.",
-            imageUrl: "../images/stock/world/simone-biles.jpg"
+            imageUrl: "https://hips.hearstapps.com/hmg-prod/images/simone-biles-celebrates-after-placing-first-in-the-floor-news-photo-1693236365.jpg?crop=0.949xw:0.633xh;0.0170xw,0.0465xh&resize=640:*"
         },
         {
             name: "Kylian Mbappé",
             sport: "Football",
             country: "France",
             achievement: "Leading a new generation of football superstars with breathtaking speed and goal-scoring prowess.",
-            imageUrl: "../images/stock/people/mbappe.jpg"
+            imageUrl: "https://b.fssta.com/uploads/application/soccer/headshots/40670.vresize.350.350.medium.72.png"
         },
         {
             name: "Max Verstappen",
             sport: "Formula 1",
             country: "Netherlands",
             achievement: "Dominating the F1 circuits with aggressive driving and multiple world championships.",
-            imageUrl: "../images/stock/people/verstappen.jpg"
+            imageUrl: "https://cdn-9.motorsport.com/images/mgl/6D1XbeV0/s800/max-verstappen-red-bull-racing.jpg"
         }
     ],
     regionalNews: {
