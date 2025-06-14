@@ -328,6 +328,24 @@ body.dark-mode .standings-table tbody tr:hover {
     text-align: center;
 }
 
+.green-color {
+    background: green
+}
+
+.gray-color{
+    background: gray;
+}
+
+.red-color{
+    background: red;
+}
+
+.result-split {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0 1rem ;
+}
+
 /* --- Tabs for League Standings --- */
 .tabs-container {
     display: flex;
