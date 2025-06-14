@@ -1053,11 +1053,6 @@ body.dark-mode .standings-table tbody tr:hover {
     background-color: #fff;
 }
 
-/* Style news cards to match the rest of the site */
-.football-page .news-card {
-    /* Most styles are inherited from the main .news-card, no overrides needed */
-}
-
 /* Use primary color for the category tag */
 .football-page .news-card .category {
     background-color: var(--primary-color);
