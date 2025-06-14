@@ -231,18 +231,38 @@ body.dark-mode .live-pulse {
 
 .pulse-items {
     display: flex;
-    gap: 1rem;
-    overflow-x: auto; /* Allow horizontal scrolling if many items */
-    padding-bottom: 0.5rem; /* For scrollbar space */
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding: 0.5rem 0.5rem ;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.pulse-items::-webkit-scrollbar {
+    display: none;
 }
 
 .pulse-item {
     font-size: 0.9rem;
     white-space: nowrap;
-    padding: 0.3rem 0.5rem;
+    padding: 0.3rem 0.8rem;
     background-color: rgba(255,255,255,0.1);
     border-radius: 4px;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--text-color);
+    position: relative;
+    overflow: hidden;
+    margin: 0 0.3rem;
 }
+
+.pulse-item.animate {
+    background-color: var(--accent-color);
+    color: #000000;
+    font-weight: bold;
+    transform: scale(1.05);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+
 .pulse-item.breaking {
     background-color: var(--accent-color);
     color: var(--secondary-color);

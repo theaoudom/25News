@@ -22,8 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
         <section class="live-pulse">
             <h3><i class="fas fa-satellite-dish"></i> Live Pulse</h3>
             <div class="pulse-items">
-                ${livePulse.map(item => `
-                    <div class="pulse-item ${item.isBreaking ? 'breaking' : ''}">${item.content}</div>
+                ${livePulse.map((item, index) => `
+                    <div class="pulse-item" data-index="${index}">
+                        <span class="pulse-content">${item.content}</span>
+                    </div>
                 `).join('')}
             </div>
         </section>
@@ -45,4 +47,41 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         </section>
     `;
+
+    // Add animation sequence for pulse items
+    const pulseItems = document.querySelectorAll('.pulse-item');
+    let currentIndex = 0;
+    let isAnimating = false;
+
+    function animateNextPulse() {
+        if (isAnimating) return;
+        isAnimating = true;
+
+        // Remove animation class from all items with a slight delay
+        pulseItems.forEach((item, index) => {
+            setTimeout(() => {
+                item.classList.remove('animate');
+            }, index * 50); // Stagger the removal
+        });
+        
+        // Add animation class to current item
+        if (pulseItems[currentIndex]) {
+            setTimeout(() => {
+                pulseItems[currentIndex].classList.add('animate');
+            }, 100);
+        }
+        
+        // Move to next item
+        currentIndex = (currentIndex + 1) % pulseItems.length;
+
+        // Reset animation flag after transition
+        setTimeout(() => {
+            isAnimating = false;
+        }, 600); // Match with CSS transition duration
+    }
+
+    // Start the animation sequence with a slight delay
+    setTimeout(() => {
+        setInterval(animateNextPulse, 3000);
+    }, 800);
 }); 
