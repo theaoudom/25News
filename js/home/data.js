@@ -119,6 +119,12 @@ export const authors = {
         avatar: "https://via.placeholder.com/100/ADD8E6/000000?text=LC",
         bio: "Leo covers the explosive growth of the e-sports industry and its financial impact."
     }
+    ,
+    "elvis": {
+        name: "Elvis",
+        avatar: "https://via.placeholder.com/100/ADD8E6/000000?text=LC",
+        bio: "Leo covers the explosive growth of the e-sports industry and its financial impact."
+    }
 };
 
 export const homePageData = {
@@ -195,8 +201,8 @@ export const homePageData = {
         },
         {
             id: 'home-article-4',
-            sport: 'esports',
-            category: 'E-SPORTS',
+            sport: 'football',
+            category: 'Football',
             title: 'Korean footballer Son Heung-Min to join the Fortnite Icon Series',
             imageUrl: '../../images/son_esport.png',
             link: 'html/sport/sport-detail.html',
@@ -209,20 +215,33 @@ export const homePageData = {
                 </pWhen the Son Heung-Min skin launches on June 21, he will become the fifth footballer to grace the game's Icon Series collection, joining Harry Kane, Marco Reus, Neymar, and Lionel Messi. Here's everything we know about the situation.</p>   
      
                 `,
-            tags: ['E-Sports', 'Gaming', 'Champion', 'Interview']
+            tags: ['Football', 'Champion', 'Interview']
         },
         {
             id: 'home-article-6',
-            sport: 'tennis',
-            category: 'TENNIS',
-            title: 'Wimbledon\'s Rising Star',
-            imageUrl: 'https://via.placeholder.com/400x250/228B22/FFFFFF?text=Tennis+Upset',
+            sport: 'esport',
+            category: 'MLBB',
+            title: 'RRQ and ONIC Esports Secure Spots at MSC 2025 in Riyadh',
+            imageUrl: '../../images/rrq_aualified_msc_25.png',
             link: 'html/sport/sport-detail.html',
-            authorId: 'sarah-jenkins',
-            date: 'October 23, 2023',
+            authorId: 'elvis',
+            date: 'June 14, 2025',
             readTime: '5 min read',
-            body: '<p>A surprising upset at the All England Club has sent shockwaves through the tennis world. The young underdog, previously unranked, has showcased a level of talent and composure that has everyone asking: are we looking at a future legend?</p>',
-            tags: ['Tennis', 'Wimbledon', 'Upset', 'Rising Star']
+            body: `
+                <p>Indonesia’s finest Mobile Legends teams—<strong>RRQ Hoshi</strong> and <strong>ONIC Esports</strong>—have officially qualified for the prestigious <strong>MSC 2025</strong>, set to take place in <strong>Riyadh, Saudi Arabia</strong>. After a highly competitive MPL ID Season 15, both teams secured their spots by finishing as the top two contenders in the league.</p>
+                <h2>Indonesia Sends Its Best</h2>
+                <p>RRQ and ONIC have long been powerhouses in the Mobile Legends scene, and their qualification adds massive weight to Indonesia’s presence at the global stage. With intense performances throughout the season, both teams have earned direct slots in the MSC 2025 Group Stage, bypassing the wildcard rounds entirely.</p>
+                <h2>MSC 2025: Bigger Than Ever</h2>
+                <p>This year’s Mid-Season Cup is part of the <strong>Esports World Cup</strong> in Riyadh and features a record-breaking prize pool of <strong>$3 million</strong>. RRQ and ONIC will compete against other elite teams from across the world, including MPL champions from the Philippines, Malaysia, and beyond.</p>
+            `,
+            subimage1: '../../images/rrq_beat_geek.png',
+            body2: `
+                <h2>What to Expect</h2>
+                <p>Fans can expect world-class gameplay and the return of iconic rivalries. With star players like <strong>Alberttt</strong>, <strong>Lemon</strong>, <strong>Kairi</strong>, and <strong>Butsss</strong> leading their respective teams, RRQ and ONIC are gearing up for a legendary run at MSC 2025.</p>
+                <h2>Final Thoughts</h2>
+                <p>The stage is set. Indonesia’s representatives are locked in. As MSC 2025 approaches, all eyes will be on RRQ and ONIC to bring home glory and reaffirm the nation’s dominance in the Mobile Legends esports scene.</p>
+            `,
+            tags: ['E-Sports', 'Wimbledon', 'Upset', 'Rising Star']
         }
     ],
     latestNews: [
@@ -295,24 +314,24 @@ export const homePageData = {
     spotlight: [
         {
             id: 'player-1',
-            name: 'Alex "The Comet" Johnson',
-            sport: 'Basketball',
-            summary: 'Known for his explosive dunks and clutch plays, Alex is redefining the point guard position.',
-            imageUrl: 'https://via.placeholder.com/300x300/4169E1/FFFFFF?text=Alex+Johnson'
+            name: 'Arch Manning – Rising Quarterback Prospect',
+            sport: 'American Football',
+            summary: 'Arch Manning leads Texas Longhorns but faces doubts about his readiness; NFL teams watch closely.',
+            imageUrl: 'https://static.toiimg.com/thumb/msid-121850099,imgsize-43132,width-400,resizemode-4/121850099.jpg'
         },
         {
             id: 'player-2',
-            name: 'Maria "Velocity" Velez',
+            name: 'Gaël Monfils – Veteran Tennis Star Faces Fan Backlash',
             sport: 'Tennis',
-            summary: 'With a serve that clocks in at over 120 mph, Maria is a force to be reckoned with on the court.',
-            imageUrl: 'https://via.placeholder.com/300x300/32CD32/FFFFFF?text=Maria+Velez'
+            summary: 'Gaël Monfils criticizes fans betting on him amid poor tennis results and harassment.',
+            imageUrl: 'https://nypost.com/wp-content/uploads/sites/2/2025/06/gael-monfils-tennis-e1749832301636.jpg?quality=75&strip=all&w=744'
         },
         {
             id: 'player-3',
-            name: 'Kenji "Katana" Tanaka',
-            sport: 'E-Sports',
-            summary: 'The undisputed champion of "Blade Fury 7," Kenji\'s strategic genius is legendary in the e-sports community.',
-            imageUrl: 'https://via.placeholder.com/300x300/FF4500/FFFFFF?text=Kenji+Tanaka'
+            name: 'FIFA Club World Cup 2025 – New Format Debuts in Florida',
+            sport: 'Football',
+            summary: 'FIFA Club World Cup 2025 starts with 32 teams prize money is big but some question its success and team exclusions.',
+            imageUrl: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Af3035059-b730-45e2-8426-570ced0ee060?source=next-article&fit=scale-down&quality=highest&width=700&dpr=2'
         }
     ]
 }; 

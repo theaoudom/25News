@@ -2,6 +2,7 @@ import { homePageData, authors } from './home/data.js';
 import { sportPageData } from './sport/data.js';
 import { esportsPageData } from './esports/data.js';
 import { footballPageData } from './football/data.js';
+import { worldPageData } from './world/data.js';
 
 // Combine all articles from different data sources into one map for easy lookup.
 const allArticles = new Map();
@@ -52,6 +53,10 @@ enrichAndAddHero(esportsPageData.hero);
 // Add articles from football page
 addArticlesToMap(footballPageData.articles);
 enrichAndAddHero(footballPageData.hero);
+
+// Add articles from football page
+addArticlesToMap(worldPageData.latestNews);
+enrichAndAddHero(worldPageData.heroArticle);
 
 // Export a function to get an article by ID
 export function getArticleById(id) {

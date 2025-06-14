@@ -1,4 +1,4 @@
-import { worldNewsData } from './data.js';
+import { worldPageData } from './data.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const mainContent = document.getElementById('main-content-area').querySelector('.container');
@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
     mainContent.innerHTML = '';
 
     // Render all the new sections
-    mainContent.appendChild(createHeroSection(worldNewsData.heroArticle));
-    mainContent.appendChild(createLatestNewsSection(worldNewsData.latestNews));
-    mainContent.appendChild(createMajorEventsSection(worldNewsData.majorEvents));
-    mainContent.appendChild(createAthleteSpotlightSection(worldNewsData.athleteSpotlight));
-    mainContent.appendChild(createRegionalNewsSection(worldNewsData.regionalNews));
+    mainContent.appendChild(createHeroSection(worldPageData.heroArticle));
+    mainContent.appendChild(createLatestNewsSection(worldPageData.latestNews));
+    mainContent.appendChild(createMajorEventsSection(worldPageData.majorEvents));
+    mainContent.appendChild(createAthleteSpotlightSection(worldPageData.athleteSpotlight));
+    mainContent.appendChild(createRegionalNewsSection(worldPageData.regionalNews));
     
     // Activate the first tab in the regional news section
     activateRegionalNewsTab();
@@ -29,7 +29,7 @@ function createHeroSection(article) {
       <span class="hero-category">${article.category}</span>
       <h2>${article.title}</h2>
       <p>${article.summary}</p>
-      <a href="${article.link}" class="read-more-btn">Read Full Story <i class="fas fa-arrow-right"></i></a>
+      <a href="${article.link}?id=${article.id}" class="read-more-btn">Read Full Story <i class="fas fa-arrow-right"></i></a>
     </div>
   `;
   return heroSection;
@@ -46,7 +46,7 @@ function createLatestNewsSection(articles) {
         <span class="category">${article.category}</span>
         <h3>${article.title}</h3>
         <p>${article.summary}</p>
-        <a href="${article.link}" class="read-more-link">Learn More</a>
+        <a href="${article.link}?id=${article.id}" class="read-more-link">Learn More</a>
       </div>
     </div>
   `).join('');
@@ -164,4 +164,4 @@ function activateRegionalNewsTab() {
       }
     }
   });
-} 
+}
