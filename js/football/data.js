@@ -60,7 +60,7 @@ export const footballPageData = {
             time: '07:00 AM', 
             homeLogo: 'https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Al_Ahly_SC_logo.svg/640px-Al_Ahly_SC_logo.svg.png', 
             awayLogo: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/Inter_Miami_CF_logo.svg/1200px-Inter_Miami_CF_logo.svg.png', 
-            isKickoff: false,
+            isKickoff: true,
             homeResult: '0',
             awayResult: '0'
         },
