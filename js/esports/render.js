@@ -39,7 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
         <section class="news-grid">
             <h2>Latest E-Sports News</h2>
             <div class="articles-container">
-                ${articles.map(article => `
+                ${articles
+                    .filter(article => !article.isHero)
+                    .sort((a, b) => a.displayOrder - b.displayOrder)
+                    .map(article => `
                     <article class="news-card" data-sport="${article.sport}" data-id="${article.id}">
                         <img src="${article.imageUrl}" alt="${article.title}">
                         <div class="card-content">
