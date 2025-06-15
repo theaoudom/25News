@@ -72,8 +72,8 @@ export const footballPageData = {
             time: '11:00 PM', 
             homeLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg/1200px-FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg.png', 
             awayLogo: 'https://upload.wikimedia.org/wikipedia/en/5/53/New_Auckland_City_FC_logo_%28updated_2022%29.png', 
-            isKickoff: false, 
-            homeResult: '0', 
+            isKickoff: true, 
+            homeResult: '10', 
             awayResult: '0' 
         }
     ],
