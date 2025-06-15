@@ -1,39 +1,34 @@
 export const esportsPageData = {
     hero: {
-        id: 'esports-hero-1',
-        category: 'MPL-PH S15 Championship',
-        title: 'Team Liquid PH Crowned MPL PH Season 15 Champions After Epic 7-Game Series',
-        summary: 'What. A. Season! After weeks of intense battles and nail-biting moments, Team Liquid PH are your MPL PH Season 15 Champions! 🎉',
-        imageUrl: '../../images/mplphs15_cham.png',
-        link: '../../html/sport/sport-detail.html',
-        author: 'Leo Chen',
-        date: 'November 5, 2023',
-        readTime: '10 min read',
-        body: `
-            <h2>Team Liquid PH Crowned MPL PH Season 15 Champions After Epic 7-Game Series</h2>
-            <p><strong>Manila, Philippines — June 1, 2025</strong> — After a thrilling and unforgettable showdown, <strong>Team Liquid PH</strong> has emerged as the <strong>champion of Mobile Legends: Bang Bang Professional League Philippines (MPL PH) Season 15</strong>, defeating <strong>ONIC Philippines</strong> in a high-stakes <strong>best-of-seven grand final</strong> with a score of <strong>4–3</strong>.</p>
-            <h2>A Season to Remember</h2>
-            <p>MPL PH Season 15 delivered everything fans hoped for—strategic depth, individual brilliance, and heart-pounding action. Team Liquid PH entered the season as strong contenders and proved their mettle by <strong>finishing the regular season with a dominant 12–2 record</strong>, securing the top spot in the standings.</p>
-            <p>Although they fell short against ONIC PH in the upper-bracket finals, Team Liquid PH staged a powerful comeback in the lower bracket, ultimately earning a rematch in the grand finals.</p>
-            <h2>The Grand Finals: A Battle of Titans</h2>
-            <p>The grand finals was a masterclass in MLBB competition. Both teams showed world-class teamwork, strategic draft executions, and remarkable mechanical skill. The series went the full distance—<strong>seven intense games</strong> that pushed both rosters to their limits.</p>
-            <p>In the final game, Team Liquid PH's composure and discipline gave them the edge, closing out the series and securing their first MPL PH title under the Liquid banner.</p>
-        `,
-        subimage1: '../../images/sanji_mvp.png',
-        body2: `
-            <h2>Key Players and Standout Moments</h2>
-            <ul>
-                <li><strong>Sanji</strong>, the midlaner of Team Liquid PH, played a crucial role throughout the series, delivering consistent impact across every game.</li>
-                <li>The team's synergy and late-game decision-making were evident, especially during clutch teamfights that turned the tide in their favor.</li>
-            </ul>
-            <h2>Looking Ahead: The Road to MSC 2025</h2>
-            <p>With this victory, <strong>Team Liquid PH</strong>, alongside <strong>runner-up ONIC PH</strong>, will represent the Philippines in the <strong>Mid-Season Cup (MSC) 2025</strong>. As MPL PH continues to be one of the most competitive regions globally, all eyes will be on the Filipino representatives as they take on the best teams from around the world.</p>
-            <hr />
-            <h2>Congratulations to Team Liquid PH!</h2>
-            <p>Their victory not only showcases their growth and resilience but also highlights the depth of talent in the Philippine MLBB scene. Season 15 has set the bar even higher for what's to come.</p>
-            <p>Stay tuned for more updates on MSC 2025 and the future of Philippine MLBB esports.</p>
-        `
-    },
+            id: 'onic-id-champion',
+            isHero: true,
+            displayOrder: 0,
+            sport: 'esports',
+            category: 'MPL-ID S15 Championship',
+            title: 'ONIC Wins MPL ID Season 15 After Epic 4–3 Showdown',
+            summary: 'ONIC defeats RRQ in a dramatic Best of 7 final to claim the MPL ID S15 crown and head to MSC 2025.',
+            imageUrl: '../../images/onic-id-cham1.png',
+            link: '../../html/sport/sport-detail.html',
+            author: 'Leo Chen',
+            date: 'June 15, 2025',
+            readTime: '10 min read',
+            body: `
+                <h2>ONIC Crowned MPL ID Season 15 Champions After Epic 4–3 Victory Over RRQ</h2>
+                <p>In one of the most intense and unforgettable grand finals in MPL history, <strong>ONIC Esports</strong> defeated <strong>RRQ Hoshi</strong> with a narrow <strong>4–3</strong> scoreline to claim the championship title for <strong>MPL Indonesia Season 15</strong>.</p>
+                <h2>A Grand Final for the Ages</h2>
+                <p>The Best of 7 series was a rollercoaster of momentum swings and masterful gameplay. RRQ started strong, but ONIC responded with composure and clutch performances from star players like <strong>Kairi</strong> and <strong>Butsss</strong>. The series reached game 7, where ONIC executed a flawless strategy to close out the match and lift the trophy once again.</p>
+                <h2>ONIC’s MPL Legacy Continues</h2>
+                <p>This marks yet another dominant season for ONIC, solidifying their reputation as one of Indonesia’s most consistent and feared Mobile Legends teams. The championship win not only adds to their growing trophy cabinet but also reaffirms their spot among the world’s best.</p>
+                `,
+            subimage1: '../../images/onic-id-cham2.png',
+            body2: `
+                <h2>MSC 2025 Bound</h2>
+                <p>With this victory, ONIC Esports heads into <strong>MSC 2025 in Riyadh</strong> with momentum and confidence. Alongside runner-up <strong>RRQ Hoshi</strong>, they will represent Indonesia at the prestigious global tournament as part of the Esports World Cup.</p>
+                <h2>What’s Next?</h2>
+                <p>Fans can expect ONIC to continue their strong form on the international stage. With their sharp coordination, disciplined macro play, and championship mentality, ONIC is poised to chase glory in Riyadh later this year.</p>
+                <p>Stay tuned for more updates on MSC 2025 and the future of Philippine MLBB esports.</p>
+            `
+        },
     topTeams: [
         {
             name: 'Team Falcons',
@@ -53,9 +48,9 @@ export const esportsPageData = {
     ],
     articles: [
         {
-            id: 'esports-hero-1',
-            isHero: true,
-            displayOrder: 0,
+            id: 'esports-hero-2',
+            isHero: false,
+            displayOrder: 1,
             sport: 'esports',
             category: 'MPL-PH S15 Championship',
             title: 'Team Liquid PH Crowned MPL PH Season 15 Champions After Epic 7-Game Series',
@@ -93,7 +88,7 @@ export const esportsPageData = {
         {
             id: 'sport-article-4',
             isHero: false,
-            displayOrder: 1,
+            displayOrder: 2,
             sport: 'esports',
             category: 'E-Sports',
             title: 'Cristiano Ronaldo named Esports World Cup Global ambassador',
@@ -116,7 +111,7 @@ export const esportsPageData = {
         {
             id: 'home-article-4',
             isHero: false,
-            displayOrder: 2,
+            displayOrder: 3,
             sport: 'esports',
             category: 'E-SPORTS',
             title: 'Mobile Legends MSC 2025 Set for Esports World Cup',
@@ -141,7 +136,7 @@ export const esportsPageData = {
         {
             id: 'home-article-x1',
             isHero: false,
-            displayOrder: 3,
+            displayOrder: 4,
             sport: 'esports',
             category: 'E-SPORTS',
             title: 'Red Bull Team 5 Finale in Barcelona',
@@ -164,7 +159,7 @@ export const esportsPageData = {
         {
             id: 'home-article-6',
             isHero: false,
-            displayOrder: 4,
+            displayOrder: 5,
             sport: 'esport',
             category: 'MLBB',
             title: 'RRQ and ONIC Esports Secure Spots at MSC 2025 in Riyadh',

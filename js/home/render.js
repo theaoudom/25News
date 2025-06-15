@@ -47,7 +47,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             <section class="latest-news-section">
                 <h2>Latest Updates</h2>
                 <div class="latest-news-list">
-                    ${homePageData.latestNews.map(article => `
+                    ${homePageData.latestNews
+                        .sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp)) 
+                        .map(article => `
                         <article class="latest-news-item" data-sport="${article.sport}" data-id="${article.id}">
                             <div class="news-item-content">
                                 <h3>${article.title}</h3>

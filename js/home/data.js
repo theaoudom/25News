@@ -259,17 +259,35 @@ export const homePageData = {
             tags: ['Tennis', 'Legend', 'Retirement', 'Comeback']
         },
         {
-            id: 'home-article-5',
-            sport: 'basketball',
-            title: 'Coaching Carousel: Who Lands the Top Jobs?',
-            summary: 'Several high-profile coaching positions are open, and the rumor mill is spinning. We break down the top candidates.',
-            timestamp: '2023-10-27T15:00:00',
-            link: 'html/sport/sport-detail.html',
-            authorId: 'ben-carter',
-            date: 'October 27, 2023',
-            readTime: '5 min read',
-            body: '<p>With several teams looking for new leadership, the coaching carousel is in full swing. We analyze the contenders, the long shots, and the potential blockbuster hires that could change the league\'s landscape.</p>',
-            tags: ['Coaching', 'NBA', 'Management', 'Basketball']
+            id: 'onic-id-champion',
+            isHero: true,
+            displayOrder: 0,
+            sport: 'esports',
+            timestamp: '2025-06-15T22:58:58',
+            category: 'MPL-ID S15 Championship',
+            title: 'ONIC Wins MPL ID Season 15 After Epic 4–3 Showdown',
+            summary: 'ONIC defeats RRQ in a dramatic Best of 7 final to claim the MPL ID S15 crown and head to MSC 2025.',
+            imageUrl: '../../images/onic-id-cham1.png',
+            link: '../../html/sport/sport-detail.html',
+            author: 'Leo Chen',
+            date: 'June 15, 2025',
+            readTime: '10 min read',
+            body: `
+                <h2>ONIC Crowned MPL ID Season 15 Champions After Epic 4–3 Victory Over RRQ</h2>
+                <p>In one of the most intense and unforgettable grand finals in MPL history, <strong>ONIC Esports</strong> defeated <strong>RRQ Hoshi</strong> with a narrow <strong>4–3</strong> scoreline to claim the championship title for <strong>MPL Indonesia Season 15</strong>.</p>
+                <h2>A Grand Final for the Ages</h2>
+                <p>The Best of 7 series was a rollercoaster of momentum swings and masterful gameplay. RRQ started strong, but ONIC responded with composure and clutch performances from star players like <strong>Kairi</strong> and <strong>Butsss</strong>. The series reached game 7, where ONIC executed a flawless strategy to close out the match and lift the trophy once again.</p>
+                <h2>ONIC’s MPL Legacy Continues</h2>
+                <p>This marks yet another dominant season for ONIC, solidifying their reputation as one of Indonesia’s most consistent and feared Mobile Legends teams. The championship win not only adds to their growing trophy cabinet but also reaffirms their spot among the world’s best.</p>
+                `,
+            subimage1: '../../images/onic-id-cham2.png',
+            body2: `
+                <h2>MSC 2025 Bound</h2>
+                <p>With this victory, ONIC Esports heads into <strong>MSC 2025 in Riyadh</strong> with momentum and confidence. Alongside runner-up <strong>RRQ Hoshi</strong>, they will represent Indonesia at the prestigious global tournament as part of the Esports World Cup.</p>
+                <h2>What’s Next?</h2>
+                <p>Fans can expect ONIC to continue their strong form on the international stage. With their sharp coordination, disciplined macro play, and championship mentality, ONIC is poised to chase glory in Riyadh later this year.</p>
+                <p>Stay tuned for more updates on MSC 2025 and the future of Philippine MLBB esports.</p>
+            `
         },
         {
             id: 'home-article-7',
