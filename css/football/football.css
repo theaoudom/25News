@@ -258,17 +258,17 @@ body.dark-mode .standings-table tbody tr:hover {
 }
 .fixtures-list-full {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 0;
 }
 .fixture-card {
     background: var(--card-background);
-    border-radius: 12px;
+    border-radius: 8px;
     box-shadow: var(--shadow);
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
+    border: 1px solid var(--border-color);
 }
 .fixture-card:hover {
     transform: translateY(-5px);
@@ -284,43 +284,57 @@ body.dark-mode .standings-table tbody tr:hover {
 }
 .fixture-card-body {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 2rem 1.5rem;
+    justify-content: space-between;
+    padding: 1.5rem;
+    gap: 1rem;
 }
 .fixture-team {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.75rem;
-    width: 120px;
+    text-align: center;
+    flex: 1;
+    min-width: 0;
 }
 .team-logo-large {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
+    margin-bottom: 0.5rem;
 }
 .team-name-fixture {
-    font-family: var(--font-headings);
-    font-size: 1.1rem;
-    font-weight: bold;
-    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
 }
 .fixture-vs {
-    flex: 1;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+    min-width: fit-content;
 }
 .vs-circle {
-    display: inline-block;
-    background: var(--primary-color);
-    color: var(--secondary-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--light-gray);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.result-split {
     font-weight: bold;
     font-size: 1.2rem;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 50%;
-    text-align: center;
+    color: var(--text-color);
 }
 
 .green-color {
@@ -333,12 +347,6 @@ body.dark-mode .standings-table tbody tr:hover {
 
 .red-color{
     background: red;
-}
-
-.result-split {
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding: 0 1rem ;
 }
 
 /* --- Tabs for League Standings --- */

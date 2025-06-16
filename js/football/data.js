@@ -75,7 +75,92 @@ export const footballPageData = {
             isKickoff: true, 
             homeResult: '10', 
             awayResult: '0' 
+        },
+        { 
+            eventName: 'FIFA Club World Cup',
+            date: 'June 16, 2025', 
+            homeTeam: 'PSG', 
+            awayTeam: 'Atlético de Madrid', 
+            time: '11:00 PM', 
+            homeLogo: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Paris_Saint-Germain_F.C..svg/1200px-Paris_Saint-Germain_F.C..svg.png', 
+            awayLogo: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Atletico_Madrid_Logo_2024.svg/1200px-Atletico_Madrid_Logo_2024.svg.png', 
+            isKickoff: true, 
+            homeResult: '4', 
+            awayResult: '0' 
+        },
+        { 
+            eventName: 'FIFA Club World Cup',
+            date: 'June 16, 2025', 
+            homeTeam: 'Palmeiras', 
+            awayTeam: 'FC Porto', 
+            time: '11:00 PM', 
+            homeLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Palmeiras_logo.svg/1200px-Palmeiras_logo.svg.png', 
+            awayLogo: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/FC_Porto.svg/1200px-FC_Porto.svg.png', 
+            isKickoff: true, 
+            homeResult: '0', 
+            awayResult: '0' 
+        },
+        { 
+            eventName: 'FIFA Club World Cup',
+            date: 'June 16, 2025', 
+            homeTeam: 'Botafogo', 
+            awayTeam: 'Seattle Sounders FC', 
+            time: '11:00 PM', 
+            homeLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Botafogo_de_Futebol_e_Regatas_logo.svg/1200px-Botafogo_de_Futebol_e_Regatas_logo.svg.png', 
+            awayLogo: 'https://upload.wikimedia.org/wikipedia/en/thumb/8/84/Seattle_Sounders_logo.svg/1200px-Seattle_Sounders_logo.svg.png', 
+            isKickoff: true, 
+            homeResult: '2', 
+            awayResult: '1' 
+        },
+        { 
+            eventName: 'FIFA Club World Cup',
+            date: 'June 17, 2025', 
+            homeTeam: 'Chelsea F.C.', 
+            awayTeam: 'LA FC', 
+            time: '02:00 AM', 
+            homeLogo: 'https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/800px-Chelsea_FC.svg.png', 
+            awayLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Los_Angeles_Football_Club.svg/1200px-Los_Angeles_Football_Club.svg.png', 
+            isKickoff: false, 
+            homeResult: '0', 
+            awayResult: '0' 
+        },
+        { 
+            eventName: 'FIFA Club World Cup',
+            date: 'June 17, 2025', 
+            homeTeam: 'Boca Juniors', 
+            awayTeam: 'S.L. Benfica', 
+            time: '05:00 AM', 
+            homeLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Boca_Juniors_logo18.svg/1200px-Boca_Juniors_logo18.svg.png', 
+            awayLogo: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/SL_Benfica_logo.svg/1200px-SL_Benfica_logo.svg.png', 
+            isKickoff: false, 
+            homeResult: '0', 
+            awayResult: '0' 
+        },
+        { 
+            eventName: 'FIFA Club World Cup',
+            date: 'June 17, 2025', 
+            homeTeam: 'Flamengo', 
+            awayTeam: 'ES Tunis', 
+            time: '08:00 AM', 
+            homeLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Flamengo_braz_logo.svg/1200px-Flamengo_braz_logo.svg.png', 
+            awayLogo: 'https://upload.wikimedia.org/wikipedia/fr/thumb/6/6b/EST_New_Logo_2012.png/1200px-EST_New_Logo_2012.png', 
+            isKickoff: false, 
+            homeResult: '0', 
+            awayResult: '0' 
+        },
+        { 
+            eventName: 'FIFA Club World Cup',
+            date: 'June 17, 2025', 
+            homeTeam: 'Fluminense FC', 
+            awayTeam: 'Borussia Dortmund', 
+            time: '11:00 PM', 
+            homeLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/FFC_crest.svg/1200px-FFC_crest.svg.png', 
+            awayLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Borussia_Dortmund_logo.svg/1200px-Borussia_Dortmund_logo.svg.png', 
+            isKickoff: false, 
+            homeResult: '0', 
+            awayResult: '0' 
         }
+        
     ],
     articles: [
         {
