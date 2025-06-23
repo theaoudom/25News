@@ -197,60 +197,65 @@ document.addEventListener('DOMContentLoaded', () => {
         const formatDate = (date) => date.toISOString().split('T')[0];
 
         const today = new Date();
-        const futureDate = new Date();
-        futureDate.setDate(today.getDate() + 10); // Look 10 days into the future
+        const yesterday = new Date();
+        yesterday.setDate(today.getDate() - 1);
+        const dayBeforeYesterday = new Date();
+        dayBeforeYesterday.setDate(today.getDate() - 2);
+        const tomorrow = new Date();
+        tomorrow.setDate(today.getDate() + 1);
 
-        const fromDate = formatDate(today);
-        const toDate = formatDate(futureDate);
-        const season = today.getFullYear();
+        const datesToFetch = [today, yesterday, dayBeforeYesterday, tomorrow].map(formatDate);
 
         // You can change the league ID here. 39=Premier League, 140=La Liga, 135=Serie A, 78=Bundesliga etc.
-        const todayDate = formatDate(new Date());
+        // We'll fetch for each date and combine results
 
-        // Construct the new API endpoint dynamically
-        const API_ENDPOINT = `${API_BASE_URL}/fixtures?date=${todayDate}`;
-
-        // 2. If no valid cache, fetch from API
         try {
-            console.log(`Fetching fixtures from ${fromDate} to ${toDate}...`);
-            const response = await fetch(API_ENDPOINT, {
-                method: 'GET',
-                headers: {
-                    'x-apisports-key': API_KEY
-                }
+            console.log(`Fetching fixtures for dates: ${datesToFetch.join(', ')}...`);
+            const fetchPromises = datesToFetch.map(dateStr => {
+                const API_ENDPOINT = `${API_BASE_URL}/fixtures?date=${dateStr}`;
+                return fetch(API_ENDPOINT, {
+                    method: 'GET',
+                    headers: {
+                        'x-apisports-key': API_KEY
+                    }
+                })
+                .then(response => {
+                    if (!response.ok) return response.json().then(errorBody => { throw new Error(`API request failed: ${JSON.stringify(errorBody.errors) || response.statusText}`); });
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.errors && Object.keys(data.errors).length > 0) {
+                        throw new Error(`API returned an error: ${JSON.stringify(data.errors)}`);
+                    }
+                    return data.response;
+                })
+                .catch(error => {
+                    console.error(`Failed to fetch fixtures for ${dateStr}:`, error);
+                    return [];
+                });
             });
 
-            if (!response.ok) {
-                const errorBody = await response.json();
-                throw new Error(`API request failed: ${JSON.stringify(errorBody.errors) || response.statusText}`);
-            }
-
-            const data = await response.json();
-
-            if (data.errors && Object.keys(data.errors).length > 0) {
-                 throw new Error(`API returned an error: ${JSON.stringify(data.errors)}`);
-            }
-            
-            // 3. Transform API data
-            const transformedFixtures = data.response
-            .filter(item => [15].includes(item.league.id)) // Filter first
-            .map(item => {
-                const fixtureDate = new Date(item.fixture.date);
-                return {
-                    id: item.fixture.id,
-                    eventName: item.league.name,
-                    date: item.fixture.date.split('T')[0],
-                    time: fixtureDate.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' }), // Use 24-hour format
-                    homeTeam: item.teams.home.name,
-                    homeLogo: item.teams.home.logo,
-                    awayTeam: item.teams.away.name,
-                    awayLogo: item.teams.away.logo,
-                    isKickoff: item.fixture.status.short === 'FT', 
-                    homeResult: item.goals.home,
-                    awayResult: item.goals.away
-                };
-            });
-            
+            const allResponses = await Promise.all(fetchPromises);
+            // Flatten and transform all fixtures
+            const allFixturesRaw = allResponses.flat();
+            const transformedFixtures = allFixturesRaw
+                .filter(item => [15].includes(item.league.id)) // Filter first
+                .map(item => {
+                    const fixtureDate = new Date(item.fixture.date);
+                    return {
+                        id: item.fixture.id,
+                        eventName: item.league.name,
+                        date: item.fixture.date.split('T')[0],
+                        time: fixtureDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true }), // Use 12-hour format with AM/PM
+                        homeTeam: item.teams.home.name,
+                        homeLogo: item.teams.home.logo,
+                        awayTeam: item.teams.away.name,
+                        awayLogo: item.teams.away.logo,
+                        isKickoff: item.fixture.status.short === 'FT', 
+                        homeResult: item.goals.home,
+                        awayResult: item.goals.away
+                    };
+                });
             // 4. Render and cache the new data
             renderFixtures(transformedFixtures);
             localStorage.setItem(CACHE_KEY_FIXTURES, JSON.stringify(transformedFixtures));
