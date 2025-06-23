@@ -116,6 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span class="player-rank">${player.rank}</span>
                         <h3 class="player-name-large">${player.name}</h3>
                         <span class="player-team">${player.team}</span>
+                        <span class="player-event">${player.event || ''}</span>
                         <div class="player-goals">${player.goals} Goals</div>
                     </div>
                 `).join('')}

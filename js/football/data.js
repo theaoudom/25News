@@ -47,9 +47,9 @@ export const footballPageData = {
         
     },
     topScorers: [
-        { rank: 1, name: 'Leo Messi', team: 'Bay City FC', goals: 14, avatar: 'https://via.placeholder.com/50x50/0000FF/FFFFFF?text=LM' },
-        { rank: 2, name: 'Alex Morgan', team: 'Northern United', goals: 12, avatar: 'https://via.placeholder.com/50x50/FF0000/FFFFFF?text=AM' },
-        { rank: 3, name: 'Sam Kerr', team: 'Riverdale Rovers', goals: 11, avatar: 'https://via.placeholder.com/50x50/008000/FFFFFF?text=SK' }
+        { rank: 1, name: 'Kylian Mbappé', team: 'Real Madrid FC', goals: 31, avatar: 'https://extratimetalk.com/wp-content/uploads/2025/02/imago1059047002-scaled.jpg', event: 'Laliga' },
+        { rank: 2, name: 'Robert Lewandowski', team: 'FC Barcelona', goals: 27, avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS29l8Lxgik6A5KVDTM8Uz3n3dGcrJwDp6plA&s', event: 'Laliga' },
+        { rank: 3, name: 'M Salah', team: 'Liverpool', goals: 25, avatar: 'https://i.eurosport.com/2024/12/23/4075693-82651508-2560-1440.jpg?w=1300', event: 'Premier League' }
     ],
     upcomingFixtures: [
         { 
