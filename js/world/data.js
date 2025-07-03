@@ -30,12 +30,35 @@ export const worldPageData = {
   },
   latestNews: [
     {
-      id: 'wn-latest-01',
-      category: "Formula 1",
-      title: "Tension in the Paddock: F1's Top Teams Battle for Mid-Season Dominance",
-      summary: "As the Formula 1 season heats up, the rivalry between Red Bull, Ferrari, and Mercedes intensifies. A look at the key moments and what to expect next.",
-      imageUrl: "../images/stock/world/f1-race.jpg",
-      link: "../../html/sport/sport-detail.html"
+        id: 'home-article-1107',
+        sport: 'football',
+        category: 'FOOTBALL',
+        title: 'Liverpool football star Diogo Jota killed in car crash',
+        summary: '',
+        imageUrl: 'https://nilepost.co.ug/new_cms/wp-content/uploads/2025/07/e2dd1de0-0217-11ef-946e-d7e525632c0f.jpg',
+        link: '../../html/sport/sport-detail.html',
+        authorId: 'mike-johnson',
+        date: 'July 03, 2025',
+        readTime: '2 min read',
+        body: `
+        <article>
+            <h1>Diogo Jota Tragically Dies in Car Crash in Spain</h1>
+            <p>Liverpool forward Diogo Jota has tragically passed away following a car accident in the early hours of Thursday morning near Zamora, in northwestern Spain.</p>
+            <h2>Accident Details</h2>
+            <p>The 28-year-old Portuguese footballer was traveling with his brother, Andre, who also lost his life in the crash. The incident took place on the A-52 highway near Palacios de Sanabria, as they were heading toward Benavente.</p>
+            <p>According to authorities, the Lamborghini they were in veered off the road at around 12:30 a.m. Early reports suggest a tire may have burst while the vehicle was overtaking, causing it to leave the road and ignite in flames.</p>
+            <h2>Investigation Underway</h2>
+            <p>Both victims were pronounced dead at the scene. One has been identified as Diogo Jota, pending confirmation through forensic testing. Officials noted that no other vehicles were involved in the crash, and speeding is being investigated as a possible factor.</p>
+        </article>
+        `,
+        subimage1: 'https://images.ladbible.com/resize?type=webp&quality=70&width=3840&fit=contain&gravity=auto&url=https://images.ladbiblegroup.com/v3/assets/bltcd74acc1d0a99f3a/bltbcfde8c439a9992d/686648b7904fb967778da00c/jota-family.jpg',
+        body2: `
+            <h2>Scene Aftermath</h2>
+            <p>Images from the aftermath showed charred wreckage and scattered debris along the roadside, painting a devastating picture of the collision.</p>
+            <h2>Personal Tragedy</h2>
+            <p>The tragedy comes just ten days after Jota married his longtime partner, Rute Cardoso, making the loss even more heartbreaking for his family and fans.</p>
+        `,
+        tags: ['Football']
     },
     {
       id: 'wn-latest-02',
