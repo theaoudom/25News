@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Disallow sensitive areas
+Disallow: /js/
+Disallow: /css/
+Disallow: /images/
+Disallow: /admin/
+Disallow: /private/
+
+# Allow important files
+Allow: /sitemap.xml
+Allow: /CNAME
+Allow: /robots.txt
+
+# Crawl delay (optional)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://25news.com/sitemap.xml 

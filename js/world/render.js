@@ -1,167 +1,170 @@
+// World News Page Render Script
 import { worldPageData } from './data.js';
 
-document.addEventListener('DOMContentLoaded', () => {
-    const mainContent = document.getElementById('main-content-area').querySelector('.container');
-    if (!mainContent) return;
+document.addEventListener('DOMContentLoaded', async () => {
+    const mainContainer = document.querySelector('main.container');
+    if (!mainContainer) return;
 
-    // Clear the placeholder content
-    mainContent.innerHTML = '';
+    // Show loading state
+    if (window.loadingManager) {
+        window.loadingManager.show();
+    }
 
-    // Render all the new sections
-    mainContent.appendChild(createHeroSection(worldPageData.heroArticle));
-    mainContent.appendChild(createLatestNewsSection(worldPageData.latestNews));
-    mainContent.appendChild(createMajorEventsSection(worldPageData.majorEvents));
-    mainContent.appendChild(createAthleteSpotlightSection(worldPageData.athleteSpotlight));
-    mainContent.appendChild(createRegionalNewsSection(worldPageData.regionalNews));
-    
-    // Activate the first tab in the regional news section
-    activateRegionalNewsTab();
+    try {
+        // Simulate data loading (remove this in production and use actual data fetching)
+        await new Promise(resolve => setTimeout(resolve, 300));
+
+        // Add dynamic content if needed
+        addDynamicContent();
+        
+        // Initialize interactive features
+        initializeInteractions();
+
+    } catch (error) {
+        console.error('Error loading world news data:', error);
+        if (mainContainer) {
+            mainContainer.innerHTML += '<div class="error-message">Failed to load additional content. Please try again later.</div>';
+        }
+    } finally {
+        // Hide loading state
+        if (window.loadingManager) {
+            window.loadingManager.hide();
+        }
+    }
 });
 
-function createHeroSection(article) {
-  const heroSection = document.createElement('section');
-  heroSection.className = 'hero-section world-hero';
-  heroSection.innerHTML = `
-    <div class="hero-image">
-      <img src="${article.imageUrl}" alt="${article.title}">
-    </div>
-    <div class="hero-content">
-      <span class="hero-category">${article.category}</span>
-      <h2>${article.title}</h2>
-      <p>${article.summary}</p>
-      <a href="${article.link}?id=${article.id}" class="read-more-btn">Read Full Story <i class="fas fa-arrow-right"></i></a>
-    </div>
-  `;
-  return heroSection;
-}
-
-function createLatestNewsSection(articles) {
-  const newsSection = document.createElement('section');
-  newsSection.className = 'news-grid';
-  
-  const articlesHtml = articles.map(article => `
-    <div class="news-card">
-      <img src="${article.imageUrl}" alt="${article.title}">
-      <div class="card-content">
-        <span class="category">${article.category}</span>
-        <h3>${article.title}</h3>
-        <p>${article.summary}</p>
-        <a href="${article.link}?id=${article.id}" class="read-more-link">Learn More</a>
-      </div>
-    </div>
-  `).join('');
-
-  newsSection.innerHTML = `
-    <h2>Latest World News</h2>
-    <div class="articles-container">
-      ${articlesHtml}
-    </div>
-  `;
-  return newsSection;
-}
-
-function createMajorEventsSection(events) {
-  const eventsSection = document.createElement('section');
-  eventsSection.className = 'major-events-section';
-
-  const eventsHtml = events.map(event => `
-    <div class="event-card">
-      <div class="event-icon"><i class="${event.icon}"></i></div>
-      <div class="event-info">
-        <h3>${event.name}</h3>
-        <p><strong>Host:</strong> ${event.host}</p>
-        <p><strong>Date:</strong> ${event.date}</p>
-      </div>
-    </div>
-  `).join('');
-
-  eventsSection.innerHTML = `
-    <h2>Upcoming Major Events</h2>
-    <div class="events-container">
-      ${eventsHtml}
-    </div>
-  `;
-  return eventsSection;
-}
-
-function createAthleteSpotlightSection(athletes) {
-  const spotlightSection = document.createElement('section');
-  spotlightSection.className = 'athlete-spotlight-section';
-
-  const athletesHtml = athletes.map(athlete => `
-    <div class="athlete-card">
-      <img src="${athlete.imageUrl}" alt="${athlete.name}" class="athlete-avatar">
-      <div class="athlete-info">
-        <h3>${athlete.name}</h3>
-        <span>${athlete.sport} - ${athlete.country}</span>
-        <p>${athlete.achievement}</p>
-      </div>
-    </div>
-  `).join('');
-
-  spotlightSection.innerHTML = `
-    <h2>Athlete Spotlight</h2>
-    <div class="spotlight-container">
-      ${athletesHtml}
-    </div>
-  `;
-  return spotlightSection;
-}
-
-function createRegionalNewsSection(regionalData) {
-  const regionalSection = document.createElement('section');
-  regionalSection.className = 'regional-news-section';
-
-  const tabs = Object.keys(regionalData).map(region => `
-    <button class="tab-button" data-region="${region}">${region.charAt(0).toUpperCase() + region.slice(1)}</button>
-  `).join('');
-
-  const tabContents = Object.entries(regionalData).map(([region, articles]) => {
-    const articlesHtml = articles.map(article => `<li><a href="${article.link}">${article.title}</a></li>`).join('');
-    return `
-      <div class="tab-content" id="region-${region}">
-        <ul>${articlesHtml}</ul>
-      </div>
+function addDynamicContent() {
+    // Add real-time updates section
+    const realTimeSection = document.createElement('section');
+    realTimeSection.className = 'real-time-updates';
+    realTimeSection.innerHTML = `
+        <h2>Real-Time Updates</h2>
+        <div class="updates-container">
+            <div class="update-item">
+                <span class="update-time">2 minutes ago</span>
+                <p>UN Security Council convenes emergency meeting on climate crisis</p>
+            </div>
+            <div class="update-item">
+                <span class="update-time">15 minutes ago</span>
+                <p>Major tech companies announce joint initiative for digital privacy standards</p>
+            </div>
+            <div class="update-item">
+                <span class="update-time">1 hour ago</span>
+                <p>Global markets respond positively to new trade agreement</p>
+            </div>
+        </div>
     `;
-  }).join('');
 
-  regionalSection.innerHTML = `
-    <h2>News by Region</h2>
-    <div class="tabs-container">${tabs}</div>
-    <div class="tab-content-container">${tabContents}</div>
-  `;
-
-  return regionalSection;
-}
-
-function activateRegionalNewsTab() {
-  const tabsContainer = document.querySelector('.regional-news-section .tabs-container');
-  const contentContainer = document.querySelector('.regional-news-section .tab-content-container');
-  if (!tabsContainer || !contentContainer) return;
-  
-  const tabs = tabsContainer.querySelectorAll('.tab-button');
-  const contents = contentContainer.querySelectorAll('.tab-content');
-
-  // Set default active tab
-  if (tabs.length > 0) {
-    tabs[0].classList.add('active');
-  }
-  if (contents.length > 0) {
-    contents[0].classList.add('active');
-  }
-
-  tabsContainer.addEventListener('click', (e) => {
-    if (e.target.matches('.tab-button')) {
-      const region = e.target.dataset.region;
-
-      tabs.forEach(tab => tab.classList.remove('active'));
-      e.target.classList.add('active');
-
-      contents.forEach(content => content.classList.remove('active'));
-      const activeContent = document.getElementById(`region-${region}`);
-      if (activeContent) {
-        activeContent.classList.add('active');
-      }
+    // Insert after the world-regions section
+    const regionsSection = document.querySelector('.world-regions');
+    if (regionsSection) {
+        regionsSection.parentNode.insertBefore(realTimeSection, regionsSection.nextSibling);
     }
-  });
+
+    // Add CSS for real-time updates
+    const style = document.createElement('style');
+    style.textContent = `
+        .real-time-updates {
+            margin-bottom: 50px;
+        }
+        
+        .real-time-updates h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #2c3e50;
+            text-align: center;
+        }
+        
+        .updates-container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .update-item {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            transition: background-color 0.3s ease;
+        }
+        
+        .update-item:last-child {
+            border-bottom: none;
+        }
+        
+        .update-item:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .update-time {
+            display: block;
+            font-size: 0.8rem;
+            color: #667eea;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        
+        .update-item p {
+            margin: 0;
+            color: #555;
+            line-height: 1.5;
+        }
+        
+        @media (max-width: 768px) {
+            .real-time-updates h2 {
+                font-size: 2rem;
+            }
+        }
+    `;
+    document.head.appendChild(style);
 }
+
+function initializeInteractions() {
+    // Add click handlers for news cards
+    const newsCards = document.querySelectorAll('.world-news-card');
+    newsCards.forEach(card => {
+        card.addEventListener('click', function() {
+            // Add visual feedback
+            this.style.transform = 'scale(0.98)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 150);
+            
+            // In a real application, this would navigate to a detail page
+            console.log('News card clicked:', this.querySelector('h3').textContent);
+        });
+    });
+
+    // Add hover effects for region cards
+    const regionCards = document.querySelectorAll('.region-card');
+    regionCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.backgroundColor = '#f8f9fa';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.backgroundColor = 'white';
+        });
+    });
+
+    // Add smooth scrolling for anchor links
+    const anchorLinks = document.querySelectorAll('a[href^="#"]');
+    anchorLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+}
+
+// Export functions for potential use in other modules
+export { addDynamicContent, initializeInteractions };

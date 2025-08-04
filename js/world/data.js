@@ -1,154 +1,220 @@
 export const worldPageData = {
-  header: "World News",
-  section: {
-    items: [
-      {
-        id: "world-1",
-        imageText: "Global Summit",
-        title: "Leaders Gather for International Summit",
-        description: "World leaders are convening to discuss pressing global issues, including climate change, economic cooperation, and security.",
-        detail: "<p>This is the full article for Leaders Gather for International Summit. Add summit agenda, leader quotes, and outcomes here.</p>",
-        link: "#"
-      },
-      {
-        id: "world-2",
-        imageText: "Cultural Festival",
-        title: "International Cultural Exchange Event",
-        description: "A vibrant festival celebrating diverse cultures from around the globe is underway, fostering understanding and artistic expression.",
-        detail: "<p>This is the full article for International Cultural Exchange Event. Include stories, interviews, and festival highlights here.</p>",
-        link: "#"
-      }
+    heroArticle: {
+        id: 'world-hero-1',
+        category: 'Breaking News',
+        title: 'Global Leaders Reach Historic Climate Agreement at COP29',
+        summary: 'World leaders have agreed to unprecedented carbon reduction targets that could reshape the global economy and energy sector.',
+        imageUrl: 'https://via.placeholder.com/800x400/4CAF50/FFFFFF?text=Climate+Summit',
+        link: '../../html/world/detail.html',
+        date: 'June 15, 2025',
+        readTime: '8 min read'
+    },
+    
+    latestNews: [
+        {
+            id: 'world-news-1',
+            category: 'Technology',
+            title: 'Revolutionary AI Breakthrough: Quantum Computing Achieves Commercial Viability',
+            summary: 'IBM and Google announce major breakthroughs in quantum computing technology, bringing commercial quantum applications within reach for the first time.',
+            imageUrl: 'https://via.placeholder.com/400x250/2196F3/FFFFFF?text=Quantum+Computing',
+            link: '../../html/world/detail.html',
+            date: 'June 14, 2025',
+            readTime: '6 min read'
+        },
+        {
+            id: 'world-news-2',
+            category: 'Economy',
+            title: 'Central Banks Coordinate Historic Interest Rate Decision',
+            summary: 'Major central banks announce coordinated policy shift to address inflation while supporting economic growth, marking unprecedented global monetary cooperation.',
+            imageUrl: 'https://via.placeholder.com/400x250/FF9800/FFFFFF?text=Central+Banks',
+            link: '../../html/world/detail.html',
+            date: 'June 13, 2025',
+            readTime: '7 min read'
+        },
+        {
+            id: 'world-news-3',
+            category: 'Health',
+            title: 'Breakthrough in Alzheimer\'s Treatment Shows Promising Results',
+            summary: 'Clinical trials of a new drug therapy demonstrate significant improvement in cognitive function for early-stage Alzheimer\'s patients.',
+            imageUrl: 'https://via.placeholder.com/400x250/4CAF50/FFFFFF?text=Medical+Breakthrough',
+            link: '../../html/world/detail.html',
+            date: 'June 12, 2025',
+            readTime: '5 min read'
+        },
+        {
+            id: 'world-news-4',
+            category: 'Science',
+            title: 'International Space Station Welcomes First Commercial Astronauts',
+            summary: 'SpaceX\'s Dragon spacecraft successfully delivered the first group of commercial astronauts to the International Space Station.',
+            imageUrl: 'https://via.placeholder.com/400x250/9C27B0/FFFFFF?text=Space+Station',
+            link: '../../html/world/detail.html',
+            date: 'June 11, 2025',
+            readTime: '4 min read'
+        }
+    ],
+    
+    majorEvents: [
+        {
+            id: 'event-1',
+            name: 'G20 Summit 2025',
+            host: 'Tokyo, Japan',
+            date: 'September 15-17, 2025',
+            icon: 'fas fa-globe'
+        },
+        {
+            id: 'event-2',
+            name: 'World Economic Forum',
+            host: 'Davos, Switzerland',
+            date: 'January 20-24, 2026',
+            icon: 'fas fa-chart-line'
+        },
+        {
+            id: 'event-3',
+            name: 'UN Climate Conference',
+            host: 'Baku, Azerbaijan',
+            date: 'November 10-22, 2025',
+            icon: 'fas fa-leaf'
+        },
+        {
+            id: 'event-4',
+            name: 'Olympic Games 2028',
+            host: 'Los Angeles, USA',
+            date: 'July 14-30, 2028',
+            icon: 'fas fa-trophy'
+        }
+    ],
+    
+    athleteSpotlight: [
+        {
+            id: 'athlete-1',
+            name: 'Emma Wilson',
+            sport: 'Tennis',
+            country: 'United States',
+            achievement: 'Won her third Grand Slam title at Wimbledon, becoming the youngest player to achieve this feat in the Open Era.',
+            imageUrl: 'https://via.placeholder.com/120x120/FF5722/FFFFFF?text=EW'
+        },
+        {
+            id: 'athlete-2',
+            name: 'Carlos Rodriguez',
+            sport: 'Football',
+            country: 'Spain',
+            achievement: 'Led his national team to victory in the UEFA Nations League, scoring the winning goal in the final.',
+            imageUrl: 'https://via.placeholder.com/120x120/2196F3/FFFFFF?text=CR'
+        },
+        {
+            id: 'athlete-3',
+            name: 'Yuki Tanaka',
+            sport: 'Swimming',
+            country: 'Japan',
+            achievement: 'Broke the world record in the 200m freestyle at the World Championships, setting a new benchmark for the sport.',
+            imageUrl: 'https://via.placeholder.com/120x120/4CAF50/FFFFFF?text=YT'
+        }
+    ],
+    
+    regionalNews: {
+        'asia-pacific': [
+            {
+                title: 'China Announces Major Economic Reforms',
+                link: '../../html/world/detail.html?id=china-reforms'
+            },
+            {
+                title: 'Japan Leads Global Innovation in Robotics',
+                link: '../../html/world/detail.html?id=japan-robotics'
+            },
+            {
+                title: 'India\'s Digital Transformation Accelerates',
+                link: '../../html/world/detail.html?id=india-digital'
+            }
+        ],
+        'europe': [
+            {
+                title: 'EU Introduces New Digital Privacy Regulations',
+                link: '../../html/world/detail.html?id=eu-privacy'
+            },
+            {
+                title: 'UK Announces Green Energy Investment Plan',
+                link: '../../html/world/detail.html?id=uk-energy'
+            },
+            {
+                title: 'Germany Leads European Economic Recovery',
+                link: '../../html/world/detail.html?id=germany-economy'
+            }
+        ],
+        'americas': [
+            {
+                title: 'US and Canada Sign New Trade Agreement',
+                link: '../../html/world/detail.html?id=us-canada-trade'
+            },
+            {
+                title: 'Brazil Emerges as Green Energy Leader',
+                link: '../../html/world/detail.html?id=brazil-energy'
+            },
+            {
+                title: 'Mexico\'s Tech Sector Shows Strong Growth',
+                link: '../../html/world/detail.html?id=mexico-tech'
+            }
+        ],
+        'africa': [
+            {
+                title: 'Kenya Leads East African Digital Revolution',
+                link: '../../html/world/detail.html?id=kenya-digital'
+            },
+            {
+                title: 'South Africa\'s Renewable Energy Boom',
+                link: '../../html/world/detail.html?id=south-africa-energy'
+            },
+            {
+                title: 'Nigeria\'s Startup Ecosystem Flourishes',
+                link: '../../html/world/detail.html?id=nigeria-startups'
+            }
+        ]
+    },
+    
+    analysisArticles: [
+        {
+            id: 'analysis-1',
+            title: 'The Future of Global Trade: Digital Transformation and Supply Chain Innovation',
+            summary: 'As the world continues to recover from the economic impacts of recent global challenges, international trade is undergoing a fundamental transformation.',
+            imageUrl: 'https://via.placeholder.com/600x300/607D8B/FFFFFF?text=Global+Trade',
+            link: '../../html/world/detail.html',
+            date: 'June 10, 2025',
+            readTime: '12 min read'
+        },
+        {
+            id: 'analysis-2',
+            title: 'Global Migration Patterns: Understanding the New Normal',
+            summary: 'Migration patterns worldwide are evolving rapidly due to climate change, economic opportunities, and political developments.',
+            imageUrl: 'https://via.placeholder.com/600x300/795548/FFFFFF?text=Migration',
+            link: '../../html/world/detail.html',
+            date: 'June 8, 2025',
+            readTime: '10 min read'
+        }
+    ],
+    
+    realTimeUpdates: [
+        {
+            id: 'update-1',
+            time: '2 minutes ago',
+            content: 'UN Security Council convenes emergency meeting on climate crisis',
+            category: 'Politics'
+        },
+        {
+            id: 'update-2',
+            time: '15 minutes ago',
+            content: 'Major tech companies announce joint initiative for digital privacy standards',
+            category: 'Technology'
+        },
+        {
+            id: 'update-3',
+            time: '1 hour ago',
+            content: 'Global markets respond positively to new trade agreement',
+            category: 'Economy'
+        },
+        {
+            id: 'update-4',
+            time: '2 hours ago',
+            content: 'WHO reports significant progress in global vaccination efforts',
+            category: 'Health'
+        }
     ]
-  },
-  heroArticle: {
-    id: 'wn-hero-01',
-    category: "Global Events",
-    title: "Paris 2024: The World Gathers for a Spectacle of Unity and Competition",
-    summary: "With the opening ceremony just weeks away, Paris is putting the final touches on what promises to be an unforgettable Olympic Games. New venues, sustainability initiatives, and a focus on inclusivity are set to redefine the global sporting event.",
-    imageUrl: "../images/stock/world/olympics-paris.jpg",
-    link: "../../html/sport/sport-detail.html"
-  },
-  latestNews: [
-    {
-        id: 'home-article-1107',
-        sport: 'football',
-        category: 'FOOTBALL',
-        title: 'Liverpool football star Diogo Jota killed in car crash',
-        summary: '',
-        imageUrl: 'https://nilepost.co.ug/new_cms/wp-content/uploads/2025/07/e2dd1de0-0217-11ef-946e-d7e525632c0f.jpg',
-        link: '../../html/sport/sport-detail.html',
-        authorId: 'mike-johnson',
-        date: 'July 03, 2025',
-        readTime: '2 min read',
-        body: `
-        <article>
-            <h1>Diogo Jota Tragically Dies in Car Crash in Spain</h1>
-            <p>Liverpool forward Diogo Jota has tragically passed away following a car accident in the early hours of Thursday morning near Zamora, in northwestern Spain.</p>
-            <h2>Accident Details</h2>
-            <p>The 28-year-old Portuguese footballer was traveling with his brother, Andre, who also lost his life in the crash. The incident took place on the A-52 highway near Palacios de Sanabria, as they were heading toward Benavente.</p>
-            <p>According to authorities, the Lamborghini they were in veered off the road at around 12:30 a.m. Early reports suggest a tire may have burst while the vehicle was overtaking, causing it to leave the road and ignite in flames.</p>
-            <h2>Investigation Underway</h2>
-            <p>Both victims were pronounced dead at the scene. One has been identified as Diogo Jota, pending confirmation through forensic testing. Officials noted that no other vehicles were involved in the crash, and speeding is being investigated as a possible factor.</p>
-        </article>
-        `,
-        subimage1: 'https://images.ladbible.com/resize?type=webp&quality=70&width=3840&fit=contain&gravity=auto&url=https://images.ladbiblegroup.com/v3/assets/bltcd74acc1d0a99f3a/bltbcfde8c439a9992d/686648b7904fb967778da00c/jota-family.jpg',
-        body2: `
-            <h2>Scene Aftermath</h2>
-            <p>Images from the aftermath showed charred wreckage and scattered debris along the roadside, painting a devastating picture of the collision.</p>
-            <h2>Personal Tragedy</h2>
-            <p>The tragedy comes just ten days after Jota married his longtime partner, Rute Cardoso, making the loss even more heartbreaking for his family and fans.</p>
-        `,
-        tags: ['Football']
-    },
-    {
-      id: 'wn-latest-02',
-      category: "Tennis",
-      title: "A New Era on the Court: Young Stars Challenge the Tennis Elite",
-      summary: "The landscape of professional tennis is shifting as a new generation of talent rises through the ranks, challenging long-standing champions at major tournaments.",
-      imageUrl: "../images/stock/world/tennis-action.jpg",
-      link: "../../html/sport/sport-detail.html"
-    },
-    {
-      id: 'wn-latest-03',
-      sport: 'basketball',
-      category: "Cricket",
-      title: "India and Australia to Clash in World Test Championship Final",
-      summary: "The stage is set for a monumental clash as cricket giants India and Australia compete for the coveted World Test Championship mace.",
-      imageUrl: "../images/stock/world/cricket-match.jpg",
-      link: "../../html/sport/sport-detail.html",
-      author: 'Mike Johnson',
-      date: 'October 26, 2023',
-      readTime: '4 min read',
-      body: '<p>The Golden State Warriors have unveiled ambitious plans for a new, state-of-the-art arena on the waterfront. The proposed venue promises an unparalleled fan experience and sets a new standard for sustainable design in professional sports.</p>'
-    },
-    {
-      id: 'wn-latest-04',
-      category: "Rugby",
-      title: "South Africa and New Zealand Prepare for Rugby Championship Showdown",
-      summary: "The historic rivalry between the Springboks and the All Blacks is reignited as they prepare for a critical match in the Rugby Championship.",
-      imageUrl: "../images/stock/world/rugby-game.jpg",
-      link: "../../html/sport/sport-detail.html"
-    }
-  ],
-  majorEvents: [
-    {
-      name: "FIFA World Cup 2026",
-      host: "USA, Canada, Mexico",
-      date: "June 11 – July 19, 2026",
-      icon: "fas fa-futbol"
-    },
-    {
-      name: "Winter Olympics 2026",
-      host: "Milan-Cortina, Italy",
-      date: "February 6–22, 2026",
-      icon: "fas fa-snowflake"
-    },
-    {
-      name: "Rugby World Cup 2027",
-      host: "Australia",
-      date: "October 1 – November 13, 2027",
-      icon: "fas fa-football-ball"
-    }
-  ],
-  athleteSpotlight: [
-    {
-      name: "Simone Biles",
-      sport: "Gymnastics",
-      country: "USA",
-      achievement: "Redefining the sport with unparalleled skill and advocacy for mental health.",
-      imageUrl: "https://hips.hearstapps.com/hmg-prod/images/simone-biles-celebrates-after-placing-first-in-the-floor-news-photo-1693236365.jpg?crop=0.949xw:0.633xh;0.0170xw,0.0465xh&resize=640:*"
-    },
-    {
-      name: "Kylian Mbappé",
-      sport: "Football",
-      country: "France",
-      achievement: "Leading a new generation of football superstars with breathtaking speed and goal-scoring prowess.",
-      imageUrl: "https://b.fssta.com/uploads/application/soccer/headshots/40670.vresize.350.350.medium.72.png"
-    },
-    {
-      name: "Max Verstappen",
-      sport: "Formula 1",
-      country: "Netherlands",
-      achievement: "Dominating the F1 circuits with aggressive driving and multiple world championships.",
-      imageUrl: "https://cdn-9.motorsport.com/images/mgl/6D1XbeV0/s800/max-verstappen-red-bull-racing.jpg"
-    }
-  ],
-  regionalNews: {
-    europe: [
-      { id: 'wn-eu-01', title: "Champions League Final Delivers Unforgettable Drama", link: "html/article-detail.html?id=wn-eu-01" },
-      { id: 'wn-eu-02', title: "Wimbledon Sees a Surprise Champion Crowned", link: "html/article-detail.html?id=wn-eu-02" },
-    ],
-    americas: [
-      { id: 'wn-am-01', title: "Super Bowl Champions Begin Their Title Defense", link: "html/article-detail.html?id=wn-am-01" },
-      { id: 'wn-am-02', title: "Copa América: Brazil and Argentina Favorites Once Again", link: "html/article-detail.html?id=wn-am-02" },
-    ],
-    asia: [
-      { id: 'wn-as-01', title: "Japan's Pro Baseball League Reaches Exciting Climax", link: "html/article-detail.html?id=wn-as-01" },
-      { id: 'wn-as-02', title: "Indian Premier League Breaks Viewership Records", link: "html/article-detail.html?id=wn-as-02" },
-    ],
-    africa: [
-      { id: 'wn-af-01', title: "Africa Cup of Nations Qualifiers Heat Up", link: "html/article-detail.html?id=wn-af-01" },
-      { id: 'wn-af-02', title: "Kenyan Marathon Runners Dominate Boston Marathon", link: "html/article-detail.html?id=wn-af-02" },
-    ]
-  }
 }; 
