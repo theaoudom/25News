@@ -82,11 +82,5 @@
         <priority>0.6</priority>
     </url>
     
-    <!-- Error Pages -->
-    <url>
-        <loc>https://25news.com/html/404.html</loc>
-        <lastmod>2025-06-15</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
-    </url>
+    
 </urlset> 

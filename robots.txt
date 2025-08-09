@@ -1,6 +1,9 @@
 User-agent: *
 Allow: /
 
+# Prevent indexing of error pages
+Disallow: /html/404.html
+
 # Allow all major search engines
 User-agent: Googlebot
 Allow: /
