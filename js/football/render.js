@@ -6,6 +6,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainContainer = document.querySelector('main.container');
     if (!mainContainer) return;
 
+    // Check if data is valid
+    if (!footballPageData || !footballPageData.hero || !footballPageData.leagues || !footballPageData.articles || footballPageData.articles.length === 0) {
+        mainContainer.innerHTML = `
+            <section class="no-content-section">
+                <h2>No Articles Available</h2>
+                <p>We're sorry, but there are currently no articles to display in this section. Please check back later for updates.</p>
+                <a href="/" class="read-more-btn">Return to Homepage</a>
+            </section>
+        `;
+        return; // Stop further execution
+    }
+
     // --- API & Caching Configuration ---
     const API_KEY = '1f6c0166ad8ee1e50a116dd8ec8fdc1a'; // <-- REPLACE WITH YOUR KEY
     const API_BASE_URL = 'https://v3.football.api-sports.io';

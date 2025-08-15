@@ -20,6 +20,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Initialize interactive features
         initializeInteractions();
 
+        // Final content check
+        if (mainContainer.innerHTML.trim().length === 0) {
+            mainContainer.innerHTML = `
+                <section class="no-content-section">
+                    <h2>No Articles Available</h2>
+                    <p>We're sorry, but there is currently no content to display. Please check back later for updates.</p>
+                    <a href="/" class="read-more-btn">Return to Homepage</a>
+                </section>
+            `;
+        }
+
     } catch (error) {
         console.error('Error loading world news data:', error);
         if (mainContainer) {

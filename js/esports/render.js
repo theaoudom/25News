@@ -6,6 +6,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainContainer = document.querySelector('main.container');
     if (!mainContainer) return;
 
+    // Check if data is valid
+    if (!esportsPageData || !esportsPageData.hero || !esportsPageData.articles || esportsPageData.articles.length === 0) {
+        mainContainer.innerHTML = `
+            <section class="no-content-section">
+                <h2>No Articles Available</h2>
+                <p>We're sorry, but there are currently no articles to display in this section. Please check back later for updates.</p>
+                <a href="/" class="read-more-btn">Return to Homepage</a>
+            </section>
+        `;
+        return; // Stop further execution
+    }
+
     const { hero, topTeams, articles, upcomingEvents, gallery } = esportsPageData;
 
     mainContainer.innerHTML = `

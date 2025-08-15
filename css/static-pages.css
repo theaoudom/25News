@@ -1,0 +1,181 @@
+/* General Styles for Static Pages */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+main > section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* About Us Page Specifics */
+.mission-values, .coverage-grid, .team-highlights, .innovation-features, .community-engagement {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.value-item, .coverage-item, .team-member, .feature, .engagement-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Contact Page Specifics */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+/* Privacy & Terms Page Specifics */
+.privacy-overview, .privacy-collection, .privacy-usage, .privacy-sharing, .privacy-cookies, .privacy-rights, .privacy-security, .privacy-children, .privacy-international, .privacy-changes, .privacy-contact,
+.terms-acceptance, .terms-services, .terms-accounts, .terms-content, .terms-intellectual, .terms-privacy, .terms-disclaimers, .terms-indemnification, .terms-termination, .terms-governing, .terms-severability, .terms-entire, .terms-contact {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode main > section {
+    background-color: #2c2c2c;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+body.dark-mode h1,
+body.dark-mode h2 {
+    color: #ffffff;
+}
+
+body.dark-mode h2 {
+    border-bottom-color: #444;
+}
+
+body.dark-mode a {
+    color: #bb86fc;
+}
+
+body.dark-mode .value-item,
+body.dark-mode .coverage-item,
+body.dark-mode .team-member,
+body.dark-mode .feature,
+body.dark-mode .engagement-item {
+    background-color: #333333;
+}
+
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea {
+    background-color: #444;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+body.dark-mode .contact-form button {
+    background-color: #bb86fc;
+    color: #121212;
+}
+
+body.dark-mode .contact-form button:hover {
+    background-color: #a062f8;
+}
+
+body.dark-mode .privacy-overview,
+body.dark-mode .privacy-collection,
+body.dark-mode .privacy-usage,
+body.dark-mode .privacy-sharing,
+body.dark-mode .privacy-cookies,
+body.dark-mode .privacy-rights,
+body.dark-mode .privacy-security,
+body.dark-mode .privacy-children,
+body.dark-mode .privacy-international,
+body.dark-mode .privacy-changes,
+body.dark-mode .privacy-contact,
+body.dark-mode .terms-acceptance,
+body.dark-mode .terms-services,
+body.dark-mode .terms-accounts,
+body.dark-mode .terms-content,
+body.dark-mode .terms-intellectual,
+body.dark-mode .terms-privacy,
+body.dark-mode .terms-disclaimers,
+body.dark-mode .terms-indemnification,
+body.dark-mode .terms-termination,
+body.dark-mode .terms-governing,
+body.dark-mode .terms-severability,
+body.dark-mode .terms-entire,
+body.dark-mode .terms-contact {
+    background-color: #2c2c2c;
+}

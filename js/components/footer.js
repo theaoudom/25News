@@ -12,6 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .then(data => {
             footerPlaceholder.innerHTML = data;
+
+            // Dynamically add the footer CSS
+            const footerCss = document.createElement('link');
+            footerCss.rel = 'stylesheet';
+            footerCss.href = '/css/components/footer.css'; // Adjust the path as needed
+            document.head.appendChild(footerCss);
         })
         .catch(error => {
             console.error('Error fetching footer:', error);
