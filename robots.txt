@@ -3,6 +3,7 @@ Allow: /
 
 # Prevent indexing of error pages
 Disallow: /html/404.html
+Disallow: /html/components/
 
 # Allow all major search engines
 User-agent: Googlebot
@@ -14,10 +15,7 @@ Allow: /
 User-agent: Slurp
 Allow: /
 
-# Disallow sensitive areas
-Disallow: /js/
-Disallow: /css/
-Disallow: /images/
+# Disallow sensitive areas (keep content assets crawlable for rendering)
 Disallow: /admin/
 Disallow: /private/
 

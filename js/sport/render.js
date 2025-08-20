@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <span class="hero-category">${hero.category}</span>
                 <h2>${hero.title}</h2>
                 <p>${hero.summary}</p>
-                <a href="${hero.link}" class="read-more-btn article-link">Read More →</a>
+                <a href="sport-detail.html?id=${hero.id}" class="read-more-btn article-link">Read More →</a>
             </div>
             <div class="hero-image">
                 <img src="${hero.imageUrl}" alt="${hero.title}">
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <span class="category">${article.category}</span>
                             <h3>${article.title}</h3>
                             <p>${article.summary}</p>
-                            <a href="${article.link}" class="read-more-link article-link">Full Story</a>
+                            <a href="sport-detail.html?id=${article.id}" class="read-more-link article-link">Full Story</a>
                         </div>
                     </article>
                 `).join('')}

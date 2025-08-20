@@ -47,12 +47,3 @@ class LoadingManager {
 
 // Create a global instance
 window.loadingManager = new LoadingManager();
-
-// Test the loading component
-document.addEventListener('DOMContentLoaded', () => {
-    window.loadingManager.show();
-    // Hide after 3 seconds for testing
-    setTimeout(() => {
-        window.loadingManager.hide();
-    }, 3000);
-}); 

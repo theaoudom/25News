@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     <span class="hero-category">${homePageData.hero.category}</span>
                     <h2>${homePageData.hero.title}</h2>
                     <p>${homePageData.hero.summary}</p>
-                    <a href="${homePageData.hero.link}" class="read-more-btn article-link">Read More →</a>
+                    <a href="html/sport/sport-detail.html?id=${homePageData.hero.id}" class="read-more-btn article-link">Read More →</a>
                 </div>
                 <div class="hero-image">
                     <img src="${homePageData.hero.imageUrl}" alt="${homePageData.hero.title}">
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                             <div class="card-content">
                                 <span class="category">${article.category}</span>
                                 <h3>${article.title}</h3>
-                                <a href="${article.link}" class="read-more-link article-link">Full Story</a>
+                                <a href="html/sport/sport-detail.html?id=${article.id}" class="read-more-link article-link">Full Story</a>
                             </div>
                         </article>
                     `).join('')}
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                                 <p>${article.summary}</p>
                                 <span class="timestamp" data-timestamp="${article.timestamp}">${timeAgo(article.timestamp)}</span>
                             </div>
-                            <a href="${article.link}" class="read-more-link article-link">→</a>
+                            <a href="html/sport/sport-detail.html?id=${article.id}" class="read-more-link article-link">→</a>
                         </article>
                     `).join('')}
                 </div>
