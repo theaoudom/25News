@@ -43,9 +43,92 @@
         <priority>0.9</priority>
     </url>
     
-    <!-- Detail pages are dynamic with query params; omit them from sitemap to avoid thin/blank versions. -->
+    <!-- Static Pages -->
+    <url>
+        <loc>https://25news.com/html/about.html</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://25news.com/html/contact.html</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://25news.com/html/privacy.html</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://25news.com/html/terms.html</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
     
-    <!-- Omit utility/legal pages (noindex) from sitemap -->
-    
+    <!-- Individual Article Pages -->
+    <url>
+        <loc>https://25news.com/html/articles/top-10-cambodian-esports-teams.html</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://25news.com/html/articles/why-mlbb-growing-southeast-asia.html</loc>
+        <lastmod>2025-06-21</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://25news.com/html/articles/how-to-start-youtube-gaming-channel-2025.html</loc>
+        <lastmod>2025-06-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://25news.com/html/articles/beginner-guide-pubg-mobile-competitive.html</loc>
+        <lastmod>2025-06-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://25news.com/html/articles/future-cambodian-tech-2025.html</loc>
+        <lastmod>2025-06-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://25news.com/html/articles/mlbb-hero-tier-list-2025.html</loc>
+        <lastmod>2025-06-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://25news.com/html/articles/esports-career-guide-2025.html</loc>
+        <lastmod>2025-06-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://25news.com/html/articles/mobile-gaming-vs-pc-gaming-2025.html</loc>
+        <lastmod>2025-06-27</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://25news.com/html/articles/best-gaming-phones-2025.html</loc>
+        <lastmod>2025-06-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://25news.com/html/articles/understanding-esports-prize-pools.html</loc>
+        <lastmod>2025-06-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
     
 </urlset> 
