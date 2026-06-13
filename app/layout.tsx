@@ -7,6 +7,7 @@ import { ThemeProvider } from '@/presentation/components/ThemeProvider';
 import { Navbar } from '@/presentation/components/Navbar';
 import { Footer } from '@/presentation/components/Footer';
 import { JsonLd } from '@/presentation/components/JsonLd';
+import { Analytics } from '@/presentation/components/Analytics';
 import { organizationJsonLd, webSiteJsonLd } from '@/shared/seo/jsonLd';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
@@ -23,6 +24,9 @@ export const metadata: Metadata = {
   alternates: { canonical: '/' },
   manifest: '/manifest.webmanifest',
   icons: { icon: '/images/Logo.svg', apple: '/images/Logo.svg' },
+  ...(process.env.NEXT_PUBLIC_GSC_VERIFICATION
+    ? { verification: { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION } }
+    : {}),
   ...(siteConfig.adsenseClient ? { other: { 'google-adsense-account': siteConfig.adsenseClient } } : {}),
 };
 
@@ -54,6 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main id="main">{children}</main>
           <Footer />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
