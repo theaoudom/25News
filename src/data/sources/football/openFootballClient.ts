@@ -71,26 +71,36 @@ export const openFootballClient = {
     return (data.matches || []).map(mapMatch);
   },
 
-  /** Compute group standings from finished matches. */
+  /** Compute group standings — seeds every team in a group, then accumulates
+   *  finished results so all four teams show (with zeros) before kickoff. */
   async getStandings(): Promise<GroupStanding[]> {
     const fixtures = await openFootballClient.getFixtures();
     type Acc = Omit<StandingRow, 'rank'>;
     const groups = new Map<string, Map<string, Acc>>();
 
+    const ensure = (group: string, side: Team) => {
+      if (!groups.has(group)) groups.set(group, new Map());
+      const table = groups.get(group)!;
+      if (!table.has(side.name)) {
+        table.set(side.name, {
+          team: side,
+          played: 0, win: 0, draw: 0, lose: 0,
+          goalsFor: 0, goalsAgainst: 0, goalDiff: 0, points: 0,
+        });
+      }
+    };
+
+    // Pass 1: register every team that appears in a group (even unplayed).
+    for (const f of fixtures) {
+      if (!f.group) continue;
+      ensure(f.group, f.home);
+      ensure(f.group, f.away);
+    }
+
+    // Pass 2: accumulate finished results.
     for (const f of fixtures) {
       if (!f.group || f.status !== 'finished' || f.homeGoals === null || f.awayGoals === null) continue;
-      if (!groups.has(f.group)) groups.set(f.group, new Map());
       const table = groups.get(f.group)!;
-
-      for (const side of [f.home, f.away]) {
-        if (!table.has(side.name)) {
-          table.set(side.name, {
-            team: side,
-            played: 0, win: 0, draw: 0, lose: 0,
-            goalsFor: 0, goalsAgainst: 0, goalDiff: 0, points: 0,
-          });
-        }
-      }
       const h = table.get(f.home.name)!;
       const a = table.get(f.away.name)!;
       const hg = f.homeGoals, ag = f.awayGoals;

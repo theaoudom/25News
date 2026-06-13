@@ -14,9 +14,11 @@ interface Sourced<T> {
 
 /**
  * FootballRepository for the World Cup that prefers free providers which
- * actually carry 2026 data: TheSportsDB first, then openfootball as a no-key
- * backup, then the bundled dataset. Each step degrades gracefully on error or
- * empty response, and the resolved source is surfaced to the UI.
+ * actually carry 2026 data. openfootball is primary — it is key-free and has
+ * the full 104-match schedule and all 12 groups. TheSportsDB is the backup
+ * (richer data like badges, but its free test key returns only a sample), and
+ * the bundled dataset is the final fallback. Each step degrades gracefully on
+ * error or empty response, and the resolved source is surfaced to the UI.
  */
 export class WorldCupFootballRepository implements FootballRepository {
   private async tryChain<T>(
@@ -37,8 +39,8 @@ export class WorldCupFootballRepository implements FootballRepository {
   private fetchFixtures(): Promise<Sourced<Fixture[]>> {
     return this.tryChain<Fixture>(
       [
-        { source: 'thesportsdb', run: () => theSportsDbClient.getFixtures() },
         { source: 'openfootball', run: () => openFootballClient.getFixtures() },
+        { source: 'thesportsdb', run: () => theSportsDbClient.getFixtures() },
       ],
       { source: 'fallback', data: FALLBACK_FIXTURES },
     );
@@ -47,8 +49,8 @@ export class WorldCupFootballRepository implements FootballRepository {
   private fetchStandings(): Promise<Sourced<GroupStanding[]>> {
     return this.tryChain<GroupStanding>(
       [
-        { source: 'thesportsdb', run: () => theSportsDbClient.getStandings() },
         { source: 'openfootball', run: () => openFootballClient.getStandings() },
+        { source: 'thesportsdb', run: () => theSportsDbClient.getStandings() },
       ],
       { source: 'fallback', data: FALLBACK_STANDINGS },
     );
