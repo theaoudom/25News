@@ -633,6 +633,101 @@ const RAW: RawArticle[] = [
       <h2>Format and Key Dates</h2>
       <p>The tournament kicks off with the Wildcard Stage (July 10–13), followed by the Group Stage (July 23–27) and the Knockout Stage (July 30 – August 2).</p>`,
   },
+
+  // ───────────────────────── EVERGREEN FEATURES ─────────────────────────
+  {
+    id: 'feature-womens-football',
+    title: 'The Rise of Women’s Football: Why the Women’s Game Is Booming',
+    category: 'football',
+    categoryLabel: 'Football',
+    authorId: 'jane-doe',
+    publishedAt: '2026-06-06T09:00:00Z',
+    isTrending: true,
+    tags: ['Football', 'Women’s Football', 'Analysis'],
+    imageUrl: '/images/placeholders/football.svg',
+    summary:
+      'Record crowds, soaring TV deals and packed stadiums — women’s football has moved from the margins to the mainstream. Here’s what’s driving the surge.',
+    body: `
+      <p>Women’s football is enjoying the fastest growth of any team sport in the world. What was once a niche pursuit now fills major stadiums, commands prime-time broadcast slots and attracts serious commercial investment. Several forces are powering that rise.</p>
+      <h2>Record Attendances</h2>
+      <p>Domestic and international fixtures have repeatedly broken attendance records in recent seasons, with showpiece matches drawing crowds that rival the men’s game. Clubs increasingly stage women’s fixtures in their main stadiums rather than smaller training grounds, signalling genuine confidence in demand.</p>
+      <h2>Investment and Broadcasting</h2>
+      <p>Broadcasters and sponsors have followed the audience. Standalone media-rights deals for women’s competitions, dedicated streaming coverage and brand partnerships have created sustainable revenue streams that did not exist a decade ago.</p>
+      <h2>Grassroots and Visibility</h2>
+      <p>Greater visibility creates a virtuous cycle: more young players take up the game, federations invest in academies, and the talent pool deepens. Stars now have the platform and role-model status long enjoyed by their male counterparts.</p>
+      <h2>What Comes Next</h2>
+      <p>The challenge now is consolidation — equal facilities, professional contracts across more leagues, and continued growth in markets where the women’s game is still emerging. The trajectory, though, is unmistakable: women’s football is no longer the future of the sport, it is firmly part of its present.</p>`,
+  },
+  {
+    id: 'guide-tennis-grand-slams',
+    title: 'The Four Tennis Grand Slams Explained: A Beginner’s Guide',
+    category: 'sports',
+    categoryLabel: 'Tennis',
+    authorId: 'sarah-jenkins',
+    publishedAt: '2026-06-05T09:00:00Z',
+    tags: ['Tennis', 'Grand Slam', 'Guide'],
+    imageUrl: '/images/placeholders/sports.svg',
+    summary:
+      'Australian Open, Roland-Garros, Wimbledon and the US Open — what makes each of tennis’s four majors unique, and why they matter most.',
+    body: `
+      <p>The four Grand Slams are the biggest tournaments in tennis — the events every player dreams of winning. Held across three continents and four very different surfaces, they define careers and crown the sport’s legends. Here’s a quick guide.</p>
+      <h2>Australian Open (January)</h2>
+      <p>The season-opener in Melbourne, played on hard courts in the southern-hemisphere summer. Known for extreme heat and a lively, festival-like atmosphere.</p>
+      <h2>Roland-Garros / French Open (May–June)</h2>
+      <p>The only major played on clay, in Paris. Slow, high-bouncing courts reward stamina and patience, producing long, physical rallies and rewarding specialists who master the surface.</p>
+      <h2>Wimbledon (June–July)</h2>
+      <p>The oldest and most prestigious tournament, played on grass in London. Famous for its traditions — all-white dress code, strawberries and cream, and a fast surface that favours powerful serving.</p>
+      <h2>US Open (August–September)</h2>
+      <p>The loud, electric finale to the Grand Slam season in New York, on hard courts. Night sessions under the lights and raucous crowds make it the most spectacle-driven of the four.</p>
+      <h2>Why the Slams Matter Most</h2>
+      <p>Grand Slam titles are the primary measure of greatness in tennis. They carry the most ranking points, the largest prize money and the deepest fields — which is why a player’s major count is the number history remembers.</p>`,
+  },
+  {
+    id: 'explainer-esports-world-cup',
+    title: 'What Is the Esports World Cup? Format, Games and Prize Money Explained',
+    category: 'esports',
+    categoryLabel: 'Esports',
+    authorId: 'leo-chen',
+    publishedAt: '2026-06-04T09:00:00Z',
+    isTrending: true,
+    tags: ['Esports', 'Esports World Cup', 'Guide'],
+    imageUrl: '/images/placeholders/esports.svg',
+    summary:
+      'The Esports World Cup has become the biggest event on the competitive gaming calendar. Here’s how it works, which games feature and what’s at stake.',
+    body: `
+      <p>The Esports World Cup (EWC) has quickly established itself as the most ambitious event in competitive gaming — a multi-week, multi-title festival held in Riyadh, Saudi Arabia, with one of the largest prize pools the industry has ever seen.</p>
+      <h2>A Multi-Title Festival</h2>
+      <p>Unlike most tournaments, which focus on a single game, the EWC spans many titles at once — from MOBAs like Mobile Legends and League of Legends to shooters such as Counter-Strike 2 and battle royales like PUBG and Fortnite. Dozens of the world’s top organisations compete across these disciplines.</p>
+      <h2>The Club Championship</h2>
+      <p>A defining feature is the Club Championship, where organisations earn points based on results across every title they enter. It rewards depth and all-round excellence, not just a single standout team — and crowns an overall champion club at the end.</p>
+      <h2>Prize Money</h2>
+      <p>The combined prize pool runs into the tens of millions of dollars across all titles, making it one of the richest events in esports history and a major payday for the teams and players involved.</p>
+      <h2>Why It Matters</h2>
+      <p>The EWC reflects esports’ continued march into the mainstream: traditional sports stars serve as ambassadors, broadcast production rivals major leagues, and the scale signals long-term investment in competitive gaming as global entertainment.</p>`,
+  },
+  {
+    id: 'explainer-ai-daily-life',
+    title: 'How Artificial Intelligence Is Reshaping Everyday Life in 2026',
+    category: 'world',
+    categoryLabel: 'Technology',
+    authorId: 'newsroom',
+    publishedAt: '2026-06-03T09:00:00Z',
+    isTrending: true,
+    tags: ['Technology', 'AI', 'Analysis'],
+    imageUrl: '/images/placeholders/world.svg',
+    summary:
+      'From the apps on your phone to the way businesses operate, artificial intelligence has quietly become part of daily life. Here’s where it’s making the biggest difference.',
+    body: `
+      <p>Artificial intelligence is no longer a futuristic concept confined to research labs — it is woven into the tools millions of people use every day. In 2026, its impact is most visible in a handful of everyday areas.</p>
+      <h2>Everyday Assistants</h2>
+      <p>AI-powered assistants now draft emails, summarise documents, translate languages in real time and answer complex questions conversationally. For many, they have become a first stop for information and a genuine productivity tool.</p>
+      <h2>Healthcare</h2>
+      <p>In medicine, AI helps clinicians analyse scans, flag early warning signs and speed up drug discovery. Used as a support tool alongside professionals, it is improving both the speed and accuracy of diagnosis.</p>
+      <h2>Work and Creativity</h2>
+      <p>From writing and design to coding and data analysis, AI is changing how people work — automating repetitive tasks and lowering the barrier to creative and technical projects that once required specialist skills.</p>
+      <h2>The Open Questions</h2>
+      <p>With the benefits come real concerns: data privacy, the reliability of AI-generated information, the impact on jobs, and the need for sensible regulation. How societies answer these questions will shape whether the technology’s promise is fully and fairly realised.</p>`,
+  },
 ];
 
 export const LOCAL_ARTICLES: Article[] = RAW.map(build);
