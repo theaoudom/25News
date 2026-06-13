@@ -5,7 +5,7 @@ import { siteConfig } from '@/shared/config/site';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Disclaimer',
-  description: 'Editorial and data disclaimer for the 25News website.',
+  description: 'Editorial and data disclaimer for the 26News website.',
   path: '/disclaimer',
 });
 

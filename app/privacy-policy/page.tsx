@@ -5,7 +5,7 @@ import { siteConfig } from '@/shared/config/site';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Privacy Policy',
-  description: 'How 25News collects, uses and protects your personal data, including cookies and advertising partners.',
+  description: 'How 26News collects, uses and protects your personal data, including cookies and advertising partners.',
   path: '/privacy-policy',
 });
 

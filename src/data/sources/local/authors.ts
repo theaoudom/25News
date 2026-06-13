@@ -85,9 +85,9 @@ export const AUTHORS: Record<string, Author> = {
   },
   newsroom: {
     id: 'newsroom',
-    name: '25News Newsroom',
+    name: '26News Newsroom',
     role: 'Editorial Desk',
-    bio: 'Reporting and analysis from the 25News editorial team.',
+    bio: 'Reporting and analysis from the 26News editorial team.',
     avatarUrl: '/images/authors/avatar.svg',
   },
 };

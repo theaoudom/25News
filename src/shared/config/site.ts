@@ -4,23 +4,23 @@
  */
 
 export const siteConfig = {
-  name: '25News',
-  shortName: '25News',
+  name: '26News',
+  shortName: '26News',
   tagline: 'World, Sports, Football & Esports — covered.',
   description:
     'Your trusted source for the latest news in World affairs, Sports, Football, the FIFA World Cup, and Esports. Timely, accurate, and in-depth reporting.',
   // Canonical base. Override via NEXT_PUBLIC_SITE_URL once a permanent custom
   // domain is live; defaults to the current Vercel URL.
-  url: (process.env.NEXT_PUBLIC_SITE_URL || 'https://25-news.vercel.app').replace(/\/$/, ''),
+  url: (process.env.NEXT_PUBLIC_SITE_URL || 'https://26news.xyz').replace(/\/$/, ''),
   locale: 'en_US',
   themeColor: '#c8102e',
-  twitterHandle: '@25news',
-  publisher: '25News Media',
+  twitterHandle: '@26news',
+  publisher: '26News Media',
   foundingYear: 2025,
   adsenseClient: process.env.NEXT_PUBLIC_ADSENSE_CLIENT || '',
-  contactEmail: 'info@25news.xyz',
-  logo: '/images/25News.png',
-  defaultOgImage: '/images/25News.png',
+  contactEmail: 'info@26news.xyz',
+  logo: '/images/26News.png',
+  defaultOgImage: '/images/26News.png',
 } as const;
 
 /** Primary navigation, also used to generate breadcrumbs and the sitemap. */

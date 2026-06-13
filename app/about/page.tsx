@@ -6,27 +6,27 @@ import { siteConfig } from '@/shared/config/site';
 export const metadata: Metadata = buildMetadata({
   title: 'About Us',
   description:
-    'Learn about 25News — our editorial mission, standards, and the team behind our World, Sports, Football and Esports coverage.',
+    'Learn about 26News — our editorial mission, standards, and the team behind our World, Sports, Football and Esports coverage.',
   path: '/about',
 });
 
 export default function AboutPage() {
   return (
     <StaticPage
-      title="About 25News"
+      title="About 26News"
       intro={`${siteConfig.name} is an independent digital newsroom covering World affairs, Sports, Football, the FIFA World Cup and Esports.`}
       path="/about"
     >
       <h2>Our Mission</h2>
       <p>
-        At 25News, our mission is to deliver timely, accurate and insightful journalism that helps
+        At 26News, our mission is to deliver timely, accurate and insightful journalism that helps
         readers understand the stories shaping our world. We combine original reporting with clear
         analysis across our core sections: World, Sports, Football and Esports.
       </p>
 
       <h2>Editorial Standards</h2>
       <p>
-        Every article published on 25News is written by a named author and reviewed for accuracy
+        Every article published on 26News is written by a named author and reviewed for accuracy
         before publication. We are committed to:
       </p>
       <ul>

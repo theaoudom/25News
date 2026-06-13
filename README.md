@@ -1,8 +1,8 @@
-# 25News — Next.js News Platform
+# 26News — Next.js News Platform
 
 A modern, SEO-first news website covering **World, Sports, Football, the FIFA World Cup 2026, and Esports**, rebuilt with **Next.js (App Router)** and **Clean Architecture**.
 
-Live data for the World Cup section comes from a pluggable football provider (API-Football), with a bundled fallback dataset so the site works out of the box.
+Live World Cup data comes from free, key-free providers (openfootball + TheSportsDB) with a bundled fallback, so the site works out of the box with no API key.
 
 ---
 
@@ -98,8 +98,8 @@ src/
   domain/                    # entities · repositories (interfaces) · usecases
   data/
     sources/local/           # migrated articles + authors (typed)
-    sources/football/        # API-Football client + bundled fallback dataset
-    repositories/            # LocalArticleRepository · ApiFootballRepository
+    sources/football/        # openfootball + TheSportsDB clients + bundled fallback
+    repositories/            # LocalArticleRepository · WorldCupFootballRepository
   di/container.ts            # composition root
   presentation/
     components/               # Navbar, Footer, ArticleCard, AdSlot, football/*, ...
@@ -206,13 +206,13 @@ that derives the slug, reading time and dates.
 1. Push this repository to GitHub/GitLab.
 2. In Vercel, **New Project → Import** the repo. Framework preset: **Next.js** (auto-detected).
 3. Add environment variables (Project Settings → Environment Variables):
-   - `NEXT_PUBLIC_SITE_URL` = `https://25news.xyz`
+   - `NEXT_PUBLIC_SITE_URL` = `https://26news.xyz`
    - `NEXT_PUBLIC_ADSENSE_CLIENT` = `ca-pub-5602570319866246`
    - `FOOTBALL_API_KEY` (optional, for live data)
    - `FOOTBALL_API_HOST`, `FOOTBALL_WORLDCUP_LEAGUE_ID`, `FOOTBALL_WORLDCUP_SEASON`
 4. **Deploy.**
-5. **Custom domain:** add `25news.xyz` in Vercel → Domains, and update DNS:
-   - Apex `25news.xyz` → Vercel A record `76.76.21.21` (or the value Vercel shows).
+5. **Custom domain:** add `26news.xyz` in Vercel → Domains, and update DNS:
+   - Apex `26news.xyz` → Vercel A record `76.76.21.21` (or the value Vercel shows).
    - `www` → CNAME `cname.vercel-dns.com`.
    - This replaces the previous GitHub Pages setup. The old `CNAME` file is kept in `public/` only for reference; Vercel uses the dashboard domain config.
 

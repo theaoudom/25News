@@ -6,7 +6,7 @@ import { siteConfig } from '@/shared/config/site';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Contact Us',
-  description: 'Get in touch with the 25News team — story tips, feedback, corrections and advertising enquiries.',
+  description: 'Get in touch with the 26News team — story tips, feedback, corrections and advertising enquiries.',
   path: '/contact',
 });
 

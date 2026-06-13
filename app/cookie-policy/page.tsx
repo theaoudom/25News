@@ -5,7 +5,7 @@ import { siteConfig } from '@/shared/config/site';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Cookie Policy',
-  description: 'How 25News uses cookies and similar technologies, and how to control them.',
+  description: 'How 26News uses cookies and similar technologies, and how to control them.',
   path: '/cookie-policy',
 });
 

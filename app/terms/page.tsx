@@ -5,7 +5,7 @@ import { siteConfig } from '@/shared/config/site';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Terms & Conditions',
-  description: 'The terms governing your use of the 25News website and its content.',
+  description: 'The terms governing your use of the 26News website and its content.',
   path: '/terms',
 });
 

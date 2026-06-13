@@ -16,7 +16,7 @@ export async function generateMetadata({
   return buildMetadata({
     title: q ? `World Cup news: “${q}”` : 'World Cup 2026 News',
     description:
-      'The latest FIFA World Cup 2026 news, analysis, previews and reaction from the 25News football desk.',
+      'The latest FIFA World Cup 2026 news, analysis, previews and reaction from the 26News football desk.',
     path: '/world-cup/news',
     noIndex: Boolean(q), // don't index arbitrary search queries
   });

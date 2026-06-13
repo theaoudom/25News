@@ -7,7 +7,7 @@ import { SearchBar } from '@/presentation/components/SearchBar';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Search',
-  description: 'Search 25News for the latest World, Sports, Football, World Cup and Esports stories.',
+  description: 'Search 26News for the latest World, Sports, Football, World Cup and Esports stories.',
   path: '/search',
   // Search results pages should not be indexed.
   noIndex: true,

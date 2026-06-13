@@ -21,7 +21,7 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-2" aria-label={`${siteConfig.name} home`}>
           <Image src="/images/Logo.svg" alt="" width={32} height={32} priority unoptimized />
           <span className="font-display text-2xl font-bold tracking-tight">
-            <span className="text-brand-600">25</span>News
+            <span className="text-brand-600">26</span>News
           </span>
         </Link>
 

@@ -11,6 +11,6 @@
     <circle cx="180" cy="560" r="220"/>
   </g>
   <text x="60" y="360" font-family="Oswald, Impact, sans-serif" font-size="92" font-weight="700" fill="#ffffff">World Cup 2026</text>
-  <text x="62" y="430" font-family="Inter, Arial, sans-serif" font-size="34" fill="#ffffff" opacity="0.85">25News</text>
+  <text x="62" y="430" font-family="Inter, Arial, sans-serif" font-size="34" fill="#ffffff" opacity="0.85">26News</text>
   <rect x="60" y="250" width="70" height="10" fill="#ffffff"/>
 </svg>

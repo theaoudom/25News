@@ -1,8 +1,8 @@
 {
-  "name": "25news",
+  "name": "26news",
   "version": "3.0.0",
   "private": true,
-  "description": "25News - Modern news platform built with Next.js and Clean Architecture",
+  "description": "26News - Modern news platform built with Next.js and Clean Architecture",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

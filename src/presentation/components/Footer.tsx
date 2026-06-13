@@ -10,7 +10,7 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-1">
             <span className="font-display text-2xl font-bold">
-              <span className="text-brand-600">25</span>News
+              <span className="text-brand-600">26</span>News
             </span>
             <p className="mt-3 max-w-xs text-sm text-muted">{siteConfig.description}</p>
           </div>
