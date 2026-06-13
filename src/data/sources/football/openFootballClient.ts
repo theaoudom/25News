@@ -1,4 +1,5 @@
 import type { Fixture, GroupStanding, StandingRow, Team } from '@/domain/entities/Football';
+import { flagUrl } from './countryFlags';
 
 /**
  * Backup client for openfootball/worldcup.json — public-domain World Cup data
@@ -44,7 +45,7 @@ function kickoffIso(date?: string, time?: string): string {
   return Number.isNaN(parsed.getTime()) ? new Date(`${d}T00:00:00Z`).toISOString() : parsed.toISOString();
 }
 
-const team = (name: string): Team => ({ id: hashId(name), name, logoUrl: '' });
+const team = (name: string): Team => ({ id: hashId(name), name, logoUrl: flagUrl(name) });
 
 function mapMatch(m: OfMatch): Fixture {
   const ft = m.score?.ft;

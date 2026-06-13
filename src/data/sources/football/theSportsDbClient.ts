@@ -1,4 +1,5 @@
 import type { Fixture, FixtureStatus, GroupStanding, StandingRow, Team } from '@/domain/entities/Football';
+import { flagUrl } from './countryFlags';
 
 /**
  * Client for TheSportsDB (https://www.thesportsdb.com/) — a free football data
@@ -85,8 +86,8 @@ function kickoffIso(e: TsdbEvent): string {
 
 function mapEvent(e: TsdbEvent): Fixture {
   const status = e.strPostponed === 'yes' ? 'postponed' : mapStatus(e.strStatus);
-  const home: Team = { id: num(e.idHomeTeam) ?? 0, name: e.strHomeTeam, logoUrl: e.strHomeTeamBadge || '' };
-  const away: Team = { id: num(e.idAwayTeam) ?? 0, name: e.strAwayTeam, logoUrl: e.strAwayTeamBadge || '' };
+  const home: Team = { id: num(e.idHomeTeam) ?? 0, name: e.strHomeTeam, logoUrl: e.strHomeTeamBadge || flagUrl(e.strHomeTeam) };
+  const away: Team = { id: num(e.idAwayTeam) ?? 0, name: e.strAwayTeam, logoUrl: e.strAwayTeamBadge || flagUrl(e.strAwayTeam) };
   return {
     id: num(e.idEvent) ?? 0,
     kickoff: kickoffIso(e),
@@ -120,7 +121,7 @@ export const theSportsDbClient = {
       const group = r.strGroup || 'Standings';
       const row: StandingRow = {
         rank: num(r.intRank) ?? 0,
-        team: { id: num(r.idTeam) ?? 0, name: r.strTeam, logoUrl: (r.strBadge || '').replace(/\/tiny$/, '') },
+        team: { id: num(r.idTeam) ?? 0, name: r.strTeam, logoUrl: (r.strBadge || '').replace(/\/tiny$/, '') || flagUrl(r.strTeam) },
         played: num(r.intPlayed) ?? 0,
         win: num(r.intWin) ?? 0,
         draw: num(r.intDraw) ?? 0,
