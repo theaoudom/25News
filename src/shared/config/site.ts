@@ -9,7 +9,9 @@ export const siteConfig = {
   tagline: 'World, Sports, Football & Esports — covered.',
   description:
     'Your trusted source for the latest news in World affairs, Sports, Football, the FIFA World Cup, and Esports. Timely, accurate, and in-depth reporting.',
-  url: (process.env.NEXT_PUBLIC_SITE_URL || 'https://25news.xyz').replace(/\/$/, ''),
+  // Canonical base. Override via NEXT_PUBLIC_SITE_URL once a permanent custom
+  // domain is live; defaults to the current Vercel URL.
+  url: (process.env.NEXT_PUBLIC_SITE_URL || 'https://25-news.vercel.app').replace(/\/$/, ''),
   locale: 'en_US',
   themeColor: '#c8102e',
   twitterHandle: '@25news',
