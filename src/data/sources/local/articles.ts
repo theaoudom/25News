@@ -258,6 +258,108 @@ const RAW: RawArticle[] = [
       <h2>The X-Factor: Conditions</h2>
       <p>Summer heat and long travel distances between host cities will test squad depth like never before. The teams that manage rotation best may have the decisive edge.</p>`,
   },
+  {
+    id: 'wc-2026-host-cities',
+    title: 'World Cup 2026 Host Cities: All 16 Venues Across the USA, Canada and Mexico',
+    category: 'football',
+    categoryLabel: 'World Cup',
+    authorId: 'newsroom',
+    publishedAt: '2026-06-09T09:00:00Z',
+    isWorldCup: true,
+    tags: ['World Cup', 'Host Cities', 'Venues', 'USA', 'Canada', 'Mexico'],
+    imageUrl: '/images/placeholders/worldcup.svg',
+    summary:
+      'The 2026 World Cup is spread across 16 host cities in three countries — 11 in the USA, three in Mexico and two in Canada. Here is the full list.',
+    body: `
+      <p>For the first time, the FIFA World Cup will be co-hosted by three nations, with 104 matches played across <strong>16 host cities</strong> in the United States, Mexico and Canada. The tournament runs from 11 June to 19 July 2026.</p>
+      <h2>United States (11 cities)</h2>
+      <ul>
+        <li><strong>New York / New Jersey</strong> — MetLife Stadium, which hosts the final on 19 July.</li>
+        <li><strong>Los Angeles</strong> — SoFi Stadium, Inglewood.</li>
+        <li><strong>Dallas</strong> — AT&amp;T Stadium, Arlington.</li>
+        <li><strong>San Francisco Bay Area</strong> — Levi's Stadium, Santa Clara.</li>
+        <li><strong>Miami</strong> — Hard Rock Stadium.</li>
+        <li><strong>Atlanta</strong> — Mercedes-Benz Stadium.</li>
+        <li><strong>Seattle</strong> — Lumen Field.</li>
+        <li><strong>Philadelphia</strong> — Lincoln Financial Field.</li>
+        <li><strong>Houston</strong> — NRG Stadium.</li>
+        <li><strong>Kansas City</strong> — Arrowhead Stadium.</li>
+        <li><strong>Boston</strong> — Gillette Stadium, Foxborough.</li>
+      </ul>
+      <h2>Mexico (3 cities)</h2>
+      <ul>
+        <li><strong>Mexico City</strong> — Estadio Azteca, which stages the opening match and becomes the first stadium to host games at three different World Cups.</li>
+        <li><strong>Guadalajara</strong> — Estadio Akron.</li>
+        <li><strong>Monterrey</strong> — Estadio BBVA.</li>
+      </ul>
+      <h2>Canada (2 cities)</h2>
+      <ul>
+        <li><strong>Toronto</strong> — BMO Field.</li>
+        <li><strong>Vancouver</strong> — BC Place.</li>
+      </ul>
+      <h2>A Logistical Challenge</h2>
+      <p>With venues stretching from Vancouver to Miami, travel and climate vary enormously. Teams and fans face long flights and a mix of summer heat, humidity and several climate-controlled indoor stadiums — a planning test unlike any previous World Cup.</p>`,
+  },
+  {
+    id: 'wc-2026-key-dates',
+    title: 'World Cup 2026 Key Dates: Opening Match, Group Stage and the Final',
+    category: 'football',
+    categoryLabel: 'World Cup',
+    authorId: 'tom-frank',
+    publishedAt: '2026-06-10T09:00:00Z',
+    isWorldCup: true,
+    tags: ['World Cup', 'Schedule', 'Fixtures', 'Dates'],
+    imageUrl: '/images/placeholders/worldcup.svg',
+    summary:
+      'From the Estadio Azteca opener to the MetLife final, here are the dates that shape the 2026 World Cup calendar.',
+    body: `
+      <p>The 2026 World Cup is the longest in history, running 39 days from 11 June to 19 July across the largest field the tournament has ever seen. Here is how the calendar breaks down.</p>
+      <h2>Opening Match — 11 June</h2>
+      <p>The tournament kicks off at the iconic Estadio Azteca in Mexico City, continuing the stadium's unique World Cup legacy after 1970 and 1986.</p>
+      <h2>Group Stage — 11 to 27 June</h2>
+      <p>All 48 teams play their three group matches across the opening fortnight. The 12 groups of four feed into a new knockout round, with the top two from each group plus the eight best third-placed teams advancing.</p>
+      <h2>Knockout Rounds</h2>
+      <ul>
+        <li><strong>Round of 32</strong> — late June, a brand-new stage created by the 48-team format.</li>
+        <li><strong>Round of 16</strong> — early July.</li>
+        <li><strong>Quarter-finals</strong> — 9 to 11 July.</li>
+        <li><strong>Semi-finals</strong> — 14 and 15 July.</li>
+        <li><strong>Third-place play-off</strong> — 18 July.</li>
+        <li><strong>Final</strong> — 19 July at MetLife Stadium, New York / New Jersey.</li>
+      </ul>
+      <h2>What It Means for Squads</h2>
+      <p>Teams that go all the way will play up to eight matches — one more than in previous tournaments — making squad depth and recovery more important than ever in the North American summer.</p>`,
+  },
+  {
+    id: 'wc-winners-history',
+    title: 'Every World Cup Winner: A Complete History from 1930 to 2022',
+    category: 'football',
+    categoryLabel: 'World Cup',
+    authorId: 'carlos-rodriguez',
+    publishedAt: '2026-06-07T09:00:00Z',
+    isWorldCup: true,
+    tags: ['World Cup', 'History', 'Records', 'Brazil', 'Argentina'],
+    imageUrl: '/images/placeholders/worldcup.svg',
+    summary:
+      'Eight nations have lifted the trophy across 22 tournaments. Here is the full roll of World Cup champions and the records that define them.',
+    body: `
+      <p>Since the first tournament in Uruguay in 1930, only eight nations have been crowned world champions. As the 2026 edition begins, here is the complete history of who has lifted football's greatest prize.</p>
+      <h2>Most Titles</h2>
+      <ul>
+        <li><strong>Brazil — 5</strong> (1958, 1962, 1970, 1994, 2002)</li>
+        <li><strong>Germany — 4</strong> (1954, 1974, 1990, 2014)</li>
+        <li><strong>Italy — 4</strong> (1934, 1938, 1982, 2006)</li>
+        <li><strong>Argentina — 3</strong> (1978, 1986, 2022)</li>
+        <li><strong>France — 2</strong> (1998, 2018)</li>
+        <li><strong>Uruguay — 2</strong> (1930, 1950)</li>
+        <li><strong>England — 1</strong> (1966)</li>
+        <li><strong>Spain — 1</strong> (2010)</li>
+      </ul>
+      <h2>Recent Champions</h2>
+      <p>Argentina are the reigning champions, having beaten France on penalties in a classic 2022 final in Qatar — Lionel Messi's crowning moment. France lifted the trophy in 2018 in Russia, with Germany (2014) and Spain (2010) the champions before them.</p>
+      <h2>Records to Know</h2>
+      <p>Brazil are the only nation to appear at every World Cup and hold the record for titles. Three players — Pelé, and more recently a select group of greats — have shaped the tournament's legend. As 2026 expands the field to 48 teams, the door is open for a ninth name to one day join this exclusive list.</p>`,
+  },
 
   // ───────────────────────── SPORTS ─────────────────────────
   {
