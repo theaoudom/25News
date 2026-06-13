@@ -49,14 +49,18 @@ export interface GroupStanding {
   rows: StandingRow[];
 }
 
+export type FootballSource = 'thesportsdb' | 'openfootball' | 'api-football' | 'fallback';
+
 export interface WorldCupSnapshot {
   /** League/competition display name. */
   competition: string;
   season: number;
   groups: GroupStanding[];
   fixtures: Fixture[];
-  /** True when served from the bundled fallback rather than the live API. */
+  /** True when served from the bundled fallback rather than a live provider. */
   isFallback: boolean;
+  /** Which provider actually served the data. */
+  source: FootballSource;
   /** ISO timestamp the snapshot was produced. */
   generatedAt: string;
 }

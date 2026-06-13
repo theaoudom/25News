@@ -117,28 +117,33 @@ legacy/                      # archived original static site (not built)
 
 ## API integrations
 
-### Football data (API-Football)
+### Football data — free providers with 2026 coverage
 
-The World Cup section is powered by [API-Football](https://www.api-football.com/),
-accessed through `src/data/sources/football/apiFootballClient.ts`.
+The World Cup section uses a **chain of free providers** that actually carry
+FIFA World Cup 2026 data, orchestrated by `WorldCupFootballRepository`:
 
-- **Auth:** set `FOOTBALL_API_KEY`. Both direct api-football.com keys
-  (`x-apisports-key`) and RapidAPI keys (`x-rapidapi-key`) are supported — switch
-  via `FOOTBALL_API_HOST`.
-- **Endpoints used:** `/fixtures`, `/fixtures?live=all`, `/standings`, scoped by
-  `FOOTBALL_WORLDCUP_LEAGUE_ID` (World Cup = `1`) and `FOOTBALL_WORLDCUP_SEASON`.
-- **Caching:** server-side `fetch` uses Next.js `revalidate` — fixtures 5 min,
-  standings 15 min, live scores 30 s. The live page additionally polls the
-  `/api/world-cup/live` route every 45 s on the client.
-- **Graceful fallback:** if no key is set, or a call fails/returns empty,
-  `ApiFootballRepository` returns the bundled dataset in
-  `fallbackData.ts` and flags `isFallback: true`, which the UI surfaces as
-  "sample data". **The site never breaks because of the football API.**
-- **Key security:** the key is read only in server code. The client polls our own
-  `/api/world-cup/live` route handler, so the key is never shipped to the browser.
+1. **[TheSportsDB](https://www.thesportsdb.com/)** (primary) —
+   `theSportsDbClient.ts`. Free; covers 2026 fixtures, results, group standings
+   and team badges. Works out of the box with the public test key `3`; set
+   `THESPORTSDB_KEY` to your own free key for higher rate limits, and
+   `THESPORTSDB_WC_LEAGUE_ID` (default `4429`).
+2. **[openfootball/worldcup.json](https://github.com/openfootball/worldcup.json)**
+   (backup) — `openFootballClient.ts`. Public-domain, **no key**, full 104-match
+   2026 schedule with groups; standings are computed from finished matches.
+3. **Bundled fallback** — `fallbackData.ts`, used only if both live sources fail.
 
-To go live: register for a free API-Football key, add it to `.env.local` (or
-Vercel env vars), and confirm `FOOTBALL_WORLDCUP_SEASON` matches the tournament.
+- **Why not API-Football?** Its *free* tier does not include the 2026 season
+  (confirmed: returns 0 results). TheSportsDB's free tier does.
+- **Graceful degradation:** each source is tried in order; on error or empty
+  response the next is used. The resolved provider is exposed as
+  `snapshot.source`, and `isFallback` is surfaced to the UI as "sample data".
+  **The site never breaks because of the football API.**
+- **Caching:** server-side `fetch` uses Next.js `revalidate` (fixtures 5 min,
+  standings 15 min). The live page also polls `/api/world-cup/live` every 45 s.
+- **Diagnostics:** `GET /api/world-cup/status` reports the active source, mode
+  (`live`/`fallback`) and counts — handy after a deploy.
+- **Season:** controlled by `FOOTBALL_WORLDCUP_SEASON` (default `2026`), shared
+  across providers.
 
 ### Content
 

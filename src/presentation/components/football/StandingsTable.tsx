@@ -26,7 +26,11 @@ export function StandingsTable({ group }: { group: GroupStanding }) {
               <td className="px-3 py-2 text-muted">{r.rank}</td>
               <td className="px-3 py-2">
                 <span className="flex items-center gap-2">
-                  <Image src={r.team.logoUrl} alt="" width={20} height={20} unoptimized className="h-5 w-5 object-contain" />
+                  {r.team.logoUrl ? (
+                    <Image src={r.team.logoUrl} alt="" width={20} height={20} unoptimized className="h-5 w-5 object-contain" />
+                  ) : (
+                    <span className="inline-block h-5 w-5 flex-shrink-0 rounded-full bg-[var(--bg-soft)]" aria-hidden="true" />
+                  )}
                   <span className="truncate">{r.team.name}</span>
                 </span>
               </td>

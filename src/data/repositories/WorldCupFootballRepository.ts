@@ -1,0 +1,95 @@
+import type { FootballRepository } from '@/domain/repositories/FootballRepository';
+import type { Fixture, FootballSource, GroupStanding, WorldCupSnapshot } from '@/domain/entities/Football';
+import { theSportsDbClient } from '@/data/sources/football/theSportsDbClient';
+import { openFootballClient } from '@/data/sources/football/openFootballClient';
+import { FALLBACK_FIXTURES, FALLBACK_STANDINGS } from '@/data/sources/football/fallbackData';
+
+const COMPETITION = 'FIFA World Cup';
+const SEASON = Number(process.env.FOOTBALL_WORLDCUP_SEASON || '2026');
+
+interface Sourced<T> {
+  data: T;
+  source: FootballSource;
+}
+
+/**
+ * FootballRepository for the World Cup that prefers free providers which
+ * actually carry 2026 data: TheSportsDB first, then openfootball as a no-key
+ * backup, then the bundled dataset. Each step degrades gracefully on error or
+ * empty response, and the resolved source is surfaced to the UI.
+ */
+export class WorldCupFootballRepository implements FootballRepository {
+  private async tryChain<T>(
+    attempts: { source: FootballSource; run: () => Promise<T[]> }[],
+    fallback: { source: FootballSource; data: T[] },
+  ): Promise<Sourced<T[]>> {
+    for (const attempt of attempts) {
+      try {
+        const data = await attempt.run();
+        if (data.length > 0) return { data, source: attempt.source };
+      } catch (err) {
+        console.error(`[worldcup] ${attempt.source} failed:`, (err as Error).message);
+      }
+    }
+    return fallback;
+  }
+
+  private fetchFixtures(): Promise<Sourced<Fixture[]>> {
+    return this.tryChain<Fixture>(
+      [
+        { source: 'thesportsdb', run: () => theSportsDbClient.getFixtures() },
+        { source: 'openfootball', run: () => openFootballClient.getFixtures() },
+      ],
+      { source: 'fallback', data: FALLBACK_FIXTURES },
+    );
+  }
+
+  private fetchStandings(): Promise<Sourced<GroupStanding[]>> {
+    return this.tryChain<GroupStanding>(
+      [
+        { source: 'thesportsdb', run: () => theSportsDbClient.getStandings() },
+        { source: 'openfootball', run: () => openFootballClient.getStandings() },
+      ],
+      { source: 'fallback', data: FALLBACK_STANDINGS },
+    );
+  }
+
+  async getFixtures(): Promise<Fixture[]> {
+    return (await this.fetchFixtures()).data;
+  }
+
+  async getResults(): Promise<Fixture[]> {
+    return (await this.getFixtures()).filter((f) => f.status === 'finished');
+  }
+
+  async getLiveFixtures(): Promise<Fixture[]> {
+    const fixtures = await this.getFixtures();
+    const live = fixtures.filter((f) => f.status === 'live');
+    // No live matches from the source? Mirror the fallback's live set only when
+    // we are actually on fallback data, so a quiet matchday doesn't invent games.
+    return live;
+  }
+
+  async getStandings(): Promise<GroupStanding[]> {
+    return (await this.fetchStandings()).data;
+  }
+
+  async getWorldCupSnapshot(): Promise<WorldCupSnapshot> {
+    const [fixtures, standings] = await Promise.all([this.fetchFixtures(), this.fetchStandings()]);
+    // Prefer the fixtures source as the headline source; fall back label only
+    // when both came from the bundled dataset.
+    const isFallback = fixtures.source === 'fallback' && standings.source === 'fallback';
+    const source: FootballSource =
+      fixtures.source !== 'fallback' ? fixtures.source : standings.source;
+
+    return {
+      competition: COMPETITION,
+      season: SEASON,
+      fixtures: fixtures.data,
+      groups: standings.data,
+      isFallback,
+      source,
+      generatedAt: new Date().toISOString(),
+    };
+  }
+}

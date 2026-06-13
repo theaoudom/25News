@@ -6,7 +6,11 @@ function TeamRow({ name, logo, goals, win }: { name: string; logo: string; goals
   return (
     <div className={`flex items-center justify-between gap-2 ${win ? 'font-bold' : ''}`}>
       <span className="flex items-center gap-2 truncate">
-        <Image src={logo} alt="" width={22} height={22} unoptimized className="h-[22px] w-[22px] object-contain" />
+        {logo ? (
+          <Image src={logo} alt="" width={22} height={22} unoptimized className="h-[22px] w-[22px] object-contain" />
+        ) : (
+          <span className="inline-block h-[22px] w-[22px] flex-shrink-0 rounded-full bg-[var(--bg-soft)]" aria-hidden="true" />
+        )}
         <span className="truncate">{name}</span>
       </span>
       {goals !== null && <span className="tabular-nums">{goals}</span>}

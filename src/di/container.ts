@@ -1,7 +1,7 @@
 import type { ArticleRepository } from '@/domain/repositories/ArticleRepository';
 import type { FootballRepository } from '@/domain/repositories/FootballRepository';
 import { LocalArticleRepository } from '@/data/repositories/LocalArticleRepository';
-import { ApiFootballRepository } from '@/data/repositories/ApiFootballRepository';
+import { WorldCupFootballRepository } from '@/data/repositories/WorldCupFootballRepository';
 import { ArticleUseCases } from '@/domain/usecases/articleUseCases';
 import { FootballUseCases } from '@/domain/usecases/footballUseCases';
 
@@ -23,7 +23,7 @@ let container: Container | null = null;
 
 function createContainer(): Container {
   const articleRepository = new LocalArticleRepository();
-  const footballRepository = new ApiFootballRepository();
+  const footballRepository = new WorldCupFootballRepository();
   return {
     articleRepository,
     footballRepository,
