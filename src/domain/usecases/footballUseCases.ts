@@ -12,13 +12,36 @@ export class FootballUseCases {
     return this.repo.getWorldCupSnapshot();
   }
 
-  /** Upcoming fixtures, soonest first. */
+  /** Upcoming fixtures — only those that haven't kicked off yet, soonest first. */
   async getUpcomingFixtures(limit?: number): Promise<Fixture[]> {
     const fixtures = await this.repo.getFixtures();
+    const now = Date.now();
     const upcoming = fixtures
-      .filter((f) => f.status === 'scheduled' || f.status === 'postponed')
+      .filter(
+        (f) =>
+          (f.status === 'scheduled' || f.status === 'postponed') &&
+          new Date(f.kickoff).getTime() >= now,
+      )
       .sort((a, b) => a.kickoff.localeCompare(b.kickoff));
     return typeof limit === 'number' ? upcoming.slice(0, limit) : upcoming;
+  }
+
+  /**
+   * Matches that have kicked off but whose result hasn't been published by the
+   * data source yet — shown as "result pending" instead of masquerading as
+   * upcoming. Most recent first.
+   */
+  async getPendingResults(limit?: number): Promise<Fixture[]> {
+    const fixtures = await this.repo.getFixtures();
+    const now = Date.now();
+    const pending = fixtures
+      .filter(
+        (f) =>
+          (f.status === 'scheduled' || f.status === 'postponed') &&
+          new Date(f.kickoff).getTime() < now,
+      )
+      .sort((a, b) => b.kickoff.localeCompare(a.kickoff));
+    return typeof limit === 'number' ? pending.slice(0, limit) : pending;
   }
 
   /** Finished matches, most recent first. */

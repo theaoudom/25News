@@ -24,13 +24,16 @@ export default async function WorldCupHub() {
   const football = footballService();
   const articles = articleService();
 
-  const [live, upcoming, results, standings, news] = await Promise.all([
+  const [live, upcoming, pending, finished, standings, news] = await Promise.all([
     football.getLiveScores(),
     football.getUpcomingFixtures(3),
+    football.getPendingResults(3),
     football.getRecentResults(3),
     football.getStandings(),
     articles.getWorldCupArticles(6),
   ]);
+  // Show kicked-off-but-unscored matches alongside finished ones.
+  const results = [...pending, ...finished].slice(0, 3);
 
   const eventLd = [...live, ...upcoming].slice(0, 5).map((f) =>
     sportsEventJsonLd({

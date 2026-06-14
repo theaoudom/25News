@@ -22,6 +22,8 @@ export function FixtureCard({ fixture }: { fixture: Fixture }) {
   const { home, away, homeGoals, awayGoals, status } = fixture;
   const homeWin = status === 'finished' && (homeGoals ?? 0) > (awayGoals ?? 0);
   const awayWin = status === 'finished' && (awayGoals ?? 0) > (homeGoals ?? 0);
+  // Kicked off but no result from the data source yet.
+  const pending = status !== 'finished' && status !== 'live' && new Date(fixture.kickoff).getTime() < Date.now();
 
   return (
     <article className="rounded-lg border border-[var(--border)] surface p-4">
@@ -34,6 +36,8 @@ export function FixtureCard({ fixture }: { fixture: Fixture }) {
           </span>
         ) : status === 'finished' ? (
           <span className="font-semibold">FT</span>
+        ) : pending ? (
+          <span className="font-medium italic">Result pending</span>
         ) : (
           <LocalTime iso={fixture.kickoff} />
         )}
