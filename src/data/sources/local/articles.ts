@@ -802,6 +802,109 @@ const RAW: RawArticle[] = [
       <h2>Why It Matters</h2>
       <p>Worlds combines elite competition with massive production — opening ceremonies, live music and global broadcasts — and remains a benchmark for how big esports events can be.</p>`,
   },
+
+  // ───────────────── EVERGREEN FEATURES WITH REAL IMAGES ─────────────────
+  {
+    id: 'history-of-football',
+    title: 'A Brief History of Football: From Folk Game to Global Spectacle',
+    category: 'football',
+    categoryLabel: 'Football',
+    authorId: 'tom-frank',
+    publishedAt: '2026-05-29T09:00:00Z',
+    isTrending: true,
+    tags: ['Football', 'History', 'Feature'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/5/52/Galatasaray-Fenerbah%C3%A7e_match_%281923%29.jpg',
+    imageAlt: 'A historic football match between Galatasaray and Fenerbahçe in 1923',
+    summary:
+      'From chaotic medieval village games to a sport watched by billions — how football became the world’s game.',
+    body: `
+      <p>Football is the most popular sport on the planet, played and watched by billions. But the modern game we know today is the result of centuries of evolution from far rougher origins.</p>
+      <h2>Folk Origins</h2>
+      <p>Forms of ball-kicking games existed across the ancient world, but the direct ancestors of football were the chaotic "folk football" matches played in medieval Europe — huge, rule-light contests between villages that could involve hundreds of players.</p>
+      <h2>The Laws of the Game</h2>
+      <p>The decisive moment came in 1863, when representatives of English clubs met in London to form the Football Association and agree a single set of rules. Standardising the laws — including banning handling the ball — separated football (soccer) from rugby and gave the sport a common framework.</p>
+      <h2>Going Global</h2>
+      <p>From Britain the game spread rapidly through trade, education and empire. FIFA was founded in 1904 to govern the international game, and the first FIFA World Cup was staged in Uruguay in 1930, giving football its global showpiece.</p>
+      <h2>The Modern Era</h2>
+      <p>Television, professional leagues and global stars turned football into a multi-billion-dollar industry. Yet its appeal remains rooted in the same simplicity that made those village games so popular: a ball, two goals, and anyone can play.</p>`,
+  },
+  {
+    id: 'basketball-101',
+    title: 'Basketball 101: The Rules and How the Game Works',
+    category: 'sports',
+    categoryLabel: 'Basketball',
+    authorId: 'mike-johnson',
+    publishedAt: '2026-05-28T09:00:00Z',
+    tags: ['Basketball', 'Guide', 'NBA'],
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Tech-Cavaliers_Women%27s_Basketball_game_%282024-03-03%29.jpg/1280px-Tech-Cavaliers_Women%27s_Basketball_game_%282024-03-03%29.jpg',
+    imageAlt: 'A college basketball game in progress',
+    summary:
+      'New to basketball? Here’s a clear guide to the rules, scoring and positions that make the game tick.',
+    body: `
+      <p>Basketball was invented in 1891 by Dr. James Naismith, who nailed a peach basket to a gymnasium wall. Today it is one of the world’s most popular sports. Here’s how it works.</p>
+      <h2>The Objective</h2>
+      <p>Two teams of five players each try to score by shooting the ball through the opposing team’s hoop, which sits 10 feet (3.05 m) above the floor. The team with the most points when time runs out wins.</p>
+      <h2>Scoring</h2>
+      <ul>
+        <li><strong>2 points</strong> for a basket made inside the three-point arc.</li>
+        <li><strong>3 points</strong> for a basket made from beyond the arc.</li>
+        <li><strong>1 point</strong> for each successful free throw, awarded after certain fouls.</li>
+      </ul>
+      <h2>The Positions</h2>
+      <p>Teams traditionally field a point guard, shooting guard, small forward, power forward and centre — though the modern game increasingly blurs these roles, prizing versatile players who can shoot, pass and defend anywhere.</p>
+      <h2>Game Flow</h2>
+      <p>Games are split into timed periods (quarters in the NBA). Teams must advance the ball by dribbling or passing, attempt a shot within the shot-clock limit, and avoid fouls — which can send opponents to the free-throw line and, in bulk, swing a game.</p>`,
+  },
+  {
+    id: 'how-solar-power-works',
+    title: 'Renewable Energy Explained: How Solar Power Works',
+    category: 'world',
+    categoryLabel: 'Energy',
+    authorId: 'newsroom',
+    publishedAt: '2026-05-27T09:00:00Z',
+    isTrending: true,
+    tags: ['Energy', 'Renewables', 'Technology', 'Climate'],
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Wall-mounted_solar_panels_on_building.jpg/1280px-Wall-mounted_solar_panels_on_building.jpg',
+    imageAlt: 'Solar panels mounted on the side of a building',
+    summary:
+      'Solar is the fastest-growing source of new electricity in the world. Here’s how a solar panel actually turns sunlight into power.',
+    body: `
+      <p>Solar power has become one of the cheapest and fastest-growing sources of electricity on Earth. But how does a panel on a roof actually turn sunshine into usable energy?</p>
+      <h2>The Photovoltaic Effect</h2>
+      <p>Solar panels are made of photovoltaic (PV) cells, usually silicon. When sunlight hits a cell, it knocks electrons loose, and the cell’s design forces those electrons to flow in one direction — creating a direct electric current (DC).</p>
+      <h2>From Panel to Plug</h2>
+      <p>The DC electricity then passes through an <strong>inverter</strong>, which converts it into the alternating current (AC) used by homes and the grid. Surplus power can be stored in batteries or fed back into the grid for credit.</p>
+      <h2>Why It’s Booming</h2>
+      <p>The cost of solar panels has fallen dramatically over the past decade, making solar competitive with — and often cheaper than — fossil fuels. It produces no emissions while operating and can scale from a single rooftop to vast utility farms.</p>
+      <h2>The Challenges</h2>
+      <p>Solar only generates power when the sun shines, so storage and grid management are key to making it reliable around the clock. Advances in battery technology are steadily closing that gap.</p>`,
+  },
+  {
+    id: 'first-marathon-guide',
+    title: 'Training for Your First Marathon: A Beginner’s Guide',
+    category: 'sports',
+    categoryLabel: 'Athletics',
+    authorId: 'evelyn-reed',
+    publishedAt: '2026-05-26T09:00:00Z',
+    tags: ['Athletics', 'Running', 'Health', 'Guide'],
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Paris_marathon_2008_16.jpg/1280px-Paris_marathon_2008_16.jpg',
+    imageAlt: 'Runners competing in a city marathon',
+    summary:
+      'Running 42.195 km is a huge but achievable goal. Here’s how beginners can train safely for their first marathon.',
+    body: `
+      <p>A marathon — 42.195 km (26.2 miles) — is one of the most rewarding challenges in endurance sport. With months of smart preparation, it’s within reach of most healthy adults. Here’s how to approach your first.</p>
+      <h2>Build a Base First</h2>
+      <p>Before starting a marathon plan, you should be comfortably running several times a week. Most beginners benefit from a few months of consistent, easy-paced running to build fitness and reduce injury risk.</p>
+      <h2>Follow a Plan</h2>
+      <p>Typical first-marathon plans run 16–20 weeks. They gradually increase weekly mileage and feature one weekly <strong>long run</strong> that builds toward roughly 30–35 km a few weeks before race day.</p>
+      <h2>Don’t Skip Recovery</h2>
+      <p>Rest days, easy runs and sleep are when your body actually adapts. Increasing mileage too quickly is the most common cause of injury — the widely cited guideline is to build gradually rather than in big jumps.</p>
+      <h2>Fuel and Race Day</h2>
+      <p>Practise eating and drinking during long runs so race day holds no surprises. Then trust your training: start slower than feels natural, settle into a steady rhythm, and save something for the final miles.</p>`,
+  },
 ];
 
 export const LOCAL_ARTICLES: Article[] = RAW.map(build);
