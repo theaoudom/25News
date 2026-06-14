@@ -988,6 +988,102 @@ const RAW: RawArticle[] = [
       <p>The move is an unusual instance of a government compelling an AI developer to pull flagship products from the market worldwide. It raises pressing questions about how national-security rules will apply to widely used AI services, the balance between security and access, and what recourse companies and users have when a model is switched off overnight.</p>
       <p><em>This is a developing story.</em></p>`,
   },
+  {
+    id: 'fable5-ban-explainer',
+    title: 'What the Fable 5 and Mythos 5 Ban Means for AI Users',
+    category: 'world',
+    categoryLabel: 'Technology',
+    authorId: 'newsroom',
+    publishedAt: '2026-06-14T08:00:00Z',
+    isTrending: true,
+    tags: ['Technology', 'AI', 'Anthropic', 'Analysis'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Ameca_Generation_1.jpg/1280px-Ameca_Generation_1.jpg',
+    imageAlt: 'A humanoid AI robot',
+    imageCredit: 'Photo: Willy Jackson / CC BY-SA 4.0 via Wikimedia Commons',
+    summary:
+      'After the US directive forced Anthropic to switch off Fable 5 and Mythos 5, here’s what it means for everyday users — and what your options are now.',
+    body: `
+      <p>The US government’s order requiring Anthropic to block foreign-national access to its newest AI models — which led the company to disable Fable 5 and Mythos 5 for everyone — has left millions of users suddenly without tools they relied on. Here’s a plain-English look at the impact.</p>
+      <h2>Who Is Affected</h2>
+      <p>Because Anthropic could not reliably verify users’ nationality in real time, it switched the two models off for all customers rather than attempt a partial block. In practice that means anyone who built workflows, apps or daily habits around Fable 5 or Mythos 5 lost access at once.</p>
+      <h2>What Still Works</h2>
+      <p>Only the two newest models were affected. Earlier models and other providers’ tools remain available, so most users can fall back to a previous generation or an alternative service while the situation is resolved.</p>
+      <h2>The Bigger Picture</h2>
+      <p>The episode is a preview of how national-security rules may increasingly intersect with consumer AI. For users and businesses, it’s a reminder not to depend on a single model or vendor — keeping a fallback option reduces the disruption when access changes overnight.</p>
+      <h2>What Happens Next</h2>
+      <p>Anthropic has said it disagrees that a narrow potential vulnerability justified pulling a widely used product, and is seeking clarity. Whether the models return — and on what terms — will be closely watched across the industry.</p>`,
+  },
+  {
+    id: 'var-explained',
+    title: 'VAR Explained: How the Video Assistant Referee Works in Football',
+    category: 'football',
+    categoryLabel: 'Football',
+    authorId: 'tom-frank',
+    publishedAt: '2026-06-12T09:00:00Z',
+    tags: ['Football', 'VAR', 'Guide'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/City_of_Manchester_Stadium_Crowd_Against_Hull.jpg/1280px-City_of_Manchester_Stadium_Crowd_Against_Hull.jpg',
+    imageAlt: 'A packed football stadium',
+    imageCredit: 'Photo: AGilhooley / CC BY-SA 3.0 via Wikimedia Commons',
+    summary:
+      'Few innovations have changed football like VAR. Here’s what it reviews, how a decision is made, and why it still sparks debate.',
+    body: `
+      <p>The Video Assistant Referee (VAR) is now a fixture of top-level football, including at the World Cup. It uses video replays to help the on-field referee correct clear and obvious errors — but only in four specific situations.</p>
+      <h2>What VAR Can Review</h2>
+      <ul>
+        <li><strong>Goals</strong> — and any infringement in the build-up (offside, handball, fouls).</li>
+        <li><strong>Penalty decisions</strong> — whether a penalty should or shouldn’t have been given.</li>
+        <li><strong>Direct red cards</strong> — not second yellows.</li>
+        <li><strong>Mistaken identity</strong> — when the referee books the wrong player.</li>
+      </ul>
+      <h2>How a Decision Is Made</h2>
+      <p>A VAR team reviews footage and recommends a check only for "clear and obvious" errors. The referee can then watch the replay pitch-side at the Referee Review Area before making the final call — the on-field official always has the last word.</p>
+      <h2>Why It’s Still Debated</h2>
+      <p>Supporters say VAR gets more big calls right; critics point to long delays, tight offside lines and the loss of spontaneous goal celebrations. Football’s lawmakers continue to refine how — and how quickly — it’s used.</p>`,
+  },
+  {
+    id: 'tennis-scoring-explained',
+    title: 'Tennis Scoring Explained: Love, Deuce and Tie-Breaks',
+    category: 'sports',
+    categoryLabel: 'Tennis',
+    authorId: 'sarah-jenkins',
+    publishedAt: '2026-06-11T09:00:00Z',
+    tags: ['Tennis', 'Guide'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/2013_US_Open_%28Tennis%29_%289651194814%29.jpg/1280px-2013_US_Open_%28Tennis%29_%289651194814%29.jpg',
+    imageAlt: 'A professional tennis match',
+    imageCredit: 'Photo: Steven Pisano / CC BY 2.0 via Wikimedia Commons',
+    summary:
+      'Tennis has one of the quirkiest scoring systems in sport. Here’s how points, games, sets and tie-breaks actually work.',
+    body: `
+      <p>Tennis scoring can baffle newcomers — "love," "deuce" and 15-30-40 aren’t exactly intuitive. Here’s the system broken down.</p>
+      <h2>Points Within a Game</h2>
+      <p>Points run <strong>0 (love) → 15 → 30 → 40</strong>. Win a point at 40 and you take the game — unless it’s 40-40, called <strong>deuce</strong>. From deuce a player must win two points in a row: the first is <strong>advantage</strong>, the second wins the game.</p>
+      <h2>Games and Sets</h2>
+      <p>Win six games (by at least two) to take a <strong>set</strong>. Matches are best-of-three or best-of-five sets. If a set reaches <strong>6-6</strong>, it’s usually settled by a <strong>tie-break</strong>, first to seven points (by two).</p>
+      <h2>Why "Love"?</h2>
+      <p>The origin of "love" for zero is debated — often linked to the French <em>l’œuf</em> ("the egg," for the shape of a zero). Whatever its roots, it’s now part of tennis’s charm.</p>`,
+  },
+  {
+    id: 'dota-the-international',
+    title: 'The International: How Dota 2’s Biggest Tournament Works',
+    category: 'esports',
+    categoryLabel: 'Esports',
+    authorId: 'emily-white',
+    publishedAt: '2026-06-10T09:00:00Z',
+    tags: ['Esports', 'Dota 2', 'Guide'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/2019_SEA_Games_Esports_Tekken_7_MAS_vs_INA.jpg/1280px-2019_SEA_Games_Esports_Tekken_7_MAS_vs_INA.jpg',
+    imageAlt: 'Players competing at an esports tournament',
+    imageCredit: 'Photo: Hariboneagle927 / CC BY-SA 3.0 via Wikimedia Commons',
+    summary:
+      'The International is Dota 2’s world championship — famous for record prize pools funded by the community itself. Here’s how it works.',
+    body: `
+      <p>The International (TI) is the annual world championship of Valve’s Dota 2, and for years it boasted the largest prize pools in all of esports. Here’s the essentials.</p>
+      <h2>Community-Funded Prize Pools</h2>
+      <p>What made TI famous is that fans help fund the prize pool: a portion of in-game Battle Pass / event sales is added to the pot, which historically pushed it past <strong>$30–40 million</strong> in peak years — far beyond a typical esports event.</p>
+      <h2>The Format</h2>
+      <p>The world’s top teams qualify through regional circuits, then compete in a group stage followed by a double-elimination main-event bracket. Matches are best-of-three, with a best-of-five grand final.</p>
+      <h2>The Aegis of Champions</h2>
+      <p>Winners lift the <strong>Aegis of Champions</strong>, one of the most prestigious trophies in gaming. Victory cements a roster’s place in Dota history — and often a life-changing payday.</p>`,
+  },
 ];
 
 export const LOCAL_ARTICLES: Article[] = RAW.map(build);
