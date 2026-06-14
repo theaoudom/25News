@@ -38,27 +38,25 @@ export function AdSlot({ slot, format = 'auto', className = '', label = 'Adverti
     }
   }, [enabled]);
 
+  // Until a real ad unit (client + slot) is configured, render nothing so no
+  // placeholder/dev text is ever shown to visitors or AdSense reviewers.
+  if (!enabled) return null;
+
   return (
     <aside
       className={`my-6 overflow-hidden rounded-lg border border-dashed border-[var(--border)] bg-[var(--bg-soft)] ${className}`}
       aria-label={label}
     >
       <p className="px-3 pt-1 text-[10px] uppercase tracking-widest text-muted">{label}</p>
-      {enabled ? (
-        <ins
-          ref={ref}
-          className="adsbygoogle block"
-          style={{ display: 'block' }}
-          data-ad-client={client}
-          data-ad-slot={slot}
-          data-ad-format={format}
-          data-full-width-responsive="true"
-        />
-      ) : (
-        <div className="flex h-24 items-center justify-center text-xs text-muted">
-          Ad space (configure NEXT_PUBLIC_ADSENSE_CLIENT and a slot id)
-        </div>
-      )}
+      <ins
+        ref={ref}
+        className="adsbygoogle block"
+        style={{ display: 'block' }}
+        data-ad-client={client}
+        data-ad-slot={slot}
+        data-ad-format={format}
+        data-full-width-responsive="true"
+      />
     </aside>
   );
 }
