@@ -66,7 +66,6 @@ const RAW: RawArticle[] = [
     categoryLabel: 'Football',
     authorId: 'mike-johnson',
     publishedAt: '2025-07-03T08:00:00Z',
-    isBreaking: true,
     isTrending: true,
     tags: ['Football', 'Liverpool', 'Premier League'],
     imageUrl:
@@ -208,6 +207,7 @@ const RAW: RawArticle[] = [
     isWorldCup: true,
     isFeatured: true,
     isTrending: true,
+    isBreaking: true,
     tags: ['World Cup', 'FIFA', 'USA', 'Canada', 'Mexico'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/FIFA_World_Cup_Trophy_%28Ank_Kumar%2C_Infosys_Limited%29_01.jpg/1280px-FIFA_World_Cup_Trophy_%28Ank_Kumar%2C_Infosys_Limited%29_01.jpg',
     imageAlt: 'The FIFA World Cup trophy',
@@ -476,7 +476,6 @@ const RAW: RawArticle[] = [
     categoryLabel: 'Breaking News',
     authorId: 'newsroom',
     publishedAt: '2025-06-15T08:00:00Z',
-    isBreaking: true,
     isFeatured: true,
     tags: ['Climate', 'Politics', 'Economy'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Bonn_climate_change_conference_may_2012_01.jpg/1280px-Bonn_climate_change_conference_may_2012_01.jpg',

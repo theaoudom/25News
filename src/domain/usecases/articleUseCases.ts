@@ -17,10 +17,17 @@ export class ArticleUseCases {
     return this.repo.getBySlug(slug);
   }
 
-  /** Breaking news for the homepage banner — flagged items, newest first. */
-  async getBreakingNews(limit = 5): Promise<ArticleSummary[]> {
+  /**
+   * Breaking news for the homepage banner — flagged items, newest first.
+   * Auto-expires: an `isBreaking` story only counts while it is recent, so a
+   * flag left on an old article can never resurface as "breaking".
+   */
+  async getBreakingNews(limit = 5, maxAgeDays = 30): Promise<ArticleSummary[]> {
     const all = await this.repo.list({});
-    return all.filter((a) => a.isBreaking).slice(0, limit);
+    const cutoff = Date.now() - maxAgeDays * 24 * 60 * 60 * 1000;
+    return all
+      .filter((a) => a.isBreaking && new Date(a.publishedAt).getTime() >= cutoff)
+      .slice(0, limit);
   }
 
   /** Trending — flagged trending plus most recent as a backfill. */

@@ -100,7 +100,7 @@ Recommended size: landscape **16:9**, at least **1200×675**.
 
 | Flag | Effect |
 |------|--------|
-| `isBreaking` | Red ticker across the top of the homepage |
+| `isBreaking` | Red ticker across the top of the homepage. **Auto-expires after 30 days** — an old story will never show as "breaking", so it's safe to leave the flag on. |
 | `isTrending` | Homepage "Trending" sidebar; the newest trending item becomes the hero |
 | `isFeatured` | Marks a flagship piece |
 | `isWorldCup` | Adds it to the **World Cup** section (`/world-cup`). Use only for real FIFA World Cup stories. |
