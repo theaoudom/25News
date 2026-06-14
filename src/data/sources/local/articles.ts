@@ -19,6 +19,7 @@ interface RawArticle {
   secondaryBody?: string;
   imageUrl: string;
   imageAlt?: string;
+  imageCredit?: string;
   authorId: string;
   publishedAt: string; // ISO 8601
   updatedAt?: string;
@@ -43,6 +44,7 @@ function build(raw: RawArticle): Article {
     secondaryBody: raw.secondaryBody,
     imageUrl: raw.imageUrl,
     imageAlt: raw.imageAlt || raw.title,
+    imageCredit: raw.imageCredit,
     author: getAuthor(raw.authorId),
     publishedAt: raw.publishedAt,
     updatedAt: raw.updatedAt || raw.publishedAt,
@@ -130,7 +132,9 @@ const RAW: RawArticle[] = [
     authorId: 'carlos-rodriguez',
     publishedAt: '2025-06-12T09:00:00Z',
     tags: ['Football', 'Transfers', 'UEFA', 'Finance'],
-    imageUrl: '/images/placeholders/football.svg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/2/2a/Crowd_wembley_FAT_08.jpg',
+    imageAlt: 'Football fans fill a stadium',
+    imageCredit: 'Photo via Wikimedia Commons (public domain)',
     body: `
       <p>UEFA's new Financial Fair Play regulations, implemented at the start of the 2025 summer transfer window, are fundamentally changing how football clubs operate. The updated rules, which limit spending to 70% of club revenue, have created a more level playing field.</p>
       <h2>Market Impact</h2>
@@ -161,7 +165,9 @@ const RAW: RawArticle[] = [
     publishedAt: '2025-06-15T22:00:00Z',
     isFeatured: true,
     tags: ['Football', 'Champions League', 'Manchester City'],
-    imageUrl: '/images/placeholders/football.svg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/City_of_Manchester_Stadium_Crowd_Against_Hull.jpg/1280px-City_of_Manchester_Stadium_Crowd_Against_Hull.jpg',
+    imageAlt: 'A packed football stadium',
+    imageCredit: 'Photo: AGilhooley / CC BY-SA 3.0 via Wikimedia Commons',
     summary:
       "Pep Guardiola's side becomes the first English club to achieve the quadruple after a thrilling victory over Real Madrid.",
     body: `
@@ -388,7 +394,9 @@ const RAW: RawArticle[] = [
     publishedAt: '2025-06-14T09:00:00Z',
     isTrending: true,
     tags: ['Basketball', 'NBA', 'Technology'],
-    imageUrl: '/images/placeholders/sports.svg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Minnesota_Lynx_teammates_huddle_on_the_court_in_the_Lynx_vs_Sun_game_at_Target_Center.jpg/1280px-Minnesota_Lynx_teammates_huddle_on_the_court_in_the_Lynx_vs_Sun_game_at_Target_Center.jpg',
+    imageAlt: 'Basketball players huddle on the court',
+    imageCredit: 'Photo: Lorie Shaull / CC BY-SA 4.0 via Wikimedia Commons',
     body: `
       <p>The NBA has announced a groundbreaking partnership to implement an AI-powered officiating system that will debut during the 2025-26 season, using advanced computer vision and machine learning to assist referees.</p>
       <h2>Technology Overview</h2>
@@ -404,7 +412,9 @@ const RAW: RawArticle[] = [
     authorId: 'sarah-jenkins',
     publishedAt: '2025-06-13T09:00:00Z',
     tags: ['Tennis', 'Wimbledon'],
-    imageUrl: '/images/placeholders/sports.svg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/2013_US_Open_%28Tennis%29_%289651194814%29.jpg/1280px-2013_US_Open_%28Tennis%29_%289651194814%29.jpg',
+    imageAlt: 'A professional tennis match',
+    imageCredit: 'Photo: Steven Pisano / CC BY 2.0 via Wikimedia Commons',
     body: `
       <p>Wimbledon has announced a historic increase in prize money for the 2025 tournament, with the total prize fund reaching £50 million. This represents a 15% increase and continues the tournament's commitment to equal pay.</p>
       <h2>Prize Money Breakdown</h2>
@@ -420,7 +430,9 @@ const RAW: RawArticle[] = [
     authorId: 'ben-carter',
     publishedAt: '2025-06-10T09:00:00Z',
     tags: ['Basketball', 'NBA', 'Expansion'],
-    imageUrl: '/images/placeholders/sports.svg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Tech-Cavaliers_Women%27s_Basketball_game_%282024-03-03%29.jpg/1280px-Tech-Cavaliers_Women%27s_Basketball_game_%282024-03-03%29.jpg',
+    imageAlt: 'A basketball game in progress',
+    imageCredit: 'Photo via Wikimedia Commons (public domain)',
     body: `
       <p>The NBA has officially announced expansion to Mexico City and Vancouver, bringing the league to 32 teams. The expansion teams will begin play in the 2027-28 season.</p>
       <h2>Market Analysis</h2>
@@ -436,7 +448,9 @@ const RAW: RawArticle[] = [
     authorId: 'evelyn-reed',
     publishedAt: '2025-05-20T09:00:00Z',
     tags: ['Tennis', 'Technology', 'Analytics'],
-    imageUrl: '/images/placeholders/sports.svg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/2013_US_Open_%28Tennis%29_%289651194814%29.jpg/1280px-2013_US_Open_%28Tennis%29_%289651194814%29.jpg',
+    imageAlt: 'Modern professional tennis',
+    imageCredit: 'Photo: Steven Pisano / CC BY 2.0 via Wikimedia Commons',
     body: `
       <p>It's not just about strings and tension anymore. Modern tennis racquets are marvels of engineering, incorporating materials and designs that maximise power and control.</p>
       <p>Coupled with on-court tracking systems, players have more data at their fingertips than ever before, reshaping how the game is coached and played.</p>`,
@@ -453,7 +467,9 @@ const RAW: RawArticle[] = [
     isBreaking: true,
     isFeatured: true,
     tags: ['Climate', 'Politics', 'Economy'],
-    imageUrl: '/images/placeholders/world.svg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Bonn_climate_change_conference_may_2012_01.jpg/1280px-Bonn_climate_change_conference_may_2012_01.jpg',
+    imageAlt: 'Delegates at a United Nations climate change conference',
+    imageCredit: 'Photo via Wikimedia Commons (CC0)',
     body: `
       <p>In a historic breakthrough at the COP29 climate summit, world leaders have agreed to the most ambitious climate targets ever set, committing to reduce greenhouse gas emissions by 60% below 2019 levels by 2035.</p>
       <h2>Key Provisions of the Agreement</h2>
@@ -475,7 +491,9 @@ const RAW: RawArticle[] = [
     publishedAt: '2025-06-14T09:00:00Z',
     isTrending: true,
     tags: ['Technology', 'Quantum Computing', 'AI'],
-    imageUrl: '/images/placeholders/world.svg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/IBM_Q_at_CES_%2839660636671%29.jpg/1280px-IBM_Q_at_CES_%2839660636671%29.jpg',
+    imageAlt: 'An IBM Q quantum computer on display',
+    imageCredit: 'Photo: Lars Plougmann / CC BY-SA 2.0 via Wikimedia Commons',
     body: `
       <p>IBM and Google have simultaneously announced major breakthroughs in quantum computing technology, bringing commercial quantum applications within reach for the first time.</p>
       <h2>The Quantum Advantage</h2>
@@ -495,7 +513,9 @@ const RAW: RawArticle[] = [
     authorId: 'newsroom',
     publishedAt: '2025-06-13T09:00:00Z',
     tags: ['Economy', 'Finance', 'Markets'],
-    imageUrl: '/images/placeholders/world.svg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/New_York_Stock_Exchange_trading_floor_on_Wall_Street%2C_New_York%2C_New_York_LCCN2011634218.tif/lossy-page1-1280px-New_York_Stock_Exchange_trading_floor_on_Wall_Street%2C_New_York%2C_New_York_LCCN2011634218.tif.jpg',
+    imageAlt: 'The trading floor of the New York Stock Exchange',
+    imageCredit: 'Photo: Library of Congress (public domain)',
     body: `
       <p>In an unprecedented display of global monetary coordination, the Federal Reserve, European Central Bank, Bank of Japan and Bank of England have announced a synchronised approach to interest rate policy.</p>
       <h2>The Coordinated Approach</h2>
@@ -511,7 +531,9 @@ const RAW: RawArticle[] = [
     authorId: 'evelyn-reed',
     publishedAt: '2025-06-12T09:00:00Z',
     tags: ['Health', 'Science', 'Medicine'],
-    imageUrl: '/images/placeholders/world.svg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/CSIRO_ScienceImage_3488_Patient_undergoing_MRI_scan_in_Westmead_Hospital_Sydney.jpg/1280px-CSIRO_ScienceImage_3488_Patient_undergoing_MRI_scan_in_Westmead_Hospital_Sydney.jpg',
+    imageAlt: 'A patient undergoing an MRI brain scan',
+    imageCredit: 'Photo: CSIRO / CC BY 3.0 via Wikimedia Commons',
     body: `
       <p>Clinical trials of a new drug therapy have shown unprecedented results in improving cognitive function for early-stage Alzheimer's patients, targeting the underlying mechanisms of the disease.</p>
       <h2>Clinical Trial Results</h2>
@@ -527,7 +549,9 @@ const RAW: RawArticle[] = [
     authorId: 'newsroom',
     publishedAt: '2025-06-09T09:00:00Z',
     tags: ['Diplomacy', 'Politics'],
-    imageUrl: '/images/placeholders/world.svg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/G7_Family_group_photo_of_2016_Ise-Shima_Summit.jpg/1280px-G7_Family_group_photo_of_2016_Ise-Shima_Summit.jpg',
+    imageAlt: 'World leaders pose for a group photo at a summit',
+    imageCredit: 'Photo: U.S. government (public domain)',
     body: `
       <p>Leaders from across the Middle East signed a comprehensive peace agreement at the United Nations headquarters that could fundamentally transform the region's geopolitical landscape.</p>
       <h2>Key Provisions</h2>
@@ -612,7 +636,9 @@ const RAW: RawArticle[] = [
     publishedAt: '2025-06-09T10:00:00Z',
     tags: ['Esports', 'Esports World Cup'],
     imageUrl:
-      '/images/placeholders/esports.svg',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/2019_SEA_Games_Esports_Tekken_7_THA_vs_PHI.jpg/1280px-2019_SEA_Games_Esports_Tekken_7_THA_vs_PHI.jpg',
+    imageAlt: 'Competitors at an esports tournament',
+    imageCredit: 'Photo: Hariboneagle927 / CC BY-SA 3.0 via Wikimedia Commons',
     body: `
       <p>Cristiano Ronaldo will spearhead the global campaign for the Esports World Cup (EWC), promoting its theme, <em>Rise Above</em>.</p>
       <p>"The passion, dedication, skill, and intensity I witness in esports athletes are just as real as what I've experienced on the football pitch," Ronaldo shared.</p>
@@ -627,7 +653,9 @@ const RAW: RawArticle[] = [
     authorId: 'elvis',
     publishedAt: '2025-05-30T10:00:00Z',
     tags: ['Esports', 'MLBB', 'MSC'],
-    imageUrl: '/images/placeholders/esports.svg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/2019_SEA_Games_Esports_Tekken_7_MAS_vs_INA.jpg/1280px-2019_SEA_Games_Esports_Tekken_7_MAS_vs_INA.jpg',
+    imageAlt: 'Players compete at an esports event',
+    imageCredit: 'Photo: Hariboneagle927 / CC BY-SA 3.0 via Wikimedia Commons',
     body: `
       <p>The Mobile Legends: Bang Bang Mid-Season Cup (MSC) 2025 is set to electrify the Esports World Cup in Riyadh this July, with a prize pool of $3 million and 16 elite teams.</p>
       <h2>Format and Key Dates</h2>
@@ -644,7 +672,9 @@ const RAW: RawArticle[] = [
     publishedAt: '2026-06-06T09:00:00Z',
     isTrending: true,
     tags: ['Football', 'Women’s Football', 'Analysis'],
-    imageUrl: '/images/placeholders/football.svg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Air_Force_Women%27s_Soccer_vs_Siena_%2848629694273%29.jpg/1280px-Air_Force_Women%27s_Soccer_vs_Siena_%2848629694273%29.jpg',
+    imageAlt: 'A women’s football match in progress',
+    imageCredit: 'Photo: U.S. Air Force (public domain)',
     summary:
       'Record crowds, soaring TV deals and packed stadiums — women’s football has moved from the margins to the mainstream. Here’s what’s driving the surge.',
     body: `
@@ -666,7 +696,9 @@ const RAW: RawArticle[] = [
     authorId: 'sarah-jenkins',
     publishedAt: '2026-06-05T09:00:00Z',
     tags: ['Tennis', 'Grand Slam', 'Guide'],
-    imageUrl: '/images/placeholders/sports.svg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/2013_US_Open_%28Tennis%29_%289651194814%29.jpg/1280px-2013_US_Open_%28Tennis%29_%289651194814%29.jpg',
+    imageAlt: 'A Grand Slam tennis match',
+    imageCredit: 'Photo: Steven Pisano / CC BY 2.0 via Wikimedia Commons',
     summary:
       'Australian Open, Roland-Garros, Wimbledon and the US Open — what makes each of tennis’s four majors unique, and why they matter most.',
     body: `
@@ -691,7 +723,9 @@ const RAW: RawArticle[] = [
     publishedAt: '2026-06-04T09:00:00Z',
     isTrending: true,
     tags: ['Esports', 'Esports World Cup', 'Guide'],
-    imageUrl: '/images/placeholders/esports.svg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/League-of-Legends-Wild-Rift_Final_Four_opening_at_eSports_Stage_20210130a.jpg/1280px-League-of-Legends-Wild-Rift_Final_Four_opening_at_eSports_Stage_20210130a.jpg',
+    imageAlt: 'An esports tournament on the main stage',
+    imageCredit: 'Photo: Solomon203 / CC BY-SA 4.0 via Wikimedia Commons',
     summary:
       'The Esports World Cup has become the biggest event on the competitive gaming calendar. Here’s how it works, which games feature and what’s at stake.',
     body: `
@@ -714,7 +748,9 @@ const RAW: RawArticle[] = [
     publishedAt: '2026-06-03T09:00:00Z',
     isTrending: true,
     tags: ['Technology', 'AI', 'Analysis'],
-    imageUrl: '/images/placeholders/world.svg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Ameca_Generation_1.jpg/1280px-Ameca_Generation_1.jpg',
+    imageAlt: 'Ameca, an advanced humanoid AI robot',
+    imageCredit: 'Photo: Willy Jackson / CC BY-SA 4.0 via Wikimedia Commons',
     summary:
       'From the apps on your phone to the way businesses operate, artificial intelligence has quietly become part of daily life. Here’s where it’s making the biggest difference.',
     body: `
@@ -736,7 +772,9 @@ const RAW: RawArticle[] = [
     authorId: 'tom-frank',
     publishedAt: '2026-06-02T09:00:00Z',
     tags: ['Football', 'Champions League', 'Guide'],
-    imageUrl: '/images/placeholders/football.svg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Crowd_at_Dora_Stadium.jpg/1280px-Crowd_at_Dora_Stadium.jpg',
+    imageAlt: 'A football crowd at a stadium',
+    imageCredit: 'Photo: TrickyH / CC BY-SA 4.0 via Wikimedia Commons',
     summary:
       'UEFA scrapped the old group stage for a single 36-team league table. Here’s how the revamped Champions League format actually works.',
     body: `
@@ -762,7 +800,9 @@ const RAW: RawArticle[] = [
     authorId: 'ben-carter',
     publishedAt: '2026-06-01T09:00:00Z',
     tags: ['Formula 1', 'Motorsport', 'Guide'],
-    imageUrl: '/images/placeholders/sports.svg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/EurobrunER189_RaceHistoryOnTrack_HH2011.jpg/1280px-EurobrunER189_RaceHistoryOnTrack_HH2011.jpg',
+    imageAlt: 'A Formula One car on track',
+    imageCredit: 'Photo: DoomWarrior / CC BY-SA 3.0 via Wikimedia Commons',
     summary:
       'Two championships, 10 points-scoring positions and sprint races — a clear beginner’s guide to how Formula 1 is scored.',
     body: `
@@ -788,7 +828,9 @@ const RAW: RawArticle[] = [
     authorId: 'emily-white',
     publishedAt: '2026-05-31T09:00:00Z',
     tags: ['Esports', 'League of Legends', 'Guide'],
-    imageUrl: '/images/placeholders/esports.svg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/League_of_Legends_Main_Stage.jpg/1280px-League_of_Legends_Main_Stage.jpg',
+    imageAlt: 'A League of Legends tournament stage',
+    imageCredit: 'Photo: Hilary Murugu / CC BY-SA 4.0 via Wikimedia Commons',
     summary:
       'The biggest event in esports, explained — how teams qualify for League of Legends Worlds and how the tournament is won.',
     body: `

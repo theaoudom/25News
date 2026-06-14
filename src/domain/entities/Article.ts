@@ -34,6 +34,8 @@ export interface Article {
   secondaryBody?: string;
   imageUrl: string;
   imageAlt?: string;
+  /** Optional image attribution caption (e.g. for CC-BY photos). */
+  imageCredit?: string;
   author: Author;
   /** ISO 8601 publish date. */
   publishedAt: string;

@@ -111,6 +111,9 @@ export default async function ArticlePage({ params }: { params: { slug: string }
               className="object-cover"
             />
           </div>
+          {article.imageCredit && (
+            <figcaption className="mt-2 text-xs text-muted">{article.imageCredit}</figcaption>
+          )}
         </figure>
 
         <ArticleBody
