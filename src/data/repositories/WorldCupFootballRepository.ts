@@ -36,14 +36,47 @@ export class WorldCupFootballRepository implements FootballRepository {
     return fallback;
   }
 
-  private fetchFixtures(): Promise<Sourced<Fixture[]>> {
-    return this.tryChain<Fixture>(
+  private async fetchFixtures(): Promise<Sourced<Fixture[]>> {
+    const base = await this.tryChain<Fixture>(
       [
         { source: 'openfootball', run: () => openFootballClient.getFixtures() },
         { source: 'thesportsdb', run: () => theSportsDbClient.getFixtures() },
       ],
       { source: 'fallback', data: FALLBACK_FIXTURES },
     );
+    // openfootball has the full schedule but can lag on scores. Overlay any
+    // finished/live results from TheSportsDB so a completed match shows its
+    // result as soon as EITHER source has it.
+    if (base.source === 'openfootball') {
+      try {
+        const tsdb = await theSportsDbClient.getFixtures();
+        base.data = this.overlayResults(base.data, tsdb);
+      } catch {
+        /* keep openfootball data as-is */
+      }
+    }
+    return base;
+  }
+
+  private overlayResults(base: Fixture[], overlay: Fixture[]): Fixture[] {
+    const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
+    const key = (f: Fixture) => `${norm(f.home.name)}|${norm(f.away.name)}`;
+    const byKey = new Map<string, Fixture>();
+    for (const f of overlay) {
+      if (f.status === 'finished' || f.status === 'live') byKey.set(key(f), f);
+    }
+    return base.map((f) => {
+      if (f.status === 'finished') return f; // already have a result
+      const live = byKey.get(key(f));
+      if (!live) return f;
+      return {
+        ...f,
+        status: live.status,
+        elapsed: live.elapsed,
+        homeGoals: live.homeGoals,
+        awayGoals: live.awayGoals,
+      };
+    });
   }
 
   private fetchStandings(): Promise<Sourced<GroupStanding[]>> {

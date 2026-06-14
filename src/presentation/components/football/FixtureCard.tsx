@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import type { Fixture } from '@/domain/entities/Football';
-import { formatKickoff } from '@/shared/utils/date';
+import { LocalTime } from './LocalTime';
 
 function TeamRow({ name, logo, goals, win }: { name: string; logo: string; goals: number | null; win: boolean }) {
   return (
@@ -35,7 +35,7 @@ export function FixtureCard({ fixture }: { fixture: Fixture }) {
         ) : status === 'finished' ? (
           <span className="font-semibold">FT</span>
         ) : (
-          <time dateTime={fixture.kickoff}>{formatKickoff(fixture.kickoff)}</time>
+          <LocalTime iso={fixture.kickoff} />
         )}
       </div>
       <div className="space-y-1.5 text-sm">
