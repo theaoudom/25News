@@ -1084,6 +1084,108 @@ const RAW: RawArticle[] = [
       <h2>The Aegis of Champions</h2>
       <p>Winners lift the <strong>Aegis of Champions</strong>, one of the most prestigious trophies in gaming. Victory cements a roster’s place in Dota history — and often a life-changing payday.</p>`,
   },
+  {
+    id: 'how-cryptocurrency-works',
+    title: 'How Cryptocurrency Works: A Beginner’s Guide to Bitcoin and Blockchain',
+    category: 'world',
+    categoryLabel: 'Technology',
+    authorId: 'newsroom',
+    publishedAt: '2026-06-09T09:00:00Z',
+    tags: ['Technology', 'Cryptocurrency', 'Finance', 'Guide'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/New_York_Stock_Exchange_trading_floor_on_Wall_Street%2C_New_York%2C_New_York_LCCN2011634218.tif/lossy-page1-1280px-New_York_Stock_Exchange_trading_floor_on_Wall_Street%2C_New_York%2C_New_York_LCCN2011634218.tif.jpg',
+    imageAlt: 'A financial trading floor',
+    imageCredit: 'Photo: Library of Congress (public domain)',
+    summary:
+      'Bitcoin, blockchain, mining, wallets — the jargon can be overwhelming. Here’s a plain-English explainer of how cryptocurrency actually works.',
+    body: `
+      <p>Cryptocurrency is digital money that runs without a central bank. Since Bitcoin launched in 2009, the idea has grown into a global market — but the core concepts are simpler than the jargon suggests.</p>
+      <h2>The Blockchain</h2>
+      <p>A blockchain is a shared digital ledger that records every transaction across thousands of computers at once. Because no single party controls it and entries can’t easily be altered, the network can agree on who owns what without a middleman.</p>
+      <h2>Mining and Verification</h2>
+      <p>Transactions are grouped into "blocks" and verified by the network. In systems like Bitcoin, "miners" compete to validate blocks and are rewarded with new coins — a process called proof-of-work. Newer networks use more energy-efficient methods such as proof-of-stake.</p>
+      <h2>Wallets and Keys</h2>
+      <p>You hold crypto in a digital wallet secured by a private key — essentially a long password. Whoever holds the key controls the funds, which is why safeguarding it is critical.</p>
+      <h2>The Risks</h2>
+      <p>Crypto can be highly volatile, is largely unregulated in many places, and transactions are usually irreversible. Anyone considering it should understand they could lose money and should never invest more than they can afford to lose.</p>`,
+  },
+  {
+    id: 'offside-rule-explained',
+    title: 'The Offside Rule Explained: Football’s Most Debated Law',
+    category: 'football',
+    categoryLabel: 'Football',
+    authorId: 'tom-frank',
+    publishedAt: '2026-06-08T09:00:00Z',
+    tags: ['Football', 'Rules', 'Guide'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Crowd_at_Dora_Stadium.jpg/1280px-Crowd_at_Dora_Stadium.jpg',
+    imageAlt: 'A football crowd at a stadium',
+    imageCredit: 'Photo: TrickyH / CC BY-SA 4.0 via Wikimedia Commons',
+    summary:
+      'Offside is football’s most argued-about rule. Here’s the simple version of what it actually means.',
+    body: `
+      <p>The offside rule keeps attackers from simply camping by the opponent’s goal. It’s simple in principle but produces some of football’s fiercest debates.</p>
+      <h2>The Basic Rule</h2>
+      <p>A player is in an offside position if they are nearer to the opponent’s goal line than <strong>both the ball and the second-to-last defender</strong> at the moment a teammate plays the ball to them. (The goalkeeper is usually the last defender.)</p>
+      <h2>Being Offside vs Being Penalised</h2>
+      <p>Being in an offside position isn’t an offence by itself — it’s only penalised if the player becomes <em>involved in active play</em>: touching the ball, interfering with an opponent, or gaining an advantage.</p>
+      <h2>When You Can’t Be Offside</h2>
+      <ul>
+        <li>In your own half of the pitch.</li>
+        <li>Directly from a throw-in, corner kick or goal kick.</li>
+        <li>If you’re level with the second-to-last defender.</li>
+      </ul>
+      <h2>Why It’s Controversial</h2>
+      <p>Split-second timing and millimetre VAR lines mean tight offside calls regularly decide big matches — which is exactly why fans never stop arguing about them.</p>`,
+  },
+  {
+    id: 'nba-vs-fiba',
+    title: 'NBA vs FIBA: How Basketball Rules Differ Around the World',
+    category: 'sports',
+    categoryLabel: 'Basketball',
+    authorId: 'mike-johnson',
+    publishedAt: '2026-06-07T09:00:00Z',
+    tags: ['Basketball', 'NBA', 'FIBA', 'Guide'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Minnesota_Lynx_teammates_huddle_on_the_court_in_the_Lynx_vs_Sun_game_at_Target_Center.jpg/1280px-Minnesota_Lynx_teammates_huddle_on_the_court_in_the_Lynx_vs_Sun_game_at_Target_Center.jpg',
+    imageAlt: 'Basketball players on the court',
+    imageCredit: 'Photo: Lorie Shaull / CC BY-SA 4.0 via Wikimedia Commons',
+    summary:
+      'The NBA and the international FIBA game look similar but play differently. Here are the key rule differences.',
+    body: `
+      <p>Watch an NBA game and then an Olympic or World Cup basketball match and you’ll notice the international (FIBA) game feels different. The fundamentals are the same, but several rules aren’t.</p>
+      <h2>Game Length</h2>
+      <p>The NBA plays four 12-minute quarters (48 minutes); FIBA plays four 10-minute quarters (40 minutes). NBA games are simply longer.</p>
+      <h2>The Court and Three-Point Line</h2>
+      <p>The NBA court is slightly larger and its three-point line is farther from the basket than FIBA’s, so the same shot can be worth different things depending on the competition.</p>
+      <h2>Other Key Differences</h2>
+      <ul>
+        <li><strong>Fouls:</strong> players foul out after 6 in the NBA, but 5 in FIBA.</li>
+        <li><strong>Defence:</strong> defensive rules and goaltending differ subtly between the two.</li>
+        <li><strong>Style:</strong> shorter games and a closer arc often make FIBA play feel more compact and physical.</li>
+      </ul>
+      <h2>Why It Matters</h2>
+      <p>NBA stars switching to international duty have to adapt quickly — which is part of what makes global tournaments such a fascinating test.</p>`,
+  },
+  {
+    id: 'battle-royale-explained',
+    title: 'What Is a Battle Royale? The Genre Behind PUBG and Fortnite',
+    category: 'esports',
+    categoryLabel: 'Esports',
+    authorId: 'leo-chen',
+    publishedAt: '2026-06-06T09:00:00Z',
+    tags: ['Esports', 'Gaming', 'Battle Royale', 'Guide'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/2019_SEA_Games_Esports_Tekken_7_MAS_vs_INA.jpg/1280px-2019_SEA_Games_Esports_Tekken_7_MAS_vs_INA.jpg',
+    imageAlt: 'Players competing at an esports event',
+    imageCredit: 'Photo: Hariboneagle927 / CC BY-SA 3.0 via Wikimedia Commons',
+    summary:
+      'Battle royale became one of gaming’s biggest genres in just a few years. Here’s what defines it and how it took over.',
+    body: `
+      <p>The battle royale genre exploded in the late 2010s and reshaped gaming. If you’ve heard of PUBG, Fortnite, Apex Legends or Warzone, you’ve heard of battle royale.</p>
+      <h2>The Core Idea</h2>
+      <p>Dozens of players — often up to 100 — drop onto a large map with nothing and scavenge for weapons and gear. A <strong>shrinking play zone</strong> forces everyone closer together over time, and the <strong>last player or team standing wins</strong>.</p>
+      <h2>How It Took Over</h2>
+      <p>The format was popularised by mods and then by PlayerUnknown’s Battlegrounds (PUBG) in 2017, before Fortnite turned it into a global, free-to-play phenomenon that crossed over into mainstream culture.</p>
+      <h2>Why It Works</h2>
+      <p>Every match is different, the tension ramps up as the zone closes, and a single great game can come down to one final firefight — a perfect recipe for both casual play and high-stakes esports.</p>`,
+  },
 ];
 
 export const LOCAL_ARTICLES: Article[] = RAW.map(build);
