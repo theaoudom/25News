@@ -1186,6 +1186,130 @@ const RAW: RawArticle[] = [
       <h2>Why It Works</h2>
       <p>Every match is different, the tension ramps up as the zone closes, and a single great game can come down to one final firefight — a perfect recipe for both casual play and high-stakes esports.</p>`,
   },
+
+  // ───────────────── WORLD CUP STARS & LEGENDS ─────────────────
+  {
+    id: 'messi-world-cup-journey',
+    title: 'Lionel Messi: The World Cup Journey to Glory in 2022',
+    category: 'football',
+    categoryLabel: 'World Cup',
+    authorId: 'carlos-rodriguez',
+    publishedAt: '2026-06-09T10:00:00Z',
+    isWorldCup: true,
+    isTrending: true,
+    tags: ['World Cup', 'Lionel Messi', 'Argentina', 'Feature'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/c8/Lionel_Messi_WC2022.jpg',
+    imageAlt: 'Lionel Messi playing for Argentina at the 2022 World Cup',
+    imageCredit: 'Photo: Hossein Zohrevand / CC BY 4.0 via Wikimedia Commons',
+    summary:
+      'For Lionel Messi, the one prize that eluded him for years finally came in Qatar 2022. Here’s the story of his long road to World Cup glory.',
+    body: `
+      <p>Widely regarded as one of the greatest footballers of all time, Lionel Messi spent much of his career chasing the one trophy that had escaped him — the FIFA World Cup. In 2022, with Argentina, he finally lifted it.</p>
+      <h2>Years of Heartbreak</h2>
+      <p>Messi’s earlier World Cups brought brilliance but no title, most painfully a runners-up finish in 2014, when Argentina lost the final to Germany. The sense that his international story was incomplete followed him for years.</p>
+      <h2>Redemption in Qatar</h2>
+      <p>At the 2022 World Cup, Messi led Argentina with goals and assists across the tournament, driving them to a dramatic final against France that finished 3-3 and was decided on penalties. Lifting the trophy in Qatar was the crowning moment of his career.</p>
+      <h2>A Legacy Sealed</h2>
+      <p>The title cemented Messi’s place in football history and silenced any remaining debate about his international legacy — adding the World Cup to a glittering haul of club honours and individual awards.</p>`,
+  },
+  {
+    id: 'ronaldo-world-cup-records',
+    title: 'Cristiano Ronaldo at the World Cup: Records and the 2026 Question',
+    category: 'football',
+    categoryLabel: 'World Cup',
+    authorId: 'jane-doe',
+    publishedAt: '2026-06-08T10:00:00Z',
+    isWorldCup: true,
+    isTrending: true,
+    tags: ['World Cup', 'Cristiano Ronaldo', 'Portugal', 'Feature'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Cristiano-ronaldo-2491446_960_720.jpg/1280px-Cristiano-ronaldo-2491446_960_720.jpg',
+    imageAlt: 'Cristiano Ronaldo',
+    imageCredit: 'Photo via Wikimedia Commons (CC0)',
+    summary:
+      'One of the game’s greatest goalscorers, Cristiano Ronaldo has a long World Cup history — and 2026 could write its final chapter.',
+    body: `
+      <p>Cristiano Ronaldo is among the most prolific scorers football has ever seen and one of its most enduring stars. His World Cup story spans multiple tournaments — and, at his age, 2026 carries extra significance.</p>
+      <h2>A Long World Cup History</h2>
+      <p>Ronaldo has represented Portugal across several World Cups since the mid-2000s, becoming a talismanic figure for his country and a holder of numerous international scoring records.</p>
+      <h2>The Trophy That Got Away</h2>
+      <p>Despite his Euro 2016 triumph and a UEFA Nations League title with Portugal, the World Cup itself has remained out of reach — the one major honour missing from an extraordinary CV.</p>
+      <h2>The 2026 Question</h2>
+      <p>With the 2026 tournament arriving late in his career, attention turns to whether this is Ronaldo’s last shot at the trophy. Whatever happens, his longevity at the elite level remains one of the sport’s remarkable stories.</p>`,
+  },
+  {
+    id: 'messi-vs-ronaldo-rivalry',
+    title: 'Messi vs Ronaldo: Inside Football’s Greatest Rivalry',
+    category: 'football',
+    categoryLabel: 'Football',
+    authorId: 'carlos-rodriguez',
+    publishedAt: '2026-06-07T10:00:00Z',
+    isTrending: true,
+    tags: ['Football', 'Lionel Messi', 'Cristiano Ronaldo', 'Feature'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Argentine_-_Portugal_-_Cristiano_Ronaldo.jpg/1280px-Argentine_-_Portugal_-_Cristiano_Ronaldo.jpg',
+    imageAlt: 'Cristiano Ronaldo in action',
+    imageCredit: 'Photo: Ludovic Péron / CC BY-SA 3.0 via Wikimedia Commons',
+    summary:
+      'For over 15 years, Lionel Messi and Cristiano Ronaldo pushed each other to greatness. Here’s why their rivalry defined an era.',
+    body: `
+      <p>For more than a decade and a half, two players stood above the rest — Lionel Messi and Cristiano Ronaldo. Their rivalry didn’t just dominate football; it defined a generation of it.</p>
+      <h2>Two Contrasting Geniuses</h2>
+      <p>Messi, the close-control magician who glides past defenders; Ronaldo, the relentless, powerful athlete and supreme finisher. Their contrasting styles made the comparison endlessly fascinating.</p>
+      <h2>Trading Records and Trophies</h2>
+      <p>Between them they collected a staggering number of Ballon d’Or awards, Champions League titles and league championships, each seemingly raising his game in response to the other across the famous El Clásico years in Spain.</p>
+      <h2>A Rivalry That Lifted Everyone</h2>
+      <p>Most remarkable is how their competition pushed both to sustained excellence far longer than most careers last. Fans may never agree on who was better — and that endless debate is exactly what made the rivalry so special.</p>`,
+  },
+  {
+    id: 'greatest-world-cup-goalscorers',
+    title: 'The Greatest World Cup Goalscorers of All Time',
+    category: 'football',
+    categoryLabel: 'World Cup',
+    authorId: 'tom-frank',
+    publishedAt: '2026-06-06T10:00:00Z',
+    isWorldCup: true,
+    tags: ['World Cup', 'Records', 'History'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/FIFA_WC-qualification_2014_-_Austria_vs._Germany_2012-09-11_-_Miroslav_Klose_01.JPG/1280px-FIFA_WC-qualification_2014_-_Austria_vs._Germany_2012-09-11_-_Miroslav_Klose_01.JPG',
+    imageAlt: 'Miroslav Klose playing for Germany',
+    imageCredit: 'Photo: Michael Kranewitter / CC BY-SA 3.0 via Wikimedia Commons',
+    summary:
+      'Who has scored the most goals in World Cup history? From Klose to Ronaldo and Müller, here are the tournament’s deadliest finishers.',
+    body: `
+      <p>Scoring at a World Cup writes a player into history. A select group of forwards have done it again and again across multiple tournaments to top the all-time charts.</p>
+      <h2>The All-Time Leader</h2>
+      <p>Germany’s <strong>Miroslav Klose</strong> holds the record with <strong>16 World Cup goals</strong>, scored across four tournaments from 2002 to 2014 — finishing his World Cup career as a world champion in Brazil.</p>
+      <h2>The Chasing Pack</h2>
+      <ul>
+        <li><strong>Ronaldo (Brazil)</strong> — 15 goals, long the record holder before Klose.</li>
+        <li><strong>Gerd Müller (Germany)</strong> — 14 goals, including a then-record haul in 1970.</li>
+        <li><strong>Just Fontaine (France)</strong> — 13 goals, astonishingly all in a single 1958 tournament.</li>
+      </ul>
+      <h2>Why the Record Endures</h2>
+      <p>Reaching the top requires not just finishing ability but the longevity to appear at three or four World Cups while staying at peak form — which is why Klose’s tally may stand for a very long time.</p>`,
+  },
+  {
+    id: 'messi-ronaldo-last-world-cup',
+    title: 'Could 2026 Be the Last World Cup for Messi and Ronaldo?',
+    category: 'football',
+    categoryLabel: 'World Cup',
+    authorId: 'carlos-rodriguez',
+    publishedAt: '2026-06-05T10:00:00Z',
+    isWorldCup: true,
+    tags: ['World Cup', 'Lionel Messi', 'Cristiano Ronaldo', 'Analysis'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/FWC_2018_-_Group_D_-_ARG_v_ISL_-_Messi_penalty_kick.jpg/1280px-FWC_2018_-_Group_D_-_ARG_v_ISL_-_Messi_penalty_kick.jpg',
+    imageAlt: 'Lionel Messi taking a penalty for Argentina',
+    imageCredit: 'Photo: Voltmetro / CC BY-SA 4.0 via Wikimedia Commons',
+    summary:
+      'Both icons are in the twilight of their careers. The 2026 World Cup could be the final tournament for two of the greatest players ever.',
+    body: `
+      <p>The 2026 World Cup arrives at a poignant moment for football fans: it may be the last time we see Lionel Messi and Cristiano Ronaldo grace the game’s biggest stage.</p>
+      <h2>The Age Factor</h2>
+      <p>Both players are now in the latter stages of remarkable careers. Sustaining elite international form into one’s late 30s and beyond is extraordinarily rare, which lends every appearance a sense of occasion.</p>
+      <h2>Different Motivations</h2>
+      <p>Messi arrives as a world champion with nothing left to prove, while Ronaldo still chases the one trophy missing from his collection. Those contrasting stakes make their 2026 campaigns compelling for very different reasons.</p>
+      <h2>A Farewell to an Era</h2>
+      <p>Whatever unfolds, 2026 feels like the closing chapter of the Messi-Ronaldo age. For a generation that grew up watching them, it’s a tournament to savour — because football may not see two such talents dominate for so long again.</p>
+      <p><em>This article is analysis and opinion.</em></p>`,
+  },
 ];
 
 export const LOCAL_ARTICLES: Article[] = RAW.map(build);
