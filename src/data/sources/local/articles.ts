@@ -209,7 +209,9 @@ const RAW: RawArticle[] = [
     isFeatured: true,
     isTrending: true,
     tags: ['World Cup', 'FIFA', 'USA', 'Canada', 'Mexico'],
-    imageUrl: '/images/placeholders/worldcup.svg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/FIFA_World_Cup_Trophy_%28Ank_Kumar%2C_Infosys_Limited%29_01.jpg/1280px-FIFA_World_Cup_Trophy_%28Ank_Kumar%2C_Infosys_Limited%29_01.jpg',
+    imageAlt: 'The FIFA World Cup trophy',
+    imageCredit: 'Photo: Ank Kumar / CC BY-SA 4.0 via Wikimedia Commons',
     summary:
       'The 2026 FIFA World Cup is the biggest in history — 48 teams, three host nations and 104 matches across North America.',
     body: `
@@ -231,7 +233,9 @@ const RAW: RawArticle[] = [
     isWorldCup: true,
     isTrending: true,
     tags: ['World Cup', 'Format', 'Group Stage'],
-    imageUrl: '/images/placeholders/worldcup.svg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/2015_FIFA_Women%27s_World_Cup_Final_at_BC_Place_2015-07-05_%2819495660835%29.jpg/1280px-2015_FIFA_Women%27s_World_Cup_Final_at_BC_Place_2015-07-05_%2819495660835%29.jpg',
+    imageAlt: 'A packed World Cup match in a full stadium',
+    imageCredit: 'Photo: apasciuto / CC BY 2.0 via Wikimedia Commons',
     summary:
       'The expanded 48-team format introduces a round of 32 for the first time. Here is how qualification from the groups works.',
     body: `
@@ -252,7 +256,9 @@ const RAW: RawArticle[] = [
     publishedAt: '2026-06-08T11:00:00Z',
     isWorldCup: true,
     tags: ['World Cup', 'Analysis', 'Brazil', 'France', 'Argentina'],
-    imageUrl: '/images/placeholders/worldcup.svg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Argentina_national_football_team_-_1_-_2022.jpg/1280px-Argentina_national_football_team_-_1_-_2022.jpg',
+    imageAlt: 'The Argentina national football team, reigning world champions',
+    imageCredit: 'Photo: Argentina.gob.ar / CC BY 4.0 via Wikimedia Commons',
     summary:
       'Defending champions Argentina, France and Brazil headline the favourites — but several dark horses could spring a surprise.',
     body: `
@@ -273,7 +279,9 @@ const RAW: RawArticle[] = [
     publishedAt: '2026-06-09T09:00:00Z',
     isWorldCup: true,
     tags: ['World Cup', 'Host Cities', 'Venues', 'USA', 'Canada', 'Mexico'],
-    imageUrl: '/images/placeholders/worldcup.svg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Estadio_Azteca1706_Intp1.jpg/1280px-Estadio_Azteca1706_Intp1.jpg',
+    imageAlt: 'Estadio Azteca in Mexico City, a 2026 World Cup host venue',
+    imageCredit: 'Photo: Carlos Valenzuela / CC BY-SA 4.0 via Wikimedia Commons',
     summary:
       'The 2026 World Cup is spread across 16 host cities in three countries — 11 in the USA, three in Mexico and two in Canada. Here is the full list.',
     body: `
@@ -315,7 +323,9 @@ const RAW: RawArticle[] = [
     publishedAt: '2026-06-10T09:00:00Z',
     isWorldCup: true,
     tags: ['World Cup', 'Schedule', 'Fixtures', 'Dates'],
-    imageUrl: '/images/placeholders/worldcup.svg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Azteca_Stadium_-_panoramio.jpg/1280px-Azteca_Stadium_-_panoramio.jpg',
+    imageAlt: 'Estadio Azteca, venue of the 2026 World Cup opening match',
+    imageCredit: 'Photo: O. Ramirez D. / CC BY-SA 3.0 via Wikimedia Commons',
     summary:
       'From the Estadio Azteca opener to the MetLife final, here are the dates that shape the 2026 World Cup calendar.',
     body: `
@@ -345,7 +355,9 @@ const RAW: RawArticle[] = [
     publishedAt: '2026-06-07T09:00:00Z',
     isWorldCup: true,
     tags: ['World Cup', 'History', 'Records', 'Brazil', 'Argentina'],
-    imageUrl: '/images/placeholders/worldcup.svg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/FIFA_World_Cup_Trophy_%28Ank_Kumar%2C_Infosys_Limited%29_02.jpg/1280px-FIFA_World_Cup_Trophy_%28Ank_Kumar%2C_Infosys_Limited%29_02.jpg',
+    imageAlt: 'The FIFA World Cup trophy, football’s greatest prize',
+    imageCredit: 'Photo: Ank Kumar / CC BY-SA 4.0 via Wikimedia Commons',
     summary:
       'Eight nations have lifted the trophy across 22 tournaments. Here is the full roll of World Cup champions and the records that define them.',
     body: `
