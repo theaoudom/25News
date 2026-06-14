@@ -958,6 +958,36 @@ const RAW: RawArticle[] = [
       <h2>Fuel and Race Day</h2>
       <p>Practise eating and drinking during long runs so race day holds no surprises. Then trust your training: start slower than feels natural, settle into a steady rhythm, and save something for the final miles.</p>`,
   },
+
+  // ───────────────────────── BREAKING TECH NEWS ─────────────────────────
+  {
+    id: 'us-orders-anthropic-disable-fable-mythos',
+    title: 'US Orders Anthropic to Disable AI Models Fable 5 and Mythos 5 Worldwide',
+    category: 'world',
+    categoryLabel: 'Technology',
+    authorId: 'newsroom',
+    publishedAt: '2026-06-13T12:00:00Z',
+    isBreaking: true,
+    isTrending: true,
+    tags: ['Technology', 'AI', 'Anthropic', 'Regulation'],
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/BalticServers_data_center.jpg/1280px-BalticServers_data_center.jpg',
+    imageAlt: 'Rows of servers in a data center',
+    imageCredit: 'Photo: BalticServers.com / CC BY-SA 3.0 via Wikimedia Commons',
+    summary:
+      'The US government has directed Anthropic to suspend access to its newest AI models for all foreign nationals over security concerns — prompting the company to switch them off for every user.',
+    body: `
+      <p>Anthropic has disabled access to its newest artificial intelligence models, <strong>Fable 5</strong> and <strong>Mythos 5</strong>, after the US government issued a directive ordering the company to block all foreign nationals from using them on national-security grounds.</p>
+      <h2>What Happened</h2>
+      <p>According to multiple reports, Anthropic received the order on Friday afternoon, instructing it to suspend access to the two models "by any foreign national." With no reliable way to screen foreign nationals out of its global user base in real time, the company chose to switch the models off for <em>everyone</em> rather than attempt a partial block.</p>
+      <h2>The Government's Concern</h2>
+      <p>Officials are understood to have believed they had identified a method of bypassing — or "jailbreaking" — Fable 5. The action has been framed as an export-control-style measure, restricting access to advanced AI capabilities on security grounds.</p>
+      <h2>Anthropic's Response</h2>
+      <p>In a public statement, Anthropic said it had reviewed a demonstration of the specific technique and concluded it identified only a small number of previously known, minor vulnerabilities. The company said it disagreed that a narrow potential jailbreak should be cause for recalling a commercial model already deployed to hundreds of millions of people, but that it had complied with the directive while seeking clarity.</p>
+      <h2>Why It Matters</h2>
+      <p>The move is an unusual instance of a government compelling an AI developer to pull flagship products from the market worldwide. It raises pressing questions about how national-security rules will apply to widely used AI services, the balance between security and access, and what recourse companies and users have when a model is switched off overnight.</p>
+      <p><em>This is a developing story.</em></p>`,
+  },
 ];
 
 export const LOCAL_ARTICLES: Article[] = RAW.map(build);
