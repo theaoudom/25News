@@ -39,6 +39,20 @@ export function Footer() {
             Questions? <a href={`mailto:${siteConfig.contactEmail}`} className="text-brand-600">{siteConfig.contactEmail}</a>
           </p>
         </div>
+        <p className="mt-4 text-center text-xs text-muted">
+          World Cup data by{' '}
+          <a href="https://github.com/openfootball/worldcup.json" rel="nofollow noopener" target="_blank" className="hover:text-brand-600">
+            openfootball
+          </a>{' '}
+          &amp;{' '}
+          <a href="https://www.thesportsdb.com/" rel="nofollow noopener" target="_blank" className="hover:text-brand-600">
+            TheSportsDB
+          </a>{' '}
+          · Flags by{' '}
+          <a href="https://flagcdn.com/" rel="nofollow noopener" target="_blank" className="hover:text-brand-600">
+            flagcdn
+          </a>
+        </p>
       </div>
     </footer>
   );

@@ -23,7 +23,10 @@ const abs = (path: string): string =>
  */
 export function buildMetadata(input: PageMetaInput): Metadata {
   const canonical = abs(input.path);
-  const images = (input.images?.length ? input.images : [siteConfig.defaultOgImage]).map(abs);
+  // Only set explicit images when a page provides them. When omitted, the
+  // file-based app/opengraph-image.tsx supplies the default branded card for
+  // both Open Graph and Twitter.
+  const images = input.images?.length ? input.images.map(abs) : undefined;
   const title = input.title.includes(siteConfig.name)
     ? input.title
     : `${input.title} | ${siteConfig.name}`;
@@ -43,7 +46,7 @@ export function buildMetadata(input: PageMetaInput): Metadata {
       siteName: siteConfig.name,
       locale: siteConfig.locale,
       type: input.type || 'website',
-      images: images.map((url) => ({ url })),
+      ...(images ? { images: images.map((url) => ({ url })) } : {}),
       ...(input.type === 'article'
         ? {
             publishedTime: input.publishedTime,
@@ -58,7 +61,7 @@ export function buildMetadata(input: PageMetaInput): Metadata {
       title,
       description: input.description,
       site: siteConfig.twitterHandle,
-      images,
+      ...(images ? { images } : {}),
     },
   };
 }

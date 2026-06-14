@@ -728,6 +728,80 @@ const RAW: RawArticle[] = [
       <h2>The Open Questions</h2>
       <p>With the benefits come real concerns: data privacy, the reliability of AI-generated information, the impact on jobs, and the need for sensible regulation. How societies answer these questions will shape whether the technology’s promise is fully and fairly realised.</p>`,
   },
+  {
+    id: 'guide-champions-league-format',
+    title: 'The Champions League’s New Format Explained: How the League Phase Works',
+    category: 'football',
+    categoryLabel: 'Football',
+    authorId: 'tom-frank',
+    publishedAt: '2026-06-02T09:00:00Z',
+    tags: ['Football', 'Champions League', 'Guide'],
+    imageUrl: '/images/placeholders/football.svg',
+    summary:
+      'UEFA scrapped the old group stage for a single 36-team league table. Here’s how the revamped Champions League format actually works.',
+    body: `
+      <p>The UEFA Champions League underwent its biggest overhaul in decades, replacing the familiar eight groups of four with a single, expanded league phase. If you’re catching up, here’s how the new format works.</p>
+      <h2>36 Teams, One Table</h2>
+      <p>The competition expanded from 32 to <strong>36 teams</strong>, all placed in one combined standings table rather than separate groups.</p>
+      <h2>Eight Matches Each</h2>
+      <p>Instead of playing the same three opponents home and away, every club plays <strong>eight different opponents</strong> — four at home and four away — drawn from across four seeding pots. It means more variety and more marquee match-ups in the opening phase.</p>
+      <h2>Who Qualifies</h2>
+      <ul>
+        <li><strong>Top 8</strong> in the table advance straight to the round of 16.</li>
+        <li><strong>Teams 9–24</strong> enter a two-legged knockout play-off for the remaining eight round-of-16 places.</li>
+        <li><strong>Teams 25–36</strong> are eliminated from European competition entirely.</li>
+      </ul>
+      <h2>Why UEFA Changed It</h2>
+      <p>The aim was more competitive, higher-stakes matches throughout the league phase — fewer dead rubbers and more jeopardy, with every result affecting a single shared table right up to the final matchday.</p>`,
+  },
+  {
+    id: 'guide-f1-points-system',
+    title: 'Formula 1 Explained: How the Championship and Points System Work',
+    category: 'sports',
+    categoryLabel: 'Formula 1',
+    authorId: 'ben-carter',
+    publishedAt: '2026-06-01T09:00:00Z',
+    tags: ['Formula 1', 'Motorsport', 'Guide'],
+    imageUrl: '/images/placeholders/sports.svg',
+    summary:
+      'Two championships, 10 points-scoring positions and sprint races — a clear beginner’s guide to how Formula 1 is scored.',
+    body: `
+      <p>Formula 1 can look complex from the outside, but the scoring is straightforward once you know the basics. Here’s how a season is decided.</p>
+      <h2>Two Championships</h2>
+      <p>Every season crowns two champions: the <strong>Drivers’ Championship</strong> (the individual with the most points) and the <strong>Constructors’ Championship</strong> (the team whose two cars score the most points combined). Prize money and prestige flow from both.</p>
+      <h2>How Race Points Work</h2>
+      <p>Points are awarded to the top 10 finishers in each Grand Prix:</p>
+      <ul>
+        <li>1st: 25 · 2nd: 18 · 3rd: 15 · 4th: 12 · 5th: 10</li>
+        <li>6th: 8 · 7th: 6 · 8th: 4 · 9th: 2 · 10th: 1</li>
+      </ul>
+      <h2>Sprint Races</h2>
+      <p>At selected events, a shorter <strong>Sprint</strong> race awards extra points to its top eight finishers, adding another opportunity to score over a weekend.</p>
+      <h2>Winning the Title</h2>
+      <p>Points accumulate across every round of the calendar. Whoever has the most at the end of the final Grand Prix wins — consistency over a long season usually matters as much as outright race wins.</p>`,
+  },
+  {
+    id: 'explainer-lol-worlds',
+    title: 'League of Legends Worlds: How the World Championship Works',
+    category: 'esports',
+    categoryLabel: 'Esports',
+    authorId: 'emily-white',
+    publishedAt: '2026-05-31T09:00:00Z',
+    tags: ['Esports', 'League of Legends', 'Guide'],
+    imageUrl: '/images/placeholders/esports.svg',
+    summary:
+      'The biggest event in esports, explained — how teams qualify for League of Legends Worlds and how the tournament is won.',
+    body: `
+      <p>The League of Legends World Championship — “Worlds” — is the pinnacle of the sport and one of the most-watched events in all of esports. Here’s how it works.</p>
+      <h2>Qualifying Through Regional Leagues</h2>
+      <p>Teams earn their place by performing in their regional leagues across the year — among them the LCK (Korea), LPL (China), LEC (Europe) and the Americas league. The strongest regions receive more qualification spots.</p>
+      <h2>The Tournament Stages</h2>
+      <p>Worlds typically runs through multiple stages: a play-in for lower-seeded teams, a Swiss-style or group stage to narrow the field, and a single-elimination knockout bracket. Knockout matches are best-of-five — a true test of adaptation and nerve.</p>
+      <h2>The Summoner’s Cup</h2>
+      <p>The winners lift the Summoner’s Cup in front of a packed arena, often in front of millions watching online. Lifting it cements a roster among the greats of the game.</p>
+      <h2>Why It Matters</h2>
+      <p>Worlds combines elite competition with massive production — opening ceremonies, live music and global broadcasts — and remains a benchmark for how big esports events can be.</p>`,
+  },
 ];
 
 export const LOCAL_ARTICLES: Article[] = RAW.map(build);
