@@ -809,17 +809,31 @@ const RAW: RawArticle[] = [
     summary:
       'Australian Open, Roland-Garros, Wimbledon and the US Open — what makes each of tennis’s four majors unique, and why they matter most.',
     body: `
-      <p>The four Grand Slams are the biggest tournaments in tennis — the events every player dreams of winning. Held across three continents and four very different surfaces, they define careers and crown the sport’s legends. Here’s a quick guide.</p>
+      <p>The four Grand Slams are the biggest tournaments in tennis — the events every player dreams of winning. Held across three continents and four very different surfaces, they define careers and crown the sport's legends. Here is the complete guide.</p>
       <h2>Australian Open (January)</h2>
-      <p>The season-opener in Melbourne, played on hard courts in the southern-hemisphere summer. Known for extreme heat and a lively, festival-like atmosphere.</p>
+      <p>The season-opener in Melbourne, played on hard courts in the southern-hemisphere summer. Known for extreme heat, a lively atmosphere and a reputation as the "Happy Slam", it sets the tone for the tennis year.</p>
       <h2>Roland-Garros / French Open (May–June)</h2>
-      <p>The only major played on clay, in Paris. Slow, high-bouncing courts reward stamina and patience, producing long, physical rallies and rewarding specialists who master the surface.</p>
+      <p>The only major played on clay, in Paris. The slow, high-bouncing red courts reward stamina, patience and sliding footwork, producing long, physical rallies. It is widely considered the most demanding Slam to win.</p>
       <h2>Wimbledon (June–July)</h2>
-      <p>The oldest and most prestigious tournament, played on grass in London. Famous for its traditions — all-white dress code, strawberries and cream, and a fast surface that favours powerful serving.</p>
+      <p>The oldest and most prestigious tournament, played on grass in London. Famous for its traditions — the all-white dress code, strawberries and cream, and a fast surface that rewards powerful serving and quick points.</p>
       <h2>US Open (August–September)</h2>
-      <p>The loud, electric finale to the Grand Slam season in New York, on hard courts. Night sessions under the lights and raucous crowds make it the most spectacle-driven of the four.</p>
+      <p>The loud, electric finale to the Slam season in New York, on hard courts. Night sessions under the lights and raucous crowds make it the most spectacle-driven of the four majors.</p>
       <h2>Why the Slams Matter Most</h2>
-      <p>Grand Slam titles are the primary measure of greatness in tennis. They carry the most ranking points, the largest prize money and the deepest fields — which is why a player’s major count is the number history remembers.</p>`,
+      <p>Grand Slam titles are the primary measure of greatness in tennis. They award the most ranking points, the largest prize money and feature the deepest fields — which is why a player's major count is the number history remembers.</p>
+      <h2>The Calendar and Career Grand Slam</h2>
+      <p>Winning all four in a single year is the <strong>Calendar Grand Slam</strong> — an extraordinarily rare feat. Winning all four at some point in a career is the <strong>Career Grand Slam</strong>, achieved by only a handful of the greatest players. Because the surfaces are so different, mastering all four is the ultimate test of versatility.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>What are the four tennis Grand Slams?</h3>
+      <p>The Australian Open, French Open (Roland-Garros), Wimbledon and the US Open.</p>
+      <h3>Which Grand Slam is on clay?</h3>
+      <p>The French Open is the only Slam played on clay.</p>
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Four majors, four surfaces, across the tennis calendar.</li>
+        <li>Slam titles are the truest measure of a player's greatness.</li>
+        <li>Winning all four (career or calendar) is tennis's ultimate achievement.</li>
+      </ul>
+    `,
   },
   {
     id: 'explainer-esports-world-cup',
@@ -838,13 +852,27 @@ const RAW: RawArticle[] = [
     body: `
       <p>The Esports World Cup (EWC) has quickly established itself as the most ambitious event in competitive gaming — a multi-week, multi-title festival held in Riyadh, Saudi Arabia, with one of the largest prize pools the industry has ever seen.</p>
       <h2>A Multi-Title Festival</h2>
-      <p>Unlike most tournaments, which focus on a single game, the EWC spans many titles at once — from MOBAs like Mobile Legends and League of Legends to shooters such as Counter-Strike 2 and battle royales like PUBG and Fortnite. Dozens of the world’s top organisations compete across these disciplines.</p>
+      <p>Unlike most tournaments, which focus on a single game, the EWC spans many titles at once — from MOBAs like Mobile Legends and League of Legends to shooters such as Counter-Strike 2 and battle royales like PUBG and Fortnite. Dozens of the world's top organisations compete across these disciplines over several weeks.</p>
       <h2>The Club Championship</h2>
-      <p>A defining feature is the Club Championship, where organisations earn points based on results across every title they enter. It rewards depth and all-round excellence, not just a single standout team — and crowns an overall champion club at the end.</p>
+      <p>A defining feature is the Club Championship, where organisations earn points based on results across every title they enter. It rewards depth and all-round excellence, not just a single standout team — and crowns an overall champion club at the end of the event.</p>
       <h2>Prize Money</h2>
       <p>The combined prize pool runs into the tens of millions of dollars across all titles, making it one of the richest events in esports history and a major payday for the teams and players involved.</p>
+      <h2>Mainstream Crossover</h2>
+      <p>The EWC reflects esports' continued march into the mainstream: traditional sports stars serve as ambassadors, broadcast production rivals major sports leagues, and the scale signals long-term investment in competitive gaming as global entertainment.</p>
       <h2>Why It Matters</h2>
-      <p>The EWC reflects esports’ continued march into the mainstream: traditional sports stars serve as ambassadors, broadcast production rivals major leagues, and the scale signals long-term investment in competitive gaming as global entertainment.</p>`,
+      <p>By bringing many games under one banner with a unifying club competition, the EWC has created a season-defining event — a place where the best organisations in the world prove their all-round strength on one giant stage.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>Where is the Esports World Cup held?</h3>
+      <p>In Riyadh, Saudi Arabia.</p>
+      <h3>What makes it different from other tournaments?</h3>
+      <p>It spans many games at once and crowns an overall champion club via a cross-title points system.</p>
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>A multi-game festival with a huge combined prize pool.</li>
+        <li>The Club Championship rewards all-round organisational strength.</li>
+        <li>A sign of esports' growing mainstream scale and investment.</li>
+      </ul>
+    `,
   },
   {
     id: 'explainer-ai-daily-life',
@@ -885,19 +913,33 @@ const RAW: RawArticle[] = [
     summary:
       'UEFA scrapped the old group stage for a single 36-team league table. Here’s how the revamped Champions League format actually works.',
     body: `
-      <p>The UEFA Champions League underwent its biggest overhaul in decades, replacing the familiar eight groups of four with a single, expanded league phase. If you’re catching up, here’s how the new format works.</p>
+      <p>The UEFA Champions League underwent its biggest overhaul in decades, replacing the familiar eight groups of four with a single, expanded league phase. If you are catching up, here is how the new format works.</p>
       <h2>36 Teams, One Table</h2>
-      <p>The competition expanded from 32 to <strong>36 teams</strong>, all placed in one combined standings table rather than separate groups.</p>
+      <p>The competition expanded from 32 to <strong>36 teams</strong>, all placed in one combined standings table rather than separate groups. Every result now affects a single shared league, right up to the final matchday.</p>
       <h2>Eight Matches Each</h2>
-      <p>Instead of playing the same three opponents home and away, every club plays <strong>eight different opponents</strong> — four at home and four away — drawn from across four seeding pots. It means more variety and more marquee match-ups in the opening phase.</p>
+      <p>Instead of playing the same three opponents home and away, every club plays <strong>eight different opponents</strong> — four at home and four away — drawn from four seeding pots. That means more variety and more marquee match-ups in the opening phase.</p>
       <h2>Who Qualifies</h2>
       <ul>
-        <li><strong>Top 8</strong> in the table advance straight to the round of 16.</li>
-        <li><strong>Teams 9–24</strong> enter a two-legged knockout play-off for the remaining eight round-of-16 places.</li>
-        <li><strong>Teams 25–36</strong> are eliminated from European competition entirely.</li>
+        <li>The <strong>top eight</strong> in the table advance straight to the round of 16.</li>
+        <li>Teams ranked <strong>9th to 24th</strong> enter a two-legged knockout play-off for the remaining eight round-of-16 places.</li>
+        <li>Teams ranked <strong>25th to 36th</strong> are eliminated from European competition entirely — with no drop into the Europa League.</li>
       </ul>
+      <h2>The Knockout Phase</h2>
+      <p>From the round of 16 onwards the competition follows the traditional two-legged knockout path through the quarter-finals and semi-finals to a single-match final at a neutral venue.</p>
       <h2>Why UEFA Changed It</h2>
-      <p>The aim was more competitive, higher-stakes matches throughout the league phase — fewer dead rubbers and more jeopardy, with every result affecting a single shared table right up to the final matchday.</p>`,
+      <p>The aim was more competitive, higher-stakes matches throughout the league phase — fewer dead rubbers and more jeopardy, with bigger clubs facing each other earlier and every point mattering in one combined table.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>How many teams are in the new Champions League?</h3>
+      <p>36, up from 32, all in a single league phase.</p>
+      <h3>How many games does each team play in the league phase?</h3>
+      <p>Eight — against eight different opponents.</p>
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>One 36-team league replaced the old group stage.</li>
+        <li>Top 8 qualify directly; 9–24 enter a play-off; 25–36 are out.</li>
+        <li>The format means more big matches and fewer meaningless games.</li>
+      </ul>
+    `,
   },
   {
     id: 'guide-f1-points-system',
@@ -913,9 +955,9 @@ const RAW: RawArticle[] = [
     summary:
       'Two championships, 10 points-scoring positions and sprint races — a clear beginner’s guide to how Formula 1 is scored.',
     body: `
-      <p>Formula 1 can look complex from the outside, but the scoring is straightforward once you know the basics. Here’s how a season is decided.</p>
+      <p>Formula 1 can look complex from the outside, but the scoring is straightforward once you know the basics. Here is how a season is decided.</p>
       <h2>Two Championships</h2>
-      <p>Every season crowns two champions: the <strong>Drivers’ Championship</strong> (the individual with the most points) and the <strong>Constructors’ Championship</strong> (the team whose two cars score the most points combined). Prize money and prestige flow from both.</p>
+      <p>Every season crowns two champions: the <strong>Drivers' Championship</strong> (the individual with the most points) and the <strong>Constructors' Championship</strong> (the team whose two cars score the most points combined). Prize money and prestige flow from both, and teams prize the constructors' title as a measure of overall strength.</p>
       <h2>How Race Points Work</h2>
       <p>Points are awarded to the top 10 finishers in each Grand Prix:</p>
       <ul>
@@ -923,9 +965,23 @@ const RAW: RawArticle[] = [
         <li>6th: 8 · 7th: 6 · 8th: 4 · 9th: 2 · 10th: 1</li>
       </ul>
       <h2>Sprint Races</h2>
-      <p>At selected events, a shorter <strong>Sprint</strong> race awards extra points to its top eight finishers, adding another opportunity to score over a weekend.</p>
-      <h2>Winning the Title</h2>
-      <p>Points accumulate across every round of the calendar. Whoever has the most at the end of the final Grand Prix wins — consistency over a long season usually matters as much as outright race wins.</p>`,
+      <p>At selected events, a shorter <strong>Sprint</strong> race awards extra points to its top finishers, giving drivers another opportunity to score over a weekend and adding strategic variety to the calendar.</p>
+      <h2>How the Title Is Decided</h2>
+      <p>Points accumulate across every round of the calendar. Whoever has the most at the end of the final Grand Prix wins the championship. Consistency over a long season usually matters as much as outright race wins — finishing in the points every week can beat a mix of wins and retirements.</p>
+      <h2>Teams, Cars and Strategy</h2>
+      <p>Ten teams field two drivers each. Beyond raw speed, races are shaped by tyre strategy, pit-stop timing, reliability and team orders — which is why F1 is as much a strategic contest as a test of driving.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>How many points do you get for winning an F1 race?</h3>
+      <p>25 points for first place, down to 1 point for tenth.</p>
+      <h3>What is the difference between the two championships?</h3>
+      <p>The Drivers' title goes to an individual; the Constructors' title goes to the team with the most combined points.</p>
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Two titles each year: Drivers' and Constructors'.</li>
+        <li>Points go to the top 10, with sprint races offering extra.</li>
+        <li>Consistency over a long calendar often decides the championship.</li>
+      </ul>
+    `,
   },
   {
     id: 'explainer-lol-worlds',
@@ -941,15 +997,29 @@ const RAW: RawArticle[] = [
     summary:
       'The biggest event in esports, explained — how teams qualify for League of Legends Worlds and how the tournament is won.',
     body: `
-      <p>The League of Legends World Championship — “Worlds” — is the pinnacle of the sport and one of the most-watched events in all of esports. Here’s how it works.</p>
+      <p>The League of Legends World Championship — "Worlds" — is the pinnacle of the sport and one of the most-watched events in all of esports. Here is how it works.</p>
       <h2>Qualifying Through Regional Leagues</h2>
-      <p>Teams earn their place by performing in their regional leagues across the year — among them the LCK (Korea), LPL (China), LEC (Europe) and the Americas league. The strongest regions receive more qualification spots.</p>
+      <p>Teams earn their place by performing in their regional leagues across the year — among them the LCK (Korea), LPL (China), LEC (Europe) and the Americas league. The strongest regions receive more qualification spots, reflecting their depth of competition.</p>
       <h2>The Tournament Stages</h2>
-      <p>Worlds typically runs through multiple stages: a play-in for lower-seeded teams, a Swiss-style or group stage to narrow the field, and a single-elimination knockout bracket. Knockout matches are best-of-five — a true test of adaptation and nerve.</p>
-      <h2>The Summoner’s Cup</h2>
-      <p>The winners lift the Summoner’s Cup in front of a packed arena, often in front of millions watching online. Lifting it cements a roster among the greats of the game.</p>
+      <p>Worlds typically runs through multiple stages: a play-in for lower-seeded teams, a Swiss-style or group stage to narrow the field, and a single-elimination knockout bracket. Knockout matches are best-of-five — a true test of adaptation, drafting and nerve over a long series.</p>
+      <h2>The Summoner's Cup</h2>
+      <p>The winners lift the Summoner's Cup in front of a packed arena, often with millions watching online and an elaborate opening ceremony. Lifting it cements a roster among the greats of the game.</p>
+      <h2>Global Scale</h2>
+      <p>Worlds combines elite competition with massive production — live music, augmented-reality stage shows and global broadcasts in many languages. Peak viewership regularly places it among the biggest esports events on earth.</p>
       <h2>Why It Matters</h2>
-      <p>Worlds combines elite competition with massive production — opening ceremonies, live music and global broadcasts — and remains a benchmark for how big esports events can be.</p>`,
+      <p>For players and regions, Worlds is the ultimate proving ground. Dynasties are built and legacies defined here, and a single championship run can turn a roster into household names within the gaming world.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>What is the League of Legends Worlds trophy called?</h3>
+      <p>The Summoner's Cup.</p>
+      <h3>How do teams qualify for Worlds?</h3>
+      <p>By performing in their regional leagues; stronger regions get more spots.</p>
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Worlds is League of Legends' annual world championship.</li>
+        <li>Teams qualify via regional leagues, then play group and knockout stages.</li>
+        <li>Winners lift the Summoner's Cup before a global audience.</li>
+      </ul>
+    `,
   },
 
   // ───────────────── EVERGREEN FEATURES WITH REAL IMAGES ─────────────────
@@ -1007,9 +1077,9 @@ const RAW: RawArticle[] = [
     summary:
       'New to basketball? Here’s a clear guide to the rules, scoring and positions that make the game tick.',
     body: `
-      <p>Basketball was invented in 1891 by Dr. James Naismith, who nailed a peach basket to a gymnasium wall. Today it is one of the world’s most popular sports. Here’s how it works.</p>
+      <p>Basketball was invented in 1891 by Dr. James Naismith, who nailed a peach basket to a gymnasium wall to keep his students active indoors. Today it is one of the world's most popular sports. Here is how it works.</p>
       <h2>The Objective</h2>
-      <p>Two teams of five players each try to score by shooting the ball through the opposing team’s hoop, which sits 10 feet (3.05 m) above the floor. The team with the most points when time runs out wins.</p>
+      <p>Two teams of five players each try to score by shooting the ball through the opposing team's hoop, which sits 10 feet (3.05 m) above the floor. The team with the most points when time runs out wins.</p>
       <h2>Scoring</h2>
       <ul>
         <li><strong>2 points</strong> for a basket made inside the three-point arc.</li>
@@ -1017,9 +1087,27 @@ const RAW: RawArticle[] = [
         <li><strong>1 point</strong> for each successful free throw, awarded after certain fouls.</li>
       </ul>
       <h2>The Positions</h2>
-      <p>Teams traditionally field a point guard, shooting guard, small forward, power forward and centre — though the modern game increasingly blurs these roles, prizing versatile players who can shoot, pass and defend anywhere.</p>
+      <p>Teams traditionally field a point guard, shooting guard, small forward, power forward and centre — though the modern game increasingly blurs these roles, prizing versatile players who can shoot, pass and defend anywhere on the court.</p>
       <h2>Game Flow</h2>
-      <p>Games are split into timed periods (quarters in the NBA). Teams must advance the ball by dribbling or passing, attempt a shot within the shot-clock limit, and avoid fouls — which can send opponents to the free-throw line and, in bulk, swing a game.</p>`,
+      <p>Games are split into timed periods (quarters in the NBA). Teams must advance the ball by dribbling or passing, and attempt a shot within the shot-clock limit, keeping the pace high and discouraging stalling.</p>
+      <h2>Key Rules to Know</h2>
+      <ul>
+        <li><strong>Traveling:</strong> you cannot move with the ball without dribbling.</li>
+        <li><strong>Double dribble:</strong> you cannot dribble, stop, then dribble again.</li>
+        <li><strong>Fouls:</strong> illegal contact sends opponents to the free-throw line and, in bulk, can foul a player out.</li>
+      </ul>
+      <h2>Frequently Asked Questions</h2>
+      <h3>How many players are on a basketball team?</h3>
+      <p>Five per side on the court at any time.</p>
+      <h3>How high is a basketball hoop?</h3>
+      <p>10 feet (3.05 metres).</p>
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Five-a-side; score by shooting through the hoop.</li>
+        <li>Baskets are worth 2 or 3 points; free throws 1.</li>
+        <li>Dribbling rules and fouls shape the flow of every game.</li>
+      </ul>
+    `,
   },
   {
     id: 'how-solar-power-works',
@@ -1143,14 +1231,30 @@ const RAW: RawArticle[] = [
       <h2>What VAR Can Review</h2>
       <ul>
         <li><strong>Goals</strong> — and any infringement in the build-up (offside, handball, fouls).</li>
-        <li><strong>Penalty decisions</strong> — whether a penalty should or shouldn’t have been given.</li>
-        <li><strong>Direct red cards</strong> — not second yellows.</li>
+        <li><strong>Penalty decisions</strong> — whether a penalty should or should not have been given.</li>
+        <li><strong>Direct red cards</strong> — not second yellow cards.</li>
         <li><strong>Mistaken identity</strong> — when the referee books the wrong player.</li>
       </ul>
       <h2>How a Decision Is Made</h2>
       <p>A VAR team reviews footage and recommends a check only for "clear and obvious" errors. The referee can then watch the replay pitch-side at the Referee Review Area before making the final call — the on-field official always has the last word.</p>
-      <h2>Why It’s Still Debated</h2>
-      <p>Supporters say VAR gets more big calls right; critics point to long delays, tight offside lines and the loss of spontaneous goal celebrations. Football’s lawmakers continue to refine how — and how quickly — it’s used.</p>`,
+      <h2>The "Clear and Obvious" Threshold</h2>
+      <p>VAR is not meant to re-referee every decision. It intervenes only when the original call is clearly wrong, which is why many subjective calls are left to the referee's on-field judgement even after a check.</p>
+      <h2>Why It Is Still Debated</h2>
+      <p>Supporters say VAR gets more big calls right; critics point to long delays, the breaking of momentum, tight offside lines decided by millimetres, and the loss of spontaneous goal celebrations while fans wait for a check.</p>
+      <h2>VAR at the World Cup</h2>
+      <p>Since its introduction at the 2018 World Cup, VAR has become standard at the tournament, and technologies such as semi-automated offside detection have been added to speed up and sharpen decisions.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>What four things can VAR review?</h3>
+      <p>Goals, penalties, direct red cards and mistaken identity.</p>
+      <h3>Does VAR make the final decision?</h3>
+      <p>No — it advises, but the on-field referee always makes the final call.</p>
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>VAR reviews only four match-changing situations.</li>
+        <li>It intervenes for "clear and obvious" errors; the referee decides.</li>
+        <li>It improves accuracy but remains a source of debate.</li>
+      </ul>
+    `,
   },
   {
     id: 'tennis-scoring-explained',
@@ -1188,13 +1292,29 @@ const RAW: RawArticle[] = [
     summary:
       'The International is Dota 2’s world championship — famous for record prize pools funded by the community itself. Here’s how it works.',
     body: `
-      <p>The International (TI) is the annual world championship of Valve’s Dota 2, and for years it boasted the largest prize pools in all of esports. Here’s the essentials.</p>
+      <p>The International (TI) is the annual world championship of Valve's Dota 2, and for years it boasted the largest prize pools in all of esports. Here are the essentials.</p>
       <h2>Community-Funded Prize Pools</h2>
-      <p>What made TI famous is that fans help fund the prize pool: a portion of in-game Battle Pass / event sales is added to the pot, which historically pushed it past <strong>$30–40 million</strong> in peak years — far beyond a typical esports event.</p>
+      <p>What made TI famous is that fans help fund the prize pool: a portion of in-game Battle Pass and event sales is added to the pot, which historically pushed it past <strong>$30–40 million</strong> in peak years — far beyond a typical esports event and a record for the industry.</p>
       <h2>The Format</h2>
-      <p>The world’s top teams qualify through regional circuits, then compete in a group stage followed by a double-elimination main-event bracket. Matches are best-of-three, with a best-of-five grand final.</p>
+      <p>The world's top teams qualify through regional circuits and direct invites, then compete in a group stage followed by a double-elimination main-event bracket. Matches are best-of-three, with a best-of-five grand final that can stretch deep into a single dramatic night.</p>
       <h2>The Aegis of Champions</h2>
-      <p>Winners lift the <strong>Aegis of Champions</strong>, one of the most prestigious trophies in gaming. Victory cements a roster’s place in Dota history — and often a life-changing payday.</p>`,
+      <p>Winners lift the <strong>Aegis of Champions</strong>, one of the most prestigious trophies in gaming. Victory cements a roster's place in Dota history — and often delivers a life-changing payday split among the players.</p>
+      <h2>A Global Spectacle</h2>
+      <p>Held in major arenas around the world, TI combines elite play with elaborate production and a passionate live crowd. Its mix of enormous stakes and unpredictable, high-skill gameplay has produced some of esports' most memorable moments.</p>
+      <h2>Why It Matters</h2>
+      <p>For the Dota 2 community, TI is the event that defines the competitive year. The double-elimination format rewards resilience, and the community-funded prize pool gives fans a direct stake in the spectacle.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>What is the Dota 2 world championship called?</h3>
+      <p>The International, or "TI".</p>
+      <h3>Why are the prize pools so large?</h3>
+      <p>Because fans crowdfund them through in-game purchases that add to the pot.</p>
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>TI is Dota 2's annual world championship, run by Valve.</li>
+        <li>Fan-funded prize pools made it the richest in esports history.</li>
+        <li>Champions lift the Aegis of Champions after a double-elimination bracket.</li>
+      </ul>
+    `,
   },
   {
     id: 'how-cryptocurrency-works',
