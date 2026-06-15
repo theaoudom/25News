@@ -41,7 +41,8 @@ export default async function WorldCupHub() {
       startDate: f.kickoff,
       homeTeam: f.home.name,
       awayTeam: f.away.name,
-      location: f.venue,
+      venue: f.venue,
+      status: f.status,
     }),
   );
 

@@ -77,17 +77,34 @@ export function sportsEventJsonLd(opts: {
   startDate: string;
   homeTeam: string;
   awayTeam: string;
-  location?: string;
+  venue?: string;
+  status?: 'scheduled' | 'live' | 'finished' | 'postponed';
+  competition?: string;
 }) {
+  const competition = opts.competition || 'FIFA World Cup 2026';
+  const eventStatus =
+    opts.status === 'postponed'
+      ? 'https://schema.org/EventPostponed'
+      : 'https://schema.org/EventScheduled';
+  const teams = [
+    { '@type': 'SportsTeam', name: opts.homeTeam },
+    { '@type': 'SportsTeam', name: opts.awayTeam },
+  ];
   return {
     '@context': 'https://schema.org',
     '@type': 'SportsEvent',
     name: opts.name,
+    description: `${competition} match: ${opts.homeTeam} vs ${opts.awayTeam}.`,
     startDate: opts.startDate,
-    ...(opts.location ? { location: { '@type': 'Place', name: opts.location } } : {}),
-    competitor: [
-      { '@type': 'SportsTeam', name: opts.homeTeam },
-      { '@type': 'SportsTeam', name: opts.awayTeam },
-    ],
+    eventStatus,
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    location: {
+      '@type': 'Place',
+      name: opts.venue || `${competition} venue`,
+      address: opts.venue || 'United States, Canada & Mexico',
+    },
+    performer: teams,
+    competitor: teams,
+    organizer: { '@type': 'Organization', name: 'FIFA', url: 'https://www.fifa.com' },
   };
 }
