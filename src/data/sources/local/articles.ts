@@ -785,15 +785,31 @@ const RAW: RawArticle[] = [
     summary:
       'Record crowds, soaring TV deals and packed stadiums — women’s football has moved from the margins to the mainstream. Here’s what’s driving the surge.',
     body: `
-      <p>Women’s football is enjoying the fastest growth of any team sport in the world. What was once a niche pursuit now fills major stadiums, commands prime-time broadcast slots and attracts serious commercial investment. Several forces are powering that rise.</p>
+      <p>Women's football is enjoying the fastest growth of any team sport in the world. What was once a niche pursuit now fills major stadiums, commands prime-time broadcast slots and attracts serious commercial investment. Several forces are powering that rise.</p>
       <h2>Record Attendances</h2>
-      <p>Domestic and international fixtures have repeatedly broken attendance records in recent seasons, with showpiece matches drawing crowds that rival the men’s game. Clubs increasingly stage women’s fixtures in their main stadiums rather than smaller training grounds, signalling genuine confidence in demand.</p>
+      <p>Domestic and international fixtures have repeatedly broken attendance records in recent seasons, with showpiece matches drawing crowds that rival the men's game. Clubs increasingly stage women's fixtures in their main stadiums rather than smaller training grounds, signalling genuine confidence in demand — and creating the kind of atmosphere that draws new fans back.</p>
       <h2>Investment and Broadcasting</h2>
-      <p>Broadcasters and sponsors have followed the audience. Standalone media-rights deals for women’s competitions, dedicated streaming coverage and brand partnerships have created sustainable revenue streams that did not exist a decade ago.</p>
+      <p>Broadcasters and sponsors have followed the audience. Standalone media-rights deals for women's competitions, dedicated streaming coverage and major brand partnerships have created sustainable revenue streams that simply did not exist a decade ago. That money is reinvested into clubs, wages and facilities.</p>
       <h2>Grassroots and Visibility</h2>
-      <p>Greater visibility creates a virtuous cycle: more young players take up the game, federations invest in academies, and the talent pool deepens. Stars now have the platform and role-model status long enjoyed by their male counterparts.</p>
+      <p>Greater visibility creates a virtuous cycle: more young players take up the game, federations invest in academies, and the talent pool deepens. Major tournaments now reach huge global audiences, inspiring the next generation in a way that was impossible when the women's game was rarely televised.</p>
+      <h2>Stars and Role Models</h2>
+      <p>Today's leading players have the platform and recognition long enjoyed by their male counterparts — household names with their own sponsorships, fan followings and influence on and off the pitch. Their visibility helps normalise the women's game as elite sport, not a novelty.</p>
+      <h2>Challenges That Remain</h2>
+      <p>The growth is real but uneven. Pay, facilities and professional contracts still lag in many leagues, and not every market has caught up with the leaders. Sustaining momentum means closing those gaps, not just celebrating record nights.</p>
       <h2>What Comes Next</h2>
-      <p>The challenge now is consolidation — equal facilities, professional contracts across more leagues, and continued growth in markets where the women’s game is still emerging. The trajectory, though, is unmistakable: women’s football is no longer the future of the sport, it is firmly part of its present.</p>`,
+      <p>The trajectory is unmistakable: bigger crowds, better pay and deeper talent pools. Women's football is no longer the future of the sport — it is firmly part of its present, and the smart money expects the rise to continue.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>Why is women's football growing so fast?</h3>
+      <p>A combination of greater visibility, broadcasting and sponsorship investment, bigger crowds and deeper grassroots participation.</p>
+      <h3>What still holds the women's game back?</h3>
+      <p>Uneven pay, facilities and professional structures across different leagues and countries.</p>
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Record crowds and new media deals have transformed the women's game.</li>
+        <li>Visibility drives a virtuous cycle of participation and talent.</li>
+        <li>Closing pay and facility gaps is the next challenge.</li>
+      </ul>
+    `,
   },
   {
     id: 'guide-tennis-grand-slams',
@@ -891,13 +907,29 @@ const RAW: RawArticle[] = [
     body: `
       <p>Artificial intelligence is no longer a futuristic concept confined to research labs — it is woven into the tools millions of people use every day. In 2026, its impact is most visible in a handful of everyday areas.</p>
       <h2>Everyday Assistants</h2>
-      <p>AI-powered assistants now draft emails, summarise documents, translate languages in real time and answer complex questions conversationally. For many, they have become a first stop for information and a genuine productivity tool.</p>
+      <p>AI-powered assistants now draft emails, summarise documents, translate languages in real time and answer complex questions conversationally. For many people, they have become a first stop for information and a genuine everyday productivity tool, built into phones, browsers and office software.</p>
       <h2>Healthcare</h2>
-      <p>In medicine, AI helps clinicians analyse scans, flag early warning signs and speed up drug discovery. Used as a support tool alongside professionals, it is improving both the speed and accuracy of diagnosis.</p>
+      <p>In medicine, AI helps clinicians analyse scans, flag early warning signs and accelerate drug discovery. Used as a support tool alongside professionals — not a replacement — it is improving both the speed and accuracy of diagnosis and freeing up clinicians' time.</p>
       <h2>Work and Creativity</h2>
-      <p>From writing and design to coding and data analysis, AI is changing how people work — automating repetitive tasks and lowering the barrier to creative and technical projects that once required specialist skills.</p>
+      <p>From writing and design to coding and data analysis, AI is changing how people work — automating repetitive tasks and lowering the barrier to creative and technical projects that once required specialist skills. The result is faster workflows and new possibilities for small teams and individuals.</p>
+      <h2>Education and Learning</h2>
+      <p>AI tutors and study tools can explain concepts, generate practice questions and adapt to a learner's pace. Used carefully, they make personalised help available far more widely than before — though schools are still working out how to balance assistance with genuine learning.</p>
       <h2>The Open Questions</h2>
-      <p>With the benefits come real concerns: data privacy, the reliability of AI-generated information, the impact on jobs, and the need for sensible regulation. How societies answer these questions will shape whether the technology’s promise is fully and fairly realised.</p>`,
+      <p>With the benefits come real concerns: data privacy, the reliability of AI-generated information, bias, the impact on jobs, and the need for sensible regulation. Recent events — including governments intervening over national-security concerns — show how quickly the rules around AI can change.</p>
+      <h2>What Comes Next</h2>
+      <p>Expect AI to become more capable and more deeply embedded, while debate intensifies over how to govern it. How societies answer the open questions will shape whether the technology's promise is realised fairly and safely.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>How is AI used in everyday life?</h3>
+      <p>In assistants, healthcare support, work and creative tools, and education, among many other areas.</p>
+      <h3>What are the main risks of AI?</h3>
+      <p>Privacy, unreliable or biased outputs, job impact, and the need for clear regulation.</p>
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>AI is already embedded in assistants, healthcare, work and learning.</li>
+        <li>It boosts productivity but raises real privacy and reliability concerns.</li>
+        <li>Sensible regulation will shape how its benefits are realised.</li>
+      </ul>
+    `,
   },
   {
     id: 'guide-champions-league-format',
@@ -1203,15 +1235,31 @@ const RAW: RawArticle[] = [
     summary:
       'After the US directive forced Anthropic to switch off Fable 5 and Mythos 5, here’s what it means for everyday users — and what your options are now.',
     body: `
-      <p>The US government’s order requiring Anthropic to block foreign-national access to its newest AI models — which led the company to disable Fable 5 and Mythos 5 for everyone — has left millions of users suddenly without tools they relied on. Here’s a plain-English look at the impact.</p>
+      <p>The US government's order requiring Anthropic to block foreign-national access to its newest AI models — which led the company to disable Fable 5 and Mythos 5 for everyone — has left millions of users suddenly without tools they relied on. Here is a plain-English look at what happened and what it means.</p>
+      <h2>What Happened</h2>
+      <p>Anthropic received a government directive instructing it to suspend access to the two models for any foreign national, on national-security grounds. Because the company could not reliably verify users' nationality in real time, it chose to switch the models off for all customers rather than attempt a partial block.</p>
       <h2>Who Is Affected</h2>
-      <p>Because Anthropic could not reliably verify users’ nationality in real time, it switched the two models off for all customers rather than attempt a partial block. In practice that means anyone who built workflows, apps or daily habits around Fable 5 or Mythos 5 lost access at once.</p>
+      <p>In practice, anyone who built workflows, apps or daily habits around Fable 5 or Mythos 5 lost access at once — including, by some accounts, the company's own staff. For businesses that had integrated the models into products, the disruption was immediate.</p>
       <h2>What Still Works</h2>
-      <p>Only the two newest models were affected. Earlier models and other providers’ tools remain available, so most users can fall back to a previous generation or an alternative service while the situation is resolved.</p>
+      <p>Only the two newest models were affected. Earlier models and other providers' tools remain available, so most users can fall back to a previous generation or an alternative service while the situation is resolved.</p>
       <h2>The Bigger Picture</h2>
-      <p>The episode is a preview of how national-security rules may increasingly intersect with consumer AI. For users and businesses, it’s a reminder not to depend on a single model or vendor — keeping a fallback option reduces the disruption when access changes overnight.</p>
+      <p>The episode is a preview of how national-security rules may increasingly intersect with consumer AI. Advanced models are now treated by some governments much like sensitive technology — subject to export-style controls that can be imposed quickly and broadly.</p>
+      <h2>Lessons for Users and Businesses</h2>
+      <p>The key takeaway is not to depend on a single model or vendor. Keeping a fallback option — a second provider, or an earlier model — dramatically reduces the disruption when access changes overnight. For businesses, building provider-agnostic systems is now a sensible resilience measure.</p>
       <h2>What Happens Next</h2>
-      <p>Anthropic has said it disagrees that a narrow potential vulnerability justified pulling a widely used product, and is seeking clarity. Whether the models return — and on what terms — will be closely watched across the industry.</p>`,
+      <p>Anthropic has said it disagrees that a narrow potential vulnerability justified pulling a widely used product, and is seeking clarity. Whether the models return — and on what terms — will be closely watched across the industry as a test case for AI governance.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>Why did Anthropic disable the models for everyone?</h3>
+      <p>The order targeted foreign nationals, but with no reliable way to screen users in real time, the company switched the models off for all users to comply.</p>
+      <h3>Are other AI tools affected?</h3>
+      <p>No — only the two newest models. Earlier models and other providers remain available.</p>
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>A US directive over foreign-national access led Anthropic to disable two models for all users.</li>
+        <li>Earlier models and rival tools still work, limiting the practical impact.</li>
+        <li>The episode shows why relying on a single AI vendor is risky.</li>
+      </ul>
+    `,
   },
   {
     id: 'var-explained',
@@ -1396,19 +1444,35 @@ const RAW: RawArticle[] = [
     summary:
       'The NBA and the international FIBA game look similar but play differently. Here are the key rule differences.',
     body: `
-      <p>Watch an NBA game and then an Olympic or World Cup basketball match and you’ll notice the international (FIBA) game feels different. The fundamentals are the same, but several rules aren’t.</p>
+      <p>Watch an NBA game and then an Olympic or World Cup basketball match and you will notice the international (FIBA) game feels different. The fundamentals are the same, but several rules are not — and those differences can catch even the world's best players out.</p>
       <h2>Game Length</h2>
-      <p>The NBA plays four 12-minute quarters (48 minutes); FIBA plays four 10-minute quarters (40 minutes). NBA games are simply longer.</p>
+      <p>The NBA plays four 12-minute quarters (48 minutes); FIBA plays four 10-minute quarters (40 minutes). NBA games are simply longer, which affects pacing, fatigue and scoring totals.</p>
       <h2>The Court and Three-Point Line</h2>
-      <p>The NBA court is slightly larger and its three-point line is farther from the basket than FIBA’s, so the same shot can be worth different things depending on the competition.</p>
-      <h2>Other Key Differences</h2>
+      <p>The NBA court is slightly larger and its three-point line is farther from the basket than FIBA's. The same shot can therefore be worth different things depending on the competition, and shooters must adjust their range when switching between the two.</p>
+      <h2>The Ball and the Paint</h2>
+      <p>There are subtle differences in ball specifications and the shape of the key (the painted area), which influence spacing and post play. Players moving between the leagues often need time to recalibrate.</p>
+      <h2>Fouls and Defence</h2>
       <ul>
-        <li><strong>Fouls:</strong> players foul out after 6 in the NBA, but 5 in FIBA.</li>
-        <li><strong>Defence:</strong> defensive rules and goaltending differ subtly between the two.</li>
-        <li><strong>Style:</strong> shorter games and a closer arc often make FIBA play feel more compact and physical.</li>
+        <li><strong>Fouling out:</strong> players are disqualified after 6 personal fouls in the NBA, but only 5 in FIBA.</li>
+        <li><strong>Goaltending:</strong> FIBA allows players to legally play the ball off the rim in situations where the NBA would call goaltending.</li>
+        <li><strong>Defensive rules</strong> around three seconds and contact differ subtly, changing how teams set up.</li>
       </ul>
+      <h2>Style of Play</h2>
+      <p>Shorter games and a closer arc often make FIBA basketball feel more compact, tactical and physical, with a premium on team structure. The NBA's length and spacing tend to reward individual shot-making and pace.</p>
       <h2>Why It Matters</h2>
-      <p>NBA stars switching to international duty have to adapt quickly — which is part of what makes global tournaments such a fascinating test.</p>`,
+      <p>NBA stars switching to international duty have to adapt quickly to these rules — which is part of what makes global tournaments such a fascinating test, and why NBA dominance does not always translate to easy international success.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>How long is an NBA game vs a FIBA game?</h3>
+      <p>NBA games are 48 minutes (4x12); FIBA games are 40 minutes (4x10).</p>
+      <h3>How many fouls before you foul out?</h3>
+      <p>Six in the NBA, five under FIBA rules.</p>
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>NBA games are longer with a deeper three-point line.</li>
+        <li>FIBA uses 5 fouls to foul out and different goaltending rules.</li>
+        <li>The rule gaps make global tournaments a genuine test for NBA stars.</li>
+      </ul>
+    `,
   },
   {
     id: 'battle-royale-explained',
@@ -1424,13 +1488,34 @@ const RAW: RawArticle[] = [
     summary:
       'Battle royale became one of gaming’s biggest genres in just a few years. Here’s what defines it and how it took over.',
     body: `
-      <p>The battle royale genre exploded in the late 2010s and reshaped gaming. If you’ve heard of PUBG, Fortnite, Apex Legends or Warzone, you’ve heard of battle royale.</p>
+      <p>The battle royale genre exploded in the late 2010s and reshaped gaming. If you have heard of PUBG, Fortnite, Apex Legends or Warzone, you have heard of battle royale — but what actually defines it, and how did it take over the world?</p>
       <h2>The Core Idea</h2>
-      <p>Dozens of players — often up to 100 — drop onto a large map with nothing and scavenge for weapons and gear. A <strong>shrinking play zone</strong> forces everyone closer together over time, and the <strong>last player or team standing wins</strong>.</p>
+      <p>Dozens of players — often up to 100 — drop onto a large map with nothing and scavenge for weapons, armour and gear. A <strong>shrinking play zone</strong> forces everyone closer together over time, and the <strong>last player or team standing wins</strong>. Every match starts equal and ends in a single survivor.</p>
       <h2>How It Took Over</h2>
-      <p>The format was popularised by mods and then by PlayerUnknown’s Battlegrounds (PUBG) in 2017, before Fortnite turned it into a global, free-to-play phenomenon that crossed over into mainstream culture.</p>
+      <p>The format grew out of game mods inspired by survival fiction, was popularised by <em>PlayerUnknown's Battlegrounds</em> (PUBG) in 2017, and then exploded into the mainstream when <em>Fortnite</em> made it free-to-play, colourful and cross-platform. Suddenly the genre was everywhere, from living rooms to phones.</p>
+      <h2>The Big Names</h2>
+      <ul>
+        <li><strong>PUBG:</strong> the realistic title that defined the modern formula.</li>
+        <li><strong>Fortnite:</strong> the free, building-based phenomenon that crossed into pop culture.</li>
+        <li><strong>Apex Legends:</strong> hero-based, squad-focused and fast-paced.</li>
+        <li><strong>Call of Duty: Warzone:</strong> a blockbuster shooter's take on the genre.</li>
+      </ul>
       <h2>Why It Works</h2>
-      <p>Every match is different, the tension ramps up as the zone closes, and a single great game can come down to one final firefight — a perfect recipe for both casual play and high-stakes esports.</p>`,
+      <p>Every match is different, the tension ramps up as the zone closes, and a single great game can come down to one final firefight. The "anyone can win" promise and short, repayable matches make it perfect for both casual play and high-stakes competition.</p>
+      <h2>Battle Royale as Esports</h2>
+      <p>The genre has produced major esports circuits with large prize pools, though the format poses unique broadcasting challenges — following dozens of players at once is harder than a traditional five-versus-five. Organisers have developed scoring systems that reward both placement and kills to keep competition fair.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>What does "battle royale" mean in gaming?</h3>
+      <p>A last-one-standing format where many players fight on a shrinking map until one player or team remains.</p>
+      <h3>What was the first big battle royale game?</h3>
+      <p>PUBG popularised the modern formula in 2017, before Fortnite took it mainstream.</p>
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Many players, one shrinking map, last one standing wins.</li>
+        <li>PUBG defined it; Fortnite made it a global phenomenon.</li>
+        <li>Its unpredictability fuels both casual play and esports.</li>
+      </ul>
+    `,
   },
 
   // ───────────────── WORLD CUP STARS & LEGENDS ─────────────────
