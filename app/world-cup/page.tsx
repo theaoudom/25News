@@ -2,8 +2,6 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { footballService, articleService } from '@/di/container';
 import { buildMetadata } from '@/shared/seo/metadata';
-import { JsonLd } from '@/presentation/components/JsonLd';
-import { sportsEventJsonLd } from '@/shared/seo/jsonLd';
 import { SectionHeading } from '@/presentation/components/SectionHeading';
 import { FixtureCard } from '@/presentation/components/football/FixtureCard';
 import { StandingsTable } from '@/presentation/components/football/StandingsTable';
@@ -35,21 +33,8 @@ export default async function WorldCupHub() {
   // Show kicked-off-but-unscored matches alongside finished ones.
   const results = [...pending, ...finished].slice(0, 3);
 
-  const eventLd = [...live, ...upcoming].slice(0, 5).map((f) =>
-    sportsEventJsonLd({
-      name: `${f.home.name} vs ${f.away.name}`,
-      startDate: f.kickoff,
-      homeTeam: f.home.name,
-      awayTeam: f.away.name,
-      venue: f.venue,
-      status: f.status,
-    }),
-  );
-
   return (
     <div className="container-page py-8">
-      {eventLd.length > 0 && <JsonLd data={eventLd} />}
-
       <div className="mb-8 max-w-xl">
         <SearchBar basePath="/world-cup/news" placeholder="Search World Cup news…" />
       </div>
