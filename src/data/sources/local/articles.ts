@@ -265,13 +265,33 @@ const RAW: RawArticle[] = [
     summary:
       'The expanded 48-team format introduces a round of 32 for the first time. Here is how qualification from the groups works.',
     body: `
-      <p>The expanded 2026 World Cup introduces a knockout round that has never existed before — the round of 32 — fundamentally changing how teams approach the group stage.</p>
+      <p>The expanded 2026 World Cup introduces a knockout round that has never existed before — the round of 32 — fundamentally changing how teams approach the group stage. Here is exactly how qualification from the groups works.</p>
       <h2>Twelve Groups of Four</h2>
-      <p>Each of the 12 groups contains four teams who play a single round-robin. The top two finishers in every group automatically progress. That accounts for 24 of the 32 knockout places.</p>
-      <h2>The Best Third-Placed Teams</h2>
-      <p>The remaining eight spots go to the best third-placed teams across all 12 groups, ranked by points, goal difference and goals scored. This means a strong third-place finish can still be enough to advance — raising the stakes in every final group match.</p>
-      <h2>Why It Matters</h2>
-      <p>For fans, it means more meaningful matches and fewer dead rubbers. For coaches, squad rotation and goal difference become strategic weapons from the very first whistle.</p>`,
+      <p>The 48 teams are split into 12 groups of four. Each side plays the other three in its group once, meaning every team is guaranteed at least three matches before any potential exit.</p>
+      <h2>Who Advances</h2>
+      <ul>
+        <li>The <strong>top two</strong> in each group qualify automatically — 24 teams.</li>
+        <li>The <strong>eight best third-placed teams</strong> across all 12 groups also go through.</li>
+        <li>Together that produces a 32-team knockout bracket.</li>
+      </ul>
+      <h2>How the Best Third-Placed Teams Are Ranked</h2>
+      <p>When comparing third-placed teams from different groups, the ranking is decided by points first, then goal difference, then goals scored, and finally fair-play and drawing-of-lots criteria if still level. This makes goal difference and discipline genuinely important from the very first match.</p>
+      <h2>Why the Round of 32 Matters</h2>
+      <p>In the old 32-team format, eight groups sent 16 teams straight to the round of 16. The new system adds an extra knockout round, lengthening the tournament and giving more nations a meaningful path deep into the competition.</p>
+      <h2>Strategic Implications</h2>
+      <p>Because a strong third-place finish can be enough to advance, coaches must balance squad rotation with the need to bank points and goals. There are fewer true "dead rubbers", and final-round group matches carry heightened drama as teams scramble for one of the eight wildcard places.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>How many teams qualify from each group?</h3>
+      <p>The top two automatically, with eight more of the best third-placed teams advancing overall.</p>
+      <h3>What is the round of 32?</h3>
+      <p>A brand-new opening knockout round created by the 48-team format, played before the round of 16.</p>
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>12 groups of four; top two plus eight best thirds reach the round of 32.</li>
+        <li>Goal difference and goals scored can decide the wildcard places.</li>
+        <li>The format means more meaningful matches and fewer dead rubbers.</li>
+      </ul>
+    `,
   },
   {
     id: 'wc-2026-contenders',
@@ -288,13 +308,27 @@ const RAW: RawArticle[] = [
     summary:
       'Defending champions Argentina, France and Brazil headline the favourites — but several dark horses could spring a surprise.',
     body: `
-      <p>As the 2026 World Cup gets under way, the usual heavyweights once again lead the betting — but the expanded format and gruelling North American summer could level the playing field.</p>
+      <p>As the 2026 World Cup gets under way, the usual heavyweights once again lead the betting — but the expanded format and gruelling North American summer could level the playing field. Here is a look at the favourites, the dark horses, and the factors that could decide it all.</p>
       <h2>The Favourites</h2>
-      <p>Defending champions Argentina, with a blend of experience and emerging talent, remain a benchmark. France's depth and Brazil's attacking riches make them perennial threats, while Spain and England arrive with deep, technically gifted squads.</p>
+      <p><strong>Argentina</strong> arrive as defending champions, blending experience with emerging talent. <strong>France</strong> boast extraordinary squad depth and a settled core. <strong>Brazil</strong> never lack attacking riches and remain perennial contenders. <strong>Spain</strong> and <strong>England</strong> bring deep, technically gifted squads, while <strong>Germany</strong> are always dangerous at a major tournament.</p>
       <h2>The Dark Horses</h2>
-      <p>Watch for Morocco, semi-finalists in 2022, alongside an athletic USA side buoyed by home advantage and a Portugal team determined to deliver on the international stage.</p>
+      <p><strong>Morocco</strong>, semi-finalists in 2022, proved they can beat anyone on their day. The <strong>USA</strong>, buoyed by home advantage and an athletic young side, could go further than expected. <strong>Portugal</strong> remain determined to deliver on the international stage, and the <strong>Netherlands</strong> are always capable of a deep run.</p>
       <h2>The X-Factor: Conditions</h2>
-      <p>Summer heat and long travel distances between host cities will test squad depth like never before. The teams that manage rotation best may have the decisive edge.</p>`,
+      <p>Summer heat, humidity and long travel distances between host cities will test squad depth like never before. Several matches in air-conditioned indoor stadiums add another variable. The teams that manage rotation and recovery best may hold a decisive edge over a long tournament.</p>
+      <h2>Key Players to Watch</h2>
+      <p>From France's Kylian Mbappé to the next generation of attacking stars across Brazil, England and Spain, individual brilliance often decides World Cups. Expect the tournament to launch new global icons just as previous editions have.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>Who are the favourites for the 2026 World Cup?</h3>
+      <p>Defending champions Argentina, along with France, Brazil, Spain, England and Germany.</p>
+      <h3>Could a host nation win?</h3>
+      <p>The USA are the most likely host to make a deep run, with home advantage a genuine factor.</p>
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Argentina, France and Brazil head a familiar list of favourites.</li>
+        <li>Morocco, the USA and Portugal lead the dark horses.</li>
+        <li>Heat, travel and rotation could decide the destiny of the trophy.</li>
+      </ul>
+    `,
   },
   {
     id: 'wc-2026-host-cities',
@@ -311,34 +345,50 @@ const RAW: RawArticle[] = [
     summary:
       'The 2026 World Cup is spread across 16 host cities in three countries — 11 in the USA, three in Mexico and two in Canada. Here is the full list.',
     body: `
-      <p>For the first time, the FIFA World Cup will be co-hosted by three nations, with 104 matches played across <strong>16 host cities</strong> in the United States, Mexico and Canada. The tournament runs from 11 June to 19 July 2026.</p>
-      <h2>United States (11 cities)</h2>
+      <p>The 2026 FIFA World Cup will be played across <strong>16 host cities</strong> in three countries — the United States, Mexico and Canada — making it the most geographically sprawling World Cup ever staged. From Vancouver in the north-west to Miami in the south-east, here is the complete guide to where the action happens.</p>
+      <h2>United States (11 Cities)</h2>
       <ul>
-        <li><strong>New York / New Jersey</strong> — MetLife Stadium, which hosts the final on 19 July.</li>
-        <li><strong>Los Angeles</strong> — SoFi Stadium, Inglewood.</li>
-        <li><strong>Dallas</strong> — AT&amp;T Stadium, Arlington.</li>
+        <li><strong>New York / New Jersey</strong> — MetLife Stadium, which hosts the final on 19 July 2026.</li>
+        <li><strong>Los Angeles</strong> — SoFi Stadium, Inglewood, one of the most advanced venues in world sport.</li>
+        <li><strong>Dallas</strong> — AT&amp;T Stadium, Arlington, expected to host a large share of knockout games.</li>
         <li><strong>San Francisco Bay Area</strong> — Levi's Stadium, Santa Clara.</li>
         <li><strong>Miami</strong> — Hard Rock Stadium.</li>
-        <li><strong>Atlanta</strong> — Mercedes-Benz Stadium.</li>
+        <li><strong>Atlanta</strong> — Mercedes-Benz Stadium, a climate-controlled indoor arena.</li>
         <li><strong>Seattle</strong> — Lumen Field.</li>
         <li><strong>Philadelphia</strong> — Lincoln Financial Field.</li>
         <li><strong>Houston</strong> — NRG Stadium.</li>
-        <li><strong>Kansas City</strong> — Arrowhead Stadium.</li>
+        <li><strong>Kansas City</strong> — Arrowhead Stadium, famed for its atmosphere.</li>
         <li><strong>Boston</strong> — Gillette Stadium, Foxborough.</li>
       </ul>
-      <h2>Mexico (3 cities)</h2>
+      <h2>Mexico (3 Cities)</h2>
       <ul>
-        <li><strong>Mexico City</strong> — Estadio Azteca, which stages the opening match and becomes the first stadium to host games at three different World Cups.</li>
+        <li><strong>Mexico City</strong> — Estadio Azteca, which stages the opening match and becomes the first stadium to host games at three different World Cups (1970, 1986, 2026).</li>
         <li><strong>Guadalajara</strong> — Estadio Akron.</li>
         <li><strong>Monterrey</strong> — Estadio BBVA.</li>
       </ul>
-      <h2>Canada (2 cities)</h2>
+      <h2>Canada (2 Cities)</h2>
       <ul>
         <li><strong>Toronto</strong> — BMO Field.</li>
         <li><strong>Vancouver</strong> — BC Place.</li>
       </ul>
+      <h2>The Showpiece Venues</h2>
+      <p>Two stadiums carry special significance. The <strong>Estadio Azteca</strong> in Mexico City hosts the opening match, extending a World Cup legacy that already includes two finals. The <strong>final</strong> itself will be played at <strong>MetLife Stadium</strong> in the New York/New Jersey area on 19 July 2026.</p>
       <h2>A Logistical Challenge</h2>
-      <p>With venues stretching from Vancouver to Miami, travel and climate vary enormously. Teams and fans face long flights and a mix of summer heat, humidity and several climate-controlled indoor stadiums — a planning test unlike any previous World Cup.</p>`,
+      <p>With venues thousands of kilometres apart and climates ranging from the humid south to cooler northern cities — plus several indoor, air-conditioned stadiums — travel and conditions will test teams enormously. Organisers have grouped fixtures regionally where possible to limit travel, but squad depth and recovery will be decisive.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>How many host cities are there in 2026?</h3>
+      <p>16 — eleven in the USA, three in Mexico and two in Canada.</p>
+      <h3>Which stadium hosts the 2026 World Cup final?</h3>
+      <p>MetLife Stadium in New Jersey, USA.</p>
+      <h3>Where is the opening match?</h3>
+      <p>The Estadio Azteca in Mexico City.</p>
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>16 cities across three nations — the largest World Cup footprint ever.</li>
+        <li>Estadio Azteca opens the tournament; MetLife Stadium hosts the final.</li>
+        <li>Travel and climate variety will be a major factor for every squad.</li>
+      </ul>
+    `,
   },
   {
     id: 'wc-2026-key-dates',
@@ -387,7 +437,7 @@ const RAW: RawArticle[] = [
     summary:
       'Eight nations have lifted the trophy across 22 tournaments. Here is the full roll of World Cup champions and the records that define them.',
     body: `
-      <p>Since the first tournament in Uruguay in 1930, only eight nations have been crowned world champions. As the 2026 edition begins, here is the complete history of who has lifted football's greatest prize.</p>
+      <p>Since the first tournament in Uruguay in 1930, only <strong>eight nations</strong> have lifted the FIFA World Cup. As the 2026 edition begins, here is the complete history of the champions — and the records that define the competition.</p>
       <h2>Most Titles</h2>
       <ul>
         <li><strong>Brazil — 5</strong> (1958, 1962, 1970, 1994, 2002)</li>
@@ -399,10 +449,30 @@ const RAW: RawArticle[] = [
         <li><strong>England — 1</strong> (1966)</li>
         <li><strong>Spain — 1</strong> (2010)</li>
       </ul>
+      <h2>The Early Years</h2>
+      <p>Uruguay won the inaugural 1930 tournament on home soil and added a second title in 1950 with the famous "Maracanazo" victory over Brazil. Italy dominated the 1930s with back-to-back wins, before the post-war era ushered in new powers.</p>
+      <h2>The Brazil and Europe Eras</h2>
+      <p>Brazil's golden generations made them the most successful nation, powered by legends from Pelé to Ronaldo. Germany and Italy built dynasties of their own, while the 21st century saw a remarkable run of four straight European champions — Italy (2006), Spain (2010), Germany (2014) and France (2018).</p>
       <h2>Recent Champions</h2>
-      <p>Argentina are the reigning champions, having beaten France on penalties in a classic 2022 final in Qatar — Lionel Messi's crowning moment. France lifted the trophy in 2018 in Russia, with Germany (2014) and Spain (2010) the champions before them.</p>
+      <p>Argentina ended that European streak in 2022, beating France on penalties in a classic final — Lionel Messi's crowning moment. France lifted the trophy in 2018, with Germany (2014) and Spain (2010) the champions before them.</p>
       <h2>Records to Know</h2>
-      <p>Brazil are the only nation to appear at every World Cup and hold the record for titles. Three players — Pelé, and more recently a select group of greats — have shaped the tournament's legend. As 2026 expands the field to 48 teams, the door is open for a ninth name to one day join this exclusive list.</p>`,
+      <ul>
+        <li>Brazil are the only nation to appear at every World Cup finals.</li>
+        <li>Only eight different countries have ever won the tournament.</li>
+        <li>European and South American nations have won every edition to date.</li>
+      </ul>
+      <h2>Frequently Asked Questions</h2>
+      <h3>Who has won the most World Cups?</h3>
+      <p>Brazil, with five titles.</p>
+      <h3>Who are the current World Cup holders?</h3>
+      <p>Argentina, who won in 2022.</p>
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Just eight nations have ever won the World Cup; Brazil lead with five.</li>
+        <li>Europe and South America have shared every title in history.</li>
+        <li>With 48 teams in 2026, the door is open for a ninth name to one day join the list.</li>
+      </ul>
+    `,
   },
 
   // ───────────────────────── SPORTS ─────────────────────────
@@ -897,15 +967,31 @@ const RAW: RawArticle[] = [
     summary:
       'From chaotic medieval village games to a sport watched by billions — how football became the world’s game.',
     body: `
-      <p>Football is the most popular sport on the planet, played and watched by billions. But the modern game we know today is the result of centuries of evolution from far rougher origins.</p>
-      <h2>Folk Origins</h2>
-      <p>Forms of ball-kicking games existed across the ancient world, but the direct ancestors of football were the chaotic "folk football" matches played in medieval Europe — huge, rule-light contests between villages that could involve hundreds of players.</p>
+      <p>Football is the most popular sport on the planet, played and watched by billions. But the modern game we know today is the result of centuries of evolution from far rougher and more chaotic origins.</p>
+      <h2>Ancient and Folk Origins</h2>
+      <p>Ball games involving kicking date back to the ancient world, from China's "cuju" to games played in Greece and Rome. In medieval Europe, "folk football" took hold — vast, rule-light contests between villages that could involve hundreds of players and few boundaries beyond the landscape itself.</p>
       <h2>The Laws of the Game</h2>
-      <p>The decisive moment came in 1863, when representatives of English clubs met in London to form the Football Association and agree a single set of rules. Standardising the laws — including banning handling the ball — separated football (soccer) from rugby and gave the sport a common framework.</p>
+      <p>The decisive moment came in 1863, when representatives of English clubs met in London to form the Football Association and agree a single set of rules. Standardising the laws — including banning the carrying of the ball — split football (soccer) from rugby and gave the sport a common framework for the first time.</p>
       <h2>Going Global</h2>
-      <p>From Britain the game spread rapidly through trade, education and empire. FIFA was founded in 1904 to govern the international game, and the first FIFA World Cup was staged in Uruguay in 1930, giving football its global showpiece.</p>
+      <p>From Britain the game spread rapidly through trade, education and empire, taking root across Europe and South America. FIFA was founded in 1904 to govern the international game, and the first FIFA World Cup was staged in Uruguay in 1930 — giving football its global showpiece.</p>
+      <h2>Professionalism and Competition</h2>
+      <p>Domestic leagues and cup competitions professionalised the sport through the 20th century. European club competition, launched in the 1950s, eventually grew into the Champions League, while national leagues across the world developed passionate followings of their own.</p>
       <h2>The Modern Era</h2>
-      <p>Television, professional leagues and global stars turned football into a multi-billion-dollar industry. Yet its appeal remains rooted in the same simplicity that made those village games so popular: a ball, two goals, and anyone can play.</p>`,
+      <p>Television, sponsorship and global stars turned football into a multi-billion-dollar industry. Players became worldwide icons, transfer fees soared, and the World Cup grew into one of the most-watched events on Earth. Technology such as VAR and goal-line systems has since reshaped how the game is officiated.</p>
+      <h2>Why It Endures</h2>
+      <p>For all the money and modernisation, football's appeal remains rooted in the same simplicity that made those village games so popular: a ball, two goals, and the fact that anyone, anywhere, can play.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>When were the rules of football created?</h3>
+      <p>In 1863, when the Football Association was formed in England.</p>
+      <h3>When was the first World Cup?</h3>
+      <p>In 1930, hosted and won by Uruguay.</p>
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Football evolved from chaotic medieval folk games into a codified sport in 1863.</li>
+        <li>FIFA (1904) and the first World Cup (1930) globalised the game.</li>
+        <li>Its enduring appeal lies in its fundamental simplicity.</li>
+      </ul>
+    `,
   },
   {
     id: 'basketball-101',
@@ -1124,15 +1210,29 @@ const RAW: RawArticle[] = [
     summary:
       'Bitcoin, blockchain, mining, wallets — the jargon can be overwhelming. Here’s a plain-English explainer of how cryptocurrency actually works.',
     body: `
-      <p>Cryptocurrency is digital money that runs without a central bank. Since Bitcoin launched in 2009, the idea has grown into a global market — but the core concepts are simpler than the jargon suggests.</p>
+      <p>Cryptocurrency is digital money that runs without a central bank. Since Bitcoin launched in 2009, the idea has grown into a global market worth trillions — but the core concepts are simpler than the jargon suggests. Here is a plain-English guide.</p>
       <h2>The Blockchain</h2>
-      <p>A blockchain is a shared digital ledger that records every transaction across thousands of computers at once. Because no single party controls it and entries can’t easily be altered, the network can agree on who owns what without a middleman.</p>
-      <h2>Mining and Verification</h2>
-      <p>Transactions are grouped into "blocks" and verified by the network. In systems like Bitcoin, "miners" compete to validate blocks and are rewarded with new coins — a process called proof-of-work. Newer networks use more energy-efficient methods such as proof-of-stake.</p>
+      <p>A blockchain is a shared digital ledger that records every transaction across thousands of computers at once. Because no single party controls it and entries are extremely difficult to alter once confirmed, the network can agree on who owns what without needing a bank or middleman.</p>
+      <h2>Mining and Consensus</h2>
+      <p>Transactions are grouped into "blocks" and verified by the network. In systems like Bitcoin, "miners" compete to validate blocks and are rewarded with new coins — a process called <strong>proof-of-work</strong>, which is secure but energy-intensive. Many newer networks use <strong>proof-of-stake</strong>, which is far more energy-efficient and relies on participants locking up coins to help secure the network.</p>
       <h2>Wallets and Keys</h2>
-      <p>You hold crypto in a digital wallet secured by a private key — essentially a long password. Whoever holds the key controls the funds, which is why safeguarding it is critical.</p>
+      <p>You hold crypto in a digital wallet secured by a <strong>private key</strong> — essentially a long, secret password. Whoever holds the key controls the funds, which is why safeguarding it is critical. Lose the key and the funds are usually gone for good; share it and they can be stolen.</p>
+      <h2>How People Use It</h2>
+      <p>Beyond buying and selling as an investment, cryptocurrencies are used for transfers, payments, and as the foundation for "decentralised finance" applications and digital collectables. Some see long-term potential; others remain sceptical.</p>
       <h2>The Risks</h2>
-      <p>Crypto can be highly volatile, is largely unregulated in many places, and transactions are usually irreversible. Anyone considering it should understand they could lose money and should never invest more than they can afford to lose.</p>`,
+      <p>Crypto can be highly volatile, with prices swinging dramatically. It is largely unregulated in many places, transactions are usually irreversible, and the space attracts scams. Anyone considering it should understand they could lose money and never invest more than they can afford to lose.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>What is the difference between Bitcoin and blockchain?</h3>
+      <p>Blockchain is the underlying technology — a shared ledger. Bitcoin is one cryptocurrency that runs on its own blockchain.</p>
+      <h3>Is cryptocurrency safe?</h3>
+      <p>The technology is robust, but prices are volatile, scams exist and lost keys are unrecoverable — so caution is essential.</p>
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Blockchain is a decentralised ledger; crypto is money that runs on it.</li>
+        <li>Networks secure transactions via proof-of-work or proof-of-stake.</li>
+        <li>Volatility, scams and irreversible transactions make caution essential.</li>
+      </ul>
+    `,
   },
   {
     id: 'offside-rule-explained',
