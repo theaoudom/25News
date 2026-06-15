@@ -215,13 +215,39 @@ const RAW: RawArticle[] = [
     summary:
       'The 2026 FIFA World Cup is the biggest in history — 48 teams, three host nations and 104 matches across North America.',
     body: `
-      <p>The 2026 FIFA World Cup marks a historic milestone for the sport: for the first time, the tournament expands to <strong>48 teams</strong> and is co-hosted by three nations — the United States, Canada and Mexico. With 104 matches across 16 host cities, it is the largest World Cup ever staged.</p>
-      <h2>A New Format</h2>
-      <p>The 48 teams are split into 12 groups of four. The top two from each group, plus the eight best third-placed teams, advance to a new round of 32. From there the tournament follows a familiar knockout path through the round of 16, quarter-finals, semi-finals and the final.</p>
-      <h2>Host Cities</h2>
-      <p>Matches are spread across iconic venues including MetLife Stadium in New Jersey — which hosts the final — alongside stadiums in Los Angeles, Dallas, Atlanta, Mexico City, Toronto and Vancouver, among others.</p>
-      <h2>What's at Stake</h2>
-      <p>With more teams than ever, nations that have historically struggled to qualify now have a genuine path to the world stage, broadening the tournament's global appeal and unlocking new footballing stories.</p>`,
+      <p>The 2026 FIFA World Cup is set to be the biggest and most ambitious tournament in the competition's history. For the first time, it will be co-hosted by three nations — the United States, Canada and Mexico — and expanded to <strong>48 teams</strong> playing <strong>104 matches</strong> across <strong>16 host cities</strong>. Here is everything you need to know before a ball is kicked.</p>
+      <h2>A Tournament of Firsts</h2>
+      <p>2026 breaks new ground in several ways. It is the first World Cup hosted by three countries, the first with 48 teams (up from 32), and the first to feature a brand-new knockout round — the round of 32. Mexico's Estadio Azteca also becomes the first stadium ever to host matches at three different World Cups, having previously staged the 1970 and 1986 finals.</p>
+      <h2>How the New 48-Team Format Works</h2>
+      <p>The 48 qualified nations are drawn into <strong>12 groups of four</strong>. Each team plays the other three in its group once. From there:</p>
+      <ul>
+        <li>The <strong>top two from each group</strong> advance automatically — that is 24 teams.</li>
+        <li>The <strong>eight best third-placed teams</strong> across all 12 groups also progress.</li>
+        <li>That fills a 32-team knockout bracket: round of 32, round of 16, quarter-finals, semi-finals and the final.</li>
+      </ul>
+      <p>The expansion means more nations than ever get a shot at the global stage, and a strong third-place finish can still be enough to survive — raising the stakes in every final group match.</p>
+      <h2>The Three Hosts and 16 Cities</h2>
+      <p>Matches are spread across North America: <strong>11 cities in the USA</strong> (including New York/New Jersey, Los Angeles, Dallas, Atlanta, Miami, Seattle, Philadelphia, Houston, Kansas City, Boston and the San Francisco Bay Area), <strong>three in Mexico</strong> (Mexico City, Guadalajara, Monterrey) and <strong>two in Canada</strong> (Toronto and Vancouver).</p>
+      <h2>Key Dates</h2>
+      <p>The tournament runs from <strong>11 June to 19 July 2026</strong>. The opening match is at the Estadio Azteca in Mexico City, and the final will be played at MetLife Stadium in New Jersey. The group stage occupies the first fortnight, with the knockout rounds filling the back half.</p>
+      <h2>The Favourites</h2>
+      <p>Reigning champions Argentina, alongside perennial powers France, Brazil, Spain, England and Germany, head the betting. But the expanded field and gruelling North American summer — long travel and high heat — could level the playing field and open the door for dark horses such as Morocco, Portugal and a home-advantaged USA.</p>
+      <h2>What Makes 2026 Different</h2>
+      <p>Beyond the format, the logistics are unprecedented. With venues stretching from Vancouver to Miami, squads face long flights and a mix of climates, including several climate-controlled indoor stadiums. Squad depth and clever rotation may matter more than ever before.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>How many teams are in the 2026 World Cup?</h3>
+      <p>48 — up from 32 at previous tournaments.</p>
+      <h3>How many matches will be played?</h3>
+      <p>104 in total, compared with 64 in 2022.</p>
+      <h3>Where is the 2026 World Cup final?</h3>
+      <p>At MetLife Stadium in New Jersey, USA, on 19 July 2026.</p>
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>First 48-team, three-nation World Cup — bigger than any before it.</li>
+        <li>12 groups of four feed a new 32-team knockout round.</li>
+        <li>Runs 11 June–19 July 2026 across 16 cities in the USA, Canada and Mexico.</li>
+      </ul>
+    `,
   },
   {
     id: 'wc-2026-groups',
@@ -1204,13 +1230,35 @@ const RAW: RawArticle[] = [
     summary:
       'For Lionel Messi, the one prize that eluded him for years finally came in Qatar 2022. Here’s the story of his long road to World Cup glory.',
     body: `
-      <p>Widely regarded as one of the greatest footballers of all time, Lionel Messi spent much of his career chasing the one trophy that had escaped him — the FIFA World Cup. In 2022, with Argentina, he finally lifted it.</p>
-      <h2>Years of Heartbreak</h2>
-      <p>Messi’s earlier World Cups brought brilliance but no title, most painfully a runners-up finish in 2014, when Argentina lost the final to Germany. The sense that his international story was incomplete followed him for years.</p>
-      <h2>Redemption in Qatar</h2>
-      <p>At the 2022 World Cup, Messi led Argentina with goals and assists across the tournament, driving them to a dramatic final against France that finished 3-3 and was decided on penalties. Lifting the trophy in Qatar was the crowning moment of his career.</p>
-      <h2>A Legacy Sealed</h2>
-      <p>The title cemented Messi’s place in football history and silenced any remaining debate about his international legacy — adding the World Cup to a glittering haul of club honours and individual awards.</p>`,
+      <p>For most of his career, Lionel Messi — widely regarded as one of the greatest footballers ever — carried one unanswered question: could he win the World Cup? In December 2022, in Qatar, he finally answered it. This is the story of a journey defined by heartbreak, persistence and ultimate redemption.</p>
+      <h2>Early Tournaments and Near Misses</h2>
+      <p>Messi burst onto the World Cup scene as a teenager in 2006, scoring on his tournament debut. In 2010 Argentina reached the quarter-finals before a heavy defeat to Germany, and in 2014 the pain deepened: Messi dragged an unfancied side all the way to the final, won the tournament's Golden Ball, but lost the showpiece to Germany after extra time. So close, yet without the prize.</p>
+      <h2>The 2018 Setback</h2>
+      <p>Four years later in Russia, Argentina laboured. They scraped out of the group and were knocked out in the round of 16 by eventual champions France in a seven-goal classic. For many, it looked like Messi's World Cup chance had gone for good.</p>
+      <h2>Redemption in Qatar 2022</h2>
+      <p>The 2022 campaign began in disaster — a shock 2-1 defeat to Saudi Arabia. But Argentina regrouped, beating Mexico and Poland to top the group, then edging Australia, the Netherlands (on penalties) and Croatia in the knockouts. Messi was magnificent throughout, scoring and creating in equal measure.</p>
+      <p>The final against France is regarded as one of the greatest ever played. Argentina led 2-0, were pegged back to 2-2, went ahead in extra time, were caught again at 3-3 by a Kylian Mbappé hat-trick, and finally won 4-2 on penalties. Messi scored twice in the final and was named the tournament's best player.</p>
+      <h2>What It Meant for His Legacy</h2>
+      <p>The title completed the set. Added to his club honours and record number of Ballon d'Or awards, the World Cup silenced the last argument against him and, for many, settled the "greatest of all time" debate in his favour.</p>
+      <h2>Messi's World Cup, by the Numbers</h2>
+      <ul>
+        <li>5 World Cups contested (2006–2022).</li>
+        <li>13 World Cup goals — among the highest in history.</li>
+        <li>2 Golden Ball awards (best player) — in 2014 and 2022.</li>
+        <li>1 World Cup title, plus a runners-up medal in 2014.</li>
+      </ul>
+      <h2>Frequently Asked Questions</h2>
+      <h3>When did Messi win the World Cup?</h3>
+      <p>In 2022, captaining Argentina to victory over France in the final.</p>
+      <h3>How many World Cup goals does Messi have?</h3>
+      <p>13, scored across five tournaments.</p>
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Messi endured years of near-misses, most painfully the 2014 final.</li>
+        <li>His 2022 triumph capped one of football's great individual stories.</li>
+        <li>The trophy cemented his place among the sport's all-time greats.</li>
+      </ul>
+    `,
   },
   {
     id: 'ronaldo-world-cup-records',
@@ -1228,13 +1276,32 @@ const RAW: RawArticle[] = [
     summary:
       'One of the game’s greatest goalscorers, Cristiano Ronaldo has a long World Cup history — and 2026 could write its final chapter.',
     body: `
-      <p>Cristiano Ronaldo is among the most prolific scorers football has ever seen and one of its most enduring stars. His World Cup story spans multiple tournaments — and, at his age, 2026 carries extra significance.</p>
+      <p>Cristiano Ronaldo is one of the most prolific and enduring footballers in history — a serial winner at club level and the all-time leading scorer in men's international football. Yet across a glittering career, the World Cup itself has remained tantalisingly out of reach. As 2026 approaches, his World Cup story takes on extra meaning.</p>
       <h2>A Long World Cup History</h2>
-      <p>Ronaldo has represented Portugal across several World Cups since the mid-2000s, becoming a talismanic figure for his country and a holder of numerous international scoring records.</p>
+      <p>Ronaldo first appeared at a World Cup in 2006 as a rising star, and has represented Portugal at every edition since. Along the way he set a notable record: scoring at five different World Cups (2006, 2010, 2014, 2018 and 2022) — a feat no other male player had achieved. His memorable 2018 hat-trick against Spain, capped by a stoppage-time free-kick, ranks among the tournament's iconic individual performances.</p>
       <h2>The Trophy That Got Away</h2>
-      <p>Despite his Euro 2016 triumph and a UEFA Nations League title with Portugal, the World Cup itself has remained out of reach — the one major honour missing from an extraordinary CV.</p>
+      <p>For all his individual brilliance, the World Cup is the one prize missing from Ronaldo's collection. He has won the European Championship with Portugal (Euro 2016) and a UEFA Nations League title, but his best World Cup run ended at the semi-final stage in 2006. In 2022, Portugal reached the quarter-finals before falling to Morocco — with Ronaldo controversially starting on the bench in the knockout games.</p>
+      <h2>Records and Achievements</h2>
+      <ul>
+        <li>All-time leading scorer in men's international football.</li>
+        <li>Five Ballon d'Or awards and five UEFA Champions League titles.</li>
+        <li>One of the very few players to score in five separate World Cups.</li>
+        <li>Euro 2016 and UEFA Nations League winner with Portugal.</li>
+      </ul>
       <h2>The 2026 Question</h2>
-      <p>With the 2026 tournament arriving late in his career, attention turns to whether this is Ronaldo’s last shot at the trophy. Whatever happens, his longevity at the elite level remains one of the sport’s remarkable stories.</p>`,
+      <p>By 2026 Ronaldo will be 41 — an age at which even legends rarely compete at the very top. Whether he features, and in what role, is one of the tournament's compelling subplots. Win or lose, his sheer longevity at the elite level — still scoring regularly years after most peers retired — is itself one of sport's remarkable stories.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>Has Cristiano Ronaldo ever won the World Cup?</h3>
+      <p>No. It is the one major trophy missing from his career, despite winning Euro 2016 and the Nations League with Portugal.</p>
+      <h3>How many World Cups has Ronaldo played in?</h3>
+      <p>Five (2006–2022), scoring in each — 2026 could be his sixth.</p>
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Ronaldo holds the rare record of scoring at five different World Cups.</li>
+        <li>The World Cup remains the one major honour to elude him.</li>
+        <li>2026, at age 41, may be his final shot at the trophy.</li>
+      </ul>
+    `,
   },
   {
     id: 'messi-vs-ronaldo-rivalry',
@@ -1251,13 +1318,33 @@ const RAW: RawArticle[] = [
     summary:
       'For over 15 years, Lionel Messi and Cristiano Ronaldo pushed each other to greatness. Here’s why their rivalry defined an era.',
     body: `
-      <p>For more than a decade and a half, two players stood above the rest — Lionel Messi and Cristiano Ronaldo. Their rivalry didn’t just dominate football; it defined a generation of it.</p>
+      <p>For more than 15 years, two players stood above everyone else in world football: Lionel Messi and Cristiano Ronaldo. Their rivalry did not just dominate the sport — it defined an entire era, pushing both to heights football may never see matched again.</p>
+      <h2>The Origins</h2>
+      <p>Both emerged in the mid-2000s — Messi at Barcelona, Ronaldo at Manchester United before his move to Real Madrid in 2009. Once Ronaldo arrived in Spain, the rivalry ignited: two of the planet's best players, in the same league, meeting twice a season in the fiercely contested El Clásico.</p>
       <h2>Two Contrasting Geniuses</h2>
-      <p>Messi, the close-control magician who glides past defenders; Ronaldo, the relentless, powerful athlete and supreme finisher. Their contrasting styles made the comparison endlessly fascinating.</p>
+      <p>Part of the fascination was how different they were. Messi: small, low-centred, a close-control magician who drifts past defenders and threads impossible passes. Ronaldo: tall, explosive, supremely athletic, a relentless goalscorer who reinvented himself repeatedly to keep scoring. Two completely different blueprints for greatness — and fans split into camps that still argue today.</p>
       <h2>Trading Records and Trophies</h2>
-      <p>Between them they collected a staggering number of Ballon d’Or awards, Champions League titles and league championships, each seemingly raising his game in response to the other across the famous El Clásico years in Spain.</p>
-      <h2>A Rivalry That Lifted Everyone</h2>
-      <p>Most remarkable is how their competition pushed both to sustained excellence far longer than most careers last. Fans may never agree on who was better — and that endless debate is exactly what made the rivalry so special.</p>`,
+      <p>Through the 2010s they traded the Ballon d'Or almost exclusively, combining for well over a dozen between them — Messi finishing with a record eight, Ronaldo with five. They shattered scoring records season after season, each seemingly raising his level in direct response to the other.</p>
+      <ul>
+        <li><strong>Messi:</strong> record Ballon d'Or wins, multiple Champions Leagues, and the 2022 World Cup.</li>
+        <li><strong>Ronaldo:</strong> five Champions Leagues across England, Spain and Italy, and the all-time international scoring record.</li>
+      </ul>
+      <h2>The Move Away From Europe</h2>
+      <p>The European chapter eventually closed: Ronaldo moved to Saudi Arabia's Al-Nassr in early 2023, while Messi joined Inter Miami in MLS later that year. Even apart, their careers remained a constant point of comparison.</p>
+      <h2>Who Was Better?</h2>
+      <p>It is the debate that never ends — and that is the point. Messi's supporters cite his natural genius, creativity and the World Cup; Ronaldo's point to his goal records, longevity and success across multiple leagues. The truth most fans accept: we were lucky to watch both at once.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>How many Ballon d'Or awards do they have?</h3>
+      <p>Messi has won a record eight; Ronaldo has won five.</p>
+      <h3>Did they ever play together?</h3>
+      <p>No — they were rivals throughout, most famously in the El Clásico years in Spain.</p>
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Messi and Ronaldo defined football for over 15 years.</li>
+        <li>Their contrasting styles made the rivalry endlessly compelling.</li>
+        <li>Their competition pushed both to historic, era-defining excellence.</li>
+      </ul>
+    `,
   },
   {
     id: 'greatest-world-cup-goalscorers',
@@ -1274,17 +1361,35 @@ const RAW: RawArticle[] = [
     summary:
       'Who has scored the most goals in World Cup history? From Klose to Ronaldo and Müller, here are the tournament’s deadliest finishers.',
     body: `
-      <p>Scoring at a World Cup writes a player into history. A select group of forwards have done it again and again across multiple tournaments to top the all-time charts.</p>
-      <h2>The All-Time Leader</h2>
-      <p>Germany’s <strong>Miroslav Klose</strong> holds the record with <strong>16 World Cup goals</strong>, scored across four tournaments from 2002 to 2014 — finishing his World Cup career as a world champion in Brazil.</p>
+      <p>Scoring at a World Cup writes a player into football folklore. Doing it repeatedly, across multiple tournaments, is what separates the legends from the rest. Here are the deadliest finishers in the history of the competition — and the man best placed to challenge the record.</p>
+      <h2>The All-Time Leader: Miroslav Klose (16)</h2>
+      <p>Germany's Miroslav Klose holds the record with <strong>16 goals</strong>, scored across four tournaments from 2002 to 2014. Remarkably consistent rather than explosive, Klose finished his World Cup career as a world champion in Brazil, overtaking the previous record holder along the way.</p>
       <h2>The Chasing Pack</h2>
       <ul>
-        <li><strong>Ronaldo (Brazil)</strong> — 15 goals, long the record holder before Klose.</li>
-        <li><strong>Gerd Müller (Germany)</strong> — 14 goals, including a then-record haul in 1970.</li>
-        <li><strong>Just Fontaine (France)</strong> — 13 goals, astonishingly all in a single 1958 tournament.</li>
+        <li><strong>Ronaldo (Brazil) — 15:</strong> the original "R9", a two-time World Cup winner who held the record before Klose.</li>
+        <li><strong>Gerd Müller (Germany) — 14:</strong> a ruthless poacher who set the bar at the 1970 and 1974 tournaments.</li>
+        <li><strong>Just Fontaine (France) — 13:</strong> astonishingly, all in a single tournament (1958) — a single-edition record that still stands.</li>
+        <li><strong>Lionel Messi (Argentina) — 13:</strong> still active, having moved up the list with his 2022 title run.</li>
+        <li><strong>Pelé (Brazil) — 12:</strong> a three-time champion whose tally came largely as a teenager and young man.</li>
       </ul>
+      <h2>Golden Boot vs All-Time Tally</h2>
+      <p>It is worth distinguishing two things: the <strong>Golden Boot</strong> goes to the top scorer at a single tournament, while the all-time list rewards sustained excellence across many. Fontaine's 13-in-one-tournament is the ultimate single-edition feat; Klose's 16 is the ultimate career achievement.</p>
+      <h2>Can Anyone Break the Record?</h2>
+      <p>The man most likely to chase Klose is France's <strong>Kylian Mbappé</strong>, who already has 12 World Cup goals — including a hat-trick in the 2022 final — while still in his twenties. If he stays fit and France keep qualifying deep, the all-time record could realistically fall within the next decade.</p>
       <h2>Why the Record Endures</h2>
-      <p>Reaching the top requires not just finishing ability but the longevity to appear at three or four World Cups while staying at peak form — which is why Klose’s tally may stand for a very long time.</p>`,
+      <p>Reaching the summit requires more than finishing ability. It demands the longevity to appear at three or four World Cups and the form to score in each. That combination is rare — which is why Klose's 16 may stand for a very long time.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>Who has scored the most World Cup goals ever?</h3>
+      <p>Miroslav Klose of Germany, with 16 goals.</p>
+      <h3>Who scored the most goals in a single World Cup?</h3>
+      <p>Just Fontaine of France, with 13 at the 1958 tournament.</p>
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Klose (16) leads the all-time list; Fontaine holds the single-tournament record (13).</li>
+        <li>Messi (13) remains an active member of the chasing pack.</li>
+        <li>Mbappé is the most likely active player to one day break the record.</li>
+      </ul>
+    `,
   },
   {
     id: 'messi-ronaldo-last-world-cup',
