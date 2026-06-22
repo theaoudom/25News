@@ -534,41 +534,8 @@ const RAW: RawArticle[] = [
     secondaryBody: `
       <p>"I am excited to get back behind the wheel with the team for my home Grand Prix this weekend," Stroll said. "I was always going to fight hard to be ready to race in front of the Montreal crowd."</p>`,
   },
-  {
-    id: 'home-article-7-tennis-tech',
-    title: "The Tech That's Changing the Game of Tennis",
-    category: 'sports',
-    categoryLabel: 'Tennis',
-    authorId: 'newsroom',
-    publishedAt: '2025-05-20T09:00:00Z',
-    tags: ['Tennis', 'Technology', 'Analytics'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/2013_US_Open_%28Tennis%29_%289651194814%29.jpg/1280px-2013_US_Open_%28Tennis%29_%289651194814%29.jpg',
-    imageAlt: 'Modern professional tennis',
-    imageCredit: 'Photo: Steven Pisano / CC BY 2.0 via Wikimedia Commons',
-    body: `
-      <p>It's not just about strings and tension anymore. Modern tennis racquets are marvels of engineering, incorporating materials and designs that maximise power and control.</p>
-      <p>Coupled with on-court tracking systems, players have more data at their fingertips than ever before, reshaping how the game is coached and played.</p>`,
-  },
 
   // ───────────────────────── WORLD ─────────────────────────
-  {
-    id: 'world-news-3-alzheimers',
-    title: "Breakthrough in Alzheimer's Treatment Shows Promising Results",
-    category: 'world',
-    categoryLabel: 'Health',
-    authorId: 'newsroom',
-    publishedAt: '2025-06-12T09:00:00Z',
-    tags: ['Health', 'Science', 'Medicine'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/CSIRO_ScienceImage_3488_Patient_undergoing_MRI_scan_in_Westmead_Hospital_Sydney.jpg/1280px-CSIRO_ScienceImage_3488_Patient_undergoing_MRI_scan_in_Westmead_Hospital_Sydney.jpg',
-    imageAlt: 'A patient undergoing an MRI brain scan',
-    imageCredit: 'Photo: CSIRO / CC BY 3.0 via Wikimedia Commons',
-    body: `
-      <p>Clinical trials of a new drug therapy have shown unprecedented results in improving cognitive function for early-stage Alzheimer's patients, targeting the underlying mechanisms of the disease.</p>
-      <h2>Clinical Trial Results</h2>
-      <p>The Phase III trial involved 1,200 patients across 15 countries. Patients receiving the treatment experienced a 40% improvement in cognitive function compared to the control group.</p>
-      <h2>Regulatory Pathway</h2>
-      <p>The FDA has granted the treatment "Breakthrough Therapy" designation, which could see it available to patients within 18 months.</p>`,
-  },
 
   // ───────────────────────── ESPORTS ─────────────────────────
   {
