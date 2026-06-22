@@ -64,35 +64,31 @@ const RAW: RawArticle[] = [
     title: 'Liverpool football star Diogo Jota killed in car crash',
     category: 'football',
     categoryLabel: 'Football',
-    authorId: 'mike-johnson',
+    authorId: 'newsroom',
     publishedAt: '2025-07-03T08:00:00Z',
     isTrending: true,
     tags: ['Football', 'Liverpool', 'Premier League'],
-    imageUrl:
-      'https://nilepost.co.ug/new_cms/wp-content/uploads/2025/07/e2dd1de0-0217-11ef-946e-d7e525632c0f.jpg',
+    imageUrl: '/images/placeholders/football.svg',
+    imageAlt: 'Football illustration in tribute to Diogo Jota',
     summary:
-      'Liverpool forward Diogo Jota has tragically passed away following a car accident in northwestern Spain.',
+      'Liverpool and Portugal forward Diogo Jota has died following a car accident in northwestern Spain. He was 28.',
     body: `
-      <p>Liverpool forward Diogo Jota has tragically passed away following a car accident in the early hours of Thursday morning near Zamora, in northwestern Spain.</p>
-      <h2>Accident Details</h2>
-      <p>The 28-year-old Portuguese footballer was traveling with his brother, Andre, who also lost his life in the crash. The incident took place on the A-52 highway near Palacios de Sanabria, as they were heading toward Benavente.</p>
-      <p>According to authorities, the Lamborghini they were in veered off the road at around 12:30 a.m. Early reports suggest a tire may have burst while the vehicle was overtaking, causing it to leave the road and ignite in flames.</p>
-      <h2>Investigation Underway</h2>
-      <p>Both victims were pronounced dead at the scene. Officials noted that no other vehicles were involved in the crash, and speeding is being investigated as a possible factor.</p>`,
-    secondaryImageUrl:
-      'https://images.ladbible.com/resize?type=webp&quality=70&width=3840&fit=contain&gravity=auto&url=https://images.ladbiblegroup.com/v3/assets/bltcd74acc1d0a99f3a/bltbcfde8c439a9992d/686648b7904fb967778da00c/jota-family.jpg',
-    secondaryBody: `
-      <h2>Scene Aftermath</h2>
-      <p>Images from the aftermath showed charred wreckage and scattered debris along the roadside, painting a devastating picture of the collision.</p>
-      <h2>Personal Tragedy</h2>
-      <p>The tragedy comes just ten days after Jota married his longtime partner, Rute Cardoso, making the loss even more heartbreaking for his family and fans.</p>`,
+      <p>Liverpool and Portugal forward Diogo Jota has died following a car accident in the early hours of Thursday near Zamora, in northwestern Spain. He was 28. His brother, André Silva, also died in the crash. The football world has reacted with shock and grief to the loss of a player admired as much for his character as for his goals.</p>
+      <h2>What Happened</h2>
+      <p>According to Spanish authorities, the vehicle the brothers were travelling in left the A-52 road near Palacios de Sanabria. Early reports indicated that a tyre may have failed while the car was overtaking. Both men were pronounced dead at the scene; no other vehicles were involved, and an official investigation into the cause is ongoing. Out of respect for the families, 26News is reporting only details confirmed by the authorities.</p>
+      <h2>A Career of Quiet Excellence</h2>
+      <p>Jota built his reputation as one of the Premier League's most intelligent and reliable forwards. After impressing at Wolverhampton Wanderers, he joined Liverpool in 2020 and quickly became a key figure under Jürgen Klopp, known for his sharp movement, two-footed finishing and a knack for decisive goals in big moments. He won major honours at Anfield and was a regular for the Portugal national team, contributing to their Nations League success and featuring at major international tournaments.</p>
+      <h2>Tributes</h2>
+      <p>Clubs, team-mates and supporters across the game paid tribute to a player widely described as humble and hard-working — a family man whose warmth off the pitch was as notable as his quality on it. The tragedy came only days after Jota had married his long-time partner, Rute Cardoso, with whom he had three children, deepening the sense of loss felt by those who knew him.</p>
+      <h2>Remembering Diogo Jota</h2>
+      <p>Beyond the statistics, Jota will be remembered for the joy he brought to the game and the respect he earned throughout it. Our thoughts are with his family, friends, team-mates and supporters at Liverpool, Wolves and the Portugal national team.</p>`,
   },
   {
     id: 'home-article-1',
     title: "Liverpool finalising deal for Leverkusen's Wirtz",
     category: 'football',
     categoryLabel: 'Football',
-    authorId: 'mike-johnson',
+    authorId: 'newsroom',
     publishedAt: '2025-06-11T09:00:00Z',
     isTrending: true,
     tags: ['Football', 'Transfers', 'Premier League', 'Liverpool'],
@@ -110,7 +106,7 @@ const RAW: RawArticle[] = [
     title: 'Manchester United announce signing of Matheus Cunha from Wolves on five-year deal',
     category: 'football',
     categoryLabel: 'Football',
-    authorId: 'carlos-rodriguez',
+    authorId: 'newsroom',
     publishedAt: '2025-06-05T10:00:00Z',
     tags: ['Football', 'Transfers', 'Manchester United'],
     imageUrl:
@@ -128,7 +124,7 @@ const RAW: RawArticle[] = [
     title: 'Transfer Window Revolution: New Financial Fair Play Rules Reshape Market',
     category: 'football',
     categoryLabel: 'Football',
-    authorId: 'carlos-rodriguez',
+    authorId: 'newsroom',
     publishedAt: '2025-06-12T09:00:00Z',
     tags: ['Football', 'Transfers', 'UEFA', 'Finance'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/2/2a/Crowd_wembley_FAT_08.jpg',
@@ -141,43 +137,6 @@ const RAW: RawArticle[] = [
       <h2>Long-term Implications</h2>
       <p>Analysts predict these changes will lead to more competitive leagues across Europe, as smaller clubs can now compete more effectively with traditional powerhouses.</p>`,
   },
-  {
-    id: 'home-article-4-son',
-    title: 'Korean footballer Son Heung-Min to join the Fortnite Icon Series',
-    category: 'football',
-    categoryLabel: 'Football',
-    authorId: 'emily-white',
-    publishedAt: '2025-06-11T12:00:00Z',
-    tags: ['Football', 'Gaming', 'Tottenham'],
-    imageUrl: '/images/son_esport.png',
-    body: `
-      <p>Epic Games Korea has announced that Tottenham footballer Son Heung-Min is coming to Fortnite's Icon Series.</p>
-      <p>This collaboration arrives on the heels of Tottenham Hotspur's 2025 UEFA Europa League Championship victory over Manchester United.</p>
-      <p>When the Son Heung-Min skin launches on June 21, he will become the fifth footballer to grace the game's Icon Series collection, joining Harry Kane, Marco Reus, Neymar, and Lionel Messi.</p>`,
-  },
-  {
-    id: 'sport-hero-quadruple',
-    title: 'Manchester City Clinches Historic Quadruple in Dramatic Champions League Final',
-    category: 'football',
-    categoryLabel: 'Football',
-    authorId: 'tom-frank',
-    publishedAt: '2025-06-15T22:00:00Z',
-    isFeatured: true,
-    tags: ['Football', 'Champions League', 'Manchester City'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/City_of_Manchester_Stadium_Crowd_Against_Hull.jpg/1280px-City_of_Manchester_Stadium_Crowd_Against_Hull.jpg',
-    imageAlt: 'A packed football stadium',
-    imageCredit: 'Photo: AGilhooley / CC BY-SA 3.0 via Wikimedia Commons',
-    summary:
-      "Pep Guardiola's side becomes the first English club to achieve the quadruple after a thrilling victory over Real Madrid.",
-    body: `
-      <p>In a historic night at Wembley Stadium, Manchester City achieved what no English club has ever accomplished before — the coveted quadruple. Pep Guardiola's side defeated Real Madrid 3-2 in a thrilling Champions League final.</p>
-      <h2>The Road to Glory</h2>
-      <p>City's journey began in August with the Community Shield, followed by a record-breaking Premier League title, an FA Cup penalty-shootout win over Manchester United, and a Carabao Cup victory over Liverpool.</p>
-      <h2>The Final Showdown</h2>
-      <p>Kevin De Bruyne opened the scoring with a stunning long-range effort, only for Vinícius Júnior to equalise. Erling Haaland restored the lead before Jude Bellingham levelled, and Phil Foden's 78th-minute strike secured the trophy.</p>
-      <h2>Guardiola's Legacy</h2>
-      <p>This victory cements Pep Guardiola's place among the greatest managers in football history.</p>`,
-  },
 
   // ───────────────────────── WORLD CUP ─────────────────────────
   {
@@ -185,7 +144,7 @@ const RAW: RawArticle[] = [
     title: 'Carlo Ancelotti Showers Praise on Cristiano Ronaldo After UEFA Nations League Win',
     category: 'football',
     categoryLabel: 'International Football',
-    authorId: 'jane-doe',
+    authorId: 'newsroom',
     publishedAt: '2025-06-11T18:00:00Z',
     isTrending: true,
     tags: ['Football', 'Portugal', 'Cristiano Ronaldo', 'Nations League'],
@@ -254,7 +213,7 @@ const RAW: RawArticle[] = [
     title: 'World Cup 2026 Group Stage Explained: How the New Round of 32 Works',
     category: 'football',
     categoryLabel: 'World Cup',
-    authorId: 'tom-frank',
+    authorId: 'newsroom',
     publishedAt: '2026-06-05T10:00:00Z',
     isWorldCup: true,
     isTrending: true,
@@ -265,31 +224,45 @@ const RAW: RawArticle[] = [
     summary:
       'The expanded 48-team format introduces a round of 32 for the first time. Here is how qualification from the groups works.',
     body: `
-      <p>The expanded 2026 World Cup introduces a knockout round that has never existed before — the round of 32 — fundamentally changing how teams approach the group stage. Here is exactly how qualification from the groups works.</p>
+      <p>The expanded 2026 World Cup introduces a knockout round that has never existed before — the round of 32 — fundamentally changing how teams approach the group stage. It is the biggest structural overhaul of the tournament since the field grew to 32 teams in 1998, and it rewards a different kind of group-stage strategy. Here is exactly how qualification from the groups works, why the format changed, and what it means on the pitch.</p>
+
       <h2>Twelve Groups of Four</h2>
-      <p>The 48 teams are split into 12 groups of four. Each side plays the other three in its group once, meaning every team is guaranteed at least three matches before any potential exit.</p>
+      <p>The 48 teams are split into 12 groups of four. Each side plays the other three in its group once, meaning every team is guaranteed at least three matches before any potential exit. That guarantee matters: it was one of FIFA's main arguments for expansion, ensuring smaller nations making their World Cup debut get a meaningful run of fixtures rather than a fleeting cameo.</p>
+
+      <h2>Why FIFA Scrapped Its First Plan</h2>
+      <p>The 12-groups-of-four structure was not the original blueprint. FIFA initially proposed 16 groups of three teams, but that idea drew heavy criticism: three-team groups risk a decisive final match where two sides could engineer a result that eliminates the third — the very kind of collusion the simultaneous final-round kick-offs are designed to prevent. After the drama of the 2022 group stage, FIFA reverted to four-team groups, accepting a longer tournament (104 matches instead of a planned 80) in exchange for fairer, more competitive groups.</p>
+
       <h2>Who Advances</h2>
       <ul>
         <li>The <strong>top two</strong> in each group qualify automatically — 24 teams.</li>
         <li>The <strong>eight best third-placed teams</strong> across all 12 groups also go through.</li>
         <li>Together that produces a 32-team knockout bracket.</li>
       </ul>
+      <p>In other words, 32 of the 48 teams — two-thirds of the field — survive the group stage. Only 16 go home after three games.</p>
+
       <h2>How the Best Third-Placed Teams Are Ranked</h2>
-      <p>When comparing third-placed teams from different groups, the ranking is decided by points first, then goal difference, then goals scored, and finally fair-play and drawing-of-lots criteria if still level. This makes goal difference and discipline genuinely important from the very first match.</p>
+      <p>When comparing third-placed teams from different groups, the ranking is decided by points first, then goal difference, then goals scored, and finally fair-play (disciplinary) record and drawing of lots if teams are still level. This makes goal difference and discipline genuinely important from the very first match — a late consolation goal in a heavy defeat, or avoiding a needless second yellow card, could be the difference between a place in the round of 32 and an early flight home. The "best third-placed" mechanism is not new in itself: it was used successfully at the 24-team Euro 2016 and Euro 2024, and 2026 simply scales it up.</p>
+
       <h2>Why the Round of 32 Matters</h2>
-      <p>In the old 32-team format, eight groups sent 16 teams straight to the round of 16. The new system adds an extra knockout round, lengthening the tournament and giving more nations a meaningful path deep into the competition.</p>
+      <p>In the old 32-team format, eight groups sent 16 teams straight to the round of 16. The new system adds an extra knockout round before it, lengthening the tournament and giving more nations a meaningful path deep into the competition. For a debutant or a smaller footballing country, reaching a World Cup knockout stage — once a near-impossible dream — is now a realistic target, which changes how those teams set up and how their fans approach the tournament.</p>
+
       <h2>Strategic Implications</h2>
-      <p>Because a strong third-place finish can be enough to advance, coaches must balance squad rotation with the need to bank points and goals. There are fewer true "dead rubbers", and final-round group matches carry heightened drama as teams scramble for one of the eight wildcard places.</p>
+      <p>Because a strong third-place finish can be enough to advance, coaches face a genuine dilemma. Win your group and you may earn a theoretically easier knockout path and more rest; play it too safe and you risk slipping to third and a tougher draw — or missing out altogether if other groups produce stronger third-placed sides. There are fewer true "dead rubbers", and final-round group matches carry heightened drama as teams scramble for one of the eight wildcard places, often without knowing the exact points total they need until other groups finish. Expect more managers chasing goals late in group games than in any previous World Cup.</p>
+
       <h2>Frequently Asked Questions</h2>
       <h3>How many teams qualify from each group?</h3>
-      <p>The top two automatically, with eight more of the best third-placed teams advancing overall.</p>
+      <p>The top two automatically, with eight more of the best third-placed teams advancing overall — 32 of 48 teams in total.</p>
       <h3>What is the round of 32?</h3>
       <p>A brand-new opening knockout round created by the 48-team format, played before the round of 16.</p>
+      <h3>How is a third-placed team's ranking decided?</h3>
+      <p>By points, then goal difference, then goals scored, then disciplinary record, and finally drawing of lots.</p>
+
       <h2>Key Takeaways</h2>
       <ul>
-        <li>12 groups of four; top two plus eight best thirds reach the round of 32.</li>
-        <li>Goal difference and goals scored can decide the wildcard places.</li>
-        <li>The format means more meaningful matches and fewer dead rubbers.</li>
+        <li>12 groups of four; the top two plus the eight best third-placed teams reach the round of 32.</li>
+        <li>FIFA chose four-team groups over its original three-team plan to keep groups fair and competitive.</li>
+        <li>Goal difference, goals scored and discipline can decide the eight wildcard places — making every minute count.</li>
+        <li>The format means more meaningful matches, fewer dead rubbers, and a realistic knockout path for smaller nations.</li>
       </ul>
     `,
   },
@@ -298,7 +271,7 @@ const RAW: RawArticle[] = [
     title: 'Title Contenders for World Cup 2026: The Favourites and the Dark Horses',
     category: 'football',
     categoryLabel: 'World Cup',
-    authorId: 'carlos-rodriguez',
+    authorId: 'newsroom',
     publishedAt: '2026-06-08T11:00:00Z',
     isWorldCup: true,
     tags: ['World Cup', 'Analysis', 'Brazil', 'France', 'Argentina'],
@@ -308,25 +281,40 @@ const RAW: RawArticle[] = [
     summary:
       'Defending champions Argentina, France and Brazil headline the favourites — but several dark horses could spring a surprise.',
     body: `
-      <p>As the 2026 World Cup gets under way, the usual heavyweights once again lead the betting — but the expanded format and gruelling North American summer could level the playing field. Here is a look at the favourites, the dark horses, and the factors that could decide it all.</p>
+      <p>As the 2026 World Cup gets under way, the usual heavyweights once again lead the betting — but the expanded format and gruelling North American summer could level the playing field more than at any tournament in memory. Here is a clear-eyed look at the favourites, the genuine dark horses, and the structural factors that could decide where the trophy ends up.</p>
+
       <h2>The Favourites</h2>
-      <p><strong>Argentina</strong> arrive as defending champions, blending experience with emerging talent. <strong>France</strong> boast extraordinary squad depth and a settled core. <strong>Brazil</strong> never lack attacking riches and remain perennial contenders. <strong>Spain</strong> and <strong>England</strong> bring deep, technically gifted squads, while <strong>Germany</strong> are always dangerous at a major tournament.</p>
+      <p><strong>Argentina</strong> arrive as defending champions, blending the experience of their 2022 winners with a steady stream of emerging talent — though the open question is how their oldest stars hold up over a longer, hotter tournament. <strong>France</strong> remain the benchmark for depth: they can lose first-choice players and barely weaken, and they have reached two of the last three finals. <strong>Brazil</strong> never lack attacking riches and arrive under pressure to end a wait for a sixth star that stretches back to 2002. <strong>Spain</strong>, European champions and built on a relentless possession game, and <strong>England</strong>, with one of the deepest attacking pools in the world, both carry the "best squad never to convert it" tag. <strong>Germany</strong>, traditionally slow starters who peak in knockouts, can never be discounted.</p>
+
       <h2>The Dark Horses</h2>
-      <p><strong>Morocco</strong>, semi-finalists in 2022, proved they can beat anyone on their day. The <strong>USA</strong>, buoyed by home advantage and an athletic young side, could go further than expected. <strong>Portugal</strong> remain determined to deliver on the international stage, and the <strong>Netherlands</strong> are always capable of a deep run.</p>
-      <h2>The X-Factor: Conditions</h2>
-      <p>Summer heat, humidity and long travel distances between host cities will test squad depth like never before. Several matches in air-conditioned indoor stadiums add another variable. The teams that manage rotation and recovery best may hold a decisive edge over a long tournament.</p>
+      <p><strong>Morocco</strong> are the obvious one. Their run to the 2022 semi-finals — beating Spain and Portugal along the way — was no fluke, and they have continued to develop a golden generation. The <strong>USA</strong>, as co-hosts with an athletic, youthful core, have the crowds, the familiarity with the venues and the motivation to go beyond their usual ceiling. <strong>Portugal</strong> still possess elite individual quality and will want a major trophy for their veteran talisman before he bows out. The <strong>Netherlands</strong> are perennial deep-runners, and a side like <strong>Croatia</strong> has shown twice in recent cycles that tournament know-how can outweigh raw talent.</p>
+
+      <h2>History's Warning to the Favourites</h2>
+      <p>One pattern is worth keeping in mind: no European team has ever won a World Cup staged in the Americas. Every edition held in North, Central or South America has been won by a South American nation. Whether 2026 finally breaks that streak — with European sides better prepared for travel and heat than their predecessors — is one of the tournament's most intriguing sub-plots, and a reason to take South American contenders especially seriously.</p>
+
+      <h2>The X-Factor: Conditions and Format</h2>
+      <p>Summer heat, humidity, altitude in Mexico City and long travel distances between host cities will test squad depth like never before. With the winners playing up to eight matches and several fixtures in air-conditioned indoor stadiums, the physical management of a squad becomes a tactical weapon in itself. The expanded field also means an extra knockout round, so the eventual champions must navigate more potential banana skins than ever. Teams that rotate intelligently and recover well may hold a decisive edge over those who rely too heavily on a small core.</p>
+
       <h2>Key Players to Watch</h2>
-      <p>From France's Kylian Mbappé to the next generation of attacking stars across Brazil, England and Spain, individual brilliance often decides World Cups. Expect the tournament to launch new global icons just as previous editions have.</p>
+      <p>France's Kylian Mbappé enters his prime as perhaps the tournament's defining talent, but World Cups have a habit of crowning new icons. Watch for the next generation of attackers across Brazil, England and Spain, and for the breakout star from an unfancied nation — almost every recent tournament has produced one. Individual brilliance in a single knockout tie can still bend an entire World Cup, however deep the favourites' squads may be.</p>
+
+      <h2>Our Read</h2>
+      <p>The smart money still sits with the established powers — Argentina, France and Brazil — but the combination of an extra round, brutal conditions and a host nation with home advantage makes 2026 unusually open. If a surprise package reaches the latter stages, few should be shocked.</p>
+
       <h2>Frequently Asked Questions</h2>
       <h3>Who are the favourites for the 2026 World Cup?</h3>
       <p>Defending champions Argentina, along with France, Brazil, Spain, England and Germany.</p>
       <h3>Could a host nation win?</h3>
-      <p>The USA are the most likely host to make a deep run, with home advantage a genuine factor.</p>
+      <p>The USA are the most likely host to make a deep run, with home advantage a genuine factor, though winning the whole tournament would be a major surprise.</p>
+      <h3>Has a European team ever won a World Cup in the Americas?</h3>
+      <p>No — every World Cup held in the Americas has been won by a South American nation, a streak the 2026 favourites will try to break.</p>
+
       <h2>Key Takeaways</h2>
       <ul>
-        <li>Argentina, France and Brazil head a familiar list of favourites.</li>
-        <li>Morocco, the USA and Portugal lead the dark horses.</li>
-        <li>Heat, travel and rotation could decide the destiny of the trophy.</li>
+        <li>Argentina, France and Brazil head a familiar list of favourites; Spain and England are the strongest "nearly" sides.</li>
+        <li>Morocco, the USA, Portugal and the Netherlands lead a credible group of dark horses.</li>
+        <li>No European team has ever won a World Cup in the Americas — a historical edge for South American contenders.</li>
+        <li>Heat, travel, altitude and rotation over up to eight games could decide the destiny of the trophy.</li>
       </ul>
     `,
   },
@@ -372,21 +360,33 @@ const RAW: RawArticle[] = [
         <li><strong>Vancouver</strong> — BC Place.</li>
       </ul>
       <h2>The Showpiece Venues</h2>
-      <p>Two stadiums carry special significance. The <strong>Estadio Azteca</strong> in Mexico City hosts the opening match, extending a World Cup legacy that already includes two finals. The <strong>final</strong> itself will be played at <strong>MetLife Stadium</strong> in the New York/New Jersey area on 19 July 2026.</p>
-      <h2>A Logistical Challenge</h2>
-      <p>With venues thousands of kilometres apart and climates ranging from the humid south to cooler northern cities — plus several indoor, air-conditioned stadiums — travel and conditions will test teams enormously. Organisers have grouped fixtures regionally where possible to limit travel, but squad depth and recovery will be decisive.</p>
+      <p>Two stadiums carry special significance. The <strong>Estadio Azteca</strong> in Mexico City hosts the opening match, extending a World Cup legacy that already includes the 1970 and 1986 finals — making it the first venue to feature at three separate tournaments. The <strong>final</strong> itself will be played at <strong>MetLife Stadium</strong> in the New York/New Jersey area on 19 July 2026, a venue chosen partly for its enormous capacity and its position in the largest media market in the United States.</p>
+
+      <h2>Three Regional Clusters</h2>
+      <p>To make sense of the sprawl, it helps to think of the venues in three broad regions. The <strong>Western cluster</strong> — Los Angeles, the Bay Area, Seattle, Vancouver, Guadalajara — pairs Pacific-coast cities with northern Mexico. The <strong>Central cluster</strong> — Dallas, Houston, Kansas City, Atlanta, Mexico City, Monterrey — sits in the warmer interior. The <strong>Eastern cluster</strong> — New York/New Jersey, Philadelphia, Boston, Miami, Toronto — runs up the Atlantic seaboard. Organisers have leaned on this geography to keep group-stage travel manageable, with teams generally based in and around one region before the knockout rounds scatter them more widely.</p>
+
+      <h2>Heat, Altitude and Indoor Roofs</h2>
+      <p>Climate is the single biggest variable. June and July can bring fierce heat and humidity to southern venues like Dallas, Houston, Atlanta and Miami, while Mexico City adds the challenge of high altitude. This is why the roofed, air-conditioned stadiums — Atlanta's Mercedes-Benz Stadium, Dallas's AT&amp;T Stadium, Houston's NRG Stadium and Los Angeles's SoFi Stadium — are so valuable: they offer controlled conditions for the hottest afternoon kick-offs, and several are strong candidates for high-profile knockout fixtures as a result. Northern venues such as Vancouver, Seattle and Toronto, by contrast, should offer cooler, more temperate conditions.</p>
+
+      <h2>A Logistical Challenge Unlike Any Before</h2>
+      <p>With venues separated by thousands of kilometres and multiple time zones, the 2026 World Cup asks more of squads logistically than any in history. A deep run can mean repeated long-haul flights, shifting climates and disrupted recovery. Travel planning, acclimatisation and squad rotation move from background concerns to genuine competitive factors — and the nations that manage them best may gain an edge as meaningful as any tactical tweak.</p>
+
       <h2>Frequently Asked Questions</h2>
       <h3>How many host cities are there in 2026?</h3>
       <p>16 — eleven in the USA, three in Mexico and two in Canada.</p>
       <h3>Which stadium hosts the 2026 World Cup final?</h3>
-      <p>MetLife Stadium in New Jersey, USA.</p>
+      <p>MetLife Stadium in the New York/New Jersey area, on 19 July 2026.</p>
       <h3>Where is the opening match?</h3>
-      <p>The Estadio Azteca in Mexico City.</p>
+      <p>The Estadio Azteca in Mexico City, which becomes the first stadium to host matches at three different World Cups.</p>
+      <h3>Which stadiums have roofs or air conditioning?</h3>
+      <p>Venues including Atlanta, Dallas, Houston and Los Angeles offer enclosed or climate-controlled environments, valuable for the hottest fixtures.</p>
+
       <h2>Key Takeaways</h2>
       <ul>
-        <li>16 cities across three nations — the largest World Cup footprint ever.</li>
+        <li>16 cities across three nations — the largest World Cup footprint ever staged.</li>
         <li>Estadio Azteca opens the tournament; MetLife Stadium hosts the final.</li>
-        <li>Travel and climate variety will be a major factor for every squad.</li>
+        <li>Venues split into western, central and eastern clusters to limit group-stage travel.</li>
+        <li>Heat, altitude and continental distances make conditions and logistics decisive for every squad.</li>
       </ul>
     `,
   },
@@ -395,7 +395,7 @@ const RAW: RawArticle[] = [
     title: 'World Cup 2026 Key Dates: Opening Match, Group Stage and the Final',
     category: 'football',
     categoryLabel: 'World Cup',
-    authorId: 'tom-frank',
+    authorId: 'newsroom',
     publishedAt: '2026-06-10T09:00:00Z',
     isWorldCup: true,
     tags: ['World Cup', 'Schedule', 'Fixtures', 'Dates'],
@@ -405,29 +405,53 @@ const RAW: RawArticle[] = [
     summary:
       'From the Estadio Azteca opener to the MetLife final, here are the dates that shape the 2026 World Cup calendar.',
     body: `
-      <p>The 2026 World Cup is the longest in history, running 39 days from 11 June to 19 July across the largest field the tournament has ever seen. Here is how the calendar breaks down.</p>
+      <p>The 2026 World Cup is the longest and largest in the tournament's history: 48 teams, 104 matches and 39 days of football, running from 11 June to 19 July across the United States, Canada and Mexico. With so many more games than the 64 played in 2022, the calendar is denser and the rhythm different from any World Cup before it. Here is how the schedule breaks down — and what each phase actually means for the teams and for fans planning their viewing.</p>
+
       <h2>Opening Match — 11 June</h2>
-      <p>The tournament kicks off at the iconic Estadio Azteca in Mexico City, continuing the stadium's unique World Cup legacy after 1970 and 1986.</p>
+      <p>The tournament kicks off at the iconic Estadio Azteca in Mexico City. The choice is deliberate and symbolic: the Azteca becomes the first stadium ever to host matches at three different World Cups, having staged the 1970 and 1986 finals — including Pelé's Brazil masterclass and Diego Maradona's "Hand of God" quarter-final. Opening at altitude in Mexico City, where the thin air notoriously saps stamina, also sets an early test of conditioning that recurs as a theme throughout this tournament.</p>
+
       <h2>Group Stage — 11 to 27 June</h2>
-      <p>All 48 teams play their three group matches across the opening fortnight. The 12 groups of four feed into a new knockout round, with the top two from each group plus the eight best third-placed teams advancing.</p>
-      <h2>Knockout Rounds</h2>
+      <p>All 48 teams play their three group matches across the opening fortnight. The 12 groups of four feed into a new knockout round, with the top two from each group plus the eight best third-placed teams advancing to a 32-team bracket. Expect a relentless schedule in this window — multiple matches every day, often in overlapping time slots across three time zones — as organisers fit 72 group games into just over two weeks. For neutrals, the final round of group fixtures (kicked off simultaneously within each group to prevent collusion) is traditionally the most dramatic stretch of any World Cup.</p>
+
+      <h2>The Knockout Rounds</h2>
+      <p>From the round of 32 onwards, every match is single-elimination — win or go home, with extra time and penalties settling draws. The approximate timeline runs as follows:</p>
       <ul>
-        <li><strong>Round of 32</strong> — late June, a brand-new stage created by the 48-team format.</li>
-        <li><strong>Round of 16</strong> — early July.</li>
-        <li><strong>Quarter-finals</strong> — 9 to 11 July.</li>
-        <li><strong>Semi-finals</strong> — 14 and 15 July.</li>
+        <li><strong>Round of 32</strong> — late June into early July. A brand-new stage created by the 48-team format, and the first true knockout test.</li>
+        <li><strong>Round of 16</strong> — early July, narrowing the field to the last eight.</li>
+        <li><strong>Quarter-finals</strong> — around 9 to 11 July.</li>
+        <li><strong>Semi-finals</strong> — around 14 and 15 July.</li>
         <li><strong>Third-place play-off</strong> — 18 July.</li>
         <li><strong>Final</strong> — 19 July at MetLife Stadium, New York / New Jersey.</li>
       </ul>
-      <h2>What It Means for Squads</h2>
-      <p>Teams that go all the way will play up to eight matches — one more than in previous tournaments — making squad depth and recovery more important than ever in the North American summer.</p>`,
+      <p>One subtlety worth noting: as the rounds progress, the gaps between matches lengthen, giving the surviving teams more recovery time but also longer to stew on the pressure. The deeper a team goes, the more rest it earns — a reward that can matter enormously in the summer heat.</p>
+
+      <h2>Why This Calendar Is Different</h2>
+      <p>The headline change is volume. A team that reaches the final will play <strong>up to eight matches</strong> — one more than the seven required in the 32-team era. Combined with long-haul travel between host cities spread across a continent and temperatures that can climb sharply in June and July, the physical demand on squads is unprecedented. This is why several venues with air-conditioned, roofed stadiums are likely to be favoured for the hottest afternoon kick-offs, and why squad depth and rotation may decide the tournament as much as raw quality.</p>
+
+      <h2>A Note for Fans and Viewers</h2>
+      <p>Because matches are spread across North American time zones — from Eastern Time on the US east coast to Pacific Time on the west and in Vancouver — kick-off times will vary widely depending on where each game is staged. International viewers should check the local time of the specific venue rather than assuming a single "World Cup time". The group stage offers the most football per day; the knockout rounds spread out into marquee single fixtures.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <h3>When does the 2026 World Cup start and finish?</h3>
+      <p>It runs from 11 June 2026 (opening match at the Estadio Azteca) to the final on 19 July 2026 at MetLife Stadium.</p>
+      <h3>How many matches are there in total?</h3>
+      <p>104 — up from 64 in 2022 — because of the expansion to 48 teams and the added round of 32.</p>
+      <h3>How many games will the winners play?</h3>
+      <p>Up to eight, one more than in the previous 32-team format.</p>
+
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>The tournament spans 39 days, 11 June to 19 July, with 104 matches — the biggest World Cup ever.</li>
+        <li>The Estadio Azteca opens proceedings; MetLife Stadium hosts the final.</li>
+        <li>An extra knockout round and continental travel make scheduling, rest and squad depth decisive.</li>
+      </ul>`,
   },
   {
     id: 'wc-winners-history',
     title: 'Every World Cup Winner: A Complete History from 1930 to 2022',
     category: 'football',
     categoryLabel: 'World Cup',
-    authorId: 'carlos-rodriguez',
+    authorId: 'newsroom',
     publishedAt: '2026-06-07T09:00:00Z',
     isWorldCup: true,
     tags: ['World Cup', 'History', 'Records', 'Brazil', 'Argentina'],
@@ -437,8 +461,9 @@ const RAW: RawArticle[] = [
     summary:
       'Eight nations have lifted the trophy across 22 tournaments. Here is the full roll of World Cup champions and the records that define them.',
     body: `
-      <p>Since the first tournament in Uruguay in 1930, only <strong>eight nations</strong> have lifted the FIFA World Cup. As the 2026 edition begins, here is the complete history of the champions — and the records that define the competition.</p>
-      <h2>Most Titles</h2>
+      <p>Since the first tournament in Uruguay in 1930, only <strong>eight nations</strong> have lifted the FIFA World Cup across 22 editions. It is one of sport's most exclusive clubs — and a reminder of how hard the trophy is to win. As the 2026 edition begins, here is the complete history of the champions, the eras that shaped the competition, and the records that define it.</p>
+
+      <h2>The Complete Roll of Champions</h2>
       <ul>
         <li><strong>Brazil — 5</strong> (1958, 1962, 1970, 1994, 2002)</li>
         <li><strong>Germany — 4</strong> (1954, 1974, 1990, 2014)</li>
@@ -449,28 +474,44 @@ const RAW: RawArticle[] = [
         <li><strong>England — 1</strong> (1966)</li>
         <li><strong>Spain — 1</strong> (2010)</li>
       </ul>
-      <h2>The Early Years</h2>
-      <p>Uruguay won the inaugural 1930 tournament on home soil and added a second title in 1950 with the famous "Maracanazo" victory over Brazil. Italy dominated the 1930s with back-to-back wins, before the post-war era ushered in new powers.</p>
-      <h2>The Brazil and Europe Eras</h2>
-      <p>Brazil's golden generations made them the most successful nation, powered by legends from Pelé to Ronaldo. Germany and Italy built dynasties of their own, while the 21st century saw a remarkable run of four straight European champions — Italy (2006), Spain (2010), Germany (2014) and France (2018).</p>
-      <h2>Recent Champions</h2>
-      <p>Argentina ended that European streak in 2022, beating France on penalties in a classic final — Lionel Messi's crowning moment. France lifted the trophy in 2018, with Germany (2014) and Spain (2010) the champions before them.</p>
+
+      <h2>The Early Years (1930–1950)</h2>
+      <p>Uruguay won the inaugural 1930 tournament on home soil, fitting for the reigning Olympic champions of the era. Italy then dominated the 1930s with back-to-back titles in 1934 and 1938, becoming the first nation to retain the trophy. After a 12-year gap forced by the Second World War, Uruguay returned to win again in 1950 with the famous "Maracanazo" — silencing a packed Maracanã by beating host Brazil in the decisive match, still regarded as one of football's greatest upsets.</p>
+
+      <h2>The Brazilian Golden Age (1958–1970)</h2>
+      <p>Brazil's emergence defined the next era. Inspired by a teenage Pelé, they won in 1958 and 1962, then produced what many consider the greatest team ever to lift the trophy in 1970 — a side of Pelé, Jairzinho, Tostão and Carlos Alberto whose flowing football set the standard for generations. That 1970 triumph let Brazil keep the original Jules Rimet Trophy permanently.</p>
+
+      <h2>European Powers and the Modern Game (1974–2002)</h2>
+      <p>West Germany (1974, 1990) and Italy (1982) built dynasties of their own through tactical discipline and tournament savvy, while Argentina announced themselves with home glory in 1978 and Diego Maradona's near-single-handed 1986 triumph. Brazil rejoined the summit in 1994 and 2002, the latter powered by the original Ronaldo, taking them clear at the top of the all-time list with five stars.</p>
+
+      <h2>The European Streak — and Argentina's Answer (2006–2022)</h2>
+      <p>The 21st century opened with a remarkable run of four consecutive European champions: Italy (2006), Spain (2010), Germany (2014) and France (2018). Spain's win was historic — their first-ever title, built on the tiki-taka era of Barcelona and the national side. Then, in 2022, Argentina ended the European run by beating France on penalties after a 3–3 classic in Qatar, delivering Lionel Messi the one prize that had eluded him and arguably settling his place among the immortals.</p>
+
       <h2>Records to Know</h2>
       <ul>
-        <li>Brazil are the only nation to appear at every World Cup finals.</li>
-        <li>Only eight different countries have ever won the tournament.</li>
-        <li>European and South American nations have won every edition to date.</li>
+        <li>Brazil are the only nation to appear at every World Cup finals tournament.</li>
+        <li>Only eight different countries have ever won; just four of them have won more than twice.</li>
+        <li>Every champion to date has come from either Europe or South America.</li>
+        <li>No host nation has won since France in 1998 — and no European side has ever won in the Americas.</li>
       </ul>
+
+      <h2>Can a Ninth Nation Break Through?</h2>
+      <p>For decades the list barely changed, but the gap between the elite and the rest has narrowed. Croatia have reached two of the last three finals or semi-finals; Morocco became the first African and Arab nation to reach a semi-final in 2022. With 48 teams competing in 2026 and more nations gaining tournament experience, the prospect of a ninth name eventually joining this list feels more plausible than at any point in the competition's history.</p>
+
       <h2>Frequently Asked Questions</h2>
       <h3>Who has won the most World Cups?</h3>
-      <p>Brazil, with five titles.</p>
+      <p>Brazil, with five titles (1958, 1962, 1970, 1994, 2002).</p>
       <h3>Who are the current World Cup holders?</h3>
-      <p>Argentina, who won in 2022.</p>
+      <p>Argentina, who won in 2022 — their third title.</p>
+      <h3>How many different countries have won the World Cup?</h3>
+      <p>Eight: Brazil, Germany, Italy, Argentina, France, Uruguay, England and Spain.</p>
+
       <h2>Key Takeaways</h2>
       <ul>
         <li>Just eight nations have ever won the World Cup; Brazil lead with five.</li>
         <li>Europe and South America have shared every title in history.</li>
-        <li>With 48 teams in 2026, the door is open for a ninth name to one day join the list.</li>
+        <li>No host has won since 1998, and no European team has triumphed in the Americas.</li>
+        <li>With 48 teams in 2026, the door is increasingly open for a ninth name to join the list.</li>
       </ul>
     `,
   },
@@ -481,7 +522,7 @@ const RAW: RawArticle[] = [
     title: 'Aston Martin confirm Stroll to return to action for Canadian Grand Prix',
     category: 'sports',
     categoryLabel: 'Formula 1',
-    authorId: 'ben-carter',
+    authorId: 'newsroom',
     publishedAt: '2025-06-11T09:00:00Z',
     tags: ['Formula 1', 'Aston Martin'],
     imageUrl: '/images/aston_martin.png',
@@ -494,66 +535,11 @@ const RAW: RawArticle[] = [
       <p>"I am excited to get back behind the wheel with the team for my home Grand Prix this weekend," Stroll said. "I was always going to fight hard to be ready to race in front of the Montreal crowd."</p>`,
   },
   {
-    id: 'sport-article-1-nba-ai',
-    title: 'NBA Introduces Revolutionary AI-Powered Officiating System',
-    category: 'sports',
-    categoryLabel: 'Basketball',
-    authorId: 'mike-johnson',
-    publishedAt: '2025-06-14T09:00:00Z',
-    isTrending: true,
-    tags: ['Basketball', 'NBA', 'Technology'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Minnesota_Lynx_teammates_huddle_on_the_court_in_the_Lynx_vs_Sun_game_at_Target_Center.jpg/1280px-Minnesota_Lynx_teammates_huddle_on_the_court_in_the_Lynx_vs_Sun_game_at_Target_Center.jpg',
-    imageAlt: 'Basketball players huddle on the court',
-    imageCredit: 'Photo: Lorie Shaull / CC BY-SA 4.0 via Wikimedia Commons',
-    body: `
-      <p>The NBA has announced a groundbreaking partnership to implement an AI-powered officiating system that will debut during the 2025-26 season, using advanced computer vision and machine learning to assist referees.</p>
-      <h2>Technology Overview</h2>
-      <p>The system combines high-definition cameras, real-time computer vision analysis, and machine learning algorithms trained on millions of plays, communicating with referees via earpieces.</p>
-      <h2>Expected Benefits</h2>
-      <p>The system is expected to reduce officiating errors by up to 85% while maintaining the human element of refereeing.</p>`,
-  },
-  {
-    id: 'sport-article-2-wimbledon',
-    title: 'Wimbledon Announces Historic Prize Money Increase',
-    category: 'sports',
-    categoryLabel: 'Tennis',
-    authorId: 'sarah-jenkins',
-    publishedAt: '2025-06-13T09:00:00Z',
-    tags: ['Tennis', 'Wimbledon'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/2013_US_Open_%28Tennis%29_%289651194814%29.jpg/1280px-2013_US_Open_%28Tennis%29_%289651194814%29.jpg',
-    imageAlt: 'A professional tennis match',
-    imageCredit: 'Photo: Steven Pisano / CC BY 2.0 via Wikimedia Commons',
-    body: `
-      <p>Wimbledon has announced a historic increase in prize money for the 2025 tournament, with the total prize fund reaching £50 million. This represents a 15% increase and continues the tournament's commitment to equal pay.</p>
-      <h2>Prize Money Breakdown</h2>
-      <p>The men's and women's singles champions will each receive £2.5 million, while even first-round losers will receive £55,000.</p>
-      <h2>Economic Impact</h2>
-      <p>The increase reflects the growing commercial success of tennis and ensures players at all levels can make a sustainable living from the sport.</p>`,
-  },
-  {
-    id: 'sport-article-5-nba-expansion',
-    title: 'NBA Expands to Mexico City and Vancouver',
-    category: 'sports',
-    categoryLabel: 'Basketball',
-    authorId: 'ben-carter',
-    publishedAt: '2025-06-10T09:00:00Z',
-    tags: ['Basketball', 'NBA', 'Expansion'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Tech-Cavaliers_Women%27s_Basketball_game_%282024-03-03%29.jpg/1280px-Tech-Cavaliers_Women%27s_Basketball_game_%282024-03-03%29.jpg',
-    imageAlt: 'A basketball game in progress',
-    imageCredit: 'Photo via Wikimedia Commons (public domain)',
-    body: `
-      <p>The NBA has officially announced expansion to Mexico City and Vancouver, bringing the league to 32 teams. The expansion teams will begin play in the 2027-28 season.</p>
-      <h2>Market Analysis</h2>
-      <p>Mexico City offers access to the growing Latin American market, while Vancouver provides a gateway to the Canadian market.</p>
-      <h2>Economic Impact</h2>
-      <p>The expansion is expected to generate over $2 billion in economic activity, including arena construction, job creation and increased tourism.</p>`,
-  },
-  {
     id: 'home-article-7-tennis-tech',
     title: "The Tech That's Changing the Game of Tennis",
     category: 'sports',
     categoryLabel: 'Tennis',
-    authorId: 'evelyn-reed',
+    authorId: 'newsroom',
     publishedAt: '2025-05-20T09:00:00Z',
     tags: ['Tennis', 'Technology', 'Analytics'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/2013_US_Open_%28Tennis%29_%289651194814%29.jpg/1280px-2013_US_Open_%28Tennis%29_%289651194814%29.jpg',
@@ -566,76 +552,11 @@ const RAW: RawArticle[] = [
 
   // ───────────────────────── WORLD ─────────────────────────
   {
-    id: 'top-1-climate',
-    title: 'Global Climate Summit Reaches Historic Agreement on Carbon Reduction',
-    category: 'world',
-    categoryLabel: 'Breaking News',
-    authorId: 'newsroom',
-    publishedAt: '2025-06-15T08:00:00Z',
-    isFeatured: true,
-    tags: ['Climate', 'Politics', 'Economy'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Bonn_climate_change_conference_may_2012_01.jpg/1280px-Bonn_climate_change_conference_may_2012_01.jpg',
-    imageAlt: 'Delegates at a United Nations climate change conference',
-    imageCredit: 'Photo via Wikimedia Commons (CC0)',
-    body: `
-      <p>In a historic breakthrough at the COP29 climate summit, world leaders have agreed to the most ambitious climate targets ever set, committing to reduce greenhouse gas emissions by 60% below 2019 levels by 2035.</p>
-      <h2>Key Provisions of the Agreement</h2>
-      <ul>
-        <li><strong>Carbon Pricing:</strong> A global minimum carbon price of $50 per ton by 2030.</li>
-        <li><strong>Renewable Energy:</strong> 70% renewable energy generation by 2035.</li>
-        <li><strong>Fossil Fuel Phase-out:</strong> Complete phase-out of coal power by 2040 in developed nations.</li>
-        <li><strong>Climate Finance:</strong> A $100 billion annual fund for developing nations.</li>
-      </ul>
-      <h2>Economic Implications</h2>
-      <p>Analysts predict the agreement will trigger the largest economic transformation since the Industrial Revolution, with the renewable energy sector expected to create over 20 million new jobs globally.</p>`,
-  },
-  {
-    id: 'world-news-1-quantum',
-    title: 'Revolutionary AI Breakthrough: Quantum Computing Achieves Commercial Viability',
-    category: 'world',
-    categoryLabel: 'Technology',
-    authorId: 'newsroom',
-    publishedAt: '2025-06-14T09:00:00Z',
-    isTrending: true,
-    tags: ['Technology', 'Quantum Computing', 'AI'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/IBM_Q_at_CES_%2839660636671%29.jpg/1280px-IBM_Q_at_CES_%2839660636671%29.jpg',
-    imageAlt: 'An IBM Q quantum computer on display',
-    imageCredit: 'Photo: Lars Plougmann / CC BY-SA 2.0 via Wikimedia Commons',
-    body: `
-      <p>IBM and Google have simultaneously announced major breakthroughs in quantum computing technology, bringing commercial quantum applications within reach for the first time.</p>
-      <h2>The Quantum Advantage</h2>
-      <p>IBM's 1,000-qubit Condor processor and Google's error-corrected processor represent the first quantum computers capable of solving real-world problems classical computers cannot handle efficiently.</p>
-      <h2>Immediate Applications</h2>
-      <ul>
-        <li><strong>Drug Discovery:</strong> Designing new drugs in days rather than years.</li>
-        <li><strong>Financial Modeling:</strong> Portfolio optimisation and risk assessment.</li>
-        <li><strong>Climate Modeling:</strong> More accurate weather and climate predictions.</li>
-      </ul>`,
-  },
-  {
-    id: 'world-news-2-banks',
-    title: 'Central Banks Coordinate Historic Interest Rate Decision',
-    category: 'world',
-    categoryLabel: 'Economy',
-    authorId: 'newsroom',
-    publishedAt: '2025-06-13T09:00:00Z',
-    tags: ['Economy', 'Finance', 'Markets'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/New_York_Stock_Exchange_trading_floor_on_Wall_Street%2C_New_York%2C_New_York_LCCN2011634218.tif/lossy-page1-1280px-New_York_Stock_Exchange_trading_floor_on_Wall_Street%2C_New_York%2C_New_York_LCCN2011634218.tif.jpg',
-    imageAlt: 'The trading floor of the New York Stock Exchange',
-    imageCredit: 'Photo: Library of Congress (public domain)',
-    body: `
-      <p>In an unprecedented display of global monetary coordination, the Federal Reserve, European Central Bank, Bank of Japan and Bank of England have announced a synchronised approach to interest rate policy.</p>
-      <h2>The Coordinated Approach</h2>
-      <p>The central banks have agreed to maintain a unified stance, with gradual rate adjustments based on shared economic indicators — the closest coordination since the 2008 financial crisis.</p>
-      <h2>Market Reaction</h2>
-      <p>Financial markets responded positively, with major indices rising 2-3% globally as uncertainty over divergent policies eased.</p>`,
-  },
-  {
     id: 'world-news-3-alzheimers',
     title: "Breakthrough in Alzheimer's Treatment Shows Promising Results",
     category: 'world',
     categoryLabel: 'Health',
-    authorId: 'evelyn-reed',
+    authorId: 'newsroom',
     publishedAt: '2025-06-12T09:00:00Z',
     tags: ['Health', 'Science', 'Medicine'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/CSIRO_ScienceImage_3488_Patient_undergoing_MRI_scan_in_Westmead_Hospital_Sydney.jpg/1280px-CSIRO_ScienceImage_3488_Patient_undergoing_MRI_scan_in_Westmead_Hospital_Sydney.jpg',
@@ -648,29 +569,6 @@ const RAW: RawArticle[] = [
       <h2>Regulatory Pathway</h2>
       <p>The FDA has granted the treatment "Breakthrough Therapy" designation, which could see it available to patients within 18 months.</p>`,
   },
-  {
-    id: 'world-1-peace',
-    title: 'Historic Peace Agreement Signed in Middle East',
-    category: 'world',
-    categoryLabel: 'Diplomacy',
-    authorId: 'newsroom',
-    publishedAt: '2025-06-09T09:00:00Z',
-    tags: ['Diplomacy', 'Politics'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/G7_Family_group_photo_of_2016_Ise-Shima_Summit.jpg/1280px-G7_Family_group_photo_of_2016_Ise-Shima_Summit.jpg',
-    imageAlt: 'World leaders pose for a group photo at a summit',
-    imageCredit: 'Photo: U.S. government (public domain)',
-    body: `
-      <p>Leaders from across the Middle East signed a comprehensive peace agreement at the United Nations headquarters that could fundamentally transform the region's geopolitical landscape.</p>
-      <h2>Key Provisions</h2>
-      <ul>
-        <li>A regional economic cooperation zone.</li>
-        <li>Joint infrastructure projects including water and energy sharing.</li>
-        <li>Cultural exchange and educational initiatives.</li>
-        <li>Security cooperation mechanisms.</li>
-      </ul>
-      <h2>Economic Impact</h2>
-      <p>Analysts predict the agreement could unlock $1 trillion in economic potential for the region.</p>`,
-  },
 
   // ───────────────────────── ESPORTS ─────────────────────────
   {
@@ -678,7 +576,7 @@ const RAW: RawArticle[] = [
     title: 'ONIC Wins MPL ID Season 15 After Epic 4–3 Showdown',
     category: 'esports',
     categoryLabel: 'MLBB',
-    authorId: 'leo-chen',
+    authorId: 'newsroom',
     publishedAt: '2025-06-15T22:58:00Z',
     isFeatured: true,
     isTrending: true,
@@ -696,78 +594,6 @@ const RAW: RawArticle[] = [
       <h2>MSC 2025 Bound</h2>
       <p>With this victory, ONIC Esports heads into MSC 2025 in Riyadh with momentum. Alongside runner-up RRQ Hoshi, they will represent Indonesia at the prestigious global tournament as part of the Esports World Cup.</p>`,
   },
-  {
-    id: 'home-article-6-rrq',
-    title: 'RRQ and ONIC Esports Secure Spots at MSC 2025 in Riyadh',
-    category: 'esports',
-    categoryLabel: 'MLBB',
-    authorId: 'elvis',
-    publishedAt: '2025-06-14T09:00:00Z',
-    tags: ['Esports', 'MLBB', 'MSC'],
-    imageUrl: '/images/rrq_aualified_msc_25.png',
-    body: `
-      <p>Indonesia's finest Mobile Legends teams — <strong>RRQ Hoshi</strong> and <strong>ONIC Esports</strong> — have officially qualified for the prestigious <strong>MSC 2025</strong> in Riyadh, Saudi Arabia.</p>
-      <h2>Indonesia Sends Its Best</h2>
-      <p>Both teams earned direct slots in the MSC 2025 Group Stage, bypassing the wildcard rounds entirely.</p>
-      <h2>MSC 2025: Bigger Than Ever</h2>
-      <p>This year's Mid-Season Cup is part of the Esports World Cup and features a record-breaking prize pool of $3 million.</p>`,
-    secondaryImageUrl: '/images/rrq_beat_geek.png',
-    secondaryBody: `
-      <h2>What to Expect</h2>
-      <p>Fans can expect world-class gameplay and the return of iconic rivalries as RRQ and ONIC gear up for a legendary run.</p>`,
-  },
-  {
-    id: 'esports-hero-2-liquid',
-    title: 'Team Liquid PH Crowned MPL PH Season 15 Champions After Epic 7-Game Series',
-    category: 'esports',
-    categoryLabel: 'MLBB',
-    authorId: 'leo-chen',
-    publishedAt: '2025-06-01T12:00:00Z',
-    tags: ['Esports', 'MLBB', 'MPL'],
-    imageUrl: '/images/mplphs15_cham.png',
-    body: `
-      <p><strong>Manila, Philippines</strong> — After a thrilling showdown, <strong>Team Liquid PH</strong> has emerged as the champion of MPL Philippines Season 15, defeating ONIC Philippines in a best-of-seven grand final 4–3.</p>
-      <h2>A Season to Remember</h2>
-      <p>Team Liquid PH finished the regular season with a dominant 12–2 record before staging a powerful lower-bracket comeback to reach the grand final.</p>`,
-    secondaryImageUrl: '/images/sanji_mvp.png',
-    secondaryBody: `
-      <h2>The Road to MSC 2025</h2>
-      <p>With this victory, Team Liquid PH and runner-up ONIC PH will represent the Philippines in the Mid-Season Cup 2025.</p>`,
-  },
-  {
-    id: 'esports-ronaldo-ambassador',
-    title: 'Cristiano Ronaldo named Esports World Cup Global Ambassador',
-    category: 'esports',
-    categoryLabel: 'Esports',
-    authorId: 'leo-chen',
-    publishedAt: '2025-06-09T10:00:00Z',
-    tags: ['Esports', 'Esports World Cup'],
-    imageUrl:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/2019_SEA_Games_Esports_Tekken_7_THA_vs_PHI.jpg/1280px-2019_SEA_Games_Esports_Tekken_7_THA_vs_PHI.jpg',
-    imageAlt: 'Competitors at an esports tournament',
-    imageCredit: 'Photo: Hariboneagle927 / CC BY-SA 3.0 via Wikimedia Commons',
-    body: `
-      <p>Cristiano Ronaldo will spearhead the global campaign for the Esports World Cup (EWC), promoting its theme, <em>Rise Above</em>.</p>
-      <p>"The passion, dedication, skill, and intensity I witness in esports athletes are just as real as what I've experienced on the football pitch," Ronaldo shared.</p>
-      <h2>Bridging Generations</h2>
-      <p>Ronaldo joins a growing trend of traditional sports athletes engaging with the esports industry, alongside figures like Lionel Messi.</p>`,
-  },
-  {
-    id: 'home-article-4-msc',
-    title: 'Mobile Legends MSC 2025 Set for Esports World Cup',
-    category: 'esports',
-    categoryLabel: 'Esports',
-    authorId: 'elvis',
-    publishedAt: '2025-05-30T10:00:00Z',
-    tags: ['Esports', 'MLBB', 'MSC'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/2019_SEA_Games_Esports_Tekken_7_MAS_vs_INA.jpg/1280px-2019_SEA_Games_Esports_Tekken_7_MAS_vs_INA.jpg',
-    imageAlt: 'Players compete at an esports event',
-    imageCredit: 'Photo: Hariboneagle927 / CC BY-SA 3.0 via Wikimedia Commons',
-    body: `
-      <p>The Mobile Legends: Bang Bang Mid-Season Cup (MSC) 2025 is set to electrify the Esports World Cup in Riyadh this July, with a prize pool of $3 million and 16 elite teams.</p>
-      <h2>Format and Key Dates</h2>
-      <p>The tournament kicks off with the Wildcard Stage (July 10–13), followed by the Group Stage (July 23–27) and the Knockout Stage (July 30 – August 2).</p>`,
-  },
 
   // ───────────────────────── EVERGREEN FEATURES ─────────────────────────
   {
@@ -775,7 +601,7 @@ const RAW: RawArticle[] = [
     title: 'The Rise of Women’s Football: Why the Women’s Game Is Booming',
     category: 'football',
     categoryLabel: 'Football',
-    authorId: 'jane-doe',
+    authorId: 'newsroom',
     publishedAt: '2026-06-06T09:00:00Z',
     isTrending: true,
     tags: ['Football', 'Women’s Football', 'Analysis'],
@@ -816,7 +642,7 @@ const RAW: RawArticle[] = [
     title: 'The Four Tennis Grand Slams Explained: A Beginner’s Guide',
     category: 'sports',
     categoryLabel: 'Tennis',
-    authorId: 'sarah-jenkins',
+    authorId: 'newsroom',
     publishedAt: '2026-06-05T09:00:00Z',
     tags: ['Tennis', 'Grand Slam', 'Guide'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/2013_US_Open_%28Tennis%29_%289651194814%29.jpg/1280px-2013_US_Open_%28Tennis%29_%289651194814%29.jpg',
@@ -856,7 +682,7 @@ const RAW: RawArticle[] = [
     title: 'What Is the Esports World Cup? Format, Games and Prize Money Explained',
     category: 'esports',
     categoryLabel: 'Esports',
-    authorId: 'leo-chen',
+    authorId: 'newsroom',
     publishedAt: '2026-06-04T09:00:00Z',
     isTrending: true,
     tags: ['Esports', 'Esports World Cup', 'Guide'],
@@ -936,7 +762,7 @@ const RAW: RawArticle[] = [
     title: 'The Champions League’s New Format Explained: How the League Phase Works',
     category: 'football',
     categoryLabel: 'Football',
-    authorId: 'tom-frank',
+    authorId: 'newsroom',
     publishedAt: '2026-06-02T09:00:00Z',
     tags: ['Football', 'Champions League', 'Guide'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Crowd_at_Dora_Stadium.jpg/1280px-Crowd_at_Dora_Stadium.jpg',
@@ -978,7 +804,7 @@ const RAW: RawArticle[] = [
     title: 'Formula 1 Explained: How the Championship and Points System Work',
     category: 'sports',
     categoryLabel: 'Formula 1',
-    authorId: 'ben-carter',
+    authorId: 'newsroom',
     publishedAt: '2026-06-01T09:00:00Z',
     tags: ['Formula 1', 'Motorsport', 'Guide'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/EurobrunER189_RaceHistoryOnTrack_HH2011.jpg/1280px-EurobrunER189_RaceHistoryOnTrack_HH2011.jpg',
@@ -1020,7 +846,7 @@ const RAW: RawArticle[] = [
     title: 'League of Legends Worlds: How the World Championship Works',
     category: 'esports',
     categoryLabel: 'Esports',
-    authorId: 'emily-white',
+    authorId: 'newsroom',
     publishedAt: '2026-05-31T09:00:00Z',
     tags: ['Esports', 'League of Legends', 'Guide'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/League_of_Legends_Main_Stage.jpg/1280px-League_of_Legends_Main_Stage.jpg',
@@ -1060,7 +886,7 @@ const RAW: RawArticle[] = [
     title: 'A Brief History of Football: From Folk Game to Global Spectacle',
     category: 'football',
     categoryLabel: 'Football',
-    authorId: 'tom-frank',
+    authorId: 'newsroom',
     publishedAt: '2026-05-29T09:00:00Z',
     isTrending: true,
     tags: ['Football', 'History', 'Feature'],
@@ -1100,7 +926,7 @@ const RAW: RawArticle[] = [
     title: 'Basketball 101: The Rules and How the Game Works',
     category: 'sports',
     categoryLabel: 'Basketball',
-    authorId: 'mike-johnson',
+    authorId: 'newsroom',
     publishedAt: '2026-05-28T09:00:00Z',
     tags: ['Basketball', 'Guide', 'NBA'],
     imageUrl:
@@ -1171,7 +997,7 @@ const RAW: RawArticle[] = [
     title: 'Training for Your First Marathon: A Beginner’s Guide',
     category: 'sports',
     categoryLabel: 'Athletics',
-    authorId: 'evelyn-reed',
+    authorId: 'newsroom',
     publishedAt: '2026-05-26T09:00:00Z',
     tags: ['Athletics', 'Running', 'Health', 'Guide'],
     imageUrl:
@@ -1193,80 +1019,11 @@ const RAW: RawArticle[] = [
 
   // ───────────────────────── BREAKING TECH NEWS ─────────────────────────
   {
-    id: 'us-orders-anthropic-disable-fable-mythos',
-    title: 'US Orders Anthropic to Disable AI Models Fable 5 and Mythos 5 Worldwide',
-    category: 'world',
-    categoryLabel: 'Technology',
-    authorId: 'newsroom',
-    publishedAt: '2026-06-13T12:00:00Z',
-    isBreaking: true,
-    isTrending: true,
-    tags: ['Technology', 'AI', 'Anthropic', 'Regulation'],
-    imageUrl:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/BalticServers_data_center.jpg/1280px-BalticServers_data_center.jpg',
-    imageAlt: 'Rows of servers in a data center',
-    imageCredit: 'Photo: BalticServers.com / CC BY-SA 3.0 via Wikimedia Commons',
-    summary:
-      'The US government has directed Anthropic to suspend access to its newest AI models for all foreign nationals over security concerns — prompting the company to switch them off for every user.',
-    body: `
-      <p>Anthropic has disabled access to its newest artificial intelligence models, <strong>Fable 5</strong> and <strong>Mythos 5</strong>, after the US government issued a directive ordering the company to block all foreign nationals from using them on national-security grounds.</p>
-      <h2>What Happened</h2>
-      <p>According to multiple reports, Anthropic received the order on Friday afternoon, instructing it to suspend access to the two models "by any foreign national." With no reliable way to screen foreign nationals out of its global user base in real time, the company chose to switch the models off for <em>everyone</em> rather than attempt a partial block.</p>
-      <h2>The Government's Concern</h2>
-      <p>Officials are understood to have believed they had identified a method of bypassing — or "jailbreaking" — Fable 5. The action has been framed as an export-control-style measure, restricting access to advanced AI capabilities on security grounds.</p>
-      <h2>Anthropic's Response</h2>
-      <p>In a public statement, Anthropic said it had reviewed a demonstration of the specific technique and concluded it identified only a small number of previously known, minor vulnerabilities. The company said it disagreed that a narrow potential jailbreak should be cause for recalling a commercial model already deployed to hundreds of millions of people, but that it had complied with the directive while seeking clarity.</p>
-      <h2>Why It Matters</h2>
-      <p>The move is an unusual instance of a government compelling an AI developer to pull flagship products from the market worldwide. It raises pressing questions about how national-security rules will apply to widely used AI services, the balance between security and access, and what recourse companies and users have when a model is switched off overnight.</p>
-      <p><em>This is a developing story.</em></p>`,
-  },
-  {
-    id: 'fable5-ban-explainer',
-    title: 'What the Fable 5 and Mythos 5 Ban Means for AI Users',
-    category: 'world',
-    categoryLabel: 'Technology',
-    authorId: 'newsroom',
-    publishedAt: '2026-06-14T08:00:00Z',
-    isTrending: true,
-    tags: ['Technology', 'AI', 'Anthropic', 'Analysis'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Ameca_Generation_1.jpg/1280px-Ameca_Generation_1.jpg',
-    imageAlt: 'A humanoid AI robot',
-    imageCredit: 'Photo: Willy Jackson / CC BY-SA 4.0 via Wikimedia Commons',
-    summary:
-      'After the US directive forced Anthropic to switch off Fable 5 and Mythos 5, here’s what it means for everyday users — and what your options are now.',
-    body: `
-      <p>The US government's order requiring Anthropic to block foreign-national access to its newest AI models — which led the company to disable Fable 5 and Mythos 5 for everyone — has left millions of users suddenly without tools they relied on. Here is a plain-English look at what happened and what it means.</p>
-      <h2>What Happened</h2>
-      <p>Anthropic received a government directive instructing it to suspend access to the two models for any foreign national, on national-security grounds. Because the company could not reliably verify users' nationality in real time, it chose to switch the models off for all customers rather than attempt a partial block.</p>
-      <h2>Who Is Affected</h2>
-      <p>In practice, anyone who built workflows, apps or daily habits around Fable 5 or Mythos 5 lost access at once — including, by some accounts, the company's own staff. For businesses that had integrated the models into products, the disruption was immediate.</p>
-      <h2>What Still Works</h2>
-      <p>Only the two newest models were affected. Earlier models and other providers' tools remain available, so most users can fall back to a previous generation or an alternative service while the situation is resolved.</p>
-      <h2>The Bigger Picture</h2>
-      <p>The episode is a preview of how national-security rules may increasingly intersect with consumer AI. Advanced models are now treated by some governments much like sensitive technology — subject to export-style controls that can be imposed quickly and broadly.</p>
-      <h2>Lessons for Users and Businesses</h2>
-      <p>The key takeaway is not to depend on a single model or vendor. Keeping a fallback option — a second provider, or an earlier model — dramatically reduces the disruption when access changes overnight. For businesses, building provider-agnostic systems is now a sensible resilience measure.</p>
-      <h2>What Happens Next</h2>
-      <p>Anthropic has said it disagrees that a narrow potential vulnerability justified pulling a widely used product, and is seeking clarity. Whether the models return — and on what terms — will be closely watched across the industry as a test case for AI governance.</p>
-      <h2>Frequently Asked Questions</h2>
-      <h3>Why did Anthropic disable the models for everyone?</h3>
-      <p>The order targeted foreign nationals, but with no reliable way to screen users in real time, the company switched the models off for all users to comply.</p>
-      <h3>Are other AI tools affected?</h3>
-      <p>No — only the two newest models. Earlier models and other providers remain available.</p>
-      <h2>Key Takeaways</h2>
-      <ul>
-        <li>A US directive over foreign-national access led Anthropic to disable two models for all users.</li>
-        <li>Earlier models and rival tools still work, limiting the practical impact.</li>
-        <li>The episode shows why relying on a single AI vendor is risky.</li>
-      </ul>
-    `,
-  },
-  {
     id: 'var-explained',
     title: 'VAR Explained: How the Video Assistant Referee Works in Football',
     category: 'football',
     categoryLabel: 'Football',
-    authorId: 'tom-frank',
+    authorId: 'newsroom',
     publishedAt: '2026-06-12T09:00:00Z',
     tags: ['Football', 'VAR', 'Guide'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/City_of_Manchester_Stadium_Crowd_Against_Hull.jpg/1280px-City_of_Manchester_Stadium_Crowd_Against_Hull.jpg',
@@ -1309,7 +1066,7 @@ const RAW: RawArticle[] = [
     title: 'Tennis Scoring Explained: Love, Deuce and Tie-Breaks',
     category: 'sports',
     categoryLabel: 'Tennis',
-    authorId: 'sarah-jenkins',
+    authorId: 'newsroom',
     publishedAt: '2026-06-11T09:00:00Z',
     tags: ['Tennis', 'Guide'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/2013_US_Open_%28Tennis%29_%289651194814%29.jpg/1280px-2013_US_Open_%28Tennis%29_%289651194814%29.jpg',
@@ -1331,7 +1088,7 @@ const RAW: RawArticle[] = [
     title: 'The International: How Dota 2’s Biggest Tournament Works',
     category: 'esports',
     categoryLabel: 'Esports',
-    authorId: 'emily-white',
+    authorId: 'newsroom',
     publishedAt: '2026-06-10T09:00:00Z',
     tags: ['Esports', 'Dota 2', 'Guide'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/2019_SEA_Games_Esports_Tekken_7_MAS_vs_INA.jpg/1280px-2019_SEA_Games_Esports_Tekken_7_MAS_vs_INA.jpg',
@@ -1407,7 +1164,7 @@ const RAW: RawArticle[] = [
     title: 'The Offside Rule Explained: Football’s Most Debated Law',
     category: 'football',
     categoryLabel: 'Football',
-    authorId: 'tom-frank',
+    authorId: 'newsroom',
     publishedAt: '2026-06-08T09:00:00Z',
     tags: ['Football', 'Rules', 'Guide'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Crowd_at_Dora_Stadium.jpg/1280px-Crowd_at_Dora_Stadium.jpg',
@@ -1435,7 +1192,7 @@ const RAW: RawArticle[] = [
     title: 'NBA vs FIBA: How Basketball Rules Differ Around the World',
     category: 'sports',
     categoryLabel: 'Basketball',
-    authorId: 'mike-johnson',
+    authorId: 'newsroom',
     publishedAt: '2026-06-07T09:00:00Z',
     tags: ['Basketball', 'NBA', 'FIBA', 'Guide'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Minnesota_Lynx_teammates_huddle_on_the_court_in_the_Lynx_vs_Sun_game_at_Target_Center.jpg/1280px-Minnesota_Lynx_teammates_huddle_on_the_court_in_the_Lynx_vs_Sun_game_at_Target_Center.jpg',
@@ -1479,7 +1236,7 @@ const RAW: RawArticle[] = [
     title: 'What Is a Battle Royale? The Genre Behind PUBG and Fortnite',
     category: 'esports',
     categoryLabel: 'Esports',
-    authorId: 'leo-chen',
+    authorId: 'newsroom',
     publishedAt: '2026-06-06T09:00:00Z',
     tags: ['Esports', 'Gaming', 'Battle Royale', 'Guide'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/2019_SEA_Games_Esports_Tekken_7_MAS_vs_INA.jpg/1280px-2019_SEA_Games_Esports_Tekken_7_MAS_vs_INA.jpg',
@@ -1524,7 +1281,7 @@ const RAW: RawArticle[] = [
     title: 'Lionel Messi: The World Cup Journey to Glory in 2022',
     category: 'football',
     categoryLabel: 'World Cup',
-    authorId: 'carlos-rodriguez',
+    authorId: 'newsroom',
     publishedAt: '2026-06-09T10:00:00Z',
     isWorldCup: true,
     isTrending: true,
@@ -1570,7 +1327,7 @@ const RAW: RawArticle[] = [
     title: 'Cristiano Ronaldo at the World Cup: Records and the 2026 Question',
     category: 'football',
     categoryLabel: 'World Cup',
-    authorId: 'jane-doe',
+    authorId: 'newsroom',
     publishedAt: '2026-06-08T10:00:00Z',
     isWorldCup: true,
     isTrending: true,
@@ -1613,7 +1370,7 @@ const RAW: RawArticle[] = [
     title: 'Messi vs Ronaldo: Inside Football’s Greatest Rivalry',
     category: 'football',
     categoryLabel: 'Football',
-    authorId: 'carlos-rodriguez',
+    authorId: 'newsroom',
     publishedAt: '2026-06-07T10:00:00Z',
     isTrending: true,
     tags: ['Football', 'Lionel Messi', 'Cristiano Ronaldo', 'Feature'],
@@ -1621,33 +1378,48 @@ const RAW: RawArticle[] = [
     imageAlt: 'Cristiano Ronaldo in action',
     imageCredit: 'Photo: Ludovic Péron / CC BY-SA 3.0 via Wikimedia Commons',
     summary:
-      'For over 15 years, Lionel Messi and Cristiano Ronaldo pushed each other to greatness. Here’s why their rivalry defined an era.',
+      'For more than 15 years Lionel Messi and Cristiano Ronaldo shared the same summit — and pushed each other higher. A clear-eyed look at how their rivalry worked, what set them apart, and why the “who was better” debate misses the point.',
     body: `
-      <p>For more than 15 years, two players stood above everyone else in world football: Lionel Messi and Cristiano Ronaldo. Their rivalry did not just dominate the sport — it defined an entire era, pushing both to heights football may never see matched again.</p>
-      <h2>The Origins</h2>
-      <p>Both emerged in the mid-2000s — Messi at Barcelona, Ronaldo at Manchester United before his move to Real Madrid in 2009. Once Ronaldo arrived in Spain, the rivalry ignited: two of the planet's best players, in the same league, meeting twice a season in the fiercely contested El Clásico.</p>
-      <h2>Two Contrasting Geniuses</h2>
-      <p>Part of the fascination was how different they were. Messi: small, low-centred, a close-control magician who drifts past defenders and threads impossible passes. Ronaldo: tall, explosive, supremely athletic, a relentless goalscorer who reinvented himself repeatedly to keep scoring. Two completely different blueprints for greatness — and fans split into camps that still argue today.</p>
-      <h2>Trading Records and Trophies</h2>
-      <p>Through the 2010s they traded the Ballon d'Or almost exclusively, combining for well over a dozen between them — Messi finishing with a record eight, Ronaldo with five. They shattered scoring records season after season, each seemingly raising his level in direct response to the other.</p>
+      <p>No two athletes in any team sport have spent as long, or as evenly, at the very top as Lionel Messi and Cristiano Ronaldo. From roughly 2008 to 2018 they did not merely lead world football — they monopolised it, sharing all but one Ballon d'Or across a decade and turning every individual award, every Champions League night and every El Clásico into a referendum on which of them was the greater player. This is not another attempt to crown a winner. It is an attempt to explain <em>why</em> the rivalry was so unusually compelling, and what it actually tells us about two completely different ways of being great.</p>
+
+      <h2>Two players who needed each other</h2>
+      <p>The first thing to understand is that the rivalry was, in large part, manufactured by circumstance — and then sustained by genuine competitive obsession. Ronaldo's move from Manchester United to Real Madrid in 2009 placed him in the same league as a Barcelona side built around Messi. Suddenly the two best players alive met twice a season, often more, in the most-watched club fixture on earth. The proximity mattered. Each had a permanent, visible benchmark playing 600 kilometres up the motorway, and both have since admitted the other's numbers shaped their own standards.</p>
+      <p>That feedback loop is the engine of the whole story. Ronaldo's goal tallies in Madrid — repeatedly clearing 50 in a season — were not normal even by elite standards, and it is hard to separate them from the fact that Messi was simultaneously rewriting Barcelona's record books. They dragged each other into statistical territory football had never seen, and may not see again.</p>
+
+      <h2>Contrasting blueprints for greatness</h2>
+      <p>What made the comparison endlessly arguable was that the two men were good at the game in almost opposite ways. Reducing them to a side-by-side helps:</p>
       <ul>
-        <li><strong>Messi:</strong> record Ballon d'Or wins, multiple Champions Leagues, and the 2022 World Cup.</li>
-        <li><strong>Ronaldo:</strong> five Champions Leagues across England, Spain and Italy, and the all-time international scoring record.</li>
+        <li><strong>Messi</strong> — low centre of gravity, impossibly tight close control, and a passing brain that turns him into a playmaker as much as a finisher. His genius is improvisational: he sees and executes things in real time that look pre-planned only in replay.</li>
+        <li><strong>Ronaldo</strong> — taller, explosively athletic, two-footed and dominant in the air. His genius is engineered: a relentlessly trained, endlessly adapted goal machine who has reinvented his game — from flying winger to penalty-box predator — to keep scoring as his body changed.</li>
       </ul>
-      <h2>The Move Away From Europe</h2>
-      <p>The European chapter eventually closed: Ronaldo moved to Saudi Arabia's Al-Nassr in early 2023, while Messi joined Inter Miami in MLS later that year. Even apart, their careers remained a constant point of comparison.</p>
-      <h2>Who Was Better?</h2>
-      <p>It is the debate that never ends — and that is the point. Messi's supporters cite his natural genius, creativity and the World Cup; Ronaldo's point to his goal records, longevity and success across multiple leagues. The truth most fans accept: we were lucky to watch both at once.</p>
+      <p>This is why the debate never resolves. They are not better and worse versions of the same thing; they are the two best examples of two different things. Asking who is better is a little like asking whether a chess grandmaster is better than a sprinter. The honest answer depends entirely on what you value.</p>
+
+      <h2>The trophy ledger — and why it isn't a verdict</h2>
+      <p>On silverware, the broad strokes are well known. Messi has won a record eight Ballons d'Or, four Champions Leagues with Barcelona, multiple league titles, the 2021 Copa América and — the trophy that reframed his entire career — the 2022 World Cup. Ronaldo has won five Ballons d'Or, five Champions Leagues across England, Spain and Italy, league titles in three different countries, Euro 2016 with Portugal, and stands as the all-time leading scorer in men's international football.</p>
+      <p>People reach for these lists as if they settle the argument. They don't, for a simple reason: the two players' achievements are strong in different categories. Messi's case leans on creative dominance and the World Cup; Ronaldo's leans on goalscoring volume, versatility across leagues and international longevity. A ledger only "proves" a winner if you have already decided which column counts most — and that decision is the actual disagreement.</p>
+
+      <h2>What separated them under pressure</h2>
+      <p>One genuinely useful lens is how each man bent the biggest matches to his will. Ronaldo built a reputation as a knockout-stage specialist for Real Madrid, scoring in clusters during their run of Champions League titles and consistently delivering in single-leg, high-stakes games. Messi's defining big-game moments came later and more emotionally — carrying an Argentina side through the 2021 and 2022 international summers after years of falling agonisingly short. The shapes of their careers even rhyme here: Ronaldo front-loaded his trophies, Messi saved his most important one for nearly last.</p>
+
+      <h2>The post-Europe chapter</h2>
+      <p>The European phase closed within a year of itself. Ronaldo joined Saudi Arabia's Al-Nassr in early 2023; Messi moved to Inter Miami in Major League Soccer later that year. Plenty of observers read these moves as the end of the story. In practice they extended it — into a debate about legacy, commercial reach and how two players have reshaped leagues far from football's traditional centre. Even geographically separated, they remain the sport's default unit of comparison.</p>
+
+      <h2>The verdict that actually matters</h2>
+      <p>Here is the uncomfortable, freeing truth: there is no objective answer, and the search for one has always been the least interesting part of the rivalry. What made Messi and Ronaldo special was not that one of them "won" — it was that two athletes of historic ability spent fifteen years refusing to let the other rest. The rivalry was the prize. Anyone who watched it live witnessed something football had never produced before: not one generational talent, but two, peaking simultaneously and pulling each other beyond every previous ceiling. That, far more than any medal count, is the part worth remembering.</p>
+
       <h2>Frequently Asked Questions</h2>
-      <h3>How many Ballon d'Or awards do they have?</h3>
-      <p>Messi has won a record eight; Ronaldo has won five.</p>
-      <h3>Did they ever play together?</h3>
-      <p>No — they were rivals throughout, most famously in the El Clásico years in Spain.</p>
+      <h3>How many Ballon d'Or awards do Messi and Ronaldo have?</h3>
+      <p>Messi has won a record eight; Ronaldo has won five. Between them they dominated the award for well over a decade.</p>
+      <h3>Did Messi and Ronaldo ever play together?</h3>
+      <p>No. They were rivals throughout their European careers, most famously meeting in El Clásico while at Barcelona and Real Madrid.</p>
+      <h3>Who has scored more career goals?</h3>
+      <p>Ronaldo leads on total senior career goals, helped by his longevity and international scoring; Messi's tally is bolstered by his creative output and assists. Exact figures shift with every match they play.</p>
       <h2>Key Takeaways</h2>
       <ul>
-        <li>Messi and Ronaldo defined football for over 15 years.</li>
-        <li>Their contrasting styles made the rivalry endlessly compelling.</li>
-        <li>Their competition pushed both to historic, era-defining excellence.</li>
+        <li>The rivalry was sustained by proximity — same league, twice-a-season meetings — and by genuine mutual obsession.</li>
+        <li>Messi and Ronaldo represent two opposite models of greatness, which is precisely why no single metric crowns a winner.</li>
+        <li>Their trophy hauls are strong in <em>different</em> categories, so the ledger reflects your priorities rather than settling the debate.</li>
+        <li>The lasting value of the era was the competition itself — two historic talents peaking at once and dragging each other higher.</li>
       </ul>
     `,
   },
@@ -1656,7 +1428,7 @@ const RAW: RawArticle[] = [
     title: 'The Greatest World Cup Goalscorers of All Time',
     category: 'football',
     categoryLabel: 'World Cup',
-    authorId: 'tom-frank',
+    authorId: 'newsroom',
     publishedAt: '2026-06-06T10:00:00Z',
     isWorldCup: true,
     tags: ['World Cup', 'Records', 'History'],
@@ -1701,7 +1473,7 @@ const RAW: RawArticle[] = [
     title: 'Could 2026 Be the Last World Cup for Messi and Ronaldo?',
     category: 'football',
     categoryLabel: 'World Cup',
-    authorId: 'carlos-rodriguez',
+    authorId: 'newsroom',
     publishedAt: '2026-06-05T10:00:00Z',
     isWorldCup: true,
     tags: ['World Cup', 'Lionel Messi', 'Cristiano Ronaldo', 'Analysis'],
