@@ -94,10 +94,33 @@
   overflow: hidden;
 }
 
+/* Breaking-news ticker: continuous right-to-left scroll. The track holds two
+   identical runs, so translating it left by half its width loops seamlessly. */
+@keyframes marquee-rtl {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.animate-marquee-rtl {
+  animation: marquee-rtl 45s linear infinite;
+  will-change: transform;
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.001ms !important;
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
+  }
+  /* Don't jitter the marquee — freeze it and let the user scroll the strip. */
+  .animate-marquee-rtl {
+    animation: none !important;
+    transform: none !important;
+  }
+  .ticker-window {
+    overflow-x: auto;
   }
 }

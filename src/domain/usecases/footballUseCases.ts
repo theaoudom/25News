@@ -55,6 +55,23 @@ export class FootballUseCases {
     return this.repo.getLiveFixtures();
   }
 
+  /**
+   * World Cup matches kicking off today or tomorrow (UTC day boundaries),
+   * soonest first. Powers the homepage breaking ticker's matchday entries.
+   */
+  async getMatchdayFixtures(): Promise<Fixture[]> {
+    const fixtures = await this.repo.getFixtures();
+    const now = new Date();
+    const startOfToday = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+    const endOfWindow = startOfToday + 2 * 24 * 60 * 60 * 1000; // through end of tomorrow (exclusive)
+    return fixtures
+      .filter((f) => {
+        const t = new Date(f.kickoff).getTime();
+        return !Number.isNaN(t) && t >= startOfToday && t < endOfWindow;
+      })
+      .sort((a, b) => a.kickoff.localeCompare(b.kickoff));
+  }
+
   async getStandings(): Promise<GroupStanding[]> {
     const groups = await this.repo.getStandings();
     return groups
