@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import type { Fixture } from '@/domain/entities/Football';
+import type { Fixture, Team } from '@/domain/entities/Football';
 
 type RoundData = { round: string; fixtures: Fixture[] };
 
@@ -75,14 +75,24 @@ function formatKickoff(iso: string) {
   return { date, time };
 }
 
+// ─── Winner helper ────────────────────────────────────────────────────────
+function fixtureWinner(f: Fixture): Team | null {
+  if (f.status !== 'finished') return null;
+  const pso = f.homeGoalsPSO != null;
+  const hW = (f.homeGoals ?? 0) > (f.awayGoals ?? 0) || (pso && (f.homeGoalsPSO ?? 0) > (f.awayGoalsPSO ?? 0));
+  const aW = (f.awayGoals ?? 0) > (f.homeGoals ?? 0) || (pso && (f.awayGoalsPSO ?? 0) > (f.homeGoalsPSO ?? 0));
+  return hW ? f.home : aW ? f.away : null;
+}
+
 // ─── Single match card (horizontal layout) ────────────────────────────────
 function MatchCard({
-  fixture, r, i, highlighted, dimmed, onEnter, onLeave,
+  fixture, r, i, highlighted, dimmed, onEnter, onLeave, isFinal,
 }: {
   fixture: Fixture | null;
   r: number; i: number;
   highlighted: boolean; dimmed: boolean;
   onEnter: () => void; onLeave: () => void;
+  isFinal?: boolean;
 }) {
   const style: React.CSSProperties = {
     position: 'absolute',
@@ -126,16 +136,23 @@ function MatchCard({
     <div
       style={style}
       className={`rounded-lg border bg-[var(--card)] overflow-hidden cursor-pointer flex flex-col ${
-        highlighted
-          ? 'border-brand-600 shadow-[0_0_0_3px_rgba(200,16,46,.18)]'
-          : 'border-[var(--border)] hover:border-brand-400'
+        isFinal
+          ? highlighted
+            ? 'border-amber-400 shadow-[0_0_0_3px_rgba(251,191,36,.22)]'
+            : 'border-amber-400/70 hover:border-amber-400'
+          : highlighted
+            ? 'border-brand-600 shadow-[0_0_0_3px_rgba(200,16,46,.18)]'
+            : 'border-[var(--border)] hover:border-brand-400'
       }`}
       onMouseEnter={onEnter}
       onMouseLeave={onLeave}
     >
       {/* Date / time header */}
-      <div className="flex items-center justify-between px-2.5 bg-[var(--bg-soft)] border-b border-[var(--border)]" style={{ height: 18 }}>
-        <span className="text-[10px] text-muted leading-none" suppressHydrationWarning>{date}</span>
+      <div className={`flex items-center justify-between px-2.5 border-b border-[var(--border)] ${isFinal ? 'bg-amber-400/10' : 'bg-[var(--bg-soft)]'}`} style={{ height: 18 }}>
+        <span className="flex items-center gap-1 leading-none">
+          {isFinal && <span className="text-[10px] leading-none">🏆</span>}
+          <span className="text-[10px] text-muted leading-none" suppressHydrationWarning>{date}</span>
+        </span>
         {status === 'live' ? (
           <span className="flex items-center gap-1 text-[10px] font-bold text-brand-600 leading-none">
             <span className="h-1 w-1 rounded-full bg-brand-600 animate-pulse" />
@@ -283,6 +300,7 @@ export function KnockoutBracket({ rounds }: { rounds: RoundData[] }) {
                 dimmed={path.length > 0 && !pathSet.has(`${r}-${i}`)}
                 onEnter={() => onEnter(r, i)}
                 onLeave={onLeave}
+                isFinal={r === ROUND_COUNT - 1}
               />
             ));
           })}
@@ -290,6 +308,45 @@ export function KnockoutBracket({ rounds }: { rounds: RoundData[] }) {
       </div>
 
       {/* Third place */}
+      {/* Champion podium — appears once the Final is decided */}
+      {(() => {
+        const finalFx = (byRound.get('Final') ?? [])[0];
+        if (!finalFx) return null;
+        const champion  = fixtureWinner(finalFx);
+        const runnerUp  = champion ? (champion.name === finalFx.home.name ? finalFx.away : finalFx.home) : null;
+        const thirdFx   = thirdPlace?.fixtures[0];
+        const thirdTeam = thirdFx ? fixtureWinner(thirdFx) : null;
+        if (!champion) return null;
+        return (
+          <div className="mt-10 pt-8 border-t border-[var(--border)] flex flex-col items-center gap-4">
+            <span className="text-5xl leading-none">🏆</span>
+            <p className="text-[10px] font-display font-black tracking-[.16em] uppercase text-amber-500">
+              FIFA World Cup 2026 Champion
+            </p>
+            <div className="flex items-end gap-10">
+              {runnerUp && (
+                <div className="flex flex-col items-center gap-1">
+                  <span className="text-2xl leading-none">🥈</span>
+                  <span className="text-2xl leading-none">{getFlag(runnerUp.name)}</span>
+                  <span className="text-xs font-bold text-muted">{getCode(runnerUp.name)}</span>
+                </div>
+              )}
+              <div className="flex flex-col items-center gap-1">
+                <span className="text-4xl leading-none">{getFlag(champion.name)}</span>
+                <span className="text-base font-black text-amber-500">{getCode(champion.name)}</span>
+              </div>
+              {thirdTeam && (
+                <div className="flex flex-col items-center gap-1">
+                  <span className="text-2xl leading-none">🥉</span>
+                  <span className="text-2xl leading-none">{getFlag(thirdTeam.name)}</span>
+                  <span className="text-xs font-bold text-muted">{getCode(thirdTeam.name)}</span>
+                </div>
+              )}
+            </div>
+          </div>
+        );
+      })()}
+
       {thirdPlace?.fixtures[0] && (() => {
         const f = thirdPlace.fixtures[0];
         const { home, away, homeGoals, awayGoals, status, elapsed } = f;
@@ -308,8 +365,8 @@ export function KnockoutBracket({ rounds }: { rounds: RoundData[] }) {
                   : 'vs';
         return (
           <div className="mt-8">
-            <p className="mb-2 text-[10px] font-display font-black tracking-[.12em] uppercase text-muted">
-              3rd Place Playoff
+            <p className="mb-2 text-[10px] font-display font-black tracking-[.12em] uppercase text-muted flex items-center gap-1">
+              🥉 3rd Place Playoff
             </p>
             <div
               className="rounded-lg border border-[var(--border)] bg-[var(--card)] flex flex-col overflow-hidden"
