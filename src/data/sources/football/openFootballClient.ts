@@ -11,7 +11,14 @@ import { flagUrl } from './countryFlags';
 const SEASON = process.env.FOOTBALL_WORLDCUP_SEASON || '2026';
 const URL = `https://raw.githubusercontent.com/openfootball/worldcup.json/master/${SEASON}/worldcup.json`;
 
+interface OfScore {
+  ft?: [number, number];
+  et?: [number, number]; // score after extra time (includes FT goals)
+  p?: [number, number];  // penalty shootout goals
+}
+
 interface OfMatch {
+  num?: number;  // sequential match number — used by W-codes (e.g. "W73")
   round?: string;
   date?: string;
   time?: string;
@@ -19,7 +26,36 @@ interface OfMatch {
   team2?: string;
   group?: string;
   ground?: string;
-  score?: { ft?: [number, number] };
+  score?: OfScore;
+}
+
+/** Determine the winner of a completed match, handling ET and penalties. */
+function matchWinner(m: OfMatch): string | undefined {
+  const s = m.score;
+  if (!s) return undefined;
+  if (s.p) {
+    const [hp, ap] = s.p;
+    if (hp !== ap) return hp > ap ? m.team1 : m.team2;
+  }
+  if (s.et) {
+    const [he, ae] = s.et;
+    if (he !== ae) return he > ae ? m.team1 : m.team2;
+  }
+  if (s.ft) {
+    const [hf, af] = s.ft;
+    if (hf !== af) return hf > af ? m.team1 : m.team2;
+  }
+  return undefined;
+}
+
+/** Resolve "W73" → actual team name using the match-number map. */
+function resolveTeam(name: string | undefined, byNum: Map<number, OfMatch>): string | undefined {
+  if (!name) return name;
+  const w = name.match(/^W(\d+)$/);
+  if (!w) return name;
+  const src = byNum.get(Number(w[1]));
+  if (!src) return name;
+  return matchWinner(src) ?? name; // keep W-code if match not yet decided
 }
 
 /** Deterministic small numeric id from a string (no Date/random — build-safe). */
@@ -48,8 +84,21 @@ function kickoffIso(date?: string, time?: string): string {
 const team = (name: string): Team => ({ id: hashId(name), name, logoUrl: flagUrl(name) });
 
 function mapMatch(m: OfMatch): Fixture {
-  const ft = m.score?.ft;
-  const finished = Array.isArray(ft) && ft.length === 2;
+  const s = m.score;
+  const ft = s?.ft;
+  const et = s?.et;
+  const p = s?.p;
+  const hasFt  = Array.isArray(ft) && ft.length === 2;
+  const hasEt  = Array.isArray(et) && et.length === 2;
+  const hasPso = Array.isArray(p)  && p.length  === 2;
+  const finished = hasFt;
+
+  // Display score: use AET score when match was decided in extra time (not PSO),
+  // otherwise use FT score. PSO matches stay at the FT tie score.
+  const display: [number, number] | null = hasFt
+    ? (hasEt && !hasPso ? et! : ft!)
+    : null;
+
   return {
     id: hashId(`${m.team1}-${m.team2}-${m.date}`),
     kickoff: kickoffIso(m.date, m.time),
@@ -59,8 +108,11 @@ function mapMatch(m: OfMatch): Fixture {
     venue: m.ground,
     home: team(m.team1 || 'TBD'),
     away: team(m.team2 || 'TBD'),
-    homeGoals: finished ? ft![0] : null,
-    awayGoals: finished ? ft![1] : null,
+    homeGoals: display ? display[0] : null,
+    awayGoals: display ? display[1] : null,
+    afterExtraTime: (finished && (hasEt || hasPso)) ? true : undefined,
+    homeGoalsPSO: hasPso ? p![0] : undefined,
+    awayGoalsPSO: hasPso ? p![1] : undefined,
   };
 }
 
@@ -69,7 +121,22 @@ export const openFootballClient = {
     const res = await fetch(URL, { next: { revalidate: 600 } });
     if (!res.ok) throw new Error(`openfootball responded ${res.status}`);
     const data = (await res.json()) as { matches?: OfMatch[] };
-    return (data.matches || []).map(mapMatch);
+    const raw = data.matches || [];
+
+    // Build num → raw match map so W-codes can be resolved to team names.
+    const byNum = new Map<number, OfMatch>();
+    for (const m of raw) {
+      if (m.num != null) byNum.set(m.num, m);
+    }
+
+    // Resolve W-codes (e.g. "W73" → "Brazil") before mapping to Fixture.
+    const resolved = raw.map((m) => ({
+      ...m,
+      team1: resolveTeam(m.team1, byNum),
+      team2: resolveTeam(m.team2, byNum),
+    }));
+
+    return resolved.map(mapMatch);
   },
 
   /** Compute group standings — seeds every team in a group, then accumulates

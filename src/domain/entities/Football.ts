@@ -27,6 +27,11 @@ export interface Fixture {
   away: Team;
   homeGoals: number | null;
   awayGoals: number | null;
+  /** True when match went to AET or penalties. */
+  afterExtraTime?: boolean;
+  /** Goals in the penalty shootout (only set when decided by PSO). */
+  homeGoalsPSO?: number;
+  awayGoalsPSO?: number;
 }
 
 export interface StandingRow {

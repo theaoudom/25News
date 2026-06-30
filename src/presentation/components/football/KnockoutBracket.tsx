@@ -7,9 +7,9 @@ type RoundData = { round: string; fixtures: Fixture[] };
 
 // ─── Layout ───────────────────────────────────────────────────────────────
 const CW   = 172;   // card width  (px)
-const CH   = 46;    // card height (px)
+const CH   = 64;    // card height (px) — header row + team row
 const CONN = 32;    // connector zone width
-const SH0  = 56;    // R32 slot height (≥ CH + vertical breathing room)
+const SH0  = 76;    // R32 slot height (≥ CH + vertical breathing room)
 const NH   = 16;    // first-round match count
 const BH   = NH * SH0;
 const ROUND_COUNT = 5;
@@ -23,8 +23,16 @@ const cardTop = (r: number, i: number) => centerY(r, i) - CH / 2;
 // ─── Bracket mapping ──────────────────────────────────────────────────────
 // bracket-slot-index → API-array-index, derived from openfootball WC 2026 W-codes
 const BRACKET_ORDER: Record<string, number[]> = {
-  'Round of 32':   [1, 4, 0, 2, 10, 11, 8, 9, 3, 5, 6, 7, 13, 15, 12, 14],
-  'Round of 16':   [0, 1, 4, 5, 2, 3, 6, 7],
+  // visual slot → API array index (API sorted by kickoff UTC)
+  // Left half:  RSA/CAN, NED/MAR, GER/PAR, FRA/SWE, BEL/SEN, USA/BIH, ESP/AUT, POR/CRO
+  // Right half: BRA/JPN, CIV/NOR, MEX/ECU, ENG/COD, SUI/ALG, COL/GHA, AUS/EGY, ARG/CPV
+  'Round of 32':   [0, 3, 2, 5, 8, 9, 10, 11, 1, 4, 6, 7, 12, 15, 13, 14],
+  // Pairs: [RSA+NED→R16₀] [GER+FRA→R16₁] [BEL+USA→R16₂] [ESP+POR→R16₃]
+  //        [BRA+CIV→R16₄] [MEX+ENG→R16₅] [SUI+COL→R16₆] [AUS+ARG→R16₇]
+  // API R16 sorted by kickoff: 0=CAN/MAR(5Jul12AM), 1=PAR/?(5Jul4AM),
+  //   2=BRA/?(6Jul3AM), 3=MEX(6Jul7AM), 4=ESP(7Jul2AM), 5=BEL(7Jul7AM),
+  //   6=AUS(7Jul11PM), 7=SUI(8Jul3AM)
+  'Round of 16':   [0, 1, 5, 4, 2, 3, 7, 6],
   'Quarter-final': [0, 1, 2, 3],
   'Semi-final':    [0, 1],
   'Final':         [0],
@@ -60,6 +68,13 @@ const isTbd   = (n: string) => !n || /^[WL]\d+$/.test(n.trim());
 const getCode = (n: string) => isTbd(n) ? '?' : (CODES[n] || n.slice(0, 3).toUpperCase());
 const getFlag = (n: string) => isTbd(n) ? '' : (FLAGS[n] || '');
 
+function formatKickoff(iso: string) {
+  const d = new Date(iso);
+  const date = d.toLocaleDateString('en-GB', { month: 'short', day: 'numeric' });
+  const time = d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true });
+  return { date, time };
+}
+
 // ─── Single match card (horizontal layout) ────────────────────────────────
 function MatchCard({
   fixture, r, i, highlighted, dimmed, onEnter, onLeave,
@@ -88,20 +103,29 @@ function MatchCard({
   }
 
   const { home, away, homeGoals, awayGoals, status, elapsed } = fixture;
-  const homeWin  = status === 'finished' && (homeGoals ?? 0) > (awayGoals ?? 0);
-  const awayWin  = status === 'finished' && (awayGoals ?? 0) > (homeGoals ?? 0);
+  const pso     = fixture.homeGoalsPSO != null;
+  const aet     = !!fixture.afterExtraTime && !pso;
+  const homeWin = status === 'finished' && (
+    (homeGoals ?? 0) > (awayGoals ?? 0) ||
+    (pso && (fixture.homeGoalsPSO ?? 0) > (fixture.awayGoalsPSO ?? 0))
+  );
+  const awayWin = status === 'finished' && (
+    (awayGoals ?? 0) > (homeGoals ?? 0) ||
+    (pso && (fixture.awayGoalsPSO ?? 0) > (fixture.homeGoalsPSO ?? 0))
+  );
   const homeTbd  = isTbd(home.name);
   const awayTbd  = isTbd(away.name);
+  const { date, time } = formatKickoff(fixture.kickoff);
 
   let mid: string;
-  if (status === 'live')                              mid = elapsed ? `${elapsed}'` : 'LIVE';
+  if (status === 'live')                                mid = elapsed ? `${elapsed}'` : 'LIVE';
   else if (status === 'finished' && homeGoals !== null) mid = `${homeGoals}–${awayGoals}`;
-  else                                                mid = 'vs';
+  else                                                  mid = 'vs';
 
   return (
     <div
       style={style}
-      className={`rounded-lg border bg-[var(--card)] overflow-hidden cursor-pointer ${
+      className={`rounded-lg border bg-[var(--card)] overflow-hidden cursor-pointer flex flex-col ${
         highlighted
           ? 'border-brand-600 shadow-[0_0_0_3px_rgba(200,16,46,.18)]'
           : 'border-[var(--border)] hover:border-brand-400'
@@ -109,9 +133,25 @@ function MatchCard({
       onMouseEnter={onEnter}
       onMouseLeave={onLeave}
     >
-      <div className="flex h-full items-center justify-between px-2.5 gap-1.5">
+      {/* Date / time header */}
+      <div className="flex items-center justify-between px-2.5 bg-[var(--bg-soft)] border-b border-[var(--border)]" style={{ height: 18 }}>
+        <span className="text-[10px] text-muted leading-none" suppressHydrationWarning>{date}</span>
+        {status === 'live' ? (
+          <span className="flex items-center gap-1 text-[10px] font-bold text-brand-600 leading-none">
+            <span className="h-1 w-1 rounded-full bg-brand-600 animate-pulse" />
+            LIVE
+          </span>
+        ) : status === 'finished' ? (
+          <span className="text-[10px] font-semibold text-muted leading-none">FT</span>
+        ) : (
+          <span className="text-[10px] text-muted leading-none" suppressHydrationWarning>{time}</span>
+        )}
+      </div>
+
+      {/* Teams row */}
+      <div className="flex flex-1 items-center justify-between px-2.5 gap-1.5">
         {/* Home */}
-        <span className={`flex min-w-0 items-center gap-1 ${homeWin ? 'text-brand-600' : homeTbd ? 'text-muted' : 'text-[var(--fg)]'}`}>
+        <span className={`flex min-w-0 items-center gap-1 ${awayWin || homeTbd ? 'text-muted' : 'text-[var(--fg)]'}`}>
           {!homeTbd && <span className="text-[15px] leading-none flex-shrink-0">{getFlag(home.name)}</span>}
           <span className={`text-[11px] tracking-wider font-display truncate ${homeWin ? 'font-black' : 'font-bold'}`}>
             {getCode(home.name)}
@@ -119,15 +159,16 @@ function MatchCard({
         </span>
 
         {/* Score / status */}
-        <span className={`flex-shrink-0 text-[11px] font-bold tabular-nums flex items-center gap-1 ${status === 'live' ? 'text-brand-600' : 'text-muted'}`}>
-          {status === 'live' && (
-            <span className="inline-block h-1.5 w-1.5 rounded-full bg-brand-600 animate-pulse flex-shrink-0" />
-          )}
-          {mid}
+        <span className="flex-shrink-0 flex flex-col items-center gap-0">
+          <span className={`text-[11px] font-bold tabular-nums leading-none ${status === 'live' ? 'text-brand-600' : 'text-muted'}`}>
+            {mid}
+          </span>
+          {pso && <span className="text-[8px] font-bold text-muted tracking-widest leading-none mt-0.5">PSO</span>}
+          {aet && <span className="text-[8px] font-bold text-muted tracking-widest leading-none mt-0.5">AET</span>}
         </span>
 
         {/* Away */}
-        <span className={`flex min-w-0 items-center justify-end gap-1 ${awayWin ? 'text-brand-600' : awayTbd ? 'text-muted' : 'text-[var(--fg)]'}`}>
+        <span className={`flex min-w-0 items-center justify-end gap-1 ${homeWin || awayTbd ? 'text-muted' : 'text-[var(--fg)]'}`}>
           <span className={`text-[11px] tracking-wider font-display truncate ${awayWin ? 'font-black' : 'font-bold'}`}>
             {getCode(away.name)}
           </span>
@@ -252,8 +293,16 @@ export function KnockoutBracket({ rounds }: { rounds: RoundData[] }) {
       {thirdPlace?.fixtures[0] && (() => {
         const f = thirdPlace.fixtures[0];
         const { home, away, homeGoals, awayGoals, status, elapsed } = f;
-        const hW = status === 'finished' && (homeGoals ?? 0) > (awayGoals ?? 0);
-        const aW = status === 'finished' && (awayGoals ?? 0) > (homeGoals ?? 0);
+        const fp   = f.homeGoalsPSO != null;
+        const faet = !!f.afterExtraTime && !fp;
+        const hW = status === 'finished' && (
+          (homeGoals ?? 0) > (awayGoals ?? 0) ||
+          (fp && (f.homeGoalsPSO ?? 0) > (f.awayGoalsPSO ?? 0))
+        );
+        const aW = status === 'finished' && (
+          (awayGoals ?? 0) > (homeGoals ?? 0) ||
+          (fp && (f.awayGoalsPSO ?? 0) > (f.homeGoalsPSO ?? 0))
+        );
         const mid = status === 'live'      ? (elapsed ? `${elapsed}'` : 'LIVE')
                   : status === 'finished' && homeGoals !== null ? `${homeGoals}–${awayGoals}`
                   : 'vs';
@@ -263,18 +312,30 @@ export function KnockoutBracket({ rounds }: { rounds: RoundData[] }) {
               3rd Place Playoff
             </p>
             <div
-              className="rounded-lg border border-[var(--border)] bg-[var(--card)] flex items-center justify-between px-2.5 gap-1.5"
+              className="rounded-lg border border-[var(--border)] bg-[var(--card)] flex flex-col overflow-hidden"
               style={{ width: CW, height: CH }}
             >
-              <span className={`flex items-center gap-1 ${hW ? 'text-brand-600 font-black' : isTbd(home.name) ? 'text-muted' : 'text-[var(--fg)]'}`}>
+            <div className="flex items-center justify-between px-2.5 bg-[var(--bg-soft)] border-b border-[var(--border)]" style={{ height: 18 }}>
+              <span className="text-[10px] text-muted" suppressHydrationWarning>{formatKickoff(f.kickoff).date}</span>
+              {status === 'live' ? <span className="text-[10px] font-bold text-brand-600">LIVE</span>
+                : status === 'finished' ? <span className="text-[10px] font-semibold text-muted">FT</span>
+                : <span className="text-[10px] text-muted" suppressHydrationWarning>{formatKickoff(f.kickoff).time}</span>}
+            </div>
+            <div className="flex flex-1 items-center justify-between px-2.5 gap-1.5">
+              <span className={`flex items-center gap-1 ${aW || isTbd(home.name) ? 'text-muted' : 'text-[var(--fg)]'}`}>
                 {!isTbd(home.name) && <span className="text-[15px]">{getFlag(home.name)}</span>}
-                <span className="text-[11px] font-display font-bold tracking-wider">{getCode(home.name)}</span>
+                <span className={`text-[11px] font-display tracking-wider ${hW ? 'font-black' : 'font-bold'}`}>{getCode(home.name)}</span>
               </span>
-              <span className="text-[11px] font-bold text-muted tabular-nums">{mid}</span>
-              <span className={`flex items-center justify-end gap-1 ${aW ? 'text-brand-600 font-black' : isTbd(away.name) ? 'text-muted' : 'text-[var(--fg)]'}`}>
-                <span className="text-[11px] font-display font-bold tracking-wider">{getCode(away.name)}</span>
+              <span className="flex flex-col items-center gap-0 flex-shrink-0">
+                <span className={`text-[11px] font-bold tabular-nums leading-none ${status === 'live' ? 'text-brand-600' : 'text-muted'}`}>{mid}</span>
+                {fp   && <span className="text-[8px] font-bold text-muted tracking-widest leading-none mt-0.5">PSO</span>}
+                {faet && <span className="text-[8px] font-bold text-muted tracking-widest leading-none mt-0.5">AET</span>}
+              </span>
+              <span className={`flex items-center justify-end gap-1 ${hW || isTbd(away.name) ? 'text-muted' : 'text-[var(--fg)]'}`}>
+                <span className={`text-[11px] font-display tracking-wider ${aW ? 'font-black' : 'font-bold'}`}>{getCode(away.name)}</span>
                 {!isTbd(away.name) && <span className="text-[15px]">{getFlag(away.name)}</span>}
               </span>
+            </div>
             </div>
           </div>
         );
