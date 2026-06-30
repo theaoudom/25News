@@ -72,6 +72,31 @@ export class FootballUseCases {
       .sort((a, b) => a.kickoff.localeCompare(b.kickoff));
   }
 
+  async getKnockoutFixtures(): Promise<{ round: string; fixtures: Fixture[] }[]> {
+    const ROUND_ORDER = [
+      'Round of 32',
+      'Round of 16',
+      'Quarter-final',
+      'Semi-final',
+      'Final',
+      'Match for third place',
+    ];
+    const all = await this.repo.getFixtures();
+    const roundSet = new Set(ROUND_ORDER);
+    const byRound = new Map<string, Fixture[]>();
+    for (const f of all) {
+      if (!roundSet.has(f.round)) continue;
+      if (!byRound.has(f.round)) byRound.set(f.round, []);
+      byRound.get(f.round)!.push(f);
+    }
+    return ROUND_ORDER
+      .filter((r) => byRound.has(r))
+      .map((r) => ({
+        round: r,
+        fixtures: byRound.get(r)!.sort((a, b) => a.kickoff.localeCompare(b.kickoff)),
+      }));
+  }
+
   async getStandings(): Promise<GroupStanding[]> {
     const groups = await this.repo.getStandings();
     return groups

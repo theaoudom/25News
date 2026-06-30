@@ -8,6 +8,7 @@ const TABS = [
   { label: 'Fixtures', href: '/world-cup/fixtures' },
   { label: 'Results', href: '/world-cup/results' },
   { label: 'Standings', href: '/world-cup/standings' },
+  { label: 'Bracket', href: '/world-cup/bracket' },
   { label: 'Live Scores', href: '/world-cup/live' },
   { label: 'News', href: '/world-cup/news' },
 ];
