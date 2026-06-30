@@ -55,7 +55,25 @@ export class WorldCupFootballRepository implements FootballRepository {
         /* keep openfootball data as-is */
       }
     }
+    if (base.source !== 'fallback') {
+      base.data = this.applyTimeLiveStatus(base.data);
+    }
     return base;
+  }
+
+  /** Mark scheduled fixtures as live based on wall-clock time.
+   *  A match is considered in-progress from kickoff until kickoff + 120 min.
+   *  Elapsed is capped at 90 so stoppage time doesn't show >90'.
+   */
+  private applyTimeLiveStatus(fixtures: Fixture[]): Fixture[] {
+    const now = Date.now();
+    return fixtures.map((f) => {
+      if (f.status !== 'scheduled') return f;
+      const kickoff = new Date(f.kickoff).getTime();
+      const elapsed = Math.floor((now - kickoff) / 60_000);
+      if (elapsed < 0 || elapsed > 120) return f;
+      return { ...f, status: 'live' as const, elapsed: Math.min(elapsed, 90) };
+    });
   }
 
   private overlayResults(base: Fixture[], overlay: Fixture[]): Fixture[] {
