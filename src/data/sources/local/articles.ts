@@ -94,12 +94,32 @@ const RAW: RawArticle[] = [
     tags: ['Football', 'Transfers', 'Premier League', 'Liverpool'],
     imageUrl: '/images/wirt_join_liverpool.png',
     body: `
-      <p>Liverpool's move for Bayer Leverkusen playmaker Florian Wirtz is at an advanced stage, with the clubs in discussions over the structure of a transfer that could be worth £114m.</p>
-      <p>The Reds submitted a third formal bid for the Germany playmaker last week, worth £100m guaranteed and a further £14m of add-ons. If completed, it would smash the club's £75m record signing of captain Virgil van Dijk in 2018.</p>
-      <p>Sources have told reporters that talks are now focused on the structure of the final details of the transfer, including the value of the add-ons and how achievable they are. Leverkusen had valued the midfielder at around £126m.</p>
-      <p>Wirtz, 22, has made it clear that his preference is to move to Anfield following interest from Manchester City and Bayern Munich. He made his debut for Leverkusen at the age of 17 and has scored 57 goals in 197 games for the club.</p>
-      <h2>Wirtz to join £100m club</h2>
-      <p>Wirtz will become the 10th player ever to go for a fee of £100m or more. The British record for an initial fee remains Chelsea's £107m recruit of Benfica midfielder Enzo Fernandez in 2023.</p>`,
+<p>Liverpool have completed the signing of Bayer Leverkusen playmaker Florian Wirtz in a deal that ranks among the most expensive in British football history. The Germany international arrives at Anfield as the centrepiece of the club's rebuild, having chosen the Premier League champions ahead of interest from several of Europe's biggest sides.</p>
+<h2>A Club-Record Move</h2>
+<p>The transfer is structured around a guaranteed fee of around £100m, with a further package of add-ons that could take the total towards £116m depending on performance and team success. Either way, it comfortably surpasses Liverpool's previous record outlay — the £75m spent on captain Virgil van Dijk in 2018 — and cements Wirtz's status among the most valuable players in the world.</p>
+<p>For Liverpool, the size of the commitment reflects both the player's rare talent and the competitive market for elite attacking midfielders, a position where genuine world-class options are scarce and fiercely contested.</p>
+<h2>Why Liverpool Pushed So Hard</h2>
+<p>Wirtz had made it clear that his preference was a move to Anfield, even with rival clubs circling. Liverpool submitted a series of formal bids before agreement was reached, with the final negotiations focused on the structure of the deal and the value and achievability of the add-ons. Leverkusen, who had developed Wirtz into one of the continent's most coveted young players, drove a hard bargain for a footballer they were reluctant to lose.</p>
+<h2>What He Brings</h2>
+<p>Still in his early twenties, Wirtz is regarded as one of the finest creative midfielders of his generation. He made his Leverkusen debut as a teenager and went on to score and create goals prolifically, playing a leading role in the club's domestic success. A left-footed attacking midfielder blessed with close control, vision and an eye for goal, he operates in the spaces between midfield and attack — precisely the kind of creator who can unlock deep-lying defences.</p>
+<p>At Liverpool he is expected to add a new dimension to the attack, linking play and providing both goals and assists in a system that thrives on quick, incisive forward movement.</p>
+<h2>Joining Football's £100m Club</h2>
+<p>The move makes Wirtz one of only a handful of players ever transferred for a fee in the £100m bracket, an exclusive group that underlines how the market for the very best talent has escalated. For a player of his age and ceiling, Liverpool clearly view the outlay as a long-term investment rather than a short-term gamble.</p>
+<h2>Frequently Asked Questions</h2>
+<h3>How much did Liverpool pay for Florian Wirtz?</h3>
+<p>The deal is built around a guaranteed fee of roughly £100m, with add-ons that could push the total towards £116m — a club record for Liverpool.</p>
+<h3>Where did Wirtz play before Liverpool?</h3>
+<p>He came through and starred for Bayer Leverkusen in Germany, making his debut as a teenager and developing into one of Europe's best young playmakers.</p>
+<h3>What position does Wirtz play?</h3>
+<p>He is an attacking midfielder, typically operating in the creative spaces behind the forwards.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li>Liverpool signed Florian Wirtz from Bayer Leverkusen in a deal worth up to around £116m.</li>
+<li>The fee smashes the club's previous record, the £75m paid for Virgil van Dijk in 2018.</li>
+<li>Wirtz chose Anfield ahead of other elite suitors and becomes one of few players moved for a nine-figure fee.</li>
+<li>The creative midfielder is seen as a long-term centrepiece of Liverpool's attack.</li>
+</ul>
+      `,
   },
   {
     id: 'football-cunha',
@@ -112,12 +132,33 @@ const RAW: RawArticle[] = [
     imageUrl:
       'https://livesport-ott-images.ssl.cdn.cra.cz/r900xfq60/2cc95d71-365f-4df4-9f8b-456b58def0e6.avif',
     body: `
-      <h2>Manchester United Complete Signing of Matheus Cunha</h2>
-      <p>Manchester United completed the signing of Matheus Cunha from Wolverhampton Wanderers, with the Brazil forward joining on a five-year contract.</p>
-      <p>United triggered Cunha's release clause, worth around £62.5 million, according to a source at the club. The Old Trafford side also have the option of extending his contract by a year.</p>
-      <h2>Matheus Cunha Shares His Dream Come True</h2>
-      <p>"It's hard to put into words my feelings about becoming a Manchester United player," Cunha said. "Ever since I was a child in Brazil watching Premier League games on TV at my grandmother's house, United was my favourite English team, and I dreamed of wearing the red shirt.</p>
-      <p>"I can't wait for the start of pre-season. All my focus is now on working hard to become a valuable part of the team, and helping get this club back to the top."</p>`,
+<p>Manchester United have completed the signing of Matheus Cunha from Wolverhampton Wanderers, with the Brazil forward joining on a five-year contract. The deal, triggered via a release clause worth around £62.5m, marks an early and clear statement of intent as United look to rebuild an attack that has too often fallen short in recent seasons.</p>
+<h2>The Details of the Deal</h2>
+<p>United moved decisively to activate the release clause in Cunha's Wolves contract, with the Old Trafford club also holding the option to extend his deal by a further year. Securing the transfer early in the window allowed United to get ahead of rival interest and give their new signing a full pre-season to integrate into the side.</p>
+<h2>Who Is Matheus Cunha?</h2>
+<p>Cunha is a versatile Brazilian forward who can operate as a central striker, a second striker or off either flank. After developing in Europe with spells in Switzerland, Germany and Spain, he joined Wolves and established himself as one of the Premier League's more creative and combatative attackers — a player who combines flair and skill with genuine work rate and a willingness to press from the front.</p>
+<p>At Wolves he became the focal point of the attack, chipping in with goals and assists while carrying much of the creative burden for his side. That blend of end product and industry is exactly what United have been seeking.</p>
+<h2>A Dream Move</h2>
+<p>For Cunha, the transfer represents the fulfilment of a childhood ambition. Reflecting on the move, he made clear how much joining the club meant to him:</p>
+<blockquote>"It's hard to put into words my feelings about becoming a Manchester United player. Ever since I was a child in Brazil watching Premier League games on TV at my grandmother's house, United was my favourite English team, and I dreamed of wearing the red shirt." — Matheus Cunha</blockquote>
+<p>He added that his focus was now on pre-season and on helping the club climb back towards the top: "All my focus is now on working hard to become a valuable part of the team, and helping get this club back to the top."</p>
+<h2>How He Fits at Old Trafford</h2>
+<p>Cunha's flexibility should give United's manager several options. He can lead the line, drop into pockets to link play, or drift wide to combine with team-mates — profiles that suit a modern, fluid front line. His energy without the ball also fits the aggressive pressing that top sides increasingly demand. If he can translate his Wolves form to a bigger stage, he offers both goals and the kind of unpredictability United's attack has lacked.</p>
+<h2>Frequently Asked Questions</h2>
+<h3>How much did Manchester United pay for Matheus Cunha?</h3>
+<p>United activated a release clause worth around £62.5m, and also secured the option to extend his contract by an additional year.</p>
+<h3>What nationality is Matheus Cunha?</h3>
+<p>He is Brazilian, and joined United from Premier League rivals Wolverhampton Wanderers.</p>
+<h3>What position does Cunha play?</h3>
+<p>He is a versatile forward who can play as a central striker, a second striker or from wide areas.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li>Manchester United signed Matheus Cunha from Wolves on a five-year deal via a release clause of around £62.5m.</li>
+<li>The versatile Brazil forward can play across the front line and is known for his flair and work rate.</li>
+<li>Cunha described joining United as a childhood dream fulfilled.</li>
+<li>His flexibility and pressing give United fresh attacking options as they rebuild.</li>
+</ul>
+      `,
   },
   {
     id: 'sport-article-3-ffp',
@@ -131,11 +172,59 @@ const RAW: RawArticle[] = [
     imageAlt: 'Football fans fill a stadium',
     imageCredit: 'Photo via Wikimedia Commons (public domain)',
     body: `
-      <p>UEFA's new Financial Fair Play regulations, implemented at the start of the 2025 summer transfer window, are fundamentally changing how football clubs operate. The updated rules, which limit spending to 70% of club revenue, have created a more level playing field.</p>
-      <h2>Market Impact</h2>
-      <p>The new regulations have led to a 40% reduction in total transfer spending compared to the previous summer window. Clubs are now focusing on developing young talent and making strategic, value-based signings.</p>
-      <h2>Long-term Implications</h2>
-      <p>Analysts predict these changes will lead to more competitive leagues across Europe, as smaller clubs can now compete more effectively with traditional powerhouses.</p>`,
+<p>Not long ago, the transfer market ran on a simple principle: the club with the deepest pockets usually got its target. That world has not disappeared, but it now operates inside a thickening web of financial regulation. Rules with dry names such as Financial Fair Play, squad-cost ratios and Profitability and Sustainability have reshaped how clubs sign, sell and value players. Understanding them has become essential for anyone trying to make sense of a modern transfer window, where accountants and lawyers increasingly sit alongside sporting directors in the decisions that define a season.</p>
+
+<h2>Where It All Began: UEFA Financial Fair Play</h2>
+<p>UEFA introduced Financial Fair Play (FFP) more than a decade ago in response to a wave of clubs running up alarming debts and, in some cases, sliding towards insolvency. The core idea was disarmingly simple: clubs should not spend far more than they earn. This was captured in the so-called <strong>break-even requirement</strong>, which measured a club's football-related income against its football-related costs over a rolling period and allowed only a limited, permitted loss.</p>
+<p>The aim was never to stop clubs spending money. It was to stop them spending money they did not have, or that depended entirely on an owner writing cheques indefinitely. If a club wanted to buy more, the logic went, it needed to grow its revenue through matchday income, broadcasting deals and commercial partnerships rather than simply borrowing against the future.</p>
+
+<h2>The New Framework: The Squad-Cost Ratio</h2>
+<p>FFP proved difficult to police and was widely seen as too blunt for a fast-changing industry. UEFA has since moved towards a more targeted model built around a <strong>squad-cost ratio</strong>. Rather than judging overall break-even, this approach limits what a club can spend specifically on its squad, capping the combined cost of player and coaching wages, transfer fees and agent fees at a set percentage of the club's football revenue.</p>
+<p>The reasoning is that squad costs are where clubs typically overreach. By tying them directly to income, UEFA hopes to keep ambition proportionate to means. The permitted share was designed to tighten over a transition period, giving clubs time to adjust their wage bills and recruitment plans. In general terms, it means a club earning modest revenue simply cannot commit the same slice to players as a continental heavyweight, however generous its owner might wish to be.</p>
+
+<h2>England's Own System: Profitability and Sustainability Rules</h2>
+<p>UEFA's rules only apply to clubs in European competition. Domestically, the Premier League runs its own separate regime, the <strong>Profitability and Sustainability Rules</strong> (PSR). These allow clubs to lose only up to a permitted amount across a three-year assessment period, with certain investments, such as spending on infrastructure, youth development and women's football, excluded from the calculation.</p>
+<p>PSR has become one of the most talked-about phrases in English football, not least because breaches now carry real sporting consequences. The existence of two overlapping systems, one European and one domestic, means the biggest clubs must satisfy more than one rulebook at once, and the two do not always pull in the same direction.</p>
+
+<h2>Why the Rules Exist</h2>
+<p>Supporters sometimes see these regulations as an obstacle to their club's ambition, but the stated goals are broadly consistent across every framework. The rules are meant to:</p>
+<ul>
+<li><strong>Protect financial stability</strong>, so that clubs are not one bad season away from collapse.</li>
+<li><strong>Preserve competitive balance</strong>, preventing a handful of the wealthiest owners from simply buying every advantage.</li>
+<li><strong>Discourage reckless overspending</strong>, particularly wage inflation that ripples through the entire market.</li>
+</ul>
+<p>Football's history is littered with clubs that chased success too hard and paid for it with administration, relegation or years of rebuilding. Regulation is, in principle, an attempt to make the game more sustainable for everyone.</p>
+
+<h2>How Clubs Respond and Adapt</h2>
+<p>Where there are rules, there is creative compliance. Clubs have developed several well-established techniques to work within the limits while still competing hard in the market.</p>
+<ul>
+<li><strong>Amortisation over long contracts</strong>: a transfer fee is spread across the length of a player's deal for accounting purposes, so a large fee on a lengthy contract counts as a smaller annual cost.</li>
+<li><strong>Selling academy players</strong>: a homegrown player has no fee to write down on the books, so any sale is registered as near-pure profit, making young talent especially valuable in the accounts.</li>
+<li><strong>Deadline trading</strong>: clubs balance the books before assessment dates by selling as well as buying, sometimes leading to a flurry of end-of-window deals designed as much for the balance sheet as for the pitch.</li>
+</ul>
+
+<h2>Criticism and Debate</h2>
+<p>The rules remain fiercely contested. Critics argue that tying spending to revenue risks <em>entrenching the established elite</em>, because the clubs that already earn the most are permitted to spend the most, making it harder for ambitious challengers to break through. Others counter that unlimited owner spending would be even worse for competitive balance.</p>
+<p>Enforcement has become a battleground of its own. Points deductions, once almost unthinkable, have been handed down for breaches, and clubs have not hesitated to challenge decisions through appeals and legal argument. The debates over what counts as fair revenue, related-party sponsorship and the true value of academy sales are unlikely to be settled soon.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>Do these rules stop rich owners from investing?</h3>
+<p>Not entirely. Owners can still fund infrastructure, academies and long-term growth, and much of that spending sits outside the core calculations. What the rules restrain is the ability to pour money straight into wages and transfer fees far beyond what the club itself generates.</p>
+
+<h3>What is amortisation, in plain terms?</h3>
+<p>It is simply spreading a transfer fee across the years of a contract. A large fee signed on a long deal is counted in smaller annual chunks, which softens its immediate impact on a club's regulatory position.</p>
+
+<h3>Are UEFA's rules and the Premier League's rules the same thing?</h3>
+<p>No. They are separate systems with different thresholds and methods. UEFA's framework governs clubs in European competition, while the Premier League's PSR applies domestically, and a club competing in Europe must comply with both.</p>
+
+<h2>Key Takeaways</h2>
+<ul>
+<li>Modern regulation has shifted from FFP's broad break-even test towards a squad-cost ratio that caps spending on wages, fees and agents as a share of revenue.</li>
+<li>The Premier League's PSR is a distinct domestic system, so the biggest clubs must satisfy more than one rulebook at once.</li>
+<li>Clubs adapt through amortisation, profitable academy sales and deadline-day trading to stay within the limits.</li>
+<li>Debate continues over whether the rules protect the game's health or simply lock in the advantages of the wealthiest clubs.</li>
+</ul>
+      `,
   },
 
   // ───────────────────────── WORLD CUP ─────────────────────────
@@ -151,10 +240,34 @@ const RAW: RawArticle[] = [
     imageUrl: '/images/ronaldo_win_nation_lauge.webp',
     summary: 'Carlo Ancelotti praises Cristiano Ronaldo after Portugal lifts the UEFA Nations League trophy.',
     body: `
-      <p>Cristiano Ronaldo, 40, continues to prove the doubters wrong, having recently lifted the UEFA Nations League trophy with Portugal. He has now won the tournament twice.</p>
-      <p>Ronaldo was pivotal to Portugal's winning campaign, scoring eight goals in nine appearances. Portugal won 5-3 on penalties after the final ended 2-2 in extra time.</p>
-      <p>Ronaldo has now received high praise from former Real Madrid manager Carlo Ancelotti. The Brazil boss said ahead of a World Cup qualifier against Paraguay:</p>
-      <blockquote>"I'm very happy for him. Cristiano is a football legend and remains one at his age, thanks to his seriousness and professionalism. He's still performing at the highest level." — Carlo Ancelotti</blockquote>`,
+<p>At 40, an age when almost every footballer has long since retired, Cristiano Ronaldo added another major honour to his career by helping Portugal win the UEFA Nations League. It was the second time he had lifted the trophy, and it prompted warm praise from one of the most decorated managers in the game, Carlo Ancelotti — a man who knows Ronaldo's qualities better than most.</p>
+<h2>A Second Nations League Title</h2>
+<p>Portugal sealed the crown by beating Spain in the final, a tight contest that finished 2-2 after extra time before Portugal held their nerve to win 5-3 on penalties. Ronaldo was central to the campaign, leading the line and contributing goals on the way to the title. For a player who first became a senior international more than two decades ago, the win was further proof that his hunger for silverware has not dimmed.</p>
+<p>It also underlined a wider truth about the modern Portugal side: while a new generation of talent has emerged around him, Ronaldo remains a focal point and a leader, still capable of decisive contributions on the biggest nights.</p>
+<h2>Ancelotti's Verdict</h2>
+<p>Ancelotti, who managed Ronaldo during a hugely successful spell at Real Madrid and now leads Brazil, was asked about the forward ahead of a World Cup qualifier. His answer was unequivocal:</p>
+<blockquote>"I'm very happy for him. Cristiano is a football legend and remains one at his age, thanks to his seriousness and professionalism. He's still performing at the highest level." — Carlo Ancelotti</blockquote>
+<p>Coming from a coach who has worked with a long list of the game's greatest players across Italy, England, France, Germany and Spain, the compliment carried real weight. Ancelotti singled out the professionalism and discipline that have allowed Ronaldo to extend his career far beyond the norm.</p>
+<h2>The Secret to His Longevity</h2>
+<p>Ronaldo's durability is no accident. Throughout his career he has been renowned for meticulous attention to fitness, diet, recovery and preparation — the very traits Ancelotti highlighted. As his explosive pace has gradually faded, he has reinvented himself as a penalty-box finisher, relying on positioning, timing and a relentless goalscoring instinct rather than the flying wing play of his youth.</p>
+<p>That capacity to adapt has kept him relevant at the elite level long after most of his contemporaries stepped away, and it is a major reason he remains a talismanic figure for his country.</p>
+<h2>Eyes on 2026</h2>
+<p>The praise inevitably turns attention to the 2026 World Cup. It is the one major prize still missing from Ronaldo's collection, and by the time the tournament arrives he will be in his forties — an age at which even legends rarely compete at the very top. Whether he features, and in what role, is one of the sport's compelling subplots. What is certain is that his professionalism, the quality Ancelotti praised, has given him a chance few would have thought possible.</p>
+<h2>Frequently Asked Questions</h2>
+<h3>How many times has Ronaldo won the Nations League?</h3>
+<p>Twice with Portugal, adding to a trophy haul that already included the European Championship in 2016.</p>
+<h3>What did Carlo Ancelotti say about Ronaldo?</h3>
+<p>He called Ronaldo a football legend who continues to perform at the highest level thanks to his seriousness and professionalism.</p>
+<h3>Did Ronaldo and Ancelotti work together?</h3>
+<p>Yes. Ancelotti managed Ronaldo at Real Madrid during a highly successful period for the club.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li>Ronaldo, at 40, helped Portugal win a second UEFA Nations League title, beating Spain on penalties in the final.</li>
+<li>Carlo Ancelotti praised his professionalism and enduring quality at the highest level.</li>
+<li>His longevity stems from meticulous fitness and a reinvention as a penalty-box finisher.</li>
+<li>The 2026 World Cup looms as the one major honour still missing from his career.</li>
+</ul>
+      `,
   },
   {
     id: 'wc-2026-guide',
@@ -527,9 +640,34 @@ const RAW: RawArticle[] = [
     tags: ['Formula 1', 'Aston Martin'],
     imageUrl: '/images/aston_martin.png',
     body: `
-      <p>Aston Martin have confirmed that Lance Stroll will be back behind the wheel at the upcoming Canadian Grand Prix weekend, following his withdrawal from the previous race in Spain.</p>
-      <p>The Silverstone-based squad announced that Stroll would sit out following a medical procedure after experiencing pain in his hand and wrist, related to a procedure he underwent in 2023.</p>
-      <p>However, after his latest procedure, Stroll will be back driving the AMR25 in front of his home crowd in Montreal.</p>`,
+<p>Aston Martin confirmed that Lance Stroll would return to the cockpit for the Canadian Grand Prix, following his withdrawal from the previous round in Spain. For the Canadian driver, a comeback at his home race in Montreal carried obvious emotional significance — and it drew a line under a difficult few weeks dealing with a recurring hand and wrist problem.</p>
+<h2>Why Stroll Sat Out</h2>
+<p>The Silverstone-based team announced that Stroll had missed the Spanish round after undergoing a medical procedure, having experienced pain in his hand and wrist. The discomfort was linked to an earlier procedure he underwent in 2023, when he suffered wrist and hand injuries in a cycling accident shortly before the start of that season and raced through significant pain in its opening rounds.</p>
+<p>Rather than risk aggravating the issue, the team opted for caution, allowing Stroll time to recover properly before returning to competition.</p>
+<h2>A Home Return in Montreal</h2>
+<p>After the latest procedure, Stroll was cleared to drive the AMR25 again in front of his home crowd. The Canadian Grand Prix, held on the Circuit Gilles Villeneuve on the Île Notre-Dame in Montreal, is one of the most atmospheric events on the calendar and a special occasion for any Canadian driver.</p>
+<p>Stroll made clear how much racing on home soil meant to him:</p>
+<blockquote>"I am excited to get back behind the wheel with the team for my home Grand Prix this weekend. I was always going to fight hard to be ready to race in front of the Montreal crowd." — Lance Stroll</blockquote>
+<h2>Aston Martin's Bigger Picture</h2>
+<p>The return came during a transitional phase for Aston Martin. The team has been steadily building its infrastructure — a new factory and wind tunnel at Silverstone — as part of a long-term ambition to challenge at the front of the grid. With a high-profile technical recruitment drive and major regulation changes on the horizon, the project is geared towards the future as much as the present.</p>
+<p>For Stroll, whose family has been central to Aston Martin's Formula 1 involvement, staying fit and in the car is an important part of that continuity as the team develops.</p>
+<h2>The Challenge of Racing Injured</h2>
+<p>Stroll's situation was a reminder of the physical demands of Formula 1. Drivers endure sustained high g-forces through corners and under braking, placing heavy strain on the neck, arms and hands over a race distance. Competing with a hand or wrist problem is especially punishing given how much load passes through the steering and the controls, which is why the team and driver prioritised a full recovery before his return.</p>
+<h2>Frequently Asked Questions</h2>
+<h3>Why did Lance Stroll miss the Spanish Grand Prix?</h3>
+<p>He sat out after a medical procedure to address pain in his hand and wrist, an issue connected to an earlier 2023 procedure.</p>
+<h3>Where is the Canadian Grand Prix held?</h3>
+<p>At the Circuit Gilles Villeneuve in Montreal, Stroll's home race.</p>
+<h3>What car does Stroll drive?</h3>
+<p>He races the Aston Martin AMR25 for the Silverstone-based team.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li>Lance Stroll returned for the Canadian Grand Prix after missing the previous race in Spain.</li>
+<li>His absence followed a procedure for hand and wrist pain linked to a 2023 injury.</li>
+<li>The comeback came at his home race in Montreal, a special occasion for the Canadian.</li>
+<li>Aston Martin continue to build towards a longer-term challenge at the front of the grid.</li>
+</ul>
+      `,
     secondaryImageUrl: '/images/fomular_sub.png',
     secondaryBody: `
       <p>"I am excited to get back behind the wheel with the team for my home Grand Prix this weekend," Stroll said. "I was always going to fight hard to be ready to race in front of the Montreal crowd."</p>`,
@@ -552,10 +690,32 @@ const RAW: RawArticle[] = [
     summary:
       'ONIC defeats RRQ in a dramatic Best of 7 final to claim the MPL ID S15 crown and head to MSC 2025.',
     body: `
-      <h2>ONIC Crowned MPL ID Season 15 Champions After Epic 4–3 Victory Over RRQ</h2>
-      <p>In one of the most intense grand finals in MPL history, <strong>ONIC Esports</strong> defeated <strong>RRQ Hoshi</strong> with a narrow <strong>4–3</strong> scoreline to claim the championship title for MPL Indonesia Season 15.</p>
-      <h2>A Grand Final for the Ages</h2>
-      <p>The Best of 7 series was a rollercoaster of momentum swings. The series reached game 7, where ONIC executed a flawless strategy to lift the trophy once again, powered by star players Kairi and Butsss.</p>`,
+<p>In one of the most intense grand finals in its history, <strong>ONIC Esports</strong> defeated <strong>RRQ Hoshi</strong> by a narrow <strong>4–3</strong> scoreline to be crowned champions of MPL Indonesia Season 15. The best-of-seven epic between the country's two biggest <em>Mobile Legends: Bang Bang</em> organisations delivered exactly the drama the occasion demanded, and ended with ONIC once again lifting the trophy.</p>
+<h2>What Is the MPL?</h2>
+<p>The Mobile Legends Professional League (MPL) is the top tier of competitive <em>Mobile Legends: Bang Bang</em>, one of the most popular mobile games in Southeast Asia. The Indonesian division, MPL ID, is widely regarded as the strongest and most fiercely contested region in the world, packing huge live crowds and a passionate online audience. Winning it is a landmark achievement in the mobile esports scene.</p>
+<h2>A Grand Final for the Ages</h2>
+<p>The series was a rollercoaster of momentum swings. Neither side could pull decisively clear, and the lead changed hands repeatedly as the best-of-seven format stretched all the way to a deciding seventh game. In that final map, ONIC executed a composed, disciplined strategy to close out the title, holding their nerve when it mattered most.</p>
+<p>Star players Kairi and Butsss were pivotal throughout, combining individual brilliance with the kind of coordinated team play that has become ONIC's hallmark. Their performances in the clutch moments proved the difference in a final that could have gone either way.</p>
+<h2>A Storied Rivalry</h2>
+<p>ONIC against RRQ is the defining rivalry of Indonesian Mobile Legends — two heavyweight organisations with large, devoted fan bases who consistently meet at the business end of tournaments. A grand final between them guarantees a spectacle, and this Season 15 decider added another memorable chapter to a rivalry that helps drive the popularity of the entire league.</p>
+<h2>MSC and the Esports World Cup Await</h2>
+<p>With the title secured, ONIC turn their attention to international competition. As champions they head into the Mid-Season Cup (MSC) with momentum, and alongside runners-up RRQ Hoshi they will represent Indonesia on the global stage. The event forms part of the wider Esports World Cup in Riyadh, Saudi Arabia — the ambitious multi-title festival that has become one of the richest and most prestigious events in competitive gaming.</p>
+<p>For ONIC, the challenge now is to translate domestic dominance into international silverware against the best teams from other regions — a step that would further cement their status as one of the premier organisations in the game.</p>
+<h2>Frequently Asked Questions</h2>
+<h3>Who won MPL Indonesia Season 15?</h3>
+<p>ONIC Esports, who beat RRQ Hoshi 4–3 in the grand final.</p>
+<h3>What game is the MPL played on?</h3>
+<p>Mobile Legends: Bang Bang, a hugely popular mobile MOBA, especially across Southeast Asia.</p>
+<h3>What comes next for ONIC?</h3>
+<p>They advance to international competition at the Mid-Season Cup, held as part of the Esports World Cup in Riyadh.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li>ONIC Esports beat RRQ Hoshi 4–3 in a seven-game thriller to win MPL ID Season 15.</li>
+<li>MPL Indonesia is regarded as the strongest Mobile Legends region in the world.</li>
+<li>Star players Kairi and Butsss led ONIC in the decisive moments.</li>
+<li>ONIC and RRQ now represent Indonesia at the MSC, part of the Esports World Cup.</li>
+</ul>
+      `,
     secondaryImageUrl: '/images/onic-id-cham2.png',
     secondaryBody: `
       <h2>MSC 2025 Bound</h2>
@@ -822,29 +982,56 @@ const RAW: RawArticle[] = [
     summary:
       'The biggest event in esports, explained — how teams qualify for League of Legends Worlds and how the tournament is won.',
     body: `
-      <p>The League of Legends World Championship — "Worlds" — is the pinnacle of the sport and one of the most-watched events in all of esports. Here is how it works.</p>
-      <h2>Qualifying Through Regional Leagues</h2>
-      <p>Teams earn their place by performing in their regional leagues across the year — among them the LCK (Korea), LPL (China), LEC (Europe) and the Americas league. The strongest regions receive more qualification spots, reflecting their depth of competition.</p>
-      <h2>The Tournament Stages</h2>
-      <p>Worlds typically runs through multiple stages: a play-in for lower-seeded teams, a Swiss-style or group stage to narrow the field, and a single-elimination knockout bracket. Knockout matches are best-of-five — a true test of adaptation, drafting and nerve over a long series.</p>
-      <h2>The Summoner's Cup</h2>
-      <p>The winners lift the Summoner's Cup in front of a packed arena, often with millions watching online and an elaborate opening ceremony. Lifting it cements a roster among the greats of the game.</p>
-      <h2>Global Scale</h2>
-      <p>Worlds combines elite competition with massive production — live music, augmented-reality stage shows and global broadcasts in many languages. Peak viewership regularly places it among the biggest esports events on earth.</p>
-      <h2>Why It Matters</h2>
-      <p>For players and regions, Worlds is the ultimate proving ground. Dynasties are built and legacies defined here, and a single championship run can turn a roster into household names within the gaming world.</p>
-      <h2>Frequently Asked Questions</h2>
-      <h3>What is the League of Legends Worlds trophy called?</h3>
-      <p>The Summoner's Cup.</p>
-      <h3>How do teams qualify for Worlds?</h3>
-      <p>By performing in their regional leagues; stronger regions get more spots.</p>
-      <h2>Key Takeaways</h2>
-      <ul>
-        <li>Worlds is League of Legends' annual world championship.</li>
-        <li>Teams qualify via regional leagues, then play group and knockout stages.</li>
-        <li>Winners lift the Summoner's Cup before a global audience.</li>
-      </ul>
-    `,
+<p>The <strong>League of Legends World Championship</strong>, known universally as <em>Worlds</em>, is the crowning event of the competitive <em>League of Legends</em> calendar and one of the most-watched tournaments in all of esports. Staged each autumn by developer <strong>Riot Games</strong>, it gathers the best teams from every professional region to compete for the sport's most coveted prize. For players, organisations and fans alike, Worlds is the moment a full year of practice, roster changes and regional battles finally counts for something. This explainer breaks down what Worlds is, how teams reach it, how the tournament plays out and why it holds such an outsized place in the esports world.</p>
+
+<h2>What Worlds Is and Why It Matters</h2>
+<p>Worlds is an annual, invitation-by-merit championship that pits regional champions and top-performing teams against one another in a single global event. It functions much like a World Cup for <em>League of Legends</em>: the domestic seasons decide who qualifies, but the international stage is where legacies are made. A strong regular season or a domestic title is valuable, yet within the community a Worlds trophy is regarded as the ultimate validation of a team's era.</p>
+<p>Its importance goes beyond the players. Worlds drives the narratives that define an entire competitive year, shapes the transfer market, and serves as the showcase Riot uses to demonstrate the health and reach of its game. For sponsors and broadcasters, it is the flagship product of a maturing industry.</p>
+
+<h2>How Teams Qualify Through Regional Leagues</h2>
+<p>Qualification runs through the professional leagues that operate across the globe. The most prominent include the <strong>LCK</strong> in Korea, the <strong>LPL</strong> in China, the <strong>LEC</strong> in Europe, and the top-tier league covering the Americas. Additional regions, covering areas such as the Asia-Pacific and other emerging scenes, also send representatives.</p>
+<p>Not every region receives the same number of places. Riot allocates slots based on how each region has historically performed on the international stage, so the strongest leagues earn more berths. This is why the leading regions frequently send several teams while smaller regions may send only one.</p>
+<ul>
+<li>Teams typically qualify by winning or placing highly in their regional championship.</li>
+<li>Stronger regions receive more slots, reflecting past international results.</li>
+<li>Some places are decided through additional qualifying gauntlets or points systems within a region.</li>
+</ul>
+
+<h2>How the Tournament Is Structured</h2>
+<p>The exact format has evolved over the years, but the broad shape has stayed consistent. Worlds generally opens with a <strong>play-in stage</strong>, where teams from smaller regions and lower regional seeds compete for the final spots in the main event. From there, the tournament moves into a <strong>group or Swiss stage</strong> that narrows the field, before culminating in a <strong>single-elimination knockout bracket</strong>.</p>
+<p>The knockout rounds are played as <strong>best-of-five</strong> series, a demanding format that rewards adaptability, deep champion pools and strategic drafting across multiple games. A single off-day can end a team's run, which adds enormous tension to every quarter-final, semi-final and the grand final itself.</p>
+
+<h2>The Summoner's Cup and the Spectacle</h2>
+<p>Champions lift the <strong>Summoner's Cup</strong>, an imposing silver trophy that has become an icon of the sport. Winning it confers lasting prestige, and the players who hoist it are enshrined in the game's history.</p>
+<p>The event is staged with the scale of a major sporting occasion. Matches are played in large arenas, often selling out venues across host cities, and the grand final in particular is treated as a cultural showpiece.</p>
+<ul>
+<li>Elaborate opening ceremonies, frequently blending live music with augmented-reality effects.</li>
+<li>Multi-language broadcasts reaching a vast global audience online and in venues.</li>
+<li>Production values comparable to traditional televised sport.</li>
+</ul>
+
+<h2>Rivalries, Dynasties and Competitive Stakes</h2>
+<p>Much of Worlds' drama comes from <strong>regional rivalry</strong>. The Korean and Chinese leagues in particular have traded international dominance, and matches between their representatives carry the weight of national and regional pride. When a Western team topples an East Asian powerhouse, it becomes a landmark moment.</p>
+<p>The tournament has also produced <strong>dynasties</strong>: organisations and rosters that string together sustained success and reshape how the game is played. These runs of dominance set the standards that every other team measures itself against, and dethroning a dynasty is treated as a defining achievement.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>How often is Worlds held?</h3>
+<p>Worlds takes place once a year, typically in the autumn, marking the climax of that season's competitive circuit before rosters and the metagame reset for the following year.</p>
+
+<h3>Do all regions get the same number of teams?</h3>
+<p>No. Slot allocation is weighted toward regions with stronger international track records, so the most successful leagues send more teams while smaller regions may qualify only a single representative.</p>
+
+<h3>What format are the deciding matches played in?</h3>
+<p>The knockout stage is contested in best-of-five series, meaning a team must win three games to advance. This longer format tests strategic depth and the ability to adjust between games.</p>
+
+<h2>Key Takeaways</h2>
+<ul>
+<li>Worlds is the annual global championship of <em>League of Legends</em>, run by Riot Games and regarded as the sport's ultimate prize.</li>
+<li>Teams qualify through regional leagues such as the LCK, LPL, LEC and the Americas league, with stronger regions earning more slots.</li>
+<li>The event moves from a play-in through a group or Swiss stage to a single-elimination, best-of-five knockout bracket.</li>
+<li>Winners lift the Summoner's Cup amid arena-scale production, fierce regional rivalries and the making of competitive dynasties.</li>
+</ul>
+      `,
   },
 
   // ───────────────── EVERGREEN FEATURES WITH REAL IMAGES ─────────────────
@@ -902,37 +1089,58 @@ const RAW: RawArticle[] = [
     summary:
       'New to basketball? Here’s a clear guide to the rules, scoring and positions that make the game tick.',
     body: `
-      <p>Basketball was invented in 1891 by Dr. James Naismith, who nailed a peach basket to a gymnasium wall to keep his students active indoors. Today it is one of the world's most popular sports. Here is how it works.</p>
-      <h2>The Objective</h2>
-      <p>Two teams of five players each try to score by shooting the ball through the opposing team's hoop, which sits 10 feet (3.05 m) above the floor. The team with the most points when time runs out wins.</p>
-      <h2>Scoring</h2>
-      <ul>
-        <li><strong>2 points</strong> for a basket made inside the three-point arc.</li>
-        <li><strong>3 points</strong> for a basket made from beyond the arc.</li>
-        <li><strong>1 point</strong> for each successful free throw, awarded after certain fouls.</li>
-      </ul>
-      <h2>The Positions</h2>
-      <p>Teams traditionally field a point guard, shooting guard, small forward, power forward and centre — though the modern game increasingly blurs these roles, prizing versatile players who can shoot, pass and defend anywhere on the court.</p>
-      <h2>Game Flow</h2>
-      <p>Games are split into timed periods (quarters in the NBA). Teams must advance the ball by dribbling or passing, and attempt a shot within the shot-clock limit, keeping the pace high and discouraging stalling.</p>
-      <h2>Key Rules to Know</h2>
-      <ul>
-        <li><strong>Traveling:</strong> you cannot move with the ball without dribbling.</li>
-        <li><strong>Double dribble:</strong> you cannot dribble, stop, then dribble again.</li>
-        <li><strong>Fouls:</strong> illegal contact sends opponents to the free-throw line and, in bulk, can foul a player out.</li>
-      </ul>
-      <h2>Frequently Asked Questions</h2>
-      <h3>How many players are on a basketball team?</h3>
-      <p>Five per side on the court at any time.</p>
-      <h3>How high is a basketball hoop?</h3>
-      <p>10 feet (3.05 metres).</p>
-      <h2>Key Takeaways</h2>
-      <ul>
-        <li>Five-a-side; score by shooting through the hoop.</li>
-        <li>Baskets are worth 2 or 3 points; free throws 1.</li>
-        <li>Dribbling rules and fouls shape the flow of every game.</li>
-      </ul>
-    `,
+<p>Basketball is one of the world's most popular sports, played everywhere from Olympic arenas to school playgrounds and neighbourhood courts. Yet if you are new to the game, the flurry of dribbling, whistles and rapid scoring can look bewildering. This beginner's guide breaks down where basketball came from, how a match is structured, the rules that govern play and the terms you will hear commentators use. By the end you should be able to follow a game with confidence and understand why players do what they do.</p>
+
+<h2>Where Basketball Came From</h2>
+<p>Basketball was invented in 1891 by <strong>Dr James Naismith</strong>, a Canadian physical education instructor working in Springfield, Massachusetts. Tasked with devising an indoor activity to keep students active through the winter, he nailed a peach basket to a balcony and wrote down thirteen simple rules. The idea caught on quickly, spread through schools and colleges, and grew into the fast, athletic global sport we know today. The peach baskets are long gone, but the core aim has never changed.</p>
+
+<h2>The Objective and the Teams</h2>
+<p>The goal is simple: score more points than your opponent by putting the ball through the raised hoop, while stopping the other side from doing the same. Each team fields <strong>five players</strong> on the court at a time, with substitutes available from the bench. Teams move the ball by dribbling (bouncing it) or passing, and only a player in control of the ball may attempt to score. Because you cannot run while holding the ball, teamwork, movement and quick decision-making matter as much as individual skill.</p>
+
+<h2>The Court and the Hoop</h2>
+<p>A basketball court is a rectangular hard surface with a hoop mounted at each end. The rim sits <strong>10 feet (3.05 metres)</strong> above the floor, attached to a backboard. A few key markings shape how the game is played:</p>
+<ul>
+<li>The <strong>three-point arc</strong>, a curved line beyond which successful shots are worth more.</li>
+<li>The <strong>free-throw line</strong>, where players shoot uncontested after certain fouls.</li>
+<li>The <strong>key</strong> (also called the paint or lane), the painted rectangle beneath each hoop where special rules apply.</li>
+</ul>
+
+<h2>How Scoring Works</h2>
+<p>Points are earned in three ways. A field goal made from inside the three-point arc is worth <strong>2 points</strong>. A shot made from beyond that arc counts for <strong>3 points</strong>. A <strong>free throw</strong>, taken from the free-throw line after certain fouls, is worth <strong>1 point</strong>. This scoring system rewards both accuracy from distance and the ability to attack the basket, which is why modern teams value long-range shooting so highly.</p>
+
+<h2>Positions, Old and New</h2>
+<p>Traditionally, the five roles are the point guard (the playmaker who directs the offence), the shooting guard (often a strong scorer), the small forward (a versatile all-rounder), the power forward and the centre (typically the tallest players, working near the basket). In the <em>modern</em> game these lines are increasingly blurred. Tall players are now expected to shoot from range, guards defend bigger opponents, and coaches favour flexible line-ups over rigid roles. You will often hear the term <strong>positionless basketball</strong> to describe this shift.</p>
+
+<h2>Game Flow and Key Rules</h2>
+<p>A match is split into timed <strong>periods</strong>. The number and length vary by competition: professional leagues and international basketball generally play four quarters, though the quarter length differs between the NBA and FIBA, and college games in the United States are often structured into two halves. The clock stops frequently for fouls, time-outs and the ball going out of play, so real time far exceeds the playing time. Teams take turns in possession, and a <strong>shot clock</strong> forces the attacking side to attempt a shot within a set number of seconds, keeping the game brisk.</p>
+<p>Several common violations keep play fair. Learning these will help you understand the referee's whistle:</p>
+<ul>
+<li><strong>Travelling:</strong> moving your feet illegally without dribbling the ball.</li>
+<li><strong>Double dribble:</strong> dribbling, stopping, then dribbling again, or bouncing the ball with both hands.</li>
+<li><strong>Backcourt:</strong> taking the ball back over the halfway line once your team has advanced it.</li>
+<li><strong>Three seconds:</strong> an attacking player lingering too long in the key.</li>
+<li><strong>Shot-clock violation:</strong> failing to shoot before the shot clock expires.</li>
+</ul>
+<p>Physical contact is policed through <strong>fouls</strong>. A defender who makes illegal contact concedes a foul, which may hand the opponent free throws or possession. Crucially, a player who commits too many fouls is disqualified for the rest of the game, known as <strong>fouling out</strong>. The exact limit differs between leagues, so it is one of those numbers worth checking for the competition you are watching.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>How long does a basketball game last?</h3>
+<p>Playing time depends on the competition, but because the clock stops so often for fouls, time-outs and stoppages, a match usually takes well over an hour of real time to complete, and often closer to two hours with breaks.</p>
+
+<h3>What is the difference between the NBA, FIBA and college basketball?</h3>
+<p>The NBA is the leading professional league in the United States, FIBA governs international and Olympic competition worldwide, and college basketball is the amateur game played at American universities. They share the same fundamentals but differ in details such as period length, court markings and some rules.</p>
+
+<h3>Why are some shots worth three points?</h3>
+<p>Shots taken from beyond the three-point arc are harder because they are further from the basket, so they are rewarded with an extra point. This encourages accurate long-range shooting and has reshaped how modern teams attack.</p>
+
+<h2>Key Takeaways</h2>
+<ul>
+<li>Basketball was invented in 1891 by Dr James Naismith and is played by two teams of five aiming to score through a hoop set 10 feet (3.05 m) high.</li>
+<li>Shots are worth 2 points inside the arc, 3 beyond it and 1 per free throw.</li>
+<li>Violations such as travelling, double dribble and shot-clock breaches keep the game flowing fairly, while too many fouls sees a player fouled out.</li>
+<li>Core rules are shared across the NBA, FIBA and college basketball, but details like period length and foul limits differ by league.</li>
+</ul>
+      `,
   },
   {
     id: 'how-solar-power-works',
@@ -949,15 +1157,53 @@ const RAW: RawArticle[] = [
     summary:
       'Solar is the fastest-growing source of new electricity in the world. Here’s how a solar panel actually turns sunlight into power.',
     body: `
-      <p>Solar power has become one of the cheapest and fastest-growing sources of electricity on Earth. But how does a panel on a roof actually turn sunshine into usable energy?</p>
-      <h2>The Photovoltaic Effect</h2>
-      <p>Solar panels are made of photovoltaic (PV) cells, usually silicon. When sunlight hits a cell, it knocks electrons loose, and the cell’s design forces those electrons to flow in one direction — creating a direct electric current (DC).</p>
-      <h2>From Panel to Plug</h2>
-      <p>The DC electricity then passes through an <strong>inverter</strong>, which converts it into the alternating current (AC) used by homes and the grid. Surplus power can be stored in batteries or fed back into the grid for credit.</p>
-      <h2>Why It’s Booming</h2>
-      <p>The cost of solar panels has fallen dramatically over the past decade, making solar competitive with — and often cheaper than — fossil fuels. It produces no emissions while operating and can scale from a single rooftop to vast utility farms.</p>
-      <h2>The Challenges</h2>
-      <p>Solar only generates power when the sun shines, so storage and grid management are key to making it reliable around the clock. Advances in battery technology are steadily closing that gap.</p>`,
+<p>Solar power has moved from the fringes of the energy system to its mainstream, with panels now appearing on suburban rooftops, factory sheds and vast desert arrays alike. Yet for all its visibility, the technology that turns sunlight into usable electricity remains a mystery to many. At its heart lies a remarkable piece of physics that allows a slab of specially treated silicon to generate an electrical current the moment daylight strikes it, with no moving parts and no fuel. This explainer walks through how that process works, how a solar system connects to your home and the wider grid, and why solar has become one of the fastest-growing sources of power in the world.</p>
+
+<h2>The Photovoltaic Effect: Turning Light into Electricity</h2>
+<p>The core of a solar panel is the <strong>photovoltaic cell</strong>, usually made from silicon. The word photovoltaic simply combines <em>photo</em> (light) and <em>voltaic</em> (electricity). Each cell contains two thin layers of silicon that have been deliberately treated, or doped, with tiny amounts of other elements so that one layer carries a slight negative charge and the other a slight positive charge. This creates an electric field at the junction between them.</p>
+<p>When sunlight hits the cell, packets of light energy called photons knock electrons loose from the silicon atoms. The built-in electric field pushes these freed electrons in one direction, and if the cell is connected to a circuit, they flow as an electric current. This is the photovoltaic effect: light in, electricity out. Crucially, a single cell produces only a small voltage, which is why they are combined in large numbers.</p>
+
+<h2>From Cells to Panels to Systems</h2>
+<p>Understanding the terminology helps make sense of how systems are sized and sold. The components build up in stages:</p>
+<ul>
+<li>A <strong>cell</strong> is the individual silicon unit that generates a small amount of direct current.</li>
+<li>A <strong>panel</strong> or <strong>module</strong> is dozens of cells wired together and sealed behind protective glass in a weatherproof frame.</li>
+<li>An <strong>array</strong> is a group of panels connected together, sized to match a household or a power station.</li>
+</ul>
+<p>The electricity produced at this stage is <strong>direct current</strong> (DC), the same steady, one-directional flow supplied by a battery. That is not yet the form of electricity your appliances or the grid can use.</p>
+
+<h2>The Inverter and the Connection to Home and Grid</h2>
+<p>Homes, businesses and the electricity network all run on <strong>alternating current</strong> (AC), in which the flow rapidly reverses direction many times each second. The job of converting the panels' DC output into grid-compatible AC falls to the <strong>inverter</strong>, arguably the most important electronic component in any solar installation. The inverter also manages the system, tracking the point at which the panels generate most efficiently and shutting down safely during a power cut.</p>
+<p>Once converted, the AC electricity is fed into the property's main fuse board and used directly by whatever is switched on at the time. If the panels are producing more than the building needs, the surplus flows outward to the grid. This is where <strong>net metering</strong> comes in: many regions allow households to export excess power and receive credit or payment for it, effectively using the grid as a giant shared reservoir and offsetting the electricity they draw at night.</p>
+
+<h2>Storing Sunshine: Batteries and Intermittency</h2>
+<p>Solar power's obvious limitation is that it only works when the sun shines. Output falls on cloudy days and stops altogether at night, a problem known as <strong>intermittency</strong>. Increasingly, this is addressed with <strong>battery storage</strong>, which captures surplus daytime generation and releases it in the evening when demand peaks. At the scale of the whole grid, operators balance the variability of solar by combining it with other sources, improving demand forecasting, and building interconnections that move power between regions. As battery costs have fallen, home and grid-scale storage have become central to making solar a reliable, round-the-clock contributor.</p>
+
+<h2>Photovoltaic Versus Solar Thermal, and Why Costs Have Fallen</h2>
+<p>It is worth distinguishing the photovoltaic panels described here from <strong>solar thermal</strong> technology, which does not generate electricity directly. Solar thermal systems use the sun's heat, either to warm water for domestic use or, in large concentrated plants, to produce steam that drives a turbine. The vast majority of rooftop and utility solar today is photovoltaic.</p>
+<p>The extraordinary rise of solar rests largely on cost. Decades of manufacturing improvements, larger factories and better cell efficiency have driven prices down dramatically over the past decade, making solar one of the cheapest ways to generate new electricity in many parts of the world. Falling prices, supportive policies and growing climate concern have together fuelled rapid adoption.</p>
+
+<h2>Environmental Benefits and Limitations</h2>
+<p>Once installed, solar panels generate electricity without burning fuel, producing no direct emissions or air pollution and using no water in operation. Over their lifetime, typically measured in decades, they repay the energy used to manufacture them many times over. The limitations are real but manageable: manufacturing has an environmental footprint, panels require land or roof space, and end-of-life recycling is still maturing. On balance, solar remains one of the cleanest large-scale sources of power available.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>Do solar panels work on cloudy days?</h3>
+<p>Yes, though at reduced output. Panels respond to daylight rather than direct sunshine, so they still generate on overcast days, just less than they would under a clear sky. They produce nothing at night.</p>
+
+<h3>What happens to the electricity I do not use?</h3>
+<p>Any surplus is either stored in a battery for later or exported to the grid. Under net metering arrangements, exported power typically earns a credit or payment that offsets the electricity you buy at other times.</p>
+
+<h3>How long do solar panels last?</h3>
+<p>Most panels are built to operate for decades, with performance declining only gradually over time. The inverter usually has a shorter working life and may need replacing at least once during the system's lifetime.</p>
+
+<h2>Key Takeaways</h2>
+<ul>
+<li>Photovoltaic cells use the photovoltaic effect to convert sunlight directly into direct current electricity, with no moving parts or fuel.</li>
+<li>An inverter converts that DC into AC so it can power a building and feed surplus into the grid, often rewarded through net metering.</li>
+<li>Batteries and smarter grid management overcome solar's intermittency, allowing daytime sunshine to be used after dark.</li>
+<li>Sharply falling costs have made solar one of the cheapest and cleanest sources of new electricity worldwide.</li>
+</ul>
+      `,
   },
   {
     id: 'first-marathon-guide',
@@ -973,15 +1219,55 @@ const RAW: RawArticle[] = [
     summary:
       'Running 42.195 km is a huge but achievable goal. Here’s how beginners can train safely for their first marathon.',
     body: `
-      <p>A marathon — 42.195 km (26.2 miles) — is one of the most rewarding challenges in endurance sport. With months of smart preparation, it’s within reach of most healthy adults. Here’s how to approach your first.</p>
-      <h2>Build a Base First</h2>
-      <p>Before starting a marathon plan, you should be comfortably running several times a week. Most beginners benefit from a few months of consistent, easy-paced running to build fitness and reduce injury risk.</p>
-      <h2>Follow a Plan</h2>
-      <p>Typical first-marathon plans run 16–20 weeks. They gradually increase weekly mileage and feature one weekly <strong>long run</strong> that builds toward roughly 30–35 km a few weeks before race day.</p>
-      <h2>Don’t Skip Recovery</h2>
-      <p>Rest days, easy runs and sleep are when your body actually adapts. Increasing mileage too quickly is the most common cause of injury — the widely cited guideline is to build gradually rather than in big jumps.</p>
-      <h2>Fuel and Race Day</h2>
-      <p>Practise eating and drinking during long runs so race day holds no surprises. Then trust your training: start slower than feels natural, settle into a steady rhythm, and save something for the final miles.</p>`,
+<p>Completing a marathon is one of the most rewarding challenges an amateur athlete can set themselves. Covering the full <strong>42.195 km</strong> distance demands months of patient preparation, but the good news is that most healthy adults can reach the start line with a sensible, gradual plan. This beginner's guide explains the core principles of marathon training, from building an initial running base to pacing yourself on race day. Before you begin any new training programme, it is wise to <strong>consult your doctor</strong>, particularly if you have an existing health condition or have not exercised for some time.</p>
+
+<h2>Build a Running Base First</h2>
+<p>The single biggest mistake new runners make is jumping straight into a marathon plan without an established habit of regular running. Before you start a structured schedule, aim to run comfortably for around 30 minutes, three or four times a week, for at least a few weeks. This foundation prepares your muscles, tendons and cardiovascular system for the heavier work to come and dramatically reduces your risk of injury.</p>
+<p>If you can already jog for half an hour without stopping, you are in a good position to begin. If not, a run-walk approach, alternating gentle jogging with walking breaks, is a proven and safe way to build up. There is no shame in starting slowly; every experienced marathoner began exactly here.</p>
+
+<h2>Choose and Follow a Structured Plan</h2>
+<p>Most beginner marathon plans run for <strong>16 to 20 weeks</strong>. A longer plan gives your body more time to adapt and leaves a buffer for the inevitable missed sessions caused by illness, work or life. A typical week includes three to five sessions: a weekly long run, one or two easy runs, and often a strength or cross-training day.</p>
+<p>The guiding principle is <em>gradual progression</em>. A widely used rule of thumb is to increase your total weekly distance by no more than roughly ten per cent, giving your body time to strengthen. Resist the urge to do more than the plan asks, even on days you feel strong; consistency over many weeks matters far more than any single heroic session.</p>
+
+<h2>The Long Run and the Value of Easy Pace</h2>
+<p>The weekly <strong>long run</strong> is the cornerstone of marathon training. It gradually lengthens week by week, teaching your body to keep moving for extended periods and building the endurance you will rely on come race day. Most plans peak with a longest run of around 30 to 32 km a few weeks before the marathon, rather than the full distance, because the taper and race-day adrenaline carry you the rest of the way.</p>
+<p>Crucially, the majority of your running, including the long run, should be done at an <em>easy, conversational pace</em>. You should be able to hold a conversation without gasping. Running too hard, too often is the classic error that leads to burnout and injury. Slow, comfortable mileage builds aerobic fitness far more effectively than constant hard efforts.</p>
+
+<h2>Strength, Cross-Training and Recovery</h2>
+<p>Running alone does not make a resilient runner. Regular <strong>strength work</strong>, focusing on the legs, hips and core, helps stabilise your stride and protects vulnerable joints. Simple bodyweight exercises such as squats, lunges, bridges and planks, done once or twice a week, make a real difference.</p>
+<p>Cross-training activities such as cycling, swimming or using a cross-trainer build fitness while sparing your legs the repeated impact of running. Equally important is genuine <strong>rest</strong>. Muscles adapt and grow stronger during recovery, not during the workout itself. Prioritise good sleep, take your scheduled rest days seriously, and remember that recovery is part of the training, not a break from it.</p>
+
+<h2>Injury Prevention, Fuelling and Hydration</h2>
+<p>Injuries usually stem from doing too much too soon. Listen to your body, distinguish ordinary muscle soreness from sharp or persistent pain, and never run through a genuine injury. Building gradually, wearing suitable running shoes and warming up properly all help keep you healthy through the training block.</p>
+<p>On runs lasting longer than about 90 minutes, your body benefits from taking on some carbohydrate to top up its energy stores, alongside sensible hydration. Practise your fuelling and drinking strategy during training long runs so nothing is new on race day. Consider the following during longer efforts:</p>
+<ul>
+<li>Take small amounts of easily digestible carbohydrate at regular intervals rather than a large amount all at once.</li>
+<li>Drink to thirst, avoiding both dehydration and excessive fluid intake.</li>
+<li>Test different foods and drinks in training to learn what your stomach tolerates.</li>
+</ul>
+
+<h2>Tapering and Race-Day Strategy</h2>
+<p>In the final two to three weeks, you <strong>taper</strong>: you reduce your total mileage while keeping some intensity, allowing your body to absorb the training and arrive at the start line fresh. It is normal to feel restless or sluggish during the taper, but trust the process; the hard work is already done.</p>
+<p>On race day, the golden rule is to <em>start slowly</em>. The excitement of the crowd tempts almost everyone to set off too fast, only to fade badly in the closing miles. Aim for an even, controlled pace you have rehearsed, break the distance into manageable segments, and keep some energy in reserve for the final stretch. Finishing strong and steady is a far better goal than a fast first half.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>How long does it take to train for a first marathon?</h3>
+<p>Most beginners follow a plan of 16 to 20 weeks, but that assumes you can already run comfortably for around 30 minutes. If you are starting from scratch, allow several extra weeks, or even a few months, to build that initial base safely before the formal plan begins.</p>
+
+<h3>Do I need to run the full 42 km in training?</h3>
+<p>No. Most beginner plans peak at a longest run of roughly 30 to 32 km. Running the full distance in training offers little extra benefit and greatly increases injury and fatigue risk. The taper and the atmosphere of race day help carry you through the remaining kilometres.</p>
+
+<h3>How many days a week should I run?</h3>
+<p>Three to five days is typical for beginners. Three or four running days, supplemented with strength work and cross-training, is plenty to prepare safely while leaving enough recovery time. More is not automatically better, especially in your first training cycle.</p>
+
+<h2>Key Takeaways</h2>
+<ul>
+<li>Build a comfortable running base before starting a 16 to 20 week marathon plan, and consult your doctor first.</li>
+<li>Keep most of your running easy and conversational, and increase mileage gradually to avoid injury.</li>
+<li>Support your running with strength work, cross-training, good sleep and genuine rest days.</li>
+<li>Practise fuelling and hydration in training, taper before the race, and start the marathon slowly to finish strong.</li>
+</ul>
+      `,
   },
 
   // ───────────────────────── BREAKING TECH NEWS ─────────────────────────
@@ -1042,13 +1328,61 @@ const RAW: RawArticle[] = [
     summary:
       'Tennis has one of the quirkiest scoring systems in sport. Here’s how points, games, sets and tie-breaks actually work.',
     body: `
-      <p>Tennis scoring can baffle newcomers — "love," "deuce" and 15-30-40 aren’t exactly intuitive. Here’s the system broken down.</p>
-      <h2>Points Within a Game</h2>
-      <p>Points run <strong>0 (love) → 15 → 30 → 40</strong>. Win a point at 40 and you take the game — unless it’s 40-40, called <strong>deuce</strong>. From deuce a player must win two points in a row: the first is <strong>advantage</strong>, the second wins the game.</p>
-      <h2>Games and Sets</h2>
-      <p>Win six games (by at least two) to take a <strong>set</strong>. Matches are best-of-three or best-of-five sets. If a set reaches <strong>6-6</strong>, it’s usually settled by a <strong>tie-break</strong>, first to seven points (by two).</p>
-      <h2>Why "Love"?</h2>
-      <p>The origin of "love" for zero is debated — often linked to the French <em>l’œuf</em> ("the egg," for the shape of a zero). Whatever its roots, it’s now part of tennis’s charm.</p>`,
+<p>Tennis has one of the most charming and confusing scoring systems in all of sport. Newcomers watching their first match often wonder why the score jumps from 15 to 30 to 40, why zero is called <strong>love</strong>, and what on earth the umpire means by <strong>deuce</strong>. Once you understand the logic, though, the whole structure clicks into place. Here is a clear, jargon-free guide to how tennis scoring actually works, from the smallest point right up to match point.</p>
+
+<h2>Points Within a Game</h2>
+<p>The smallest unit of tennis scoring is the point, and points build up to win a game. Rather than counting one, two, three, tennis uses its own peculiar sequence. The progression runs like this:</p>
+<ul>
+<li><strong>0 points</strong> — called <em>love</em></li>
+<li><strong>1 point</strong> — called <em>15</em></li>
+<li><strong>2 points</strong> — called <em>30</em></li>
+<li><strong>3 points</strong> — called <em>40</em></li>
+<li><strong>4 points</strong> — wins the game, provided you are two points clear</li>
+</ul>
+<p>The server's score is always announced first. So if the server has won two points and the receiver one, the umpire calls "30-15". If both players have won the same number of points, the umpire adds "all", as in "15-all" or "30-all".</p>
+
+<h2>Deuce and Advantage</h2>
+<p>Here is where many beginners get lost. A game cannot be won by a single point once both players reach 40. When the score is tied at 40-40, it is called <strong>deuce</strong>, and from that moment a player must win two points in a row to take the game.</p>
+<p>Win the first point from deuce and you have the <strong>advantage</strong>. Win the next point too and the game is yours. But if you lose the point after gaining advantage, the score slides back to deuce, and the tug-of-war begins again. A single game can therefore swing back and forth through deuce many times before someone finally edges two points clear.</p>
+
+<h2>Games and Sets</h2>
+<p>Games in turn build up to win a set. To take a set, a player must win at least <strong>six games</strong> and be ahead by a margin of two. So 6-4 and 6-3 are winning scorelines, but 6-5 is not enough — you would need to press on to 7-5. If the set reaches 6-6, a tie-break is usually played to decide it.</p>
+<p>Matches are then decided by winning a majority of sets. There are two common formats:</p>
+<ul>
+<li><strong>Best-of-three sets</strong> — the first player to win two sets takes the match. This is standard for most professional matches, including all women's singles.</li>
+<li><strong>Best-of-five sets</strong> — the first to win three sets wins. This longer format is used for men's singles at the four Grand Slam tournaments, producing some famously marathon encounters.</li>
+</ul>
+
+<h2>The Tie-Break</h2>
+<p>The tie-break was introduced to stop sets dragging on endlessly when neither player could pull two games clear. When a set reaches 6-6, players contest a tie-break instead of continuing game by game. In a standard tie-break, points are counted in plain numbers — one, two, three — and the first to reach <strong>seven points</strong> with a margin of at least two wins the set, which is then recorded as 7-6.</p>
+<p>Players change ends during the tie-break, and the serve rotates between them in a set pattern rather than staying with one player. If the tie-break itself reaches 6-6, it simply continues until someone leads by two, so a tie-break can stretch well beyond seven points.</p>
+
+<h2>Final-Set Formats</h2>
+<p>For years the deciding set caused headaches, because some tournaments refused to use a tie-break in the final set. That meant the last set had to be won by two clear games, occasionally leading to enormous scorelines and matches lasting many hours. To bring consistency and protect players, the Grand Slams agreed on a shared solution.</p>
+<p>Today, when the final set reaches 6-6, the major championships use a <strong>ten-point tie-break</strong> — sometimes called a match tie-break — where the first player to reach ten points, again by a margin of two, wins the whole match. This keeps thrilling finishes intact while preventing the never-ending deciders of the past.</p>
+
+<h2>Why Do We Say Love and Deuce?</h2>
+<p>The quirky vocabulary has roots stretching back centuries. The most popular explanation for <em>love</em> is that it derives from the French word <em>l'oeuf</em>, meaning "the egg", because a zero on the scoreboard resembles an egg — much like calling a score of nought a "duck's egg" in other games. Another theory suggests it comes from playing "for love", meaning for nothing rather than for money.</p>
+<p><em>Deuce</em> is thought to come from the French phrase <em>a deux</em> or <em>deux du jeu</em>, signalling that two consecutive points are still needed to settle the game. The origins of the 15-30-40 sequence are murkier, but a common theory links them to a clock face, with points marked at the quarter-hours; 45 was likely shortened to 40 over time for ease of calling.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>Why is zero called love in tennis?</h3>
+<p>The widely accepted explanation is that love comes from the French <em>l'oeuf</em>, "the egg", because the shape of a zero looks like an egg. An alternative theory holds that playing "for love" meant playing for no stakes, and the term simply stuck to describe a score of nothing.</p>
+
+<h3>What is the difference between a game, a set and a match?</h3>
+<p>A game is won by taking four points with a two-point margin. A set is won by taking at least six games with a two-point margin, usually settled by a tie-break at 6-6. A match is won by taking the majority of sets — two in a best-of-three, or three in a best-of-five.</p>
+
+<h3>What happens if a tie-break reaches 6-6?</h3>
+<p>Play simply continues. A standard tie-break is won at seven points, but only if a player is two points ahead. At 6-6 in the tie-break, players keep going until one of them leads by two, so the tie-break can extend well past seven.</p>
+
+<h2>Key Takeaways</h2>
+<ul>
+<li>Points run love, 15, 30, 40, and a game needs four points won by a two-point margin.</li>
+<li>At 40-40 the game reaches deuce, and a player must win two points in a row to close it out.</li>
+<li>Sets require six games won by two, with a tie-break usually deciding matters at 6-6.</li>
+<li>Matches are best-of-three or best-of-five, with the majors now using a ten-point tie-break to settle the final set.</li>
+</ul>
+      `,
   },
   {
     id: 'dota-the-international',
@@ -1140,19 +1474,58 @@ const RAW: RawArticle[] = [
     summary:
       'Offside is football’s most argued-about rule. Here’s the simple version of what it actually means.',
     body: `
-      <p>The offside rule keeps attackers from simply camping by the opponent’s goal. It’s simple in principle but produces some of football’s fiercest debates.</p>
-      <h2>The Basic Rule</h2>
-      <p>A player is in an offside position if they are nearer to the opponent’s goal line than <strong>both the ball and the second-to-last defender</strong> at the moment a teammate plays the ball to them. (The goalkeeper is usually the last defender.)</p>
-      <h2>Being Offside vs Being Penalised</h2>
-      <p>Being in an offside position isn’t an offence by itself — it’s only penalised if the player becomes <em>involved in active play</em>: touching the ball, interfering with an opponent, or gaining an advantage.</p>
-      <h2>When You Can’t Be Offside</h2>
-      <ul>
-        <li>In your own half of the pitch.</li>
-        <li>Directly from a throw-in, corner kick or goal kick.</li>
-        <li>If you’re level with the second-to-last defender.</li>
-      </ul>
-      <h2>Why It’s Controversial</h2>
-      <p>Split-second timing and millimetre VAR lines mean tight offside calls regularly decide big matches — which is exactly why fans never stop arguing about them.</p>`,
+<p>Few laws in football provoke as much passion, confusion and pub-table debate as the offside rule. It has been rewritten, reinterpreted and dissected more than almost any other part of the game, yet supporters, pundits and even players still argue over what it actually means. At its heart the rule is simple: it exists to stop attackers from loitering next to the goal and waiting for an easy tap-in. Putting that principle into practice, however, is where things become gloriously complicated. Here is a clear, up-to-date guide to how offside really works.</p>
+
+<h2>What Counts as an Offside Position</h2>
+<p>A player is in an <strong>offside position</strong> if they are in the opponents' half and nearer to the opponents' goal line than both the ball and the second-to-last defender. In most situations the last defender is the goalkeeper, so the rule effectively means being beyond the last outfield defender. It is worth stressing that any part of the body a player can legally score with counts when judging the line, so the arms and hands are ignored but the head, torso and feet are all measured.</p>
+<p>Crucially, simply standing in an offside position is <em>not</em> an offence. The laws are careful to distinguish position from punishment, and that distinction is the source of much of the confusion around the modern game.</p>
+
+<h2>Position Versus Offence: Active Play</h2>
+<p>A player is only penalised if, at the moment a teammate plays or touches the ball, they are in an offside position <em>and</em> become involved in active play. The laws define three ways this can happen:</p>
+<ul>
+<li><strong>Interfering with play</strong> — touching or playing the ball passed or touched by a teammate.</li>
+<li><strong>Interfering with an opponent</strong> — preventing an opponent from playing the ball, for example by blocking their line of vision or challenging them for it.</li>
+<li><strong>Gaining an advantage</strong> — playing a ball that has rebounded off the goalpost, crossbar, an opponent or a match official while in an offside position.</li>
+</ul>
+<p>This is why you often see an attacker standing in an offside position with play waved on. If they never touch the ball and never affect an opponent, no offence has occurred.</p>
+
+<h2>Situations Where You Cannot Be Offside</h2>
+<p>Several circumstances make offside impossible, and knowing them clears up a great deal of misunderstanding:</p>
+<ul>
+<li>A player in their <strong>own half</strong> of the pitch when the ball is played cannot be offside.</li>
+<li>A player <strong>level</strong> with the second-to-last defender, or level with the last two defenders, is onside.</li>
+<li>A player who receives the ball directly from a <strong>throw-in, corner kick or goal kick</strong> cannot be offside, regardless of position.</li>
+</ul>
+<p>That last point surprises many fans. A striker can stand behind the entire defence at a corner and still score legally, because offside does not apply to those set pieces.</p>
+
+<h2>How the Offside Line Is Judged</h2>
+<p>The decisive moment is when the ball is played by the attacking teammate, not when it is received. Assistant referees must effectively freeze that instant in their minds while tracking both the passer and the runner. Given that top players sprint at high speed, judging a marginal call with the naked eye is extraordinarily difficult, and honest human error is inevitable. This is precisely the gap that technology was introduced to close.</p>
+
+<h2>VAR and Semi-Automated Offside Technology</h2>
+<p>The Video Assistant Referee (VAR) system allows offside calls in the build-up to a goal to be reviewed. Officials identify the frame where the ball is played and draw lines to compare the attacker and the defender. Early implementations were slow and relied on manually placed lines, which fed accusations that goals were being ruled out by mere millimetres.</p>
+<p><strong>Semi-automated offside technology</strong> was developed to speed this up and improve consistency. Using multiple tracking cameras and, in some competitions, a sensor inside the ball, the system pinpoints the exact moment of the pass and the players' body positions, then generates an alert and a clear graphic for the officials. It still requires a human to confirm the decision, hence "semi-automated", but it has dramatically reduced the time taken to reach a verdict.</p>
+
+<h2>Why the Rule Remains Controversial</h2>
+<p>Even with cameras and sensors, offside divides opinion. Many argue that ruling out goals for a shoulder or toe being fractionally ahead punishes attacking football and ignores the rule's original spirit. Others counter that a line is a line, and consistency matters more than sentiment. Proposals to reward the attacker in tight calls, or to require "daylight" between players, continue to be debated by lawmakers. As long as the margins are measured in centimetres, the arguments will endure.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>Can you be offside in your own half?</h3>
+<p>No. A player level with or behind the halfway line at the moment the ball is played cannot be offside, however far forward the defence has pushed.</p>
+
+<h3>Is a player offside straight from a corner?</h3>
+<p>No. A player cannot be penalised for offside if they receive the ball directly from a corner kick, throw-in or goal kick.</p>
+
+<h3>Does the attacker's arm count for offside?</h3>
+<p>No. Only parts of the body with which a player can legally score are considered, so the arms and hands are excluded when the offside line is drawn.</p>
+
+<h2>Key Takeaways</h2>
+<ul>
+<li>Being in an offside position is not an offence unless the player becomes involved in active play.</li>
+<li>You cannot be offside in your own half, when level with the second-to-last defender, or directly from a throw-in, corner or goal kick.</li>
+<li>The decisive moment is when the ball is played, not when it is received.</li>
+<li>VAR and semi-automated technology have improved accuracy and speed, but tight margins keep the rule fiercely debated.</li>
+</ul>
+      `,
   },
   {
     id: 'nba-vs-fiba',
@@ -1450,14 +1823,34 @@ const RAW: RawArticle[] = [
     summary:
       'Both icons are in the twilight of their careers. The 2026 World Cup could be the final tournament for two of the greatest players ever.',
     body: `
-      <p>The 2026 World Cup arrives at a poignant moment for football fans: it may be the last time we see Lionel Messi and Cristiano Ronaldo grace the game’s biggest stage.</p>
-      <h2>The Age Factor</h2>
-      <p>Both players are now in the latter stages of remarkable careers. Sustaining elite international form into one’s late 30s and beyond is extraordinarily rare, which lends every appearance a sense of occasion.</p>
-      <h2>Different Motivations</h2>
-      <p>Messi arrives as a world champion with nothing left to prove, while Ronaldo still chases the one trophy missing from his collection. Those contrasting stakes make their 2026 campaigns compelling for very different reasons.</p>
-      <h2>A Farewell to an Era</h2>
-      <p>Whatever unfolds, 2026 feels like the closing chapter of the Messi-Ronaldo age. For a generation that grew up watching them, it’s a tournament to savour — because football may not see two such talents dominate for so long again.</p>
-      <p><em>This article is analysis and opinion.</em></p>`,
+<p>The 2026 World Cup arrives at a poignant moment for football. It may be the last time supporters see Lionel Messi and Cristiano Ronaldo — the two players who defined a generation — grace the game's biggest stage. For more than fifteen years they set the standards by which everyone else was measured. Now, in the twilight of their careers, a final tournament together would feel like the closing of an era.</p>
+<h2>The Age Factor</h2>
+<p>Time is the one opponent neither man can beat indefinitely. By the time the tournament kicks off, Ronaldo will be 41 and Messi will be well into his late thirties. Sustaining elite international form at that age is extraordinarily rare; the physical demands of a summer World Cup, played in the heat of North America across long distances, would test even players half their age. That difficulty is exactly what lends every possible appearance a heightened sense of occasion.</p>
+<p>Both have already defied the usual career arc. Where most greats fade quietly in their early thirties, Messi and Ronaldo have continued to influence matches years later — a testament to their professionalism, adaptability and sheer will.</p>
+<h2>Two Different Stories, Two Different Stakes</h2>
+<p>What makes the prospect so compelling is that the two men arrive with opposite motivations. Messi comes as a world champion, having finally lifted the trophy in 2022 to complete his collection. He has nothing left to prove and can play with the freedom of a man who has already written his ending.</p>
+<p>Ronaldo's story is unfinished. The World Cup is the one major honour that has eluded him throughout a glittering career, and 2026 may represent his final chance to chase it. Those contrasting stakes — one seeking a fairytale farewell, the other a last shot at the only prize missing — make their respective campaigns fascinating for very different reasons.</p>
+<h2>Life After Europe</h2>
+<p>The pair's club journeys have already taken them beyond football's traditional centres. Ronaldo moved to Saudi Arabian football, while Messi joined Major League Soccer in the United States. Far from ending their stories, these moves extended them, keeping both players competitive and visible while reshaping the leagues they joined. That continued exposure means both could still arrive at a World Cup sharp and match-fit, rather than winding down.</p>
+<h2>A Farewell to an Era</h2>
+<p>Whatever unfolds on the pitch, 2026 feels like the final chapter of the Messi–Ronaldo age. For a generation of fans who grew up watching them trade Ballon d'Or awards, Champions League nights and records, it is a tournament to savour. Football rarely produces one generational talent at a time, let alone two who peaked simultaneously and pushed each other higher for well over a decade.</p>
+<p>Even if their roles are reduced and their minutes limited, the mere presence of both at the same World Cup would be a fitting send-off — a chance for supporters everywhere to appreciate what may not come again for a very long time.</p>
+<h2>Frequently Asked Questions</h2>
+<h3>How old will Messi and Ronaldo be at the 2026 World Cup?</h3>
+<p>Ronaldo will be 41, and Messi will be in his late thirties — ages at which competing at the top of international football is exceptionally rare.</p>
+<h3>Has Messi won the World Cup?</h3>
+<p>Yes. He captained Argentina to victory in 2022, completing his set of major honours. Ronaldo has never won the tournament.</p>
+<h3>Where do Messi and Ronaldo play their club football now?</h3>
+<p>Messi plays in Major League Soccer in the United States, while Ronaldo plays in Saudi Arabia.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li>2026 could be the final World Cup for both Lionel Messi and Cristiano Ronaldo.</li>
+<li>Their ages make sustained elite form a genuine challenge, adding to the sense of occasion.</li>
+<li>Messi arrives as a world champion with nothing to prove; Ronaldo still chases his one missing prize.</li>
+<li>For a generation of fans, the tournament marks the closing of a defining football era.</li>
+</ul>
+<p><em>This article is analysis and opinion.</em></p>
+      `,
   },
 ];
 
