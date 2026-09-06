@@ -414,6 +414,26 @@ const RAW: RawArticle[] = [
   },
   {
     id: 'wc-2026-guide',
+    sources: [
+      {
+        publisher: 'FIFA',
+        title: 'How the FIFA World Cup 26 will work with 48 teams',
+        url: 'https://www.fifa.com/en/articles/article-fifa-world-cup-2026-mexico-canada-usa-new-format-tournament-football-soccer',
+        note: 'Official explanation of the 48-team format and round of 32',
+      },
+      {
+        publisher: 'FIFA',
+        title: 'FIFA World Cup 2026: hosts, cities and dates',
+        url: 'https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-2026-hosts-cities-dates-usa-mexico-canada',
+        note: 'Official host-city and venue list',
+      },
+      {
+        publisher: 'FIFA',
+        title: 'FIFA World Cup 2026 match schedule, fixtures and stadiums',
+        url: 'https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums',
+        note: 'Official schedule, dates and kick-off times',
+      },
+    ],
     title: 'FIFA World Cup 2026: Everything You Need to Know About the 48-Team Tournament',
     category: 'football',
     categoryLabel: 'World Cup',
@@ -475,6 +495,20 @@ const RAW: RawArticle[] = [
   },
   {
     id: 'wc-2026-groups',
+    sources: [
+      {
+        publisher: 'FIFA',
+        title: 'How the FIFA World Cup 26 will work with 48 teams',
+        url: 'https://www.fifa.com/en/articles/article-fifa-world-cup-2026-mexico-canada-usa-new-format-tournament-football-soccer',
+        note: 'Official explanation of the 48-team format and round of 32',
+      },
+      {
+        publisher: 'FIFA',
+        title: 'Teams in the FIFA World Cup 2026: full 48-team list',
+        url: 'https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/teams',
+        note: 'Official list of qualified teams',
+      },
+    ],
     title: 'World Cup 2026 Group Stage Explained: How the New Round of 32 Works',
     category: 'football',
     categoryLabel: 'World Cup',
@@ -533,6 +567,20 @@ const RAW: RawArticle[] = [
   },
   {
     id: 'wc-2026-contenders',
+    sources: [
+      {
+        publisher: 'FIFA',
+        title: 'Teams in the FIFA World Cup 2026: full 48-team list',
+        url: 'https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/teams',
+        note: 'Official list of qualified teams',
+      },
+      {
+        publisher: 'FIFA',
+        title: 'How the FIFA World Cup 26 will work with 48 teams',
+        url: 'https://www.fifa.com/en/articles/article-fifa-world-cup-2026-mexico-canada-usa-new-format-tournament-football-soccer',
+        note: 'Official explanation of the 48-team format and round of 32',
+      },
+    ],
     title: 'Title Contenders for World Cup 2026: The Favourites and the Dark Horses',
     category: 'football',
     categoryLabel: 'World Cup',
@@ -585,6 +633,20 @@ const RAW: RawArticle[] = [
   },
   {
     id: 'wc-2026-host-cities',
+    sources: [
+      {
+        publisher: 'FIFA',
+        title: 'FIFA World Cup 2026: hosts, cities and dates',
+        url: 'https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-2026-hosts-cities-dates-usa-mexico-canada',
+        note: 'Official host-city and venue list',
+      },
+      {
+        publisher: 'FIFA',
+        title: 'FIFA World Cup 2026 match schedule, fixtures and stadiums',
+        url: 'https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums',
+        note: 'Official schedule, dates and kick-off times',
+      },
+    ],
     title: 'World Cup 2026 Host Cities: All 16 Venues Across the USA, Canada and Mexico',
     category: 'football',
     categoryLabel: 'World Cup',
@@ -657,6 +719,20 @@ const RAW: RawArticle[] = [
   },
   {
     id: 'wc-2026-key-dates',
+    sources: [
+      {
+        publisher: 'FIFA',
+        title: 'FIFA World Cup 2026 match schedule, fixtures and stadiums',
+        url: 'https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums',
+        note: 'Official schedule, dates and kick-off times',
+      },
+      {
+        publisher: 'FIFA',
+        title: 'How the FIFA World Cup 26 will work with 48 teams',
+        url: 'https://www.fifa.com/en/articles/article-fifa-world-cup-2026-mexico-canada-usa-new-format-tournament-football-soccer',
+        note: 'Official explanation of the 48-team format and round of 32',
+      },
+    ],
     title: 'World Cup 2026 Key Dates: Opening Match, Group Stage and the Final',
     category: 'football',
     categoryLabel: 'World Cup',
@@ -713,6 +789,14 @@ const RAW: RawArticle[] = [
   },
   {
     id: 'wc-winners-history',
+    sources: [
+      {
+        publisher: 'FIFA',
+        title: 'How the FIFA World Cup 26 will work with 48 teams',
+        url: 'https://www.fifa.com/en/articles/article-fifa-world-cup-2026-mexico-canada-usa-new-format-tournament-football-soccer',
+        note: 'Official explanation of the 48-team format and round of 32',
+      },
+    ],
     title: 'Every World Cup Winner: A Complete History from 1930 to 2022',
     category: 'football',
     categoryLabel: 'World Cup',
@@ -857,12 +941,6 @@ const RAW: RawArticle[] = [
         url: 'https://en.moonton.com/news/212.html',
         note: 'The game developer\'s official announcement',
       },
-      {
-        publisher: 'Liquipedia',
-        title: 'MPL Indonesia Season 15',
-        url: 'https://liquipedia.net/mobilelegends/MPL/Indonesia/Season_15',
-        note: 'Full bracket, series scores and prize distribution',
-      },
     ],
     title: 'ONIC Wins MPL ID Season 15 After Epic 4–3 Showdown',
     category: 'esports',
@@ -917,6 +995,14 @@ const RAW: RawArticle[] = [
   },
   {
     id: 'feature-womens-football',
+    sources: [
+      {
+        publisher: 'FIFA',
+        title: 'How the FIFA World Cup 26 will work with 48 teams',
+        url: 'https://www.fifa.com/en/articles/article-fifa-world-cup-2026-mexico-canada-usa-new-format-tournament-football-soccer',
+        note: 'Official explanation of the 48-team format and round of 32',
+      },
+    ],
     title: 'The Rise of Women’s Football: Why the Women’s Game Is Booming',
     category: 'football',
     categoryLabel: 'Football',
@@ -967,6 +1053,14 @@ const RAW: RawArticle[] = [
   },
   {
     id: 'explainer-esports-world-cup',
+    sources: [
+      {
+        publisher: 'Riot Games',
+        title: 'Why we\'re returning to the Esports World Cup',
+        url: 'https://www.riotgames.com/en/news/ewc-2025',
+        note: 'Publisher account of Esports World Cup participation',
+      },
+    ],
     title: 'What Is the Esports World Cup? Format, Games and Prize Money Explained',
     category: 'esports',
     categoryLabel: 'Esports',
@@ -1015,6 +1109,14 @@ const RAW: RawArticle[] = [
   },
   {
     id: 'guide-champions-league-format',
+    sources: [
+      {
+        publisher: 'UEFA',
+        title: 'UEFA Champions League: competition format',
+        url: 'https://www.uefa.com/uefachampionsleague/competition-format/',
+        note: 'Official description of the league phase and qualification',
+      },
+    ],
     title: 'The Champions League’s New Format Explained: How the League Phase Works',
     category: 'football',
     categoryLabel: 'Football',
@@ -1066,6 +1168,26 @@ const RAW: RawArticle[] = [
   },
   {
     id: 'guide-f1-points-system',
+    sources: [
+      {
+        publisher: 'Formula 1',
+        title: 'The beginner\'s guide to the F1 weekend',
+        url: 'https://www.formula1.com/en/latest/article/the-beginners-guide-to-the-formula-1-weekend.5RFZzGXNhEi9AEuMXwo987',
+        note: 'Official guide to practice, qualifying and the race',
+      },
+      {
+        publisher: 'Formula 1',
+        title: 'The beginner\'s guide to the F1 Sprint',
+        url: 'https://www.formula1.com/en/latest/article/the-beginners-guide-to-the-f1-sprint.55yJBEiF7vYkZEwSV9lZJ9',
+        note: 'Official explanation of the Sprint format and its points',
+      },
+      {
+        publisher: 'Formula 1',
+        title: 'Seven rule changes you need to know for the 2025 F1 season',
+        url: 'https://www.formula1.com/en/latest/article/from-fastest-lap-to-increased-rookie-running-7-rule-changes-you-need-to-know.pgdSMDnDyv1aJUgtcKPp6',
+        note: 'Source for the removal of the fastest-lap bonus point',
+      },
+    ],
     title: 'Formula 1 Explained: How the Championship and Points System Work',
     category: 'sports',
     categoryLabel: 'Formula 1',
@@ -1103,21 +1225,48 @@ const RAW: RawArticle[] = [
       <p>Formula 1 is governed by a detailed set of technical and sporting <strong>regulations</strong> that define what the cars are allowed to do. Within those rules, teams design and constantly refine their machines, which is why the fastest car at the start of a season is not always the fastest by the end. Development never stops: engineers bring upgrades throughout the year in the hope of finding an advantage.</p>
       <p>This is also why small margins matter so much. Because positions are often decided by fractions, a driver who finishes solidly at every round can quietly build a lead over a rival who mixes brilliant wins with races that end in no points at all. Over a long calendar, reliability and steady scoring frequently prove just as valuable as raw speed.</p>
 
+      <h2>The Points Breakdown, in Full</h2>
+      <p>The Grand Prix scale has been unchanged since 2010 and rewards the top ten finishers only:</p>
+      <ul>
+      <li><strong>1st:</strong> 25 points &middot; <strong>2nd:</strong> 18 &middot; <strong>3rd:</strong> 15</li>
+      <li><strong>4th:</strong> 12 &middot; <strong>5th:</strong> 10 &middot; <strong>6th:</strong> 8</li>
+      <li><strong>7th:</strong> 6 &middot; <strong>8th:</strong> 4 &middot; <strong>9th:</strong> 2 &middot; <strong>10th:</strong> 1</li>
+      </ul>
+      <p>Finish eleventh and you score nothing, which is why the fight for the final points-paying place is often as fierce as the one for the podium.</p>
+      <p>Sprint races carry a shorter scale of their own, paying the <strong>top eight</strong> from 8 points for the winner down to a single point for eighth. A sprint weekend therefore puts a maximum of 33 points on the table for one driver rather than 25.</p>
+      <p>One change worth knowing if you are reading about older seasons: from 2019 to 2024 a bonus point went to the driver who set the fastest lap, provided they finished in the top ten. That bonus was <strong>scrapped from the 2025 season</strong>, so the fastest lap is now a statistic rather than a scoring position.</p>
+      
       <h2>Frequently Asked Questions</h2>
       <h3>How many points do you get for winning an F1 race?</h3>
-      <p>25 points for first place, down to 1 point for tenth.</p>
+      <p>25 points for first place, then 18, 15, 12, 10, 8, 6, 4, 2 and 1 point for tenth.</p>
+      <h3>Is there still a point for the fastest lap?</h3>
+      <p>No. The fastest-lap bonus point applied from 2019 to 2024 and was removed for the 2025 season.</p>
       <h3>What is the difference between the two championships?</h3>
       <p>The Drivers' title goes to an individual; the Constructors' title goes to the team with the most combined points.</p>
       <h2>Key Takeaways</h2>
       <ul>
         <li>Two titles each year: Drivers' and Constructors'.</li>
-        <li>Points go to the top 10, with sprint races offering extra.</li>
+        <li>Points go to the top 10 (25 down to 1); sprints pay the top eight (8 down to 1).</li>
         <li>Consistency over a long calendar often decides the championship.</li>
       </ul>
     `,
   },
   {
     id: 'explainer-lol-worlds',
+    sources: [
+      {
+        publisher: 'Riot Games (LoL Esports)',
+        title: 'Worlds 2025 primer',
+        url: 'https://lolesports.com/en-US/news/worlds-2025-primer',
+        note: 'Official breakdown of the Play-In, Swiss and Knockout stages',
+      },
+      {
+        publisher: 'Riot Games',
+        title: 'League of Legends Competitive Operations',
+        url: 'https://competitiveops.riotgames.com/en-US/league-of-legends',
+        note: 'Official competitive rulesets and regional structure',
+      },
+    ],
     title: 'League of Legends Worlds: How the World Championship Works',
     category: 'esports',
     categoryLabel: 'Esports',
@@ -1183,6 +1332,14 @@ const RAW: RawArticle[] = [
   },
   {
     id: 'history-of-football',
+    sources: [
+      {
+        publisher: 'IFAB',
+        title: 'Laws of the Game — Law 11: Offside',
+        url: 'https://www.theifab.com/laws/latest/offside/',
+        note: 'The governing text defining offside position and offence',
+      },
+    ],
     title: 'A Brief History of Football: From Folk Game to Global Spectacle',
     category: 'football',
     categoryLabel: 'Football',
@@ -1233,6 +1390,20 @@ const RAW: RawArticle[] = [
   },
   {
     id: 'var-explained',
+    sources: [
+      {
+        publisher: 'IFAB',
+        title: 'Laws of the Game — Video Assistant Referee (VAR) protocol',
+        url: 'https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/',
+        note: 'The protocol setting out when a VAR may intervene',
+      },
+      {
+        publisher: 'IFAB',
+        title: 'Laws of the Game — Law 11: Offside',
+        url: 'https://www.theifab.com/laws/latest/offside/',
+        note: 'The governing text defining offside position and offence',
+      },
+    ],
     title: 'VAR Explained: How the Video Assistant Referee Works in Football',
     category: 'football',
     categoryLabel: 'Football',
@@ -1285,6 +1456,20 @@ const RAW: RawArticle[] = [
   },
   {
     id: 'dota-the-international',
+    sources: [
+      {
+        publisher: 'Valve',
+        title: 'The International 2024',
+        url: 'https://www.dota2.com/international2024',
+        note: 'Official tournament page',
+      },
+      {
+        publisher: 'Valve',
+        title: 'The International Battle Pass',
+        url: 'https://www.dota2.com/international/battlepass',
+        note: 'Official source for how community purchases fund the prize pool',
+      },
+    ],
     title: 'The International: How Dota 2’s Biggest Tournament Works',
     category: 'esports',
     categoryLabel: 'Esports',
@@ -1334,6 +1519,20 @@ const RAW: RawArticle[] = [
   },
   {
     id: 'offside-rule-explained',
+    sources: [
+      {
+        publisher: 'IFAB',
+        title: 'Laws of the Game — Law 11: Offside',
+        url: 'https://www.theifab.com/laws/latest/offside/',
+        note: 'The governing text defining offside position and offence',
+      },
+      {
+        publisher: 'IFAB',
+        title: 'Laws of the Game — Video Assistant Referee (VAR) protocol',
+        url: 'https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/',
+        note: 'The protocol setting out when a VAR may intervene',
+      },
+    ],
     title: 'The Offside Rule Explained: Football’s Most Debated Law',
     category: 'football',
     categoryLabel: 'Football',
@@ -1401,6 +1600,14 @@ const RAW: RawArticle[] = [
   },
   {
     id: 'messi-world-cup-journey',
+    sources: [
+      {
+        publisher: 'FIFA',
+        title: 'How the FIFA World Cup 26 will work with 48 teams',
+        url: 'https://www.fifa.com/en/articles/article-fifa-world-cup-2026-mexico-canada-usa-new-format-tournament-football-soccer',
+        note: 'Official explanation of the 48-team format and round of 32',
+      },
+    ],
     title: 'Lionel Messi: The World Cup Journey to Glory in 2022',
     category: 'football',
     categoryLabel: 'World Cup',
@@ -1456,6 +1663,20 @@ const RAW: RawArticle[] = [
   },
   {
     id: 'ronaldo-world-cup-records',
+    sources: [
+      {
+        publisher: 'FIFA',
+        title: 'How the FIFA World Cup 26 will work with 48 teams',
+        url: 'https://www.fifa.com/en/articles/article-fifa-world-cup-2026-mexico-canada-usa-new-format-tournament-football-soccer',
+        note: 'Official explanation of the 48-team format and round of 32',
+      },
+      {
+        publisher: 'FIFA',
+        title: 'Teams in the FIFA World Cup 2026: full 48-team list',
+        url: 'https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/teams',
+        note: 'Official list of qualified teams',
+      },
+    ],
     title: 'Cristiano Ronaldo at the World Cup: Records and the 2026 Question',
     category: 'football',
     categoryLabel: 'World Cup',
@@ -1508,6 +1729,14 @@ const RAW: RawArticle[] = [
   },
   {
     id: 'messi-vs-ronaldo-rivalry',
+    sources: [
+      {
+        publisher: 'FIFA',
+        title: 'How the FIFA World Cup 26 will work with 48 teams',
+        url: 'https://www.fifa.com/en/articles/article-fifa-world-cup-2026-mexico-canada-usa-new-format-tournament-football-soccer',
+        note: 'Official explanation of the 48-team format and round of 32',
+      },
+    ],
     title: 'Messi vs Ronaldo: Inside Football’s Greatest Rivalry',
     category: 'football',
     categoryLabel: 'Football',
@@ -1566,6 +1795,14 @@ const RAW: RawArticle[] = [
   },
   {
     id: 'greatest-world-cup-goalscorers',
+    sources: [
+      {
+        publisher: 'FIFA',
+        title: 'How the FIFA World Cup 26 will work with 48 teams',
+        url: 'https://www.fifa.com/en/articles/article-fifa-world-cup-2026-mexico-canada-usa-new-format-tournament-football-soccer',
+        note: 'Official explanation of the 48-team format and round of 32',
+      },
+    ],
     title: 'The Greatest World Cup Goalscorers of All Time',
     category: 'football',
     categoryLabel: 'World Cup',
@@ -1620,6 +1857,20 @@ const RAW: RawArticle[] = [
   },
   {
     id: 'messi-ronaldo-last-world-cup',
+    sources: [
+      {
+        publisher: 'FIFA',
+        title: 'Teams in the FIFA World Cup 2026: full 48-team list',
+        url: 'https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/teams',
+        note: 'Official list of qualified teams',
+      },
+      {
+        publisher: 'FIFA',
+        title: 'How the FIFA World Cup 26 will work with 48 teams',
+        url: 'https://www.fifa.com/en/articles/article-fifa-world-cup-2026-mexico-canada-usa-new-format-tournament-football-soccer',
+        note: 'Official explanation of the 48-team format and round of 32',
+      },
+    ],
     title: 'Could 2026 Be the Last World Cup for Messi and Ronaldo?',
     category: 'football',
     categoryLabel: 'World Cup',
