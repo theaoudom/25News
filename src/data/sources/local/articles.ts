@@ -144,8 +144,10 @@ const RAW: RawArticle[] = [
     publishedAt: '2025-06-11T09:00:00Z',
     isTrending: true,
     tags: ['Football', 'Transfers', 'Premier League', 'Liverpool'],
-    imageUrl: '/images/wirt_join_liverpool.png',
-    imageAlt: 'Florian Wirtz pictured after completing his transfer to Liverpool',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Florian_Wirtz_04012026_%283%29_%28extracted%29.jpg/1280px-Florian_Wirtz_04012026_%283%29_%28extracted%29.jpg',
+    imageAlt: 'Florian Wirtz playing for Liverpool against Fulham in January 2026',
+    imageCredit: 'Photo by Timmy96 via Wikimedia Commons (CC0 public domain)',
     body: `
 <p>Liverpool have completed the signing of Bayer Leverkusen playmaker Florian Wirtz in a deal that ranks among the most expensive in British football history. The Germany international arrives at Anfield as the centrepiece of the club's rebuild, having chosen the Premier League champions ahead of interest from several of Europe's biggest sides.</p>
 <h2>A Club-Record Move</h2>
@@ -375,8 +377,10 @@ const RAW: RawArticle[] = [
     publishedAt: '2025-06-11T18:00:00Z',
     isTrending: true,
     tags: ['Football', 'Portugal', 'Cristiano Ronaldo', 'Nations League'],
-    imageUrl: '/images/ronaldo_win_nation_lauge.webp',
-    imageAlt: 'Cristiano Ronaldo celebrating Portugal’s UEFA Nations League final win',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Cristiano_Ronaldo_2275_%28cropped%29.jpg/1280px-Cristiano_Ronaldo_2275_%28cropped%29.jpg',
+    imageAlt: 'Cristiano Ronaldo celebrating a goal for Portugal in September 2025',
+    imageCredit: 'Photo by Asatur Yesayants (YantsImages) via Wikimedia Commons (CC BY-SA 4.0)',
     summary: 'Carlo Ancelotti praises Cristiano Ronaldo after Portugal lifts the UEFA Nations League trophy.',
     body: `
 <p>At 40, an age when almost every footballer has long since retired, Cristiano Ronaldo added another major honour to his career by helping Portugal win the UEFA Nations League. It was the second time he had lifted the trophy, and it prompted warm praise from one of the most decorated managers in the game, Carlo Ancelotti — a man who knows Ronaldo's qualities better than most.</p>
@@ -808,8 +812,10 @@ const RAW: RawArticle[] = [
     authorId: 'newsroom',
     publishedAt: '2025-06-11T09:00:00Z',
     tags: ['Formula 1', 'Aston Martin'],
-    imageUrl: '/images/aston_martin.png',
-    imageAlt: 'An Aston Martin Formula 1 car on track',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/2025_Japan_GP_-_Aston_Martin_-_Fernando_Alonso_-_FP1.jpg/1280px-2025_Japan_GP_-_Aston_Martin_-_Fernando_Alonso_-_FP1.jpg',
+    imageAlt: 'An Aston Martin AMR25 on track during practice at the 2025 Japanese Grand Prix',
+    imageCredit: 'Photo by Liauzh via Wikimedia Commons (CC BY-SA 4.0)',
     body: `
 <p>Aston Martin confirmed that Lance Stroll would return to the cockpit for the Canadian Grand Prix, following his withdrawal from the previous round in Spain. For the Canadian driver, a comeback at his home race in Montreal carried obvious emotional significance — and it drew a line under a difficult few weeks dealing with a recurring hand and wrist problem.</p>
 <h2>Why Stroll Sat Out</h2>
@@ -839,7 +845,6 @@ const RAW: RawArticle[] = [
 <li>Aston Martin continue to build towards a longer-term challenge at the front of the grid.</li>
 </ul>
       `,
-    secondaryImageUrl: '/images/fomular_sub.png',
     secondaryBody: `
       <p>"I am excited to get back behind the wheel with the team for my home Grand Prix this weekend," Stroll said. "I was always going to fight hard to be ready to race in front of the Montreal crowd."</p>`,
   },
@@ -867,8 +872,10 @@ const RAW: RawArticle[] = [
     isFeatured: true,
     isTrending: true,
     tags: ['Esports', 'MLBB', 'MPL'],
-    imageUrl: '/images/onic-id-cham1.png',
-    imageAlt: 'ONIC celebrating their MPL Indonesia Season 15 championship win',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/2026_Esports_World_Cup_-_Mobile_Legends_competition.jpg/1280px-2026_Esports_World_Cup_-_Mobile_Legends_competition.jpg',
+    imageAlt: 'A Mobile Legends: Bang Bang competition stage at the 2026 Esports World Cup',
+    imageCredit: 'Photo by PeaceSeekers via Wikimedia Commons (CC0 public domain)',
     summary:
       'ONIC defeats RRQ in a dramatic Best of 7 final to claim the MPL ID S15 crown and head to MSC 2025.',
     body: `
@@ -904,7 +911,6 @@ const RAW: RawArticle[] = [
 <li>ONIC and RRQ now represent Indonesia at the MSC, part of the Esports World Cup.</li>
 </ul>
       `,
-    secondaryImageUrl: '/images/onic-id-cham2.png',
     secondaryBody: `
       <h2>MSC 2025 Bound</h2>
       <p>With this victory, ONIC Esports heads into MSC 2025 in Riyadh with momentum. Alongside runner-up RRQ Hoshi, they will represent Indonesia at the prestigious global tournament as part of the Esports World Cup.</p>`,
