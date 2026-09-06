@@ -45,14 +45,13 @@ export function articleJsonLd(article: Article, path: string) {
     articleSection: article.categoryLabel,
     keywords: article.tags.join(', '),
     wordCount: stripHtml(article.body).split(/\s+/).filter(Boolean).length,
-    // The byline is an editorial desk, not an individual, so it is typed as an
-    // Organization. Marking a masthead as a Person is inaccurate structured
-    // data — if a real named journalist is added to authors.ts, branch on that
-    // rather than mislabelling the desk.
+    // Type follows the byline: a real individual is a Person, an editorial
+    // desk is an Organization. Never mark a masthead up as a Person.
     author: {
-      '@type': 'Organization',
+      '@type': article.author.kind === 'person' ? 'Person' : 'Organization',
       name: article.author.name,
-      url: `${siteConfig.url}/about`,
+      ...(article.author.role ? { jobTitle: article.author.role } : {}),
+      ...(article.author.url ? { url: article.author.url } : {}),
     },
     publisher: {
       '@type': 'Organization',

@@ -13,6 +13,13 @@ export interface Author {
   bio?: string;
   /** Optional credentials reinforcing E-E-A-T signals. */
   role?: string;
+  /**
+   * Whether this byline is a real individual or an editorial desk. Drives the
+   * schema.org type: a masthead must not be marked up as a Person.
+   */
+  kind: 'person' | 'organization';
+  /** Public profile or contact for the author, surfaced in structured data. */
+  url?: string;
 }
 
 /**

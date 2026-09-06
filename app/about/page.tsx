@@ -42,11 +42,15 @@ export default function AboutPage() {
 
       <h2>Who Publishes 26News</h2>
       <p>
-        26News is independently owned and operated. It is not a wire service and does not employ a
-        newsroom of correspondents. Articles are published under a single editorial byline,{' '}
-        <strong>26News Newsroom</strong>, which reflects how the site actually works: a small
-        editorial operation writing and reviewing its own copy. We would rather be straightforward
-        about that than attach invented staff names to stories.
+        26News is written and edited by <strong>Elvis</strong>, who founded the site. It is
+        independently owned and operated — not a wire service, and not a newsroom of
+        correspondents. Every article carries his byline because he writes and edits all of it,
+        which is a plainer description of how the site works than a masthead would be.
+      </p>
+      <p>
+        You can reach him directly at{' '}
+        <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a> — corrections
+        included.
       </p>
 
       <h2>How We Source Our Reporting</h2>
