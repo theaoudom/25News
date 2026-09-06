@@ -25,22 +25,23 @@ export function WorldCupWidget({
         ))}
       </div>
       <div className="mt-4 flex flex-wrap gap-3 text-sm font-medium">
-        <Link href="/world-cup/fixtures" className="text-brand-600 hover:underline">
-          Fixtures
+        <Link href="/world-cup/results" className="text-brand-600 hover:underline">
+          Results
         </Link>
         <Link href="/world-cup/standings" className="text-brand-600 hover:underline">
           Standings
         </Link>
-        <Link href="/world-cup/results" className="text-brand-600 hover:underline">
-          Results
+        <Link href="/world-cup/bracket" className="text-brand-600 hover:underline">
+          Bracket
         </Link>
-        <Link href="/world-cup/live" className="text-brand-600 hover:underline">
-          Live Scores
+        <Link href="/world-cup/news" className="text-brand-600 hover:underline">
+          Analysis
         </Link>
       </div>
       {isFallback && (
         <p className="mt-3 text-xs text-muted">
-          Showing sample data. Connect a football API key to enable live results.
+          Live match data is temporarily unavailable from our providers. We show results only when
+          we can verify them from a live source.
         </p>
       )}
     </section>

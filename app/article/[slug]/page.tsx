@@ -8,6 +8,7 @@ import { articleJsonLd } from '@/shared/seo/jsonLd';
 import { JsonLd } from '@/presentation/components/JsonLd';
 import { Breadcrumbs } from '@/presentation/components/Breadcrumbs';
 import { ArticleBody } from '@/presentation/components/ArticleBody';
+import { ArticleSources } from '@/presentation/components/ArticleSources';
 import { ArticleCard } from '@/presentation/components/ArticleCard';
 import { AdSlot } from '@/presentation/components/AdSlot';
 import { SectionHeading } from '@/presentation/components/SectionHeading';
@@ -132,6 +133,8 @@ export default async function ArticlePage({ params }: { params: { slug: string }
             ))}
           </div>
         )}
+
+        <ArticleSources sources={article.sources} />
 
         {/* Author bio reinforces E-E-A-T */}
         {article.author.bio && (

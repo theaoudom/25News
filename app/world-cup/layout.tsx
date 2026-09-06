@@ -11,7 +11,8 @@ export default function WorldCupLayout({ children }: { children: React.ReactNode
           </p>
           <h1 className="mt-1 font-display text-3xl font-bold sm:text-4xl">World Cup Central</h1>
           <p className="mt-2 max-w-2xl text-white/90">
-            Fixtures, live scores, standings, results and the latest World Cup news — all in one place.
+            The complete record of the first 48-team World Cup — final results, group tables, the
+            knockout bracket and our tournament analysis.
           </p>
         </div>
       </div>

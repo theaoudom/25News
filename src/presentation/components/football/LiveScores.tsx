@@ -49,7 +49,7 @@ export function LiveScores({
     return (
       <div className="rounded-lg border border-[var(--border)] surface p-8 text-center text-muted">
         No matches are live right now. Check the{' '}
-        <a href="/world-cup/fixtures" className="text-brand-600 underline">
+        <a href="/world-cup/results" className="text-brand-600 underline">
           fixtures
         </a>{' '}
         for upcoming games.

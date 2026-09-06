@@ -8,13 +8,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();
 
   const staticPages: MetadataRoute.Sitemap = [
-    { url: `${base}/`, lastModified: now, changeFrequency: 'hourly', priority: 1 },
-    { url: `${base}/world-cup`, lastModified: now, changeFrequency: 'hourly', priority: 0.9 },
-    { url: `${base}/world-cup/fixtures`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
-    { url: `${base}/world-cup/results`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
-    { url: `${base}/world-cup/standings`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
-    { url: `${base}/world-cup/live`, lastModified: now, changeFrequency: 'always', priority: 0.7 },
-    { url: `${base}/world-cup/news`, lastModified: now, changeFrequency: 'daily', priority: 0.7 },
+    { url: `${base}/`, lastModified: now, changeFrequency: 'daily', priority: 1 },
+    { url: `${base}/world-cup`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${base}/world-cup/results`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/world-cup/standings`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/world-cup/bracket`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/world-cup/news`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
     { url: `${base}/about`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${base}/contact`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${base}/privacy-policy`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },

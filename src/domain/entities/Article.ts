@@ -4,7 +4,7 @@
  * into these; the presentation layer only ever sees these.
  */
 
-export type CategorySlug = 'world' | 'sports' | 'football' | 'esports';
+export type CategorySlug = 'sports' | 'football' | 'esports';
 
 export interface Author {
   id: string;
@@ -13,6 +13,23 @@ export interface Author {
   bio?: string;
   /** Optional credentials reinforcing E-E-A-T signals. */
   role?: string;
+}
+
+/**
+ * A citation pointing at the original reporting or primary record behind a
+ * claim in an article. Rendered visibly at the foot of the article so readers
+ * (and reviewers assessing trust) can follow every factual claim to its
+ * source.
+ */
+export interface ArticleSource {
+  /** Publication or organisation, e.g. "Liverpool FC", "Reuters". */
+  publisher: string;
+  /** Headline or document title being cited. */
+  title: string;
+  /** Canonical URL of the cited material. */
+  url: string;
+  /** Optional note on what this source supports, e.g. "confirmed the fee". */
+  note?: string;
 }
 
 export interface Article {
@@ -43,6 +60,8 @@ export interface Article {
   updatedAt: string;
   readTimeMinutes: number;
   tags: string[];
+  /** Citations for the reporting this article is based on. */
+  sources: ArticleSource[];
   /** Flags for homepage curation. */
   isBreaking?: boolean;
   isFeatured?: boolean;

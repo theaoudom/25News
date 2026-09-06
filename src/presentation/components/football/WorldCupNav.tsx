@@ -3,13 +3,14 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
+// The tournament is complete, so the section is an archive: the live-scores
+// and upcoming-fixtures tabs were retired once they could only ever render an
+// empty state.
 const TABS = [
   { label: 'Overview', href: '/world-cup' },
-  { label: 'Fixtures', href: '/world-cup/fixtures' },
   { label: 'Results', href: '/world-cup/results' },
   { label: 'Standings', href: '/world-cup/standings' },
   { label: 'Bracket', href: '/world-cup/bracket' },
-  { label: 'Live Scores', href: '/world-cup/live' },
   { label: 'News', href: '/world-cup/news' },
 ];
 

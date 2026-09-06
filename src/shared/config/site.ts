@@ -6,9 +6,9 @@
 export const siteConfig = {
   name: '26News',
   shortName: '26News',
-  tagline: 'World, Sports, Football & Esports — covered.',
+  tagline: 'Football, World Cup & Esports — covered.',
   description:
-    'Your trusted source for the latest news in World affairs, Sports, Football, the FIFA World Cup, and Esports. Timely, accurate, and in-depth reporting.',
+    'Football, FIFA World Cup and esports coverage — transfer news, match analysis, tournament explainers and the stories behind the results.',
   // Canonical base. Override via NEXT_PUBLIC_SITE_URL once a permanent custom
   // domain is live; defaults to the current Vercel URL.
   url: (process.env.NEXT_PUBLIC_SITE_URL || 'https://26news.xyz').replace(/\/$/, ''),
@@ -26,7 +26,6 @@ export const siteConfig = {
 /** Primary navigation, also used to generate breadcrumbs and the sitemap. */
 export const mainNav: { label: string; href: string }[] = [
   { label: 'Home', href: '/' },
-  { label: 'World', href: '/category/world' },
   { label: 'Sports', href: '/category/sports' },
   { label: 'Football', href: '/category/football' },
   { label: 'World Cup', href: '/world-cup' },
@@ -37,7 +36,6 @@ export const footerNav: { title: string; links: { label: string; href: string }[
   {
     title: 'Sections',
     links: [
-      { label: 'World', href: '/category/world' },
       { label: 'Sports', href: '/category/sports' },
       { label: 'Football', href: '/category/football' },
       { label: 'World Cup', href: '/world-cup' },
@@ -47,10 +45,10 @@ export const footerNav: { title: string; links: { label: string; href: string }[
   {
     title: 'World Cup',
     links: [
-      { label: 'Fixtures', href: '/world-cup/fixtures' },
       { label: 'Results', href: '/world-cup/results' },
       { label: 'Standings', href: '/world-cup/standings' },
-      { label: 'Live Scores', href: '/world-cup/live' },
+      { label: 'Bracket', href: '/world-cup/bracket' },
+      { label: 'Analysis', href: '/world-cup/news' },
     ],
   },
   {

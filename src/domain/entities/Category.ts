@@ -8,16 +8,10 @@ export interface Category {
 
 export const CATEGORIES: Category[] = [
   {
-    slug: 'world',
-    name: 'World',
-    description:
-      'International headlines, diplomacy, economy, science and breaking global stories.',
-  },
-  {
     slug: 'sports',
     name: 'Sports',
     description:
-      'Scores, match reports, transfers and analysis across basketball, tennis, Formula 1 and more.',
+      'Motorsport and wider sport beyond football — Formula 1 race news, championship regulations and the decisions that shape a season.',
   },
   {
     slug: 'football',

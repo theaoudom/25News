@@ -1,4 +1,4 @@
-import type { Article, CategorySlug } from '@/domain/entities/Article';
+import type { Article, ArticleSource, CategorySlug } from '@/domain/entities/Article';
 import { getAuthor } from './authors';
 import { slugify, stripHtml, truncate, estimateReadTime } from '@/shared/utils/text';
 
@@ -24,6 +24,7 @@ interface RawArticle {
   publishedAt: string; // ISO 8601
   updatedAt?: string;
   tags?: string[];
+  sources?: ArticleSource[];
   isBreaking?: boolean;
   isFeatured?: boolean;
   isTrending?: boolean;
@@ -50,6 +51,7 @@ function build(raw: RawArticle): Article {
     updatedAt: raw.updatedAt || raw.publishedAt,
     readTimeMinutes: estimateReadTime(raw.body + (raw.secondaryBody || '')),
     tags: raw.tags || [],
+    sources: raw.sources || [],
     isBreaking: raw.isBreaking,
     isFeatured: raw.isFeatured,
     isTrending: raw.isTrending,
@@ -58,9 +60,28 @@ function build(raw: RawArticle): Article {
 }
 
 const RAW: RawArticle[] = [
-  // ───────────────────────── FOOTBALL ─────────────────────────
   {
     id: 'home-article-1107',
+    sources: [
+      {
+        publisher: 'Liverpool FC',
+        title: 'Diogo Jota: 1996-2025',
+        url: 'https://www.liverpoolfc.com/news/diogo-jota-1996-2025',
+        note: 'The club\'s official announcement and tribute',
+      },
+      {
+        publisher: 'CNN',
+        title: 'Diogo Jota: What we know about the death of the Liverpool soccer star and his brother',
+        url: 'https://www.cnn.com/2025/07/04/sport/diogo-jota-death-what-we-know-spt',
+        note: 'Details of the crash confirmed by Spanish authorities',
+      },
+      {
+        publisher: 'Al Jazeera',
+        title: 'Diogo Jota: What happened to the Liverpool and Portugal football star?',
+        url: 'https://www.aljazeera.com/sports/2025/7/3/diogo-jota-what-happened-to-the-liverpool-and-portugal-football-star',
+        note: 'Career record and reaction across the game',
+      },
+    ],
     title: 'Liverpool football star Diogo Jota killed in car crash',
     category: 'football',
     categoryLabel: 'Football',
@@ -68,8 +89,9 @@ const RAW: RawArticle[] = [
     publishedAt: '2025-07-03T08:00:00Z',
     isTrending: true,
     tags: ['Football', 'Liverpool', 'Premier League'],
-    imageUrl: '/images/placeholders/football.svg',
-    imageAlt: 'Football illustration in tribute to Diogo Jota',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d4/Diogo_Jota_2025.jpg',
+    imageAlt: 'Diogo Jota arriving at Craven Cottage before Fulham v Liverpool in April 2025',
+    imageCredit: 'Photo by Timmy96 via Wikimedia Commons (CC0 public domain)',
     summary:
       'Liverpool and Portugal forward Diogo Jota has died following a car accident in northwestern Spain. He was 28.',
     body: `
@@ -91,7 +113,31 @@ const RAW: RawArticle[] = [
   },
   {
     id: 'home-article-1',
-    title: "Liverpool finalising deal for Leverkusen's Wirtz",
+    // Slug pinned: the headline was rewritten for originality after it was
+    // found to duplicate the wording used by another outlet, but the URL predates
+    // and is already indexed.
+    slug: 'liverpool-finalising-deal-for-leverkusen-s-wirtz',
+    sources: [
+      {
+        publisher: 'Liverpool FC',
+        title: 'Liverpool agree signing of Florian Wirtz from Bayer Leverkusen',
+        url: 'https://www.liverpoolfc.com/news/liverpool-agree-signing-florian-wirtz-bayer-leverkusen',
+        note: 'The club\'s official confirmation of the transfer',
+      },
+      {
+        publisher: 'Sky Sports',
+        title: 'Liverpool sign Bayer Leverkusen playmaker for fee of £116m',
+        url: 'https://www.skysports.com/football/news/11095/13377022/florian-wirtz-transfer-news-liverpool-sign-bayer-leverkusen-playmaker-for-fee-of-116m',
+        note: 'Source for the £100m guaranteed fee and £116m total package',
+      },
+      {
+        publisher: 'Premier League',
+        title: 'Liverpool sign Wirtz from Bayer Leverkusen',
+        url: 'https://www.premierleague.com/en/news/4323655/liverpool-sign-wirtz-from-bayer-leverkusen',
+        note: 'League confirmation and player background',
+      },
+    ],
+    title: 'Liverpool’s club-record move for Florian Wirtz, and the £116m question behind it',
     category: 'football',
     categoryLabel: 'Football',
     authorId: 'newsroom',
@@ -99,6 +145,7 @@ const RAW: RawArticle[] = [
     isTrending: true,
     tags: ['Football', 'Transfers', 'Premier League', 'Liverpool'],
     imageUrl: '/images/wirt_join_liverpool.png',
+    imageAlt: 'Florian Wirtz pictured after completing his transfer to Liverpool',
     body: `
 <p>Liverpool have completed the signing of Bayer Leverkusen playmaker Florian Wirtz in a deal that ranks among the most expensive in British football history. The Germany international arrives at Anfield as the centrepiece of the club's rebuild, having chosen the Premier League champions ahead of interest from several of Europe's biggest sides.</p>
 <h2>A Club-Record Move</h2>
@@ -135,14 +182,40 @@ const RAW: RawArticle[] = [
   },
   {
     id: 'football-cunha',
-    title: 'Manchester United announce signing of Matheus Cunha from Wolves on five-year deal',
+    // Slug pinned: the headline was rewritten for originality after it was
+    // found to duplicate the wording used by another outlet, but the URL predates
+    // and is already indexed.
+    slug: 'manchester-united-announce-signing-of-matheus-cunha-from-wolves-on-five-year-dea',
+    sources: [
+      {
+        publisher: 'Sky Sports',
+        title: 'Matheus Cunha completes £62.5m move to join Ruben Amorim at Old Trafford from Wolves',
+        url: 'https://www.skysports.com/football/news/11095/13375784/man-utd-transfer-news-matheus-cunha-completes-62-5m-move-to-join-ruben-amorim-at-old-trafford-from-wolves',
+        note: 'Source for the £62.5m release-clause fee and five-year terms',
+      },
+      {
+        publisher: 'ESPN',
+        title: 'Man United sign Matheus Cunha from Wolves in £62.5m deal',
+        url: 'https://www.espn.com/soccer/story/_/id/45341965/man-united-transfer-matheus-cunha-wolves',
+        note: 'Transfer detail and squad context',
+      },
+      {
+        publisher: 'Al Jazeera',
+        title: 'Manchester United complete Matheus Cunha signing from Wolves',
+        url: 'https://www.aljazeera.com/sports/2025/6/12/manchester-united-complete-matheus-cunha-signing-from-wolves',
+        note: 'Confirmation of the completed deal',
+      },
+    ],
+    title: 'What Manchester United are buying in Matheus Cunha, and why the release clause mattered',
     category: 'football',
     categoryLabel: 'Football',
     authorId: 'newsroom',
     publishedAt: '2025-06-05T10:00:00Z',
     tags: ['Football', 'Transfers', 'Manchester United'],
     imageUrl:
-      'https://livesport-ott-images.ssl.cdn.cra.cz/r900xfq60/2cc95d71-365f-4df4-9f8b-456b58def0e6.avif',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Matheus_Cunha_Brazil_V_Morocco_13_June_2026-177.jpg/1280px-Matheus_Cunha_Brazil_V_Morocco_13_June_2026-177.jpg',
+    imageAlt: 'Matheus Cunha in action for Brazil against Morocco at the 2026 World Cup',
+    imageCredit: 'Photo by Bryan Berlin via Wikimedia Commons (CC BY-SA 4.0)',
     body: `
 <p>Manchester United have completed the signing of Matheus Cunha from Wolverhampton Wanderers, with the Brazil forward joining on a five-year contract. The deal, triggered via a release clause worth around £62.5m, marks an early and clear statement of intent as United look to rebuild an attack that has too often fallen short in recent seasons.</p>
 <h2>The Details of the Deal</h2>
@@ -180,7 +253,30 @@ const RAW: RawArticle[] = [
   },
   {
     id: 'sport-article-3-ffp',
-    title: 'Transfer Window Revolution: New Financial Fair Play Rules Reshape Market',
+    // Slug pinned: headline rewritten for specificity, but this URL is
+    // already indexed.
+    slug: 'transfer-window-revolution-new-financial-fair-play-rules-reshape-market',
+    sources: [
+      {
+        publisher: 'UEFA',
+        title: 'Article 94: Squad cost rule — Club Licensing and Financial Sustainability Regulations',
+        url: 'https://documents.uefa.com/r/UEFA-Club-Licensing-and-Financial-Sustainability-Regulations-2025/Article-94-Squad-cost-rule-Online',
+        note: 'The regulation text setting the squad-cost limit',
+      },
+      {
+        publisher: 'UEFA',
+        title: 'Article 93: Calculation of the squad cost ratio',
+        url: 'https://documents.uefa.com/r/UEFA-Club-Licensing-and-Financial-Sustainability-Regulations-2026/Article-93-Calculation-of-squad-cost-ratio-Online',
+        note: 'How the ratio\'s numerator and denominator are defined',
+      },
+      {
+        publisher: 'UEFA',
+        title: 'Financial sustainability',
+        url: 'https://www.uefa.com/running-competitions/integrity/financial-sustainability/',
+        note: 'UEFA\'s overview of the framework and its aims',
+      },
+    ],
+    title: 'Squad cost ratio, FFP and PSR: the rules that now decide what clubs can spend',
     category: 'football',
     categoryLabel: 'Football',
     authorId: 'newsroom',
@@ -198,7 +294,9 @@ const RAW: RawArticle[] = [
 
 <h2>The New Framework: The Squad-Cost Ratio</h2>
 <p>FFP proved difficult to police and was widely seen as too blunt for a fast-changing industry. UEFA has since moved towards a more targeted model built around a <strong>squad-cost ratio</strong>. Rather than judging overall break-even, this approach limits what a club can spend specifically on its squad, capping the combined cost of player and coaching wages, transfer fees and agent fees at a set percentage of the club's football revenue.</p>
-<p>The reasoning is that squad costs are where clubs typically overreach. By tying them directly to income, UEFA hopes to keep ambition proportionate to means. The permitted share was designed to tighten over a transition period, giving clubs time to adjust their wage bills and recruitment plans. In general terms, it means a club earning modest revenue simply cannot commit the same slice to players as a continental heavyweight, however generous its owner might wish to be.</p>
+<p>The reasoning is that squad costs are where clubs typically overreach. By tying them directly to income, UEFA hopes to keep ambition proportionate to means.</p>
+<p>The limit was phased in deliberately rather than imposed overnight, giving clubs time to adjust wage bills and recruitment plans. Under UEFA's Club Licensing and Financial Sustainability Regulations, the ceiling was set at <strong>90% of football revenue for 2023/24</strong>, tightened to <strong>80% for 2024/25</strong>, and settles at a permanent <strong>70% from 2025/26 onwards</strong>. Breaching it is not a technicality: the regulations provide for a financial penalty scaled to the size of the excess and to how many times a club has been in breach across the current and previous three seasons, withheld by UEFA directly from the prize and solidarity money the club earns in its competitions.</p>
+<p>The practical effect is a hard arithmetic limit on ambition. A club with modest revenue cannot commit the same absolute sum to players as a continental heavyweight, however willing its owner, because the cap is a proportion of what the club itself earns rather than what its owner can afford. That is precisely the point: it pushes clubs to grow revenue first and spend second, and it explains why so much modern transfer business is structured around player sales, add-ons and amortised fees rather than simple cash purchases.</p>
 
 <h2>England's Own System: Profitability and Sustainability Rules</h2>
 <p>UEFA's rules only apply to clubs in European competition. Domestically, the Premier League runs its own separate regime, the <strong>Profitability and Sustainability Rules</strong> (PSR). These allow clubs to lose only up to a permitted amount across a three-year assessment period, with certain investments, such as spending on infrastructure, youth development and women's football, excluded from the calculation.</p>
@@ -244,11 +342,33 @@ const RAW: RawArticle[] = [
 </ul>
       `,
   },
-
-  // ───────────────────────── WORLD CUP ─────────────────────────
   {
     id: 'home-hero-main',
-    title: 'Carlo Ancelotti Showers Praise on Cristiano Ronaldo After UEFA Nations League Win',
+    // Slug pinned: the headline was rewritten for originality after it was
+    // found to duplicate the wording used by another outlet, but the URL predates
+    // and is already indexed.
+    slug: 'carlo-ancelotti-showers-praise-on-cristiano-ronaldo-after-uefa-nations-league-wi',
+    sources: [
+      {
+        publisher: 'Goal.com',
+        title: 'Cristiano Ronaldo told he \'could play for any team in the world\' by Carlo Ancelotti',
+        url: 'https://www.goal.com/en-us/lists/football-legend-cristiano-ronaldo-play-any-team-world-by-former-real-madrid-boss-carlo-ancelotti-nations-league-win-portugal/blt5a6aaa8a56e9820e',
+        note: 'Source for Ancelotti\'s quotes about Ronaldo',
+      },
+      {
+        publisher: 'CBS Sports',
+        title: 'Cristiano Ronaldo\'s Portugal win UEFA Nations League title over Spain in dramatic shootout',
+        url: 'https://www.cbssports.com/soccer/news/cristiano-ronaldos-portugal-win-uefa-nations-league-title-over-lamine-yamal-and-spain-in-dramatic-shootout',
+        note: 'Match report for the final in Munich',
+      },
+      {
+        publisher: 'Olympics.com',
+        title: 'Emotional Cristiano Ronaldo reacts to helping Portugal win the 2025 UEFA Nations League',
+        url: 'https://www.olympics.com/en/news/emotional-cristiano-ronaldo-reacts-portugal-2025-uefa-nations-league-trophy-win',
+        note: 'Ronaldo\'s own reaction after the final',
+      },
+    ],
+    title: 'Ancelotti on Ronaldo at 40: why he says the forward could still play anywhere',
     category: 'football',
     categoryLabel: 'International Football',
     authorId: 'newsroom',
@@ -256,6 +376,7 @@ const RAW: RawArticle[] = [
     isTrending: true,
     tags: ['Football', 'Portugal', 'Cristiano Ronaldo', 'Nations League'],
     imageUrl: '/images/ronaldo_win_nation_lauge.webp',
+    imageAlt: 'Cristiano Ronaldo celebrating Portugal’s UEFA Nations League final win',
     summary: 'Carlo Ancelotti praises Cristiano Ronaldo after Portugal lifts the UEFA Nations League trophy.',
     body: `
 <p>At 40, an age when almost every footballer has long since retired, Cristiano Ronaldo added another major honour to his career by helping Portugal win the UEFA Nations League. It was the second time he had lifted the trophy, and it prompted warm praise from one of the most decorated managers in the game, Carlo Ancelotti — a man who knows Ronaldo's qualities better than most.</p>
@@ -655,10 +776,32 @@ const RAW: RawArticle[] = [
       </ul>
     `,
   },
-
-  // ───────────────────────── SPORTS ─────────────────────────
   {
     id: 'home-article-3-stroll',
+    // Slug pinned: the headline was rewritten for originality after it was
+    // found to duplicate the wording used by another outlet, but the URL predates
+    // and is already indexed.
+    slug: 'aston-martin-confirm-stroll-to-return-to-action-for-canadian-grand-prix',
+    sources: [
+      {
+        publisher: 'Formula 1',
+        title: 'Stroll back for his home race: the wrist injury that kept him out, and what it cost Aston Martin',
+        url: 'https://www.formula1.com/en/latest/article/breaking-aston-martin-confirm-stroll-to-return-to-action-for-canadian-grand.58p4Kb3cKx2zqzdosniCUX',
+        note: 'Official confirmation of Stroll\'s return',
+      },
+      {
+        publisher: 'Aston Martin Aramco F1 Team',
+        title: 'Talking Points: Lance Stroll on returning to the cockpit for his home Grand Prix',
+        url: 'https://www.astonmartinf1.com/en-GB/news/feature/talking-points-lance-stroll-canadian-grand-prix',
+        note: 'The team\'s own account, in Stroll\'s words',
+      },
+      {
+        publisher: 'The Race',
+        title: 'Stroll to return at Canadian GP after Paul Ricard test and surgery',
+        url: 'https://www.the-race.com/formula-1/stroll-to-return-canadian-gp-after-paul-ricard-test-and-surgery/',
+        note: 'Background on the procedure and the private test',
+      },
+    ],
     title: 'Aston Martin confirm Stroll to return to action for Canadian Grand Prix',
     category: 'sports',
     categoryLabel: 'Formula 1',
@@ -666,6 +809,7 @@ const RAW: RawArticle[] = [
     publishedAt: '2025-06-11T09:00:00Z',
     tags: ['Formula 1', 'Aston Martin'],
     imageUrl: '/images/aston_martin.png',
+    imageAlt: 'An Aston Martin Formula 1 car on track',
     body: `
 <p>Aston Martin confirmed that Lance Stroll would return to the cockpit for the Canadian Grand Prix, following his withdrawal from the previous round in Spain. For the Canadian driver, a comeback at his home race in Montreal carried obvious emotional significance — and it drew a line under a difficult few weeks dealing with a recurring hand and wrist problem.</p>
 <h2>Why Stroll Sat Out</h2>
@@ -699,12 +843,22 @@ const RAW: RawArticle[] = [
     secondaryBody: `
       <p>"I am excited to get back behind the wheel with the team for my home Grand Prix this weekend," Stroll said. "I was always going to fight hard to be ready to race in front of the Montreal crowd."</p>`,
   },
-
-  // ───────────────────────── WORLD ─────────────────────────
-
-  // ───────────────────────── ESPORTS ─────────────────────────
   {
     id: 'onic-id-champion',
+    sources: [
+      {
+        publisher: 'Moonton',
+        title: 'ONIC Crowned MPL ID Season 15 Champions',
+        url: 'https://en.moonton.com/news/212.html',
+        note: 'The game developer\'s official announcement',
+      },
+      {
+        publisher: 'Liquipedia',
+        title: 'MPL Indonesia Season 15',
+        url: 'https://liquipedia.net/mobilelegends/MPL/Indonesia/Season_15',
+        note: 'Full bracket, series scores and prize distribution',
+      },
+    ],
     title: 'ONIC Wins MPL ID Season 15 After Epic 4–3 Showdown',
     category: 'esports',
     categoryLabel: 'MLBB',
@@ -714,6 +868,7 @@ const RAW: RawArticle[] = [
     isTrending: true,
     tags: ['Esports', 'MLBB', 'MPL'],
     imageUrl: '/images/onic-id-cham1.png',
+    imageAlt: 'ONIC celebrating their MPL Indonesia Season 15 championship win',
     summary:
       'ONIC defeats RRQ in a dramatic Best of 7 final to claim the MPL ID S15 crown and head to MSC 2025.',
     body: `
@@ -754,8 +909,6 @@ const RAW: RawArticle[] = [
       <h2>MSC 2025 Bound</h2>
       <p>With this victory, ONIC Esports heads into MSC 2025 in Riyadh with momentum. Alongside runner-up RRQ Hoshi, they will represent Indonesia at the prestigious global tournament as part of the Esports World Cup.</p>`,
   },
-
-  // ───────────────────────── EVERGREEN FEATURES ─────────────────────────
   {
     id: 'feature-womens-football',
     title: 'The Rise of Women’s Football: Why the Women’s Game Is Booming',
@@ -807,56 +960,6 @@ const RAW: RawArticle[] = [
     `,
   },
   {
-    id: 'guide-tennis-grand-slams',
-    title: 'The Four Tennis Grand Slams Explained: A Beginner’s Guide',
-    category: 'sports',
-    categoryLabel: 'Tennis',
-    authorId: 'newsroom',
-    publishedAt: '2026-06-05T09:00:00Z',
-    tags: ['Tennis', 'Grand Slam', 'Guide'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/2013_US_Open_%28Tennis%29_%289651194814%29.jpg/1280px-2013_US_Open_%28Tennis%29_%289651194814%29.jpg',
-    imageAlt: 'A Grand Slam tennis match',
-    imageCredit: 'Photo: Steven Pisano / CC BY 2.0 via Wikimedia Commons',
-    summary:
-      'Australian Open, Roland-Garros, Wimbledon and the US Open — what makes each of tennis’s four majors unique, and why they matter most.',
-    body: `
-      <p>The four Grand Slams are the biggest tournaments in tennis — the events every player dreams of winning. Held across three continents and four very different surfaces, they define careers and crown the sport's legends. Here is the complete guide.</p>
-      <h2>Australian Open (January)</h2>
-      <p>The season-opener in Melbourne, played on hard courts in the southern-hemisphere summer. Known for extreme heat, a lively atmosphere and a reputation as the "Happy Slam", it sets the tone for the tennis year.</p>
-      <h2>Roland-Garros / French Open (May–June)</h2>
-      <p>The only major played on clay, in Paris. The slow, high-bouncing red courts reward stamina, patience and sliding footwork, producing long, physical rallies. It is widely considered the most demanding Slam to win.</p>
-      <h2>Wimbledon (June–July)</h2>
-      <p>The oldest and most prestigious tournament, played on grass in London. Famous for its traditions — the all-white dress code, strawberries and cream, and a fast surface that rewards powerful serving and quick points.</p>
-      <h2>US Open (August–September)</h2>
-      <p>The loud, electric finale to the Slam season in New York, on hard courts. Night sessions under the lights and raucous crowds make it the most spectacle-driven of the four majors.</p>
-      <h2>Why the Slams Matter Most</h2>
-      <p>Grand Slam titles are the primary measure of greatness in tennis. They award the most ranking points, the largest prize money and feature the deepest fields — which is why a player's major count is the number history remembers.</p>
-      <h2>The Calendar and Career Grand Slam</h2>
-      <p>Winning all four in a single year is the <strong>Calendar Grand Slam</strong> — an extraordinarily rare feat. Winning all four at some point in a career is the <strong>Career Grand Slam</strong>, achieved by only a handful of the greatest players. Because the surfaces are so different, mastering all four is the ultimate test of versatility.</p>
-            <h2>How the Surfaces Shape the Tactics</h2>
-      <p>The surface a Slam is played on does far more than change the colour of the court — it changes which style of tennis tends to win. Clay is the slowest surface, taking pace off the ball and making it bounce high, which rewards patient baseline players who can build long rallies and defend for hours. Grass is the fastest and lowest-bouncing, favouring big serves, sharp reactions and players who like to attack and shorten points. Hard courts sit somewhere in between, offering a fair, consistent bounce that does not heavily favour one style — part of the reason two of the four majors are played on them.</p>
-      <p>This is why some champions dominate on one surface yet struggle on another, and why a truly complete player must be able to switch between defending on clay one month and attacking on grass the next.</p>
-      <h2>Inside the Draw: Seeds, Best-of-Five and Tie-Breaks</h2>
-      <p>Each Grand Slam singles event begins with a draw of <strong>128 players</strong>, meaning a champion must win seven matches in a row to lift the trophy. The leading players are given <strong>seedings</strong> based on their ranking, which spreads the strongest names across the draw so they cannot meet in the early rounds. In the men's singles, Slam matches are played as <strong>best-of-five sets</strong> — the only events on the calendar to do so — while the women's singles is best-of-three. This longer format is a major reason the majors are regarded as the ultimate test.</p>
-      <p>To avoid sets running on forever, tennis uses the <strong>tie-break</strong>, a short mini-game that settles a set which reaches six games all. In recent years the way the deciding final set is resolved has been standardised across all four majors, giving players and fans a clear and consistent finish to even the longest matches.</p>
-      <h2>Why the Slams Are So Physically Demanding</h2>
-      <p>Winning a major is as much a feat of endurance as of skill. Over roughly two weeks a player may have to compete every second day, and with the men's best-of-five format a single match can last several hours in heat, humidity or cold. Recovering in time for the next round — while managing travel, practice and the mental strain of the biggest stage in the sport — is a challenge in itself.</p>
-      <p>The calendar adds to the difficulty. The four Slams are spread across the year and around the world, and the rapid switch between surfaces gives players very little time to adjust their movement and timing. Peaking for one major is hard enough; staying fit and sharp enough to contend at all four, year after year, is what separates the sport's greatest names from the rest.</p>
-
-      <h2>Frequently Asked Questions</h2>
-      <h3>What are the four tennis Grand Slams?</h3>
-      <p>The Australian Open, French Open (Roland-Garros), Wimbledon and the US Open.</p>
-      <h3>Which Grand Slam is on clay?</h3>
-      <p>The French Open is the only Slam played on clay.</p>
-      <h2>Key Takeaways</h2>
-      <ul>
-        <li>Four majors, four surfaces, across the tennis calendar.</li>
-        <li>Slam titles are the truest measure of a player's greatness.</li>
-        <li>Winning all four (career or calendar) is tennis's ultimate achievement.</li>
-      </ul>
-    `,
-  },
-  {
     id: 'explainer-esports-world-cup',
     title: 'What Is the Esports World Cup? Format, Games and Prize Money Explained',
     category: 'esports',
@@ -901,56 +1004,6 @@ const RAW: RawArticle[] = [
         <li>A multi-game festival with a huge combined prize pool.</li>
         <li>The Club Championship rewards all-round organisational strength.</li>
         <li>A sign of esports' growing mainstream scale and investment.</li>
-      </ul>
-    `,
-  },
-  {
-    id: 'explainer-ai-daily-life',
-    title: 'How Artificial Intelligence Is Reshaping Everyday Life in 2026',
-    category: 'world',
-    categoryLabel: 'Technology',
-    authorId: 'newsroom',
-    publishedAt: '2026-06-03T09:00:00Z',
-    isTrending: true,
-    tags: ['Technology', 'AI', 'Analysis'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Ameca_Generation_1.jpg/1280px-Ameca_Generation_1.jpg',
-    imageAlt: 'Ameca, an advanced humanoid AI robot',
-    imageCredit: 'Photo: Willy Jackson / CC BY-SA 4.0 via Wikimedia Commons',
-    summary:
-      'From the apps on your phone to the way businesses operate, artificial intelligence has quietly become part of daily life. Here’s where it’s making the biggest difference.',
-    body: `
-      <p>Artificial intelligence is no longer a futuristic concept confined to research labs — it is woven into the tools millions of people use every day. In 2026, its impact is most visible in a handful of everyday areas.</p>
-      <h2>Everyday Assistants</h2>
-      <p>AI-powered assistants now draft emails, summarise documents, translate languages in real time and answer complex questions conversationally. For many people, they have become a first stop for information and a genuine everyday productivity tool, built into phones, browsers and office software.</p>
-      <h2>Healthcare</h2>
-      <p>In medicine, AI helps clinicians analyse scans, flag early warning signs and accelerate drug discovery. Used as a support tool alongside professionals — not a replacement — it is improving both the speed and accuracy of diagnosis and freeing up clinicians' time.</p>
-      <h2>Work and Creativity</h2>
-      <p>From writing and design to coding and data analysis, AI is changing how people work — automating repetitive tasks and lowering the barrier to creative and technical projects that once required specialist skills. The result is faster workflows and new possibilities for small teams and individuals.</p>
-      <h2>Education and Learning</h2>
-      <p>AI tutors and study tools can explain concepts, generate practice questions and adapt to a learner's pace. Used carefully, they make personalised help available far more widely than before — though schools are still working out how to balance assistance with genuine learning.</p>
-      <h2>The Open Questions</h2>
-      <p>With the benefits come real concerns: data privacy, the reliability of AI-generated information, bias, the impact on jobs, and the need for sensible regulation. Recent events — including governments intervening over national-security concerns — show how quickly the rules around AI can change.</p>
-      <h2>What Comes Next</h2>
-      <p>Expect AI to become more capable and more deeply embedded, while debate intensifies over how to govern it. How societies answer the open questions will shape whether the technology's promise is realised fairly and safely.</p>
-            <h2>How Modern AI Actually Works</h2>
-      <p>At a high level, much of today's AI is built by <strong>training</strong> software on very large collections of data. Rather than following rules written by a programmer for every situation, these systems learn statistical patterns from examples and use them to predict what is likely to come next, whether that is the next word in a sentence or the most probable label for an image. This is the key difference between <strong>generative</strong> AI, which produces new text, images or code, and traditional software, which simply executes fixed instructions. Understanding this helps explain both AI's strengths and its limits: it is remarkably good at plausible-sounding output, but it can also be confidently wrong.</p>
-      <h2>AI at Home and on Your Phone</h2>
-      <p>Some of the most common encounters with AI happen without much fanfare. Smartphones use it to improve photos, filter spam, suggest replies and power voice assistants. In the home, smart speakers and connected devices respond to spoken commands, while streaming and shopping services rely on recommendation systems to suggest what you might want next. These quiet, everyday features are often where people benefit from AI most, even if they rarely think of it as artificial intelligence at all.</p>
-      <h2>AI in Transport and Business</h2>
-      <p>Beyond the home, AI increasingly supports mobility and industry. In transport, it helps with navigation, route planning and driver-assistance features that aim to improve safety, while fully autonomous vehicles remain an area of active development. In business, organisations use AI to analyse data, detect fraud, forecast demand and handle routine customer queries, freeing staff to focus on more complex work. The common thread is the automation of repetitive analysis at a scale and speed people cannot easily match.</p>
-      <h2>Using AI Tools Responsibly</h2>
-      <p>Because AI can be wrong, a few habits go a long way. <strong>Verify important outputs</strong> against trusted sources rather than accepting them at face value, especially for health, legal or financial matters. <strong>Protect your personal data</strong> by being careful about what you share with AI services, and treat anything confidential with caution. Above all, build <strong>AI literacy</strong>: a working sense of how these tools operate, where they tend to fail, and when human judgement is still essential. Used thoughtfully, AI is a powerful assistant, but it works best as a support for human decisions rather than a replacement for them.</p>
-
-      <h2>Frequently Asked Questions</h2>
-      <h3>How is AI used in everyday life?</h3>
-      <p>In assistants, healthcare support, work and creative tools, and education, among many other areas.</p>
-      <h3>What are the main risks of AI?</h3>
-      <p>Privacy, unreliable or biased outputs, job impact, and the need for clear regulation.</p>
-      <h2>Key Takeaways</h2>
-      <ul>
-        <li>AI is already embedded in assistants, healthcare, work and learning.</li>
-        <li>It boosts productivity but raises real privacy and reliability concerns.</li>
-        <li>Sensible regulation will shape how its benefits are realised.</li>
       </ul>
     `,
   },
@@ -1122,8 +1175,6 @@ const RAW: RawArticle[] = [
 </ul>
       `,
   },
-
-  // ───────────────── EVERGREEN FEATURES WITH REAL IMAGES ─────────────────
   {
     id: 'history-of-football',
     title: 'A Brief History of Football: From Folk Game to Global Spectacle',
@@ -1134,6 +1185,7 @@ const RAW: RawArticle[] = [
     isTrending: true,
     tags: ['Football', 'History', 'Feature'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/5/52/Galatasaray-Fenerbah%C3%A7e_match_%281923%29.jpg',
+    imageCredit: 'Photo via Wikimedia Commons (public domain)',
     imageAlt: 'A historic football match between Galatasaray and Fenerbahçe in 1923',
     summary:
       'From chaotic medieval village games to a sport watched by billions — how football became the world’s game.',
@@ -1173,202 +1225,6 @@ const RAW: RawArticle[] = [
       </ul>
     `,
   },
-  {
-    id: 'basketball-101',
-    title: 'Basketball 101: The Rules and How the Game Works',
-    category: 'sports',
-    categoryLabel: 'Basketball',
-    authorId: 'newsroom',
-    publishedAt: '2026-05-28T09:00:00Z',
-    tags: ['Basketball', 'Guide', 'NBA'],
-    imageUrl:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Tech-Cavaliers_Women%27s_Basketball_game_%282024-03-03%29.jpg/1280px-Tech-Cavaliers_Women%27s_Basketball_game_%282024-03-03%29.jpg',
-    imageAlt: 'A college basketball game in progress',
-    summary:
-      'New to basketball? Here’s a clear guide to the rules, scoring and positions that make the game tick.',
-    body: `
-<p>Basketball is one of the world's most popular sports, played everywhere from Olympic arenas to school playgrounds and neighbourhood courts. Yet if you are new to the game, the flurry of dribbling, whistles and rapid scoring can look bewildering. This beginner's guide breaks down where basketball came from, how a match is structured, the rules that govern play and the terms you will hear commentators use. By the end you should be able to follow a game with confidence and understand why players do what they do.</p>
-
-<h2>Where Basketball Came From</h2>
-<p>Basketball was invented in 1891 by <strong>Dr James Naismith</strong>, a Canadian physical education instructor working in Springfield, Massachusetts. Tasked with devising an indoor activity to keep students active through the winter, he nailed a peach basket to a balcony and wrote down thirteen simple rules. The idea caught on quickly, spread through schools and colleges, and grew into the fast, athletic global sport we know today. The peach baskets are long gone, but the core aim has never changed.</p>
-
-<h2>The Objective and the Teams</h2>
-<p>The goal is simple: score more points than your opponent by putting the ball through the raised hoop, while stopping the other side from doing the same. Each team fields <strong>five players</strong> on the court at a time, with substitutes available from the bench. Teams move the ball by dribbling (bouncing it) or passing, and only a player in control of the ball may attempt to score. Because you cannot run while holding the ball, teamwork, movement and quick decision-making matter as much as individual skill.</p>
-
-<h2>The Court and the Hoop</h2>
-<p>A basketball court is a rectangular hard surface with a hoop mounted at each end. The rim sits <strong>10 feet (3.05 metres)</strong> above the floor, attached to a backboard. A few key markings shape how the game is played:</p>
-<ul>
-<li>The <strong>three-point arc</strong>, a curved line beyond which successful shots are worth more.</li>
-<li>The <strong>free-throw line</strong>, where players shoot uncontested after certain fouls.</li>
-<li>The <strong>key</strong> (also called the paint or lane), the painted rectangle beneath each hoop where special rules apply.</li>
-</ul>
-
-<h2>How Scoring Works</h2>
-<p>Points are earned in three ways. A field goal made from inside the three-point arc is worth <strong>2 points</strong>. A shot made from beyond that arc counts for <strong>3 points</strong>. A <strong>free throw</strong>, taken from the free-throw line after certain fouls, is worth <strong>1 point</strong>. This scoring system rewards both accuracy from distance and the ability to attack the basket, which is why modern teams value long-range shooting so highly.</p>
-
-<h2>Positions, Old and New</h2>
-<p>Traditionally, the five roles are the point guard (the playmaker who directs the offence), the shooting guard (often a strong scorer), the small forward (a versatile all-rounder), the power forward and the centre (typically the tallest players, working near the basket). In the <em>modern</em> game these lines are increasingly blurred. Tall players are now expected to shoot from range, guards defend bigger opponents, and coaches favour flexible line-ups over rigid roles. You will often hear the term <strong>positionless basketball</strong> to describe this shift.</p>
-
-<h2>Game Flow and Key Rules</h2>
-<p>A match is split into timed <strong>periods</strong>. The number and length vary by competition: professional leagues and international basketball generally play four quarters, though the quarter length differs between the NBA and FIBA, and college games in the United States are often structured into two halves. The clock stops frequently for fouls, time-outs and the ball going out of play, so real time far exceeds the playing time. Teams take turns in possession, and a <strong>shot clock</strong> forces the attacking side to attempt a shot within a set number of seconds, keeping the game brisk.</p>
-<p>Several common violations keep play fair. Learning these will help you understand the referee's whistle:</p>
-<ul>
-<li><strong>Travelling:</strong> moving your feet illegally without dribbling the ball.</li>
-<li><strong>Double dribble:</strong> dribbling, stopping, then dribbling again, or bouncing the ball with both hands.</li>
-<li><strong>Backcourt:</strong> taking the ball back over the halfway line once your team has advanced it.</li>
-<li><strong>Three seconds:</strong> an attacking player lingering too long in the key.</li>
-<li><strong>Shot-clock violation:</strong> failing to shoot before the shot clock expires.</li>
-</ul>
-<p>Physical contact is policed through <strong>fouls</strong>. A defender who makes illegal contact concedes a foul, which may hand the opponent free throws or possession. Crucially, a player who commits too many fouls is disqualified for the rest of the game, known as <strong>fouling out</strong>. The exact limit differs between leagues, so it is one of those numbers worth checking for the competition you are watching.</p>
-
-<h2>Frequently Asked Questions</h2>
-<h3>How long does a basketball game last?</h3>
-<p>Playing time depends on the competition, but because the clock stops so often for fouls, time-outs and stoppages, a match usually takes well over an hour of real time to complete, and often closer to two hours with breaks.</p>
-
-<h3>What is the difference between the NBA, FIBA and college basketball?</h3>
-<p>The NBA is the leading professional league in the United States, FIBA governs international and Olympic competition worldwide, and college basketball is the amateur game played at American universities. They share the same fundamentals but differ in details such as period length, court markings and some rules.</p>
-
-<h3>Why are some shots worth three points?</h3>
-<p>Shots taken from beyond the three-point arc are harder because they are further from the basket, so they are rewarded with an extra point. This encourages accurate long-range shooting and has reshaped how modern teams attack.</p>
-
-<h2>Key Takeaways</h2>
-<ul>
-<li>Basketball was invented in 1891 by Dr James Naismith and is played by two teams of five aiming to score through a hoop set 10 feet (3.05 m) high.</li>
-<li>Shots are worth 2 points inside the arc, 3 beyond it and 1 per free throw.</li>
-<li>Violations such as travelling, double dribble and shot-clock breaches keep the game flowing fairly, while too many fouls sees a player fouled out.</li>
-<li>Core rules are shared across the NBA, FIBA and college basketball, but details like period length and foul limits differ by league.</li>
-</ul>
-      `,
-  },
-  {
-    id: 'how-solar-power-works',
-    title: 'Renewable Energy Explained: How Solar Power Works',
-    category: 'world',
-    categoryLabel: 'Energy',
-    authorId: 'newsroom',
-    publishedAt: '2026-05-27T09:00:00Z',
-    isTrending: true,
-    tags: ['Energy', 'Renewables', 'Technology', 'Climate'],
-    imageUrl:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Wall-mounted_solar_panels_on_building.jpg/1280px-Wall-mounted_solar_panels_on_building.jpg',
-    imageAlt: 'Solar panels mounted on the side of a building',
-    summary:
-      'Solar is the fastest-growing source of new electricity in the world. Here’s how a solar panel actually turns sunlight into power.',
-    body: `
-<p>Solar power has moved from the fringes of the energy system to its mainstream, with panels now appearing on suburban rooftops, factory sheds and vast desert arrays alike. Yet for all its visibility, the technology that turns sunlight into usable electricity remains a mystery to many. At its heart lies a remarkable piece of physics that allows a slab of specially treated silicon to generate an electrical current the moment daylight strikes it, with no moving parts and no fuel. This explainer walks through how that process works, how a solar system connects to your home and the wider grid, and why solar has become one of the fastest-growing sources of power in the world.</p>
-
-<h2>The Photovoltaic Effect: Turning Light into Electricity</h2>
-<p>The core of a solar panel is the <strong>photovoltaic cell</strong>, usually made from silicon. The word photovoltaic simply combines <em>photo</em> (light) and <em>voltaic</em> (electricity). Each cell contains two thin layers of silicon that have been deliberately treated, or doped, with tiny amounts of other elements so that one layer carries a slight negative charge and the other a slight positive charge. This creates an electric field at the junction between them.</p>
-<p>When sunlight hits the cell, packets of light energy called photons knock electrons loose from the silicon atoms. The built-in electric field pushes these freed electrons in one direction, and if the cell is connected to a circuit, they flow as an electric current. This is the photovoltaic effect: light in, electricity out. Crucially, a single cell produces only a small voltage, which is why they are combined in large numbers.</p>
-
-<h2>From Cells to Panels to Systems</h2>
-<p>Understanding the terminology helps make sense of how systems are sized and sold. The components build up in stages:</p>
-<ul>
-<li>A <strong>cell</strong> is the individual silicon unit that generates a small amount of direct current.</li>
-<li>A <strong>panel</strong> or <strong>module</strong> is dozens of cells wired together and sealed behind protective glass in a weatherproof frame.</li>
-<li>An <strong>array</strong> is a group of panels connected together, sized to match a household or a power station.</li>
-</ul>
-<p>The electricity produced at this stage is <strong>direct current</strong> (DC), the same steady, one-directional flow supplied by a battery. That is not yet the form of electricity your appliances or the grid can use.</p>
-
-<h2>The Inverter and the Connection to Home and Grid</h2>
-<p>Homes, businesses and the electricity network all run on <strong>alternating current</strong> (AC), in which the flow rapidly reverses direction many times each second. The job of converting the panels' DC output into grid-compatible AC falls to the <strong>inverter</strong>, arguably the most important electronic component in any solar installation. The inverter also manages the system, tracking the point at which the panels generate most efficiently and shutting down safely during a power cut.</p>
-<p>Once converted, the AC electricity is fed into the property's main fuse board and used directly by whatever is switched on at the time. If the panels are producing more than the building needs, the surplus flows outward to the grid. This is where <strong>net metering</strong> comes in: many regions allow households to export excess power and receive credit or payment for it, effectively using the grid as a giant shared reservoir and offsetting the electricity they draw at night.</p>
-
-<h2>Storing Sunshine: Batteries and Intermittency</h2>
-<p>Solar power's obvious limitation is that it only works when the sun shines. Output falls on cloudy days and stops altogether at night, a problem known as <strong>intermittency</strong>. Increasingly, this is addressed with <strong>battery storage</strong>, which captures surplus daytime generation and releases it in the evening when demand peaks. At the scale of the whole grid, operators balance the variability of solar by combining it with other sources, improving demand forecasting, and building interconnections that move power between regions. As battery costs have fallen, home and grid-scale storage have become central to making solar a reliable, round-the-clock contributor.</p>
-
-<h2>Photovoltaic Versus Solar Thermal, and Why Costs Have Fallen</h2>
-<p>It is worth distinguishing the photovoltaic panels described here from <strong>solar thermal</strong> technology, which does not generate electricity directly. Solar thermal systems use the sun's heat, either to warm water for domestic use or, in large concentrated plants, to produce steam that drives a turbine. The vast majority of rooftop and utility solar today is photovoltaic.</p>
-<p>The extraordinary rise of solar rests largely on cost. Decades of manufacturing improvements, larger factories and better cell efficiency have driven prices down dramatically over the past decade, making solar one of the cheapest ways to generate new electricity in many parts of the world. Falling prices, supportive policies and growing climate concern have together fuelled rapid adoption.</p>
-
-<h2>Environmental Benefits and Limitations</h2>
-<p>Once installed, solar panels generate electricity without burning fuel, producing no direct emissions or air pollution and using no water in operation. Over their lifetime, typically measured in decades, they repay the energy used to manufacture them many times over. The limitations are real but manageable: manufacturing has an environmental footprint, panels require land or roof space, and end-of-life recycling is still maturing. On balance, solar remains one of the cleanest large-scale sources of power available.</p>
-
-<h2>Frequently Asked Questions</h2>
-<h3>Do solar panels work on cloudy days?</h3>
-<p>Yes, though at reduced output. Panels respond to daylight rather than direct sunshine, so they still generate on overcast days, just less than they would under a clear sky. They produce nothing at night.</p>
-
-<h3>What happens to the electricity I do not use?</h3>
-<p>Any surplus is either stored in a battery for later or exported to the grid. Under net metering arrangements, exported power typically earns a credit or payment that offsets the electricity you buy at other times.</p>
-
-<h3>How long do solar panels last?</h3>
-<p>Most panels are built to operate for decades, with performance declining only gradually over time. The inverter usually has a shorter working life and may need replacing at least once during the system's lifetime.</p>
-
-<h2>Key Takeaways</h2>
-<ul>
-<li>Photovoltaic cells use the photovoltaic effect to convert sunlight directly into direct current electricity, with no moving parts or fuel.</li>
-<li>An inverter converts that DC into AC so it can power a building and feed surplus into the grid, often rewarded through net metering.</li>
-<li>Batteries and smarter grid management overcome solar's intermittency, allowing daytime sunshine to be used after dark.</li>
-<li>Sharply falling costs have made solar one of the cheapest and cleanest sources of new electricity worldwide.</li>
-</ul>
-      `,
-  },
-  {
-    id: 'first-marathon-guide',
-    title: 'Training for Your First Marathon: A Beginner’s Guide',
-    category: 'sports',
-    categoryLabel: 'Athletics',
-    authorId: 'newsroom',
-    publishedAt: '2026-05-26T09:00:00Z',
-    tags: ['Athletics', 'Running', 'Health', 'Guide'],
-    imageUrl:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Paris_marathon_2008_16.jpg/1280px-Paris_marathon_2008_16.jpg',
-    imageAlt: 'Runners competing in a city marathon',
-    summary:
-      'Running 42.195 km is a huge but achievable goal. Here’s how beginners can train safely for their first marathon.',
-    body: `
-<p>Completing a marathon is one of the most rewarding challenges an amateur athlete can set themselves. Covering the full <strong>42.195 km</strong> distance demands months of patient preparation, but the good news is that most healthy adults can reach the start line with a sensible, gradual plan. This beginner's guide explains the core principles of marathon training, from building an initial running base to pacing yourself on race day. Before you begin any new training programme, it is wise to <strong>consult your doctor</strong>, particularly if you have an existing health condition or have not exercised for some time.</p>
-
-<h2>Build a Running Base First</h2>
-<p>The single biggest mistake new runners make is jumping straight into a marathon plan without an established habit of regular running. Before you start a structured schedule, aim to run comfortably for around 30 minutes, three or four times a week, for at least a few weeks. This foundation prepares your muscles, tendons and cardiovascular system for the heavier work to come and dramatically reduces your risk of injury.</p>
-<p>If you can already jog for half an hour without stopping, you are in a good position to begin. If not, a run-walk approach, alternating gentle jogging with walking breaks, is a proven and safe way to build up. There is no shame in starting slowly; every experienced marathoner began exactly here.</p>
-
-<h2>Choose and Follow a Structured Plan</h2>
-<p>Most beginner marathon plans run for <strong>16 to 20 weeks</strong>. A longer plan gives your body more time to adapt and leaves a buffer for the inevitable missed sessions caused by illness, work or life. A typical week includes three to five sessions: a weekly long run, one or two easy runs, and often a strength or cross-training day.</p>
-<p>The guiding principle is <em>gradual progression</em>. A widely used rule of thumb is to increase your total weekly distance by no more than roughly ten per cent, giving your body time to strengthen. Resist the urge to do more than the plan asks, even on days you feel strong; consistency over many weeks matters far more than any single heroic session.</p>
-
-<h2>The Long Run and the Value of Easy Pace</h2>
-<p>The weekly <strong>long run</strong> is the cornerstone of marathon training. It gradually lengthens week by week, teaching your body to keep moving for extended periods and building the endurance you will rely on come race day. Most plans peak with a longest run of around 30 to 32 km a few weeks before the marathon, rather than the full distance, because the taper and race-day adrenaline carry you the rest of the way.</p>
-<p>Crucially, the majority of your running, including the long run, should be done at an <em>easy, conversational pace</em>. You should be able to hold a conversation without gasping. Running too hard, too often is the classic error that leads to burnout and injury. Slow, comfortable mileage builds aerobic fitness far more effectively than constant hard efforts.</p>
-
-<h2>Strength, Cross-Training and Recovery</h2>
-<p>Running alone does not make a resilient runner. Regular <strong>strength work</strong>, focusing on the legs, hips and core, helps stabilise your stride and protects vulnerable joints. Simple bodyweight exercises such as squats, lunges, bridges and planks, done once or twice a week, make a real difference.</p>
-<p>Cross-training activities such as cycling, swimming or using a cross-trainer build fitness while sparing your legs the repeated impact of running. Equally important is genuine <strong>rest</strong>. Muscles adapt and grow stronger during recovery, not during the workout itself. Prioritise good sleep, take your scheduled rest days seriously, and remember that recovery is part of the training, not a break from it.</p>
-
-<h2>Injury Prevention, Fuelling and Hydration</h2>
-<p>Injuries usually stem from doing too much too soon. Listen to your body, distinguish ordinary muscle soreness from sharp or persistent pain, and never run through a genuine injury. Building gradually, wearing suitable running shoes and warming up properly all help keep you healthy through the training block.</p>
-<p>On runs lasting longer than about 90 minutes, your body benefits from taking on some carbohydrate to top up its energy stores, alongside sensible hydration. Practise your fuelling and drinking strategy during training long runs so nothing is new on race day. Consider the following during longer efforts:</p>
-<ul>
-<li>Take small amounts of easily digestible carbohydrate at regular intervals rather than a large amount all at once.</li>
-<li>Drink to thirst, avoiding both dehydration and excessive fluid intake.</li>
-<li>Test different foods and drinks in training to learn what your stomach tolerates.</li>
-</ul>
-
-<h2>Tapering and Race-Day Strategy</h2>
-<p>In the final two to three weeks, you <strong>taper</strong>: you reduce your total mileage while keeping some intensity, allowing your body to absorb the training and arrive at the start line fresh. It is normal to feel restless or sluggish during the taper, but trust the process; the hard work is already done.</p>
-<p>On race day, the golden rule is to <em>start slowly</em>. The excitement of the crowd tempts almost everyone to set off too fast, only to fade badly in the closing miles. Aim for an even, controlled pace you have rehearsed, break the distance into manageable segments, and keep some energy in reserve for the final stretch. Finishing strong and steady is a far better goal than a fast first half.</p>
-
-<h2>Frequently Asked Questions</h2>
-<h3>How long does it take to train for a first marathon?</h3>
-<p>Most beginners follow a plan of 16 to 20 weeks, but that assumes you can already run comfortably for around 30 minutes. If you are starting from scratch, allow several extra weeks, or even a few months, to build that initial base safely before the formal plan begins.</p>
-
-<h3>Do I need to run the full 42 km in training?</h3>
-<p>No. Most beginner plans peak at a longest run of roughly 30 to 32 km. Running the full distance in training offers little extra benefit and greatly increases injury and fatigue risk. The taper and the atmosphere of race day help carry you through the remaining kilometres.</p>
-
-<h3>How many days a week should I run?</h3>
-<p>Three to five days is typical for beginners. Three or four running days, supplemented with strength work and cross-training, is plenty to prepare safely while leaving enough recovery time. More is not automatically better, especially in your first training cycle.</p>
-
-<h2>Key Takeaways</h2>
-<ul>
-<li>Build a comfortable running base before starting a 16 to 20 week marathon plan, and consult your doctor first.</li>
-<li>Keep most of your running easy and conversational, and increase mileage gradually to avoid injury.</li>
-<li>Support your running with strength work, cross-training, good sleep and genuine rest days.</li>
-<li>Practise fuelling and hydration in training, taper before the race, and start the marathon slowly to finish strong.</li>
-</ul>
-      `,
-  },
-
-  // ───────────────────────── BREAKING TECH NEWS ─────────────────────────
   {
     id: 'var-explained',
     title: 'VAR Explained: How the Video Assistant Referee Works in Football',
@@ -1422,76 +1278,6 @@ const RAW: RawArticle[] = [
     `,
   },
   {
-    id: 'tennis-scoring-explained',
-    title: 'Tennis Scoring Explained: Love, Deuce and Tie-Breaks',
-    category: 'sports',
-    categoryLabel: 'Tennis',
-    authorId: 'newsroom',
-    publishedAt: '2026-06-11T09:00:00Z',
-    tags: ['Tennis', 'Guide'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/2013_US_Open_%28Tennis%29_%289651194814%29.jpg/1280px-2013_US_Open_%28Tennis%29_%289651194814%29.jpg',
-    imageAlt: 'A professional tennis match',
-    imageCredit: 'Photo: Steven Pisano / CC BY 2.0 via Wikimedia Commons',
-    summary:
-      'Tennis has one of the quirkiest scoring systems in sport. Here’s how points, games, sets and tie-breaks actually work.',
-    body: `
-<p>Tennis has one of the most charming and confusing scoring systems in all of sport. Newcomers watching their first match often wonder why the score jumps from 15 to 30 to 40, why zero is called <strong>love</strong>, and what on earth the umpire means by <strong>deuce</strong>. Once you understand the logic, though, the whole structure clicks into place. Here is a clear, jargon-free guide to how tennis scoring actually works, from the smallest point right up to match point.</p>
-
-<h2>Points Within a Game</h2>
-<p>The smallest unit of tennis scoring is the point, and points build up to win a game. Rather than counting one, two, three, tennis uses its own peculiar sequence. The progression runs like this:</p>
-<ul>
-<li><strong>0 points</strong> — called <em>love</em></li>
-<li><strong>1 point</strong> — called <em>15</em></li>
-<li><strong>2 points</strong> — called <em>30</em></li>
-<li><strong>3 points</strong> — called <em>40</em></li>
-<li><strong>4 points</strong> — wins the game, provided you are two points clear</li>
-</ul>
-<p>The server's score is always announced first. So if the server has won two points and the receiver one, the umpire calls "30-15". If both players have won the same number of points, the umpire adds "all", as in "15-all" or "30-all".</p>
-
-<h2>Deuce and Advantage</h2>
-<p>Here is where many beginners get lost. A game cannot be won by a single point once both players reach 40. When the score is tied at 40-40, it is called <strong>deuce</strong>, and from that moment a player must win two points in a row to take the game.</p>
-<p>Win the first point from deuce and you have the <strong>advantage</strong>. Win the next point too and the game is yours. But if you lose the point after gaining advantage, the score slides back to deuce, and the tug-of-war begins again. A single game can therefore swing back and forth through deuce many times before someone finally edges two points clear.</p>
-
-<h2>Games and Sets</h2>
-<p>Games in turn build up to win a set. To take a set, a player must win at least <strong>six games</strong> and be ahead by a margin of two. So 6-4 and 6-3 are winning scorelines, but 6-5 is not enough — you would need to press on to 7-5. If the set reaches 6-6, a tie-break is usually played to decide it.</p>
-<p>Matches are then decided by winning a majority of sets. There are two common formats:</p>
-<ul>
-<li><strong>Best-of-three sets</strong> — the first player to win two sets takes the match. This is standard for most professional matches, including all women's singles.</li>
-<li><strong>Best-of-five sets</strong> — the first to win three sets wins. This longer format is used for men's singles at the four Grand Slam tournaments, producing some famously marathon encounters.</li>
-</ul>
-
-<h2>The Tie-Break</h2>
-<p>The tie-break was introduced to stop sets dragging on endlessly when neither player could pull two games clear. When a set reaches 6-6, players contest a tie-break instead of continuing game by game. In a standard tie-break, points are counted in plain numbers — one, two, three — and the first to reach <strong>seven points</strong> with a margin of at least two wins the set, which is then recorded as 7-6.</p>
-<p>Players change ends during the tie-break, and the serve rotates between them in a set pattern rather than staying with one player. If the tie-break itself reaches 6-6, it simply continues until someone leads by two, so a tie-break can stretch well beyond seven points.</p>
-
-<h2>Final-Set Formats</h2>
-<p>For years the deciding set caused headaches, because some tournaments refused to use a tie-break in the final set. That meant the last set had to be won by two clear games, occasionally leading to enormous scorelines and matches lasting many hours. To bring consistency and protect players, the Grand Slams agreed on a shared solution.</p>
-<p>Today, when the final set reaches 6-6, the major championships use a <strong>ten-point tie-break</strong> — sometimes called a match tie-break — where the first player to reach ten points, again by a margin of two, wins the whole match. This keeps thrilling finishes intact while preventing the never-ending deciders of the past.</p>
-
-<h2>Why Do We Say Love and Deuce?</h2>
-<p>The quirky vocabulary has roots stretching back centuries. The most popular explanation for <em>love</em> is that it derives from the French word <em>l'oeuf</em>, meaning "the egg", because a zero on the scoreboard resembles an egg — much like calling a score of nought a "duck's egg" in other games. Another theory suggests it comes from playing "for love", meaning for nothing rather than for money.</p>
-<p><em>Deuce</em> is thought to come from the French phrase <em>a deux</em> or <em>deux du jeu</em>, signalling that two consecutive points are still needed to settle the game. The origins of the 15-30-40 sequence are murkier, but a common theory links them to a clock face, with points marked at the quarter-hours; 45 was likely shortened to 40 over time for ease of calling.</p>
-
-<h2>Frequently Asked Questions</h2>
-<h3>Why is zero called love in tennis?</h3>
-<p>The widely accepted explanation is that love comes from the French <em>l'oeuf</em>, "the egg", because the shape of a zero looks like an egg. An alternative theory holds that playing "for love" meant playing for no stakes, and the term simply stuck to describe a score of nothing.</p>
-
-<h3>What is the difference between a game, a set and a match?</h3>
-<p>A game is won by taking four points with a two-point margin. A set is won by taking at least six games with a two-point margin, usually settled by a tie-break at 6-6. A match is won by taking the majority of sets — two in a best-of-three, or three in a best-of-five.</p>
-
-<h3>What happens if a tie-break reaches 6-6?</h3>
-<p>Play simply continues. A standard tie-break is won at seven points, but only if a player is two points ahead. At 6-6 in the tie-break, players keep going until one of them leads by two, so the tie-break can extend well past seven.</p>
-
-<h2>Key Takeaways</h2>
-<ul>
-<li>Points run love, 15, 30, 40, and a game needs four points won by a two-point margin.</li>
-<li>At 40-40 the game reaches deuce, and a player must win two points in a row to close it out.</li>
-<li>Sets require six games won by two, with a tie-break usually deciding matters at 6-6.</li>
-<li>Matches are best-of-three or best-of-five, with the majors now using a ten-point tie-break to settle the final set.</li>
-</ul>
-      `,
-  },
-  {
     id: 'dota-the-international',
     title: 'The International: How Dota 2’s Biggest Tournament Works',
     category: 'esports',
@@ -1537,55 +1323,6 @@ const RAW: RawArticle[] = [
         <li>TI is Dota 2's annual world championship, run by Valve.</li>
         <li>Fan-funded prize pools made it the richest in esports history.</li>
         <li>Champions lift the Aegis of Champions after a double-elimination bracket.</li>
-      </ul>
-    `,
-  },
-  {
-    id: 'how-cryptocurrency-works',
-    title: 'How Cryptocurrency Works: A Beginner’s Guide to Bitcoin and Blockchain',
-    category: 'world',
-    categoryLabel: 'Technology',
-    authorId: 'newsroom',
-    publishedAt: '2026-06-09T09:00:00Z',
-    tags: ['Technology', 'Cryptocurrency', 'Finance', 'Guide'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/New_York_Stock_Exchange_trading_floor_on_Wall_Street%2C_New_York%2C_New_York_LCCN2011634218.tif/lossy-page1-1280px-New_York_Stock_Exchange_trading_floor_on_Wall_Street%2C_New_York%2C_New_York_LCCN2011634218.tif.jpg',
-    imageAlt: 'A financial trading floor',
-    imageCredit: 'Photo: Library of Congress (public domain)',
-    summary:
-      'Bitcoin, blockchain, mining, wallets — the jargon can be overwhelming. Here’s a plain-English explainer of how cryptocurrency actually works.',
-    body: `
-      <p>Cryptocurrency is digital money that runs without a central bank. Since Bitcoin launched in 2009, the idea has grown into a global market worth trillions — but the core concepts are simpler than the jargon suggests. Here is a plain-English guide.</p>
-      <h2>The Blockchain</h2>
-      <p>A blockchain is a shared digital ledger that records every transaction across thousands of computers at once. Because no single party controls it and entries are extremely difficult to alter once confirmed, the network can agree on who owns what without needing a bank or middleman.</p>
-      <h2>Mining and Consensus</h2>
-      <p>Transactions are grouped into "blocks" and verified by the network. In systems like Bitcoin, "miners" compete to validate blocks and are rewarded with new coins — a process called <strong>proof-of-work</strong>, which is secure but energy-intensive. Many newer networks use <strong>proof-of-stake</strong>, which is far more energy-efficient and relies on participants locking up coins to help secure the network.</p>
-      <h2>Wallets and Keys</h2>
-      <p>You hold crypto in a digital wallet secured by a <strong>private key</strong> — essentially a long, secret password. Whoever holds the key controls the funds, which is why safeguarding it is critical. Lose the key and the funds are usually gone for good; share it and they can be stolen.</p>
-      <h2>How People Use It</h2>
-      <p>Beyond buying and selling as an investment, cryptocurrencies are used for transfers, payments, and as the foundation for "decentralised finance" applications and digital collectables. Some see long-term potential; others remain sceptical.</p>
-      <h2>The Risks</h2>
-      <p>Crypto can be highly volatile, with prices swinging dramatically. It is largely unregulated in many places, transactions are usually irreversible, and the space attracts scams. Anyone considering it should understand they could lose money and never invest more than they can afford to lose.</p>
-            <h2>What "Decentralised" Really Means</h2>
-      <p>The word <strong>decentralised</strong> is central to cryptocurrency, and it describes how the network is run. Instead of a single company or bank keeping the official record, thousands of independent computers each hold a copy of the ledger and check one another's work. Because no single party is in charge, users do not have to trust an institution to be honest; they can rely on the rules of the network and the mathematics that secures it. This idea is often called <strong>trustless verification</strong>: you can confirm that a transaction is valid without trusting any individual participant.</p>
-      <h3>How a Transaction Gets Confirmed</h3>
-      <p>Sending cryptocurrency follows a clear sequence. You create a transaction in your wallet and sign it with your private key, proving you own the funds. The transaction is then broadcast to the network, where it waits among other pending transactions until validators or miners bundle it into a block and add that block to the chain under the network's consensus rules. Once included, the transaction gains <strong>confirmations</strong> as further blocks are built on top, and after enough confirmations it is treated as settled and practically impossible to reverse.</p>
-      <h2>Coins, Tokens, Stablecoins and Altcoins</h2>
-      <p>The vocabulary can be confusing, but the distinctions are straightforward. A <strong>coin</strong> generally refers to a cryptocurrency that runs on its own blockchain, as Bitcoin does. A <strong>token</strong>, by contrast, is built on top of an existing blockchain and can represent many things, from a stake in a project to a digital collectable. <strong>Altcoin</strong> is a loose term for cryptocurrencies other than Bitcoin, while a <strong>stablecoin</strong> is designed to hold a steady value by tracking an asset such as a national currency, aiming to avoid the sharp price swings common elsewhere in the market.</p>
-      <h2>Custodial Versus Self-Custody Wallets</h2>
-      <p>How you store crypto matters as much as what you own. With a <strong>custodial</strong> wallet, a third party such as an exchange holds your keys on your behalf, which is convenient but means trusting that provider. With a <strong>self-custody</strong> wallet, you hold the keys yourself, gaining full control along with full responsibility. Sound security habits apply in both cases: safeguard any recovery phrase offline, enable the protections on offer, stay alert to scams and phishing, and never share your private key with anyone.</p>
-      <h2>The Environmental and Regulatory Debates</h2>
-      <p>Cryptocurrency sits at the centre of two ongoing debates. The first is <strong>environmental</strong>: proof-of-work networks consume significant energy, prompting criticism and driving interest in more efficient alternatives such as proof-of-stake. The second is <strong>regulatory</strong>: governments around the world are still deciding how to treat crypto, weighing consumer protection and financial stability against a wish not to stifle innovation. Both debates are likely to shape how the technology develops for years to come.</p>
-
-      <h2>Frequently Asked Questions</h2>
-      <h3>What is the difference between Bitcoin and blockchain?</h3>
-      <p>Blockchain is the underlying technology — a shared ledger. Bitcoin is one cryptocurrency that runs on its own blockchain.</p>
-      <h3>Is cryptocurrency safe?</h3>
-      <p>The technology is robust, but prices are volatile, scams exist and lost keys are unrecoverable — so caution is essential.</p>
-      <h2>Key Takeaways</h2>
-      <ul>
-        <li>Blockchain is a decentralised ledger; crypto is money that runs on it.</li>
-        <li>Networks secure transactions via proof-of-work or proof-of-stake.</li>
-        <li>Volatility, scams and irreversible transactions make caution essential.</li>
       </ul>
     `,
   },
@@ -1656,115 +1393,6 @@ const RAW: RawArticle[] = [
 </ul>
       `,
   },
-  {
-    id: 'nba-vs-fiba',
-    title: 'NBA vs FIBA: How Basketball Rules Differ Around the World',
-    category: 'sports',
-    categoryLabel: 'Basketball',
-    authorId: 'newsroom',
-    publishedAt: '2026-06-07T09:00:00Z',
-    tags: ['Basketball', 'NBA', 'FIBA', 'Guide'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Minnesota_Lynx_teammates_huddle_on_the_court_in_the_Lynx_vs_Sun_game_at_Target_Center.jpg/1280px-Minnesota_Lynx_teammates_huddle_on_the_court_in_the_Lynx_vs_Sun_game_at_Target_Center.jpg',
-    imageAlt: 'Basketball players on the court',
-    imageCredit: 'Photo: Lorie Shaull / CC BY-SA 4.0 via Wikimedia Commons',
-    summary:
-      'The NBA and the international FIBA game look similar but play differently. Here are the key rule differences.',
-    body: `
-      <p>Watch an NBA game and then an Olympic or World Cup basketball match and you will notice the international (FIBA) game feels different. The fundamentals are the same, but several rules are not — and those differences can catch even the world's best players out.</p>
-      <h2>Game Length</h2>
-      <p>The NBA plays four 12-minute quarters (48 minutes); FIBA plays four 10-minute quarters (40 minutes). NBA games are simply longer, which affects pacing, fatigue and scoring totals.</p>
-      <h2>The Court and Three-Point Line</h2>
-      <p>The NBA court is slightly larger and its three-point line is farther from the basket than FIBA's. The same shot can therefore be worth different things depending on the competition, and shooters must adjust their range when switching between the two.</p>
-      <h2>The Ball and the Paint</h2>
-      <p>There are subtle differences in ball specifications and the shape of the key (the painted area), which influence spacing and post play. Players moving between the leagues often need time to recalibrate.</p>
-      <h2>Fouls and Defence</h2>
-      <ul>
-        <li><strong>Fouling out:</strong> players are disqualified after 6 personal fouls in the NBA, but only 5 in FIBA.</li>
-        <li><strong>Goaltending:</strong> FIBA allows players to legally play the ball off the rim in situations where the NBA would call goaltending.</li>
-        <li><strong>Defensive rules</strong> around three seconds and contact differ subtly, changing how teams set up.</li>
-      </ul>
-      <h2>Style of Play</h2>
-      <p>Shorter games and a closer arc often make FIBA basketball feel more compact, tactical and physical, with a premium on team structure. The NBA's length and spacing tend to reward individual shot-making and pace.</p>
-      <h2>Why It Matters</h2>
-      <p>NBA stars switching to international duty have to adapt quickly to these rules — which is part of what makes global tournaments such a fascinating test, and why NBA dominance does not always translate to easy international success.</p>
-            <h2>The Clock and the Bench</h2>
-      <p>Both the NBA and FIBA use a <strong>24-second shot clock</strong>, so at first glance the pace of possessions looks similar. The differences show up around it. The rules governing when the clock resets, how timeouts are called and how the closing minutes are managed are not identical, and these small gaps change the rhythm of a game.</p>
-      <p>Timeouts are a clear example. In the NBA, stoppages and broadcast breaks are woven tightly into the flow of a game, and there are more of them. Under FIBA rules timeouts are fewer and are generally requested by the coach at specific moments. With fewer chances to stop the clock and reset, international teams often have to solve problems on the floor themselves rather than relying on a coach's intervention.</p>
-      <h2>Two Systems Governing One Global Game</h2>
-      <p>The two rulebooks exist because they serve different purposes. The <strong>NBA</strong> is a single professional league based in North America, free to shape its rules around entertainment and its own competitive balance. <strong>FIBA</strong>, by contrast, is the sport's international governing body, and its rules apply to national-team basketball around the world — including the Olympic Games and the FIBA Basketball World Cup, as well as most domestic leagues outside the United States.</p>
-      <p>That split means the version of basketball a fan grows up with depends largely on where they live. It also means the biggest international tournaments are played under FIBA rules, so even the most celebrated NBA players must compete on the international game's terms when they represent their countries.</p>
-      <h2>Why the International Game Has Caught Up</h2>
-      <p>For much of basketball's history the United States was expected to win almost any tournament it entered. That is no longer a given. The standard of play around the world has risen sharply, driven by better coaching, more players developing in strong domestic leagues, and a steady flow of international stars into the NBA itself.</p>
-      <p>Officiating and physicality add another layer. The international game is called differently — tighter in some areas and more permissive of contact in others — and its more compact court can make defences harder to break down. Combined with the rule differences already covered, this means visiting teams cannot simply rely on individual talent; they must adapt to a genuinely different style, which is exactly what has made recent global competition so unpredictable.</p>
-
-      <h2>Frequently Asked Questions</h2>
-      <h3>How long is an NBA game vs a FIBA game?</h3>
-      <p>NBA games are 48 minutes (4x12); FIBA games are 40 minutes (4x10).</p>
-      <h3>How many fouls before you foul out?</h3>
-      <p>Six in the NBA, five under FIBA rules.</p>
-      <h2>Key Takeaways</h2>
-      <ul>
-        <li>NBA games are longer with a deeper three-point line.</li>
-        <li>FIBA uses 5 fouls to foul out and different goaltending rules.</li>
-        <li>The rule gaps make global tournaments a genuine test for NBA stars.</li>
-      </ul>
-    `,
-  },
-  {
-    id: 'battle-royale-explained',
-    title: 'What Is a Battle Royale? The Genre Behind PUBG and Fortnite',
-    category: 'esports',
-    categoryLabel: 'Esports',
-    authorId: 'newsroom',
-    publishedAt: '2026-06-06T09:00:00Z',
-    tags: ['Esports', 'Gaming', 'Battle Royale', 'Guide'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/2019_SEA_Games_Esports_Tekken_7_MAS_vs_INA.jpg/1280px-2019_SEA_Games_Esports_Tekken_7_MAS_vs_INA.jpg',
-    imageAlt: 'Players competing at an esports event',
-    imageCredit: 'Photo: Hariboneagle927 / CC BY-SA 3.0 via Wikimedia Commons',
-    summary:
-      'Battle royale became one of gaming’s biggest genres in just a few years. Here’s what defines it and how it took over.',
-    body: `
-      <p>The battle royale genre exploded in the late 2010s and reshaped gaming. If you have heard of PUBG, Fortnite, Apex Legends or Warzone, you have heard of battle royale — but what actually defines it, and how did it take over the world?</p>
-      <h2>The Core Idea</h2>
-      <p>Dozens of players — often up to 100 — drop onto a large map with nothing and scavenge for weapons, armour and gear. A <strong>shrinking play zone</strong> forces everyone closer together over time, and the <strong>last player or team standing wins</strong>. Every match starts equal and ends in a single survivor.</p>
-      <h2>How It Took Over</h2>
-      <p>The format grew out of game mods inspired by survival fiction, was popularised by <em>PlayerUnknown's Battlegrounds</em> (PUBG) in 2017, and then exploded into the mainstream when <em>Fortnite</em> made it free-to-play, colourful and cross-platform. Suddenly the genre was everywhere, from living rooms to phones.</p>
-      <h2>The Big Names</h2>
-      <ul>
-        <li><strong>PUBG:</strong> the realistic title that defined the modern formula.</li>
-        <li><strong>Fortnite:</strong> the free, building-based phenomenon that crossed into pop culture.</li>
-        <li><strong>Apex Legends:</strong> hero-based, squad-focused and fast-paced.</li>
-        <li><strong>Call of Duty: Warzone:</strong> a blockbuster shooter's take on the genre.</li>
-      </ul>
-      <h2>Why It Works</h2>
-      <p>Every match is different, the tension ramps up as the zone closes, and a single great game can come down to one final firefight. The "anyone can win" promise and short, repayable matches make it perfect for both casual play and high-stakes competition.</p>
-      <h2>Battle Royale as Esports</h2>
-      <p>The genre has produced major esports circuits with large prize pools, though the format poses unique broadcasting challenges — following dozens of players at once is harder than a traditional five-versus-five. Organisers have developed scoring systems that reward both placement and kills to keep competition fair.</p>
-            <h2>The Mechanics Behind Every Match</h2>
-      <p>Beneath the simple premise lies a set of mechanics that reward smart decisions. Matches begin with <strong>looting</strong>, searching buildings and the map for weapons, armour, ammunition and healing items, and the quality of your early gear often shapes your options later. As the match progresses, a shrinking boundary, commonly called the <strong>circle</strong> or the <strong>storm</strong>, herds surviving players into an ever-smaller area, forcing confrontations and preventing anyone from hiding indefinitely.</p>
-      <p><strong>Positioning</strong> is therefore crucial: holding high ground, using cover and anticipating where the safe zone will close can matter more than raw aim. A common hazard is <strong>third-partying</strong>, where a team attacks two opponents already weakened from fighting each other, a reminder that winning one gunfight can leave you exposed to the next threat.</p>
-      <h2>Solo, Duo and Squad Play</h2>
-      <p>Most battle royale games offer several modes, and strategy shifts with each. In <strong>solo</strong> play, self-reliance and caution rule, since there is no one to revive you. <strong>Duos</strong> and <strong>squads</strong> introduce teamwork: sharing loot, reviving downed teammates and coordinating pushes. Communication and role-sharing become as important as individual skill, and clever teams often win by playing the zone patiently rather than chasing every kill.</p>
-      <h2>The Free-to-Play Business Model</h2>
-      <p>A major reason the genre spread so quickly is its business model. Many of the biggest titles are <strong>free-to-play</strong>, removing the cost barrier and allowing enormous player bases to form. Revenue instead comes largely from cosmetic items and the <strong>battle pass</strong>, a seasonal system that rewards players with unlockable content as they play. Because these purchases are typically cosmetic rather than performance-boosting, players can compete on a level field regardless of spending, which has helped the model win broad acceptance.</p>
-      <h2>Keeping the Genre Fresh</h2>
-      <p>To hold players' attention, developers treat these games as evolving services rather than fixed products. Regular <strong>seasons</strong> introduce new content and themes, maps are reworked or replaced, and limited-time <strong>live events</strong> can change the world in dramatic, one-off moments. At the top level, the best players stand out through sharp game sense, quick and accurate aim, disciplined positioning and the composure to make good decisions under pressure as the zone closes in.</p>
-
-      <h2>Frequently Asked Questions</h2>
-      <h3>What does "battle royale" mean in gaming?</h3>
-      <p>A last-one-standing format where many players fight on a shrinking map until one player or team remains.</p>
-      <h3>What was the first big battle royale game?</h3>
-      <p>PUBG popularised the modern formula in 2017, before Fortnite took it mainstream.</p>
-      <h2>Key Takeaways</h2>
-      <ul>
-        <li>Many players, one shrinking map, last one standing wins.</li>
-        <li>PUBG defined it; Fortnite made it a global phenomenon.</li>
-        <li>Its unpredictability fuels both casual play and esports.</li>
-      </ul>
-    `,
-  },
-
-  // ───────────────── WORLD CUP STARS & LEGENDS ─────────────────
   {
     id: 'messi-world-cup-journey',
     title: 'Lionel Messi: The World Cup Journey to Glory in 2022',

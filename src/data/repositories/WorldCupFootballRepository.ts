@@ -16,9 +16,12 @@ interface Sourced<T> {
  * FootballRepository for the World Cup that prefers free providers which
  * actually carry 2026 data. openfootball is primary — it is key-free and has
  * the full 104-match schedule and all 12 groups. TheSportsDB is the backup
- * (richer data like badges, but its free test key returns only a sample), and
- * the bundled dataset is the final fallback. Each step degrades gracefully on
- * error or empty response, and the resolved source is surfaced to the UI.
+ * (richer data like badges, but its free test key returns only a sample).
+ *
+ * When every provider fails the chain resolves to the deliberately empty
+ * bundled dataset, so the UI reports that data is unavailable rather than
+ * showing anything we cannot attribute to a live source. Never substitute
+ * placeholder scores here — see the note in `fallbackData.ts`.
  */
 export class WorldCupFootballRepository implements FootballRepository {
   private async tryChain<T>(

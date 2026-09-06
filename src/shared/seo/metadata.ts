@@ -32,7 +32,9 @@ export function buildMetadata(input: PageMetaInput): Metadata {
     : `${input.title} | ${siteConfig.name}`;
 
   return {
-    title,
+    // `absolute` stops the root layout's `%s | 26News` template from appending
+    // the site name a second time (it is already applied just above).
+    title: { absolute: title },
     description: input.description,
     metadataBase: new URL(siteConfig.url),
     alternates: { canonical },

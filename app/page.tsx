@@ -16,13 +16,13 @@ function matchToTicker(f: Fixture): TickerItem {
   let href: string;
   if (f.status === 'live') {
     text = `🔴 LIVE ${score}${f.elapsed ? ` ${f.elapsed}'` : ''}`;
-    href = '/world-cup/live';
+    href = '/world-cup/results';
   } else if (f.status === 'finished') {
     text = `⚽ ${score} (FT)`;
     href = '/world-cup/results';
   } else {
     text = `⚽ ${teams} · ${formatKickoff(f.kickoff)}`;
-    href = '/world-cup/fixtures';
+    href = '/world-cup/bracket';
   }
   return { key: `match-${f.id}`, text, href };
 }
@@ -82,7 +82,7 @@ export default async function HomePage() {
 
         {/* Latest news grid */}
         <section className="mt-12">
-          <SectionHeading title="Latest News" href="/category/world" accent />
+          <SectionHeading title="Latest News" href="/category/football" accent />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {latestList.map((a, i) => (
               <ArticleCard key={a.id} article={a} priority={i < 3} />
