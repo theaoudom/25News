@@ -413,6 +413,469 @@ const RAW: RawArticle[] = [
       `,
   },
   {
+    id: 'f1-2026-antonelli-austin-title',
+    slug: 'can-kimi-antonelli-win-the-f1-title-in-austin-the-maths-explained',
+    sources: [
+      {
+        publisher: 'Sky Sports',
+        title: 'Kimi Antonelli F1 title permutations: How Mercedes driver could clinch world championship at United States GP',
+        url: 'https://www.skysports.com/f1/news/13597654/kimi-antonelli-f1-title-permutations-how-mercedes-driver-could-clinch-world-championship-at-united-states-gp',
+        note: 'Clinch conditions and tie-break',
+      },
+      {
+        publisher: 'Motorsport Week',
+        title: 'F1 2026 - Drivers’ Championship after Singapore GP',
+        url: 'https://www.motorsportweek.com/2026/10/13/f1-2026-drivers-championship-after-singapore-gp/',
+        note: 'Full standings after round 17',
+      },
+      {
+        publisher: 'Crash.net',
+        title: 'Formula 1 Singapore Grand Prix: Full race results',
+        url: 'https://www.crash.net/f1/results/1107465/1/formula-1-singapore-grand-prix-full-race-results',
+        note: 'Singapore race result, 11 October 2026',
+      },
+      {
+        publisher: 'Formula 1',
+        title: 'Points permutations: When is the earliest Antonelli could win the World Championship?',
+        url: 'https://www.formula1.com/en/latest/article/points-permutations-when-is-the-earliest-antonelli-could-win-the-world-championship.24UKT2fsQl4GmC5DMrmYUy',
+        note: 'Official permutations',
+      },
+    ],
+    title: 'Can Kimi Antonelli Win the F1 Title in Austin? The Maths Explained',
+    category: 'sports',
+    categoryLabel: 'Formula 1',
+    authorId: 'elvis',
+    publishedAt: '2026-10-18T12:00:00Z',
+    tags: ['Formula 1', 'Kimi Antonelli', 'Mercedes', 'Championship'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/EurobrunER189_RaceHistoryOnTrack_HH2011.jpg/1280px-EurobrunER189_RaceHistoryOnTrack_HH2011.jpg',
+    imageAlt: 'A Formula One car on track',
+    imageCredit: 'Photo: DoomWarrior / CC BY-SA 3.0 via Wikimedia Commons',
+    summary:
+      'Antonelli leads Mercedes teammate George Russell by 102 points with six races left. He can become champion at the United States Grand Prix on 25 October, but only if three things happen at once.',
+    body: `
+      <p>Kimi Antonelli goes to the United States Grand Prix in Austin on 25 October with his first world title within reach. The Mercedes driver leads the championship on 340 points, 102 clear of his teammate George Russell, with six rounds left. He can win the title in Texas, but it is not in his hands alone. Here is exactly what has to happen, and why.</p>
+
+      <h2>The Standings After Singapore</h2>
+      <p>The top six after round 17, the Singapore Grand Prix on 11 October:</p>
+      <ul>
+        <li><strong>Kimi Antonelli (Mercedes)</strong>: 340</li>
+        <li><strong>George Russell (Mercedes)</strong>: 238</li>
+        <li><strong>Lewis Hamilton (Ferrari)</strong>: 229</li>
+        <li><strong>Max Verstappen (Red Bull)</strong>: 221</li>
+        <li><strong>Charles Leclerc (Ferrari)</strong>: 215</li>
+        <li><strong>Lando Norris (McLaren)</strong>: 201</li>
+      </ul>
+      <p>Singapore helped Antonelli more than it helped anyone chasing him. Max Verstappen won both the sprint and the Grand Prix, leading the race from pole. Charles Leclerc was second and Antonelli third. Russell started 19th after an engine penalty and recovered only to ninth, so Antonelli's lead over his nearest rival grew again.</p>
+
+      <h2>How Many Points Are Left</h2>
+      <p>Singapore was the last sprint weekend of 2026, so from here only Grands Prix award points. The winner gets 25. Six races remain:</p>
+      <ul>
+        <li>United States (Austin): 25 October</li>
+        <li>Mexico City: 1 November</li>
+        <li>São Paulo: 8 November</li>
+        <li>Las Vegas: 21 November</li>
+        <li>Qatar: 29 November</li>
+        <li>Abu Dhabi: 6 December</li>
+      </ul>
+      <p>That is 150 points available before Austin. After Austin, 125 will remain. To be champion when he leaves Texas, Antonelli needs a lead that no rival can close in the last five races.</p>
+
+      <h2>The Three Conditions</h2>
+      <p>According to Sky Sports' permutations, Antonelli is champion in Austin if all of these happen:</p>
+      <ol>
+        <li><strong>Antonelli wins the race.</strong> Anything less and the fight goes on to Mexico.</li>
+        <li><strong>Russell finishes ninth or lower.</strong></li>
+        <li><strong>Hamilton finishes fifth or lower.</strong></li>
+      </ol>
+      <p>If Antonelli wins, Verstappen, Leclerc and Norris are out of contention wherever they finish.</p>
+
+      <h2>Why Those Exact Positions?</h2>
+      <p>The conditions come straight from the arithmetic, and working them through shows how close some of them are.</p>
+      <p><strong>Russell.</strong> If Antonelli wins and Russell finishes ninth, Russell scores 2 points. Antonelli's lead becomes 102 + 25 − 2 = 125, exactly the number of points left. Russell could then only draw level by winning all five remaining races. A tie is decided by the number of wins. Sky Sports reports that Russell has three wins this season, so he could reach eight at most. Antonelli would have just taken his ninth, so he would win the tie-break. That is why ninth is enough for the title, even though it leaves the gap at exactly 125. If Russell finishes eighth (4 points), the lead is only 123 and the title waits.</p>
+      <p><strong>Hamilton.</strong> Hamilton starts 111 points behind. If Antonelli wins and Hamilton finishes fifth (10 points), the gap becomes 126, more than the 125 left. If Hamilton finishes fourth (12 points), the gap is 124 and he stays mathematically alive.</p>
+      <p><strong>Verstappen.</strong> He starts 119 behind. Even second place (18 points) behind an Antonelli win would leave him 126 back, so he cannot stay in the fight if Antonelli wins.</p>
+
+      <h2>Our Read: Likely Soon, Less Likely in Austin</h2>
+      <p>Clinching in Austin needs a win and two rivals to have bad days at the same time. Russell has been Antonelli's closest challenger all year in the same car, so even a Mercedes one-two with Antonelli in front would delay the title. Hamilton has also been scoring well for Ferrari. The more likely outcome is that Antonelli extends his lead in Texas and finishes the job in Mexico City or São Paulo. With 102 points in hand and only 150 to play for, though, the title is his to lose.</p>
+
+      <h2>What a Title Would Mean</h2>
+      <p>Antonelli became the youngest championship leader in Formula 1 history after the Japanese Grand Prix in March. He was also the first Italian to lead the standings since Alberto Ascari in 1953. Ascari, champion in 1952 and 1953, is the last Italian to win the drivers' title, so an Antonelli title would end a wait of more than seven decades.</p>
+      <p>For a refresher on how points, sprints and tie-breaks work, see our <a href="/article/formula-1-explained-how-the-championship-and-points-system-work">Formula 1 championship explainer</a>.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <h3>When is the United States Grand Prix?</h3>
+      <p>Sunday 25 October 2026, at the Circuit of the Americas in Austin, Texas.</p>
+      <h3>What does Antonelli need to win the title in Austin?</h3>
+      <p>He must win the race, Russell must finish ninth or lower, and Hamilton must finish fifth or lower.</p>
+      <h3>What happens if he does not clinch in Austin?</h3>
+      <p>The title fight moves on to the Mexico City Grand Prix on 1 November, with 125 points still available.</p>
+
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Antonelli leads Russell by 102 points with six Grands Prix and 150 points left.</li>
+        <li>He clinches in Austin only with a win, Russell ninth or lower and Hamilton fifth or lower.</li>
+        <li>Russell finishing ninth would still be enough because Antonelli would win a tie-break on wins.</li>
+        <li>A title would make him Italy's first world champion since Alberto Ascari in 1953.</li>
+      </ul>
+      <p><em>Standings and permutations are from the sources below. The "Our Read" section is analysis.</em></p>
+    `,
+  },
+  {
+    id: 'ucl-2026-27-matchday-2',
+    slug: 'champions-league-matchday-2-six-things-we-learned',
+    sources: [
+      {
+        publisher: 'UEFA',
+        title: '2026/27 Champions League: All the league phase fixtures and results',
+        url: 'https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/',
+        note: 'Official fixtures and results',
+      },
+      {
+        publisher: 'NBC Sports',
+        title: 'UEFA Champions League 2026-27: League phase schedule, scores, how to watch live',
+        url: 'https://www.nbcsports.com/soccer/news/uefa-champions-league-2026-27-league-phase-schedule-scores-how-to-watch-live',
+        note: 'Matchday 1 and 2 scores',
+      },
+      {
+        publisher: 'Wikipedia',
+        title: '2026–27 UEFA Champions League league phase',
+        url: 'https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Champions_League_league_phase',
+        note: 'League phase table after Matchday 2',
+      },
+    ],
+    title: 'Champions League Matchday 2: Six Things We Learned',
+    category: 'football',
+    categoryLabel: 'Champions League',
+    authorId: 'elvis',
+    publishedAt: '2026-10-18T12:30:00Z',
+    tags: ['Football', 'Champions League', 'Aston Villa', 'Analysis'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Crowd_at_Dora_Stadium.jpg/1280px-Crowd_at_Dora_Stadium.jpg',
+    imageAlt: 'A football crowd at a stadium',
+    imageCredit: 'Photo: TrickyH / CC BY-SA 4.0 via Wikimedia Commons',
+    summary:
+      'Aston Villa hit Fenerbahçe for six, Inter are pointless, Bodø/Glimt beat Dortmund and Manchester City lost to PSG. What the second round of the league phase told us.',
+    body: `
+      <p>The second round of the 2026–27 Champions League league phase, played on 13 and 14 October, was full of goals and gave a few big clubs something to think about. Two games into an eight-game league phase, nothing is settled. But points dropped now can decide later who goes straight to the round of 16 (the top eight) and who goes into the play-off round (ninth to 24th). Here is what stood out.</p>
+
+      <h2>1. Aston Villa Are the Form English Side</h2>
+      <p>Villa beat Fenerbahçe 6–0, the biggest win of the round, after winning 3–2 at Club Brugge on the opening night. Two wins and a goal difference of +7 put them third, level on points and goal difference with Paris Saint-Germain and Barcelona. It is a striking contrast with their domestic form: Villa are in the bottom half of the Premier League table after seven games. This competition is clearly where their best football is happening so far.</p>
+
+      <h2>2. Inter Have Nothing to Show for Two Games</h2>
+      <p>Inter lost 2–1 at Real Madrid on Matchday 1, which was no disgrace. Losing 4–3 at home to Club Brugge is a different matter. They are one of the few established clubs with no points after two rounds. Eight games leave room to recover, but Inter now need wins from fixtures they would have expected to treat as routine.</p>
+
+      <h2>3. Bodø/Glimt Bounced Back in Style</h2>
+      <p>The Norwegian champions lost 5–0 at Bayern Munich on Matchday 1. A week later they beat Borussia Dortmund 1–0. Bodø/Glimt have built a reputation in recent seasons for beating far richer clubs in Europe, and Dortmund are the latest to find that out. Another Norwegian side, Viking, also drew 3–3 with Bayern, so Bayern have dropped two points to a team that lost its opening match 3–1 to Stuttgart.</p>
+
+      <h2>4. Manchester City's Perfect Run Is Domestic Only</h2>
+      <p>City won 2–0 at Porto on Matchday 1 and have won all seven of their Premier League games. But PSG beat them 4–2 in Manchester, and PSG now top the table on goals scored after beating Slovan Bratislava 6–1 in their first match. For City, it was a reminder that domestic form does not always carry over to Europe.</p>
+
+      <h2>5. A Night for Attackers</h2>
+      <p>Several scorelines look more like basketball than football. Liverpool won 6–3 at LASK, Real Madrid won 4–3 at Roma, Inter and Brugge shared seven goals, and Viking and Bayern shared six. Both Liverpool and Real Madrid have two wins, but conceding three goals each away from home is something both coaches will want fixed before the tougher fixtures arrive.</p>
+
+      <h2>6. Manchester United Were Brought Back to Earth</h2>
+      <p>United opened with a 4–0 home win over Azerbaijan's Sabah, then lost 2–0 at Atlético Madrid. That leaves them on three points. Atlético also lost on Matchday 1, 2–1 at Liverpool, so United have taken nothing from the one strong opponent they have faced so far.</p>
+
+      <h2>The Table After Two Rounds</h2>
+      <p>Nine teams have six points: PSG, Barcelona and Aston Villa (all +7), then Stuttgart, Liverpool, Sporting CP, Arsenal, Real Madrid and Real Betis. Arsenal have yet to concede after a 1–0 win at Napoli and a 3–0 home win over Lille. Bayern are tenth with four points.</p>
+      <p>If the new 36-team format is still unfamiliar, our <a href="/article/the-champions-league-s-new-format-explained-how-the-league-phase-works">explainer on how the league phase works</a> covers the rules on qualification, seeding and tie-breaks.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <h3>Who tops the Champions League table after Matchday 2?</h3>
+      <p>Paris Saint-Germain, on six points and a goal difference of +7, level with Barcelona and Aston Villa.</p>
+      <h3>How many teams qualify directly for the round of 16?</h3>
+      <p>The top eight after eight matches. Teams finishing ninth to 24th go into a two-legged play-off round; the bottom 12 are eliminated.</p>
+      <h3>When does the league phase end?</h3>
+      <p>The final matchday is on 27 January 2027.</p>
+
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Aston Villa, PSG and Barcelona share top spot after two straight wins with a +7 goal difference each.</li>
+        <li>Inter have no points after losing to Real Madrid and, at home, to Club Brugge.</li>
+        <li>Bodø/Glimt beat Dortmund a week after losing 5–0 at Bayern; Viking held Bayern 3–3.</li>
+        <li>Manchester City's perfect domestic start did not carry over, as PSG won 4–2 in Manchester.</li>
+      </ul>
+      <p><em>Results are from the sources below. The talking points are analysis.</em></p>
+    `,
+  },
+  {
+    id: 'pl-2026-27-maresca-record',
+    slug: 'seven-from-seven-enzo-maresca-sets-a-premier-league-record-at-manchester-city',
+    sources: [
+      {
+        publisher: 'Manchester City',
+        title: 'City see off Ipswich as Maresca makes Premier League history',
+        url: 'https://www.mancity.com/news/mens/man-city-ipswich-premier-league-match-report-october-2026-63927840',
+        note: 'Club match report, 17 October 2026',
+      },
+      {
+        publisher: 'The Hans India',
+        title: 'Maresca equals best winning run to start of a managerial reign in Premier League',
+        url: 'https://www.thehansindia.com/sports/maresca-equals-best-winning-run-to-start-of-a-managerial-reign-in-premier-league-1131593',
+        note: 'The previous shared record of six wins',
+      },
+      {
+        publisher: 'Manchester City',
+        title: 'Haaland, Doku and Cherki fire City to victory at Liverpool',
+        url: 'https://www.mancity.com/news/mens/liverpool-v-city-premier-league-match-report-october-2026-63927325',
+        note: 'Club match report, Liverpool 0–3 City',
+      },
+      {
+        publisher: 'Al Jazeera',
+        title: 'Liverpool vs Man City: Premier League',
+        url: 'https://www.aljazeera.com/sports/2026/10/10/liverpool-man-city-premier-league-isak-haaland-predictions-financial-breach',
+        note: 'Context on the financial-rules case and appeal',
+      },
+      {
+        publisher: 'Wikipedia',
+        title: '2026–27 Premier League',
+        url: 'https://en.wikipedia.org/wiki/2026%E2%80%9327_Premier_League',
+        note: 'League table and managerial changes',
+      },
+    ],
+    title: 'Seven From Seven: Enzo Maresca Sets a Premier League Record at Manchester City',
+    category: 'football',
+    categoryLabel: 'Premier League',
+    authorId: 'elvis',
+    publishedAt: '2026-10-18T13:00:00Z',
+    tags: ['Football', 'Premier League', 'Manchester City', 'Enzo Maresca'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Etihad_Stadium.jpg/1280px-Etihad_Stadium.jpg',
+    imageAlt: 'The Etihad Stadium, home of Manchester City',
+    imageCredit: 'Photo: Cléria De Souza / CC BY 2.0 via Wikimedia Commons',
+    summary:
+      'A 3–2 win over Ipswich made Enzo Maresca the first manager to win his first seven Premier League games in charge of a club. How City have handled life after Guardiola, and what the table says.',
+    body: `
+      <p>Manchester City's 3–2 win over Ipswich Town on 17 October made Enzo Maresca the first manager in Premier League history to win his first seven league matches in charge of a club. Phil Foden scored once and Erling Haaland twice. City have 21 points from 21, six clear at the top. For a club that lost Pep Guardiola in the summer, the transition could hardly have gone better on the domestic front.</p>
+
+      <h2>Breaking a Shared Record</h2>
+      <p>Six straight wins at the start of a Premier League reign had been done before. The previous record was shared by three managers, including Guardiola himself and Carlo Ancelotti. Maresca matched them with a 3–0 win at Anfield on 11 October, where Haaland, Jérémy Doku and Rayan Cherki scored. The Ipswich game took him clear on his own.</p>
+      <p>It was not comfortable. Ipswich, promoted last season and now managed by Gary O'Neil, made City work for it, and Haaland had a third goal ruled out for offside. Seven wins, though, is seven wins.</p>
+
+      <h2>Life After Guardiola</h2>
+      <p>Guardiola resigned at the end of last season, and City appointed Maresca on 29 June 2026. It was a return: Maresca was one of Guardiola's assistants at City before going into management on his own. That background is the most likely explanation for how smooth the handover has been. The squad has not had to learn a completely new way of playing. Patient possession, full-backs moving into midfield and pressing high after losing the ball were all part of the Guardiola years, and they remain.</p>
+      <p>The one blemish came in Europe: City lost 4–2 to Paris Saint-Germain in Manchester in the Champions League on 14 October. In the league, they have yet to drop a point.</p>
+
+      <h2>A Cloud Over the Season</h2>
+      <p>City's season is running alongside a serious off-field case. Al Jazeera reported before the Liverpool match that City had been found guilty of serious breaches of Premier League financial rules, and that the club was appealing. Maresca said publicly he expected City to win that appeal. We will report on the outcome when it is decided. For now it has not affected results on the pitch.</p>
+
+      <h2>The Top of the Table</h2>
+      <p>After seven rounds (Arsenal and some others had a game in hand at the time of writing):</p>
+      <ul>
+        <li><strong>Manchester City</strong>: 21 points from 7 games</li>
+        <li><strong>Arsenal</strong>: 15 from 6</li>
+        <li><strong>Brighton</strong>: 13 from 6</li>
+        <li><strong>Chelsea</strong>: 13 from 7</li>
+        <li><strong>Liverpool</strong>: 12 from 7</li>
+      </ul>
+      <p>Manager changes were everywhere this summer. Xabi Alonso now runs Chelsea, and Andoni Iraola replaced the sacked Arne Slot at Liverpool. Promoted Hull City and Ipswich are both on nine points, in the top half. Tottenham are bottom with three points from six games.</p>
+
+      <h2>Our Read</h2>
+      <p>Records for winning streaks at the start of a season tend to say as much about the fixture list as the team. City's seven wins include victories away at Liverpool and Manchester United, so the run has not been built only on easy fixtures. A six-point lead in October is not decisive; title races are usually settled in the spring. But the question at City this summer was whether Guardiola's departure would cause a dip. Seven games in, there is no sign of one.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <h3>What record did Enzo Maresca set?</h3>
+      <p>He is the first manager to win his first seven Premier League matches in charge of a club.</p>
+      <h3>When did Maresca become Manchester City manager?</h3>
+      <p>He was appointed on 29 June 2026, after Pep Guardiola resigned.</p>
+      <h3>Who scored in City's 3–2 win over Ipswich?</h3>
+      <p>Phil Foden scored once and Erling Haaland twice.</p>
+
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Maresca's City have won all seven league games, a new record for the start of a managerial reign.</li>
+        <li>They lead Arsenal by six points, though Arsenal had a game in hand.</li>
+        <li>The handover from Guardiola has been smooth on the pitch; the only defeat came against PSG in Europe.</li>
+        <li>An appeal against a ruling on financial breaches hangs over the club's season.</li>
+      </ul>
+      <p><em>Facts are from the sources below. The "Our Read" section is analysis.</em></p>
+    `,
+  },
+  {
+    id: 'lol-worlds-2026-swiss-preview',
+    slug: 'worlds-2026-swiss-stage-preview-can-t1-make-it-four-in-a-row',
+    sources: [
+      {
+        publisher: 'Wikipedia',
+        title: '2026 League of Legends World Championship',
+        url: 'https://en.wikipedia.org/wiki/2026_League_of_Legends_World_Championship',
+        note: 'Teams, seeds, schedule, venues and prize pool',
+      },
+      {
+        publisher: 'esports.gg',
+        title: 'LoL Worlds 2026 hub: Results, format, schedule, and more',
+        url: 'https://esports.gg/guides/league-of-legends/worlds-2026-hub/',
+        note: 'Swiss stage schedule and format',
+      },
+      {
+        publisher: 'Liquipedia',
+        title: '2026 World Championship',
+        url: 'https://liquipedia.net/leagueoflegends/World_Championship/2026',
+        note: 'Series formats',
+      },
+      {
+        publisher: 'GosuGamers',
+        title: 'Karmine Corp sweep MVK Esports, FURIA eliminate Cloud9 KIA in Day 2 of Worlds 2026 Play-Ins',
+        url: 'https://www.gosugamers.net/lol/news/79364-karmine-corp-sweep-mvk-esports-furia-eliminate-cloud9-kia-on-day-2-of-worlds-2026-play-ins',
+        note: 'Play-In results',
+      },
+    ],
+    title: 'Worlds 2026 Swiss Stage Preview: Can T1 Make It Four in a Row?',
+    category: 'esports',
+    categoryLabel: 'League of Legends',
+    authorId: 'elvis',
+    publishedAt: '2026-10-18T13:30:00Z',
+    tags: ['Esports', 'League of Legends', 'Worlds 2026', 'T1', 'Preview'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/League_of_Legends_Main_Stage.jpg/1280px-League_of_Legends_Main_Stage.jpg',
+    imageAlt: 'A League of Legends tournament stage',
+    imageCredit: 'Photo: Hilary Murugu / CC BY-SA 4.0 via Wikimedia Commons',
+    summary:
+      'Sixteen teams, five rounds, eight places in the knockouts. The Worlds 2026 Swiss stage starts in Texas on 23 October, with T1 chasing a fourth straight title.',
+    body: `
+      <p>The main event of the 2026 League of Legends World Championship begins on 23 October in Allen, Texas. Sixteen teams enter the Swiss stage, and eight will leave for the knockouts. Hanging over all of it is one question: can T1, champions in 2023, 2024 and 2025, become the first team to win four Worlds in a row?</p>
+
+      <h2>Schedule and Venues</h2>
+      <ul>
+        <li><strong>Play-In</strong>: 15–18 October, Riot Games Arena, Los Angeles.</li>
+        <li><strong>Swiss stage</strong>: 23–31 October, Credit Union of Texas Event Center, Allen, Texas.</li>
+        <li><strong>Quarter-finals and semi-finals</strong>: 3–8 November, also in Allen.</li>
+        <li><strong>Final</strong>: 14 November, Barclays Center, Brooklyn, New York.</li>
+      </ul>
+      <p>The base prize pool is US$5 million, with US$1 million for the winners.</p>
+
+      <h2>How the Swiss Stage Works</h2>
+      <p>Each round pairs teams with the same win-loss record. Three wins sends a team to the knockouts; three losses sends it home. Over five rounds, that leaves eight qualifiers. The first two rounds are best-of-one, so one bad draft or a single mistake can cost a team dearly. Matches that decide qualification or elimination are best-of-three. In round one, teams from the same region cannot meet. For the full background on the format, see our <a href="/article/league-of-legends-worlds-how-the-world-championship-works">guide to how Worlds works</a>.</p>
+
+      <h2>The Sixteen Teams</h2>
+      <ul>
+        <li><strong>Korea (LCK)</strong>: Gen.G (season champions), Hanwha Life Esports (runners-up and MSI 2026 winners), T1, Dplus KIA.</li>
+        <li><strong>China (LPL)</strong>: Anyone's Legend, Bilibili Gaming, Top Esports, Invictus Gaming.</li>
+        <li><strong>EMEA (LEC)</strong>: G2 Esports, Movistar KOI.</li>
+        <li><strong>North America (LCS)</strong>: Team Liquid Alienware, LYON.</li>
+        <li><strong>Asia-Pacific (LCP)</strong>: Team Secret Whales, CTBC Flying Oyster.</li>
+        <li><strong>Brazil (CBLOL)</strong>: Los Grandes.</li>
+        <li><strong>Play-In winner</strong>: Karmine Corp or MVK Esports.</li>
+      </ul>
+
+      <h2>The Last Ticket: Karmine Corp vs MVK</h2>
+      <p>The final Swiss spot goes to the winner of the Play-In decider on 18 October between Karmine Corp, the LEC's third team, and MVK Esports from the LCP. Karmine Corp have looked the strongest team in Los Angeles. They edged Cloud9 KIA 3–2 and then swept MVK 3–0. MVK came back through the lower bracket, beating FURIA 3–1. FURIA and Cloud9 KIA are out.</p>
+
+      <h2>The Favourites</h2>
+      <p><strong>T1</strong> arrive as the third LCK seed, which is a familiar position for them: they have often done better at Worlds than their domestic record suggested. Four straight titles would be unprecedented. <strong>Gen.G</strong> won the LCK season and are the most consistent team in the world over the past few years, but still lack a recent Worlds title. <strong>Hanwha Life</strong> won MSI this year, so they have already beaten the best teams in the world at an international event in 2026. Of the Chinese teams, <strong>Anyone's Legend</strong> come in as the LPL's top seed and <strong>Bilibili Gaming</strong> have the most experience of deep runs.</p>
+
+      <h2>The Teams to Watch</h2>
+      <p><strong>G2 Esports</strong> are Europe's best hope and are in Pool 1 for the draw, so they avoid the other top seeds in round one. The two North American teams play with home support in Texas. Team Liquid Alienware and LYON would both be happy just to reach the knockouts. In the best-of-one opening rounds, a team from a smaller region can steal a win off anyone.</p>
+
+      <h2>Our Read</h2>
+      <p>On form, the title is most likely to go to a Korean team. All four LCK teams are realistic quarter-finalists, and three of them (Gen.G, Hanwha Life and T1) have a real case to win it. T1's record over the last three years is too strong to bet against, but HLE's MSI win means they have beaten the best teams in the world more recently than anyone else. Expect the LPL's top two to reach the knockouts, and expect at least one surprise from the best-of-one rounds.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <h3>When does the Worlds 2026 Swiss stage start?</h3>
+      <p>23 October 2026, in Allen, Texas. It runs until 31 October.</p>
+      <h3>Where is the Worlds 2026 final?</h3>
+      <p>The Barclays Center in Brooklyn, New York, on 14 November 2026.</p>
+      <h3>Who are the defending champions?</h3>
+      <p>T1, who won in 2023, 2024 and 2025.</p>
+      <h3>How much prize money is there?</h3>
+      <p>The base prize pool is US$5 million, with US$1 million for the champions.</p>
+
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Sixteen teams play the Swiss stage from 23 to 31 October; eight reach the knockouts.</li>
+        <li>T1 are trying to become the first team to win four Worlds titles in a row.</li>
+        <li>Gen.G (LCK champions) and Hanwha Life (MSI 2026 winners) are their strongest rivals.</li>
+        <li>The final is at the Barclays Center in Brooklyn on 14 November.</li>
+      </ul>
+      <p><em>Schedule and team facts are from the sources below. The favourites and "Our Read" sections are analysis.</em></p>
+    `,
+  },
+  {
+    id: 'messi-argentina-farewell',
+    slug: 'messi-s-last-tango-how-argentina-said-goodbye-to-its-eternal-captain',
+    sources: [
+      {
+        publisher: 'ABC News (Associated Press)',
+        title: 'Argentina bids Messi farewell in final national team match, ending an era',
+        url: 'https://abcnews.com/Sports/wireStory/argentina-bids-messi-farewell-final-national-team-match-137042826',
+        note: 'Match report, 6 October 2026',
+      },
+      {
+        publisher: 'ITV News',
+        title: 'Messi caps Argentina farewell with a penalty and 2 assists in a 3-0 win over Benin',
+        url: 'https://www.itv.com/news/2026-10-07/argentina-bids-farewell-to-messi-21-years-126-goals-and-a-world-cup',
+        note: 'Scorers and minutes',
+      },
+      {
+        publisher: 'CBS Sports',
+        title: 'Lionel Messi announces international retirement: Argentina star won 2022 World Cup and was runner up in 2026',
+        url: 'https://www.cbssports.com/soccer/news/lionel-messi-retirement-argentina-2022-world-cup-s-runner-2026/',
+        note: 'Retirement announcement, 31 August 2026',
+      },
+      {
+        publisher: 'NBC News',
+        title: 'Lionel Messi retires from Argentina national team after six World Cup appearances',
+        url: 'https://www.nbcnews.com/sports/soccer/lionel-messi-argentina-soccer-national-team-world-cup-retire-rcna595342',
+        note: 'Background to the decision',
+      },
+    ],
+    title: 'Messi’s Last Tango: How Argentina Said Goodbye to Its Eternal Captain',
+    category: 'football',
+    categoryLabel: 'Football',
+    authorId: 'elvis',
+    publishedAt: '2026-10-18T14:00:00Z',
+    tags: ['Football', 'Lionel Messi', 'Argentina', 'Feature'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/c8/Lionel_Messi_WC2022.jpg',
+    imageAlt: 'Lionel Messi playing for Argentina',
+    imageCredit: 'Photo: Hossein Zohrevand / CC BY 4.0 via Wikimedia Commons',
+    summary:
+      'Lionel Messi scored a penalty and set up two goals in a 3–0 win over Benin in Buenos Aires, his 208th and final match for Argentina. How the night unfolded, and what his international career added up to.',
+    body: `
+      <p>Lionel Messi played his last match for Argentina on 6 October 2026, a 3–0 friendly win over Benin at the Monumental in Buenos Aires. He set up the first two goals and scored the third from the penalty spot. The Argentine federation called the occasion "the last tango". It was his 208th appearance for his country, 21 years after his first.</p>
+
+      <h2>The Match</h2>
+      <p>The goals came in the second half, and Messi was involved in all three:</p>
+      <ul>
+        <li><strong>48'</strong>: Nicolás Otamendi scored from a Messi corner. Otamendi was a teammate in the 2022 World Cup-winning side.</li>
+        <li><strong>61'</strong>: Nicolás Paz scored from a Messi pass.</li>
+        <li><strong>About 71'</strong>: Messi scored a left-footed penalty, his 126th goal for Argentina.</li>
+      </ul>
+      <p>More than 85,000 tickets sold out within 90 minutes of going on sale. Players from Argentina's 1978, 1986 and 2022 World Cup-winning squads came back for the night. A banner at midfield called him the "Eternal Captain". At the final whistle his teammates gathered round to applaud him, and he took a last lap of the pitch.</p>
+
+      <h2>Why He Stepped Away Now</h2>
+      <p>Messi announced his retirement from the national team on 31 August, six weeks after Argentina lost the World Cup final 1–0 to Spain after extra time. According to NBC News, he wrote his farewell message on 21 July, two days after the final. His father, Jorge, died on 8 August, and Messi said the loss reinforced his decision. In his message he also pointed to the young players coming through, saying they deserved their chance.</p>
+      <p>This is not the first time he has retired from international football. In 2016, after losing a Copa América final, he said he was finished with the national team and then changed his mind. This time the farewell match makes the decision feel final.</p>
+
+      <h2>The International Career in Numbers</h2>
+      <ul>
+        <li><strong>208</strong> matches and <strong>126</strong> goals, both Argentina records.</li>
+        <li><strong>1</strong> World Cup (2022) and <strong>2</strong> Copa América titles.</li>
+        <li><strong>6</strong> World Cups played, from 2006 to 2026, with <strong>21</strong> World Cup goals, second on the all-time list behind Kylian Mbappé.</li>
+        <li><strong>3</strong> World Cup finals: lost in 2014 and 2026, won in 2022.</li>
+      </ul>
+
+      <h2>What Comes Next</h2>
+      <p>Messi is not retiring from football. He continues at Inter Miami in Major League Soccer, where his contract runs to the end of the 2028 season. For Argentina, the job now is to build a team that no longer revolves around him. After two decades in which the national team's plans started with Messi, that will be the biggest change the team has faced in a generation.</p>
+
+      <h2>Our Read</h2>
+      <p>Few great players get to choose their ending. Messi lost a World Cup final in his last tournament and still got the farewell most players can only imagine. He was involved in every goal, in front of a full Monumental, with three generations of world champions watching. He finished his Argentina career as he played most of it, making the decisive passes as well as scoring.</p>
+      <p>For the full story of his World Cup career, read our feature on <a href="/article/lionel-messi-the-world-cup-journey-to-glory-in-2022">Messi's road to glory in 2022</a>.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <h3>When was Messi's last match for Argentina?</h3>
+      <p>6 October 2026, a 3–0 friendly win over Benin in Buenos Aires.</p>
+      <h3>How many goals did Messi score for Argentina?</h3>
+      <p>126, in 208 matches.</p>
+      <h3>Is Messi still playing football?</h3>
+      <p>Yes. He plays for Inter Miami in MLS, with a contract running through 2028.</p>
+
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Messi's last Argentina match was a 3–0 win over Benin; he scored a penalty and set up the other two goals.</li>
+        <li>He ends with 126 goals in 208 matches over 21 years, both national records.</li>
+        <li>He announced his retirement on 31 August, six weeks after losing the World Cup final to Spain.</li>
+        <li>He continues his club career at Inter Miami.</li>
+      </ul>
+      <p><em>Match facts are from the sources below. The "Our Read" section is analysis.</em></p>
+    `,
+  },
+  {
     id: 'wc-2026-review-spain',
     slug: 'spain-win-the-2026-world-cup-how-the-first-48-team-tournament-was-decided',
     sources: [
