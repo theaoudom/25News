@@ -413,6 +413,108 @@ const RAW: RawArticle[] = [
       `,
   },
   {
+    id: 'wc-2026-review-spain',
+    slug: 'spain-win-the-2026-world-cup-how-the-first-48-team-tournament-was-decided',
+    sources: [
+      {
+        publisher: 'CBS News',
+        title: 'Spain wins 2026 FIFA World Cup with grueling 1-0 victory over Argentina',
+        url: 'https://www.cbsnews.com/news/2026-fifa-world-cup-final-spain-argentina-sunday/',
+        note: 'Final report: goal, shots, red card and Spain’s records',
+      },
+      {
+        publisher: 'NBC Bay Area',
+        title: 'Spain vs Portugal: score and Cristiano Ronaldo’s World Cup exit',
+        url: 'https://www.nbcbayarea.com/world-cup/spain-portugal-score-cristiano-ronaldo/4109553/',
+        note: 'Round-of-16 report, 6 July 2026',
+      },
+      {
+        publisher: 'theScore',
+        title: 'England defeats France in 10-goal World Cup thriller to claim 3rd place',
+        url: 'https://www.thescore.com/news/3567778',
+        note: 'Third-place play-off report, including both semi-final results',
+      },
+      {
+        publisher: 'NBC Sports',
+        title: '2026 World Cup award winners: Golden Boot, Golden Ball, Best Young Player, Golden Glove',
+        url: 'https://www.nbcsports.com/soccer/news/2026-world-cup-award-winners-golden-boot-golden-ball-best-young-player-golden-glove',
+        note: 'Official tournament awards',
+      },
+    ],
+    title: 'Spain Win the 2026 World Cup: How the First 48-Team Tournament Was Decided',
+    category: 'football',
+    categoryLabel: 'World Cup',
+    authorId: 'elvis',
+    publishedAt: '2026-10-18T09:00:00Z',
+    isWorldCup: true,
+    isFeatured: true,
+    tags: ['World Cup', 'Spain', 'Argentina', 'Analysis', 'Review'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/FIFA_World_Cup_Trophy_%28Ank_Kumar%2C_Infosys_Limited%29_02.jpg/1280px-FIFA_World_Cup_Trophy_%28Ank_Kumar%2C_Infosys_Limited%29_02.jpg',
+    imageAlt: 'The FIFA World Cup trophy, won by Spain in 2026',
+    imageCredit: 'Photo: Ank Kumar / CC BY-SA 4.0 via Wikimedia Commons',
+    summary:
+      'Spain beat Argentina 1–0 after extra time to win their second World Cup. A look back at how they did it, what the 48-team format changed, and which pre-tournament assumptions turned out wrong.',
+    body: `
+      <p>Spain are world champions for the second time. They beat defending champions Argentina 1–0 after extra time in the final at MetLife Stadium in New Jersey on 19 July 2026. Ferran Torres scored the only goal in the 106th minute. Three months on, with the results settled and the awards handed out, this is our look back at how the first 48-team World Cup was won, and what it tells us about the format.</p>
+
+      <h2>The Final: Control Without a Goal, Then One Was Enough</h2>
+      <p>For 90 minutes Spain had the ball and Argentina had the scoreline. CBS News' report on the final records that Spain outshot Argentina 20–3 over the match and that Argentina did not have a shot in regulation time. Spain took 15 shots in that period and could not beat Emiliano Martínez, who made a record number of saves for a World Cup final.</p>
+      <p>The match turned in stoppage time at the end of the second half. Enzo Fernández was sent off for a second yellow card, and Argentina played the whole of extra time with ten men. The winner came early in the second period of extra time. Torres, who had come off the bench in the 62nd minute, reacted first to a bouncing ball in the box and shot just under the crossbar. It was his first goal of the tournament.</p>
+      <p>The goal mattered, but so did the substitution. Spain's coach Luis de la Fuente, 65, sent on a fresh forward to face a tiring defence, and that forward decided the final. According to CBS News, de la Fuente is now the oldest coach to win a World Cup.</p>
+
+      <h2>The Road to New Jersey</h2>
+      <p>Spain's knockout run tested them against two of the pre-tournament favourites and an old Iberian rival:</p>
+      <ul>
+        <li><strong>Round of 16, 6 July</strong>: Spain 1–0 Portugal. Mikel Merino scored in stoppage time, set up by Ferran Torres. It ended Cristiano Ronaldo's last World Cup.</li>
+        <li><strong>Semi-final, 14 July</strong>: France 0–2 Spain. France had been many people's favourites after a strong start to the tournament.</li>
+        <li><strong>Final, 19 July</strong>: Spain 1–0 Argentina, after extra time.</li>
+      </ul>
+      <p>In the other semi-final, Argentina beat England 2–1. England then beat France 6–4 in the third-place play-off, the first time England had won that match.</p>
+
+      <h2>Why Spain Won: A Defence That Barely Bent</h2>
+      <p>The headline numbers are about goals scored, but Spain's title was built on goals not conceded. CBS News reports that they let in one goal in eight matches, the fewest ever conceded by a World Cup champion. Their goalkeeper Unai Simón won the Golden Glove, and the 19-year-old centre-back Pau Cubarsí was named Best Young Player.</p>
+      <p>This is our reading of it: in a tournament with an extra knockout round, conceding rarely is worth more than scoring freely. Every extra match is another chance for one mistake to end a campaign. Spain's three knockout wins shown above were by one or two goals, and they kept a clean sheet in every one of them. A team that relies on outscoring opponents has to keep doing it for eight games. A team that hardly concedes only needs one goal at the right moment, which is exactly how Spain won both the round of 16 and the final.</p>
+
+      <h2>The Awards</h2>
+      <ul>
+        <li><strong>Golden Ball (best player)</strong>: Rodri (Spain). Lionel Messi took the Silver Ball and Kylian Mbappé the Bronze.</li>
+        <li><strong>Golden Boot (top scorer)</strong>: Kylian Mbappé (France), 10 goals. He is the first player to win it at two tournaments in a row, and he finished with 22 career World Cup goals, a new record.</li>
+        <li><strong>Golden Glove (best goalkeeper)</strong>: Unai Simón (Spain).</li>
+        <li><strong>Best Young Player</strong>: Pau Cubarsí (Spain).</li>
+      </ul>
+      <p>Three of the four individual awards went to Spanish players, and the one that did not went to the player Spain had shut out in the semi-final.</p>
+
+      <h2>What the Tournament Overturned</h2>
+      <p>Before the tournament, we noted that no European team had ever won a World Cup held in the Americas. Every one of those tournaments had been won by a South American side. Spain ended that run, and did it by beating a South American team in the final.</p>
+      <p>CBS News also reports two other firsts. Spain are the first country to hold the men's and women's World Cup titles at the same time. Their unbeaten run reached 38 matches, the longest by any European national team.</p>
+      <p>The expanded format did not produce a surprise winner. All four semi-finalists (Spain, Argentina, France and England) were former champions, and all were on the list of favourites before a ball was kicked. More teams did not mean more upsets at the sharp end. The extra round of 32 mostly gave the strongest squads one more game to get through.</p>
+
+      <h2>The End of an Era</h2>
+      <p>The tournament also closed the Messi and Ronaldo era at World Cups. Ronaldo became the first player to score at six World Cups before Spain knocked Portugal out. Messi scored eight goals and reached a third final. On 31 August he announced his retirement from the Argentina national team, so his World Cup total stays at 21, one behind Mbappé.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <h3>Who won the 2026 World Cup?</h3>
+      <p>Spain, beating Argentina 1–0 after extra time in the final on 19 July 2026 at MetLife Stadium, New Jersey.</p>
+      <h3>Who scored the winning goal in the 2026 final?</h3>
+      <p>Ferran Torres, in the 106th minute, after coming on as a substitute.</p>
+      <h3>How many World Cups have Spain won?</h3>
+      <p>Two: 2010 and 2026.</p>
+      <h3>Who won the Golden Ball at the 2026 World Cup?</h3>
+      <p>Rodri of Spain.</p>
+      <h3>Who finished third?</h3>
+      <p>England, who beat France 6–4 in the third-place play-off.</p>
+
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Spain won their second World Cup, beating Argentina 1–0 after extra time; the winner came from a substitute, Ferran Torres.</li>
+        <li>Spain conceded once in eight matches, the fewest by any champion, and won three of the four main individual awards.</li>
+        <li>They are the first European team to win a World Cup held in the Americas.</li>
+        <li>The first 48-team tournament produced no surprise semi-finalists: all four were former champions.</li>
+      </ul>
+      <p><em>This article combines reported match facts, linked in the sources below, with our own analysis. The analysis sections are opinion.</em></p>
+    `,
+  },
+  {
     id: 'wc-2026-guide',
     sources: [
       {
@@ -433,16 +535,22 @@ const RAW: RawArticle[] = [
         url: 'https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums',
         note: 'Official schedule, dates and kick-off times',
       },
+      {
+        publisher: 'CBS News',
+        title: 'Spain wins 2026 FIFA World Cup with grueling 1-0 victory over Argentina',
+        url: 'https://www.cbsnews.com/news/2026-fifa-world-cup-final-spain-argentina-sunday/',
+        note: 'Report on the final, 19 July 2026',
+      },
     ],
     title: 'FIFA World Cup 2026: Everything You Need to Know About the 48-Team Tournament',
     category: 'football',
     categoryLabel: 'World Cup',
     authorId: 'elvis',
     publishedAt: '2026-06-01T09:00:00Z',
+    updatedAt: '2026-10-18T09:00:00Z',
     isWorldCup: true,
     isFeatured: true,
     isTrending: true,
-    isBreaking: true,
     tags: ['World Cup', 'FIFA', 'USA', 'Canada', 'Mexico'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/FIFA_World_Cup_Trophy_%28Ank_Kumar%2C_Infosys_Limited%29_01.jpg/1280px-FIFA_World_Cup_Trophy_%28Ank_Kumar%2C_Infosys_Limited%29_01.jpg',
     imageAlt: 'The FIFA World Cup trophy',
@@ -450,6 +558,7 @@ const RAW: RawArticle[] = [
     summary:
       'The 2026 FIFA World Cup is the biggest in history — 48 teams, three host nations and 104 matches across North America.',
     body: `
+      <p><strong>Update, 18 October 2026:</strong> the tournament is over. Spain won it, beating defending champions Argentina 1–0 after extra time in the final at MetLife Stadium on 19 July, with Ferran Torres scoring in the 106th minute. This guide was written before the opening match and is kept as a record of how the 48-team format was set up. For how it played out, read our <a href="/article/spain-win-the-2026-world-cup-how-the-first-48-team-tournament-was-decided">full review of Spain's win</a>.</p>
       <p>The 2026 FIFA World Cup is set to be the biggest and most ambitious tournament in the competition's history. For the first time, it will be co-hosted by three nations — the United States, Canada and Mexico — and expanded to <strong>48 teams</strong> playing <strong>104 matches</strong> across <strong>16 host cities</strong>. Here is everything you need to know before a ball is kicked.</p>
       <h2>A Tournament of Firsts</h2>
       <p>2026 breaks new ground in several ways. It is the first World Cup hosted by three countries, the first with 48 teams (up from 32), and the first to feature a brand-new knockout round — the round of 32. Mexico's Estadio Azteca also becomes the first stadium ever to host matches at three different World Cups, having previously staged the 1970 and 1986 finals.</p>
@@ -580,12 +689,25 @@ const RAW: RawArticle[] = [
         url: 'https://www.fifa.com/en/articles/article-fifa-world-cup-2026-mexico-canada-usa-new-format-tournament-football-soccer',
         note: 'Official explanation of the 48-team format and round of 32',
       },
+      {
+        publisher: 'CBS News',
+        title: 'Spain wins 2026 FIFA World Cup with grueling 1-0 victory over Argentina',
+        url: 'https://www.cbsnews.com/news/2026-fifa-world-cup-final-spain-argentina-sunday/',
+        note: 'Report on the final, 19 July 2026',
+      },
+      {
+        publisher: 'theScore',
+        title: 'England defeats France in 10-goal World Cup thriller to claim 3rd place',
+        url: 'https://www.thescore.com/news/3567778',
+        note: 'Third-place play-off report, including both semi-final results',
+      },
     ],
     title: 'Title Contenders for World Cup 2026: The Favourites and the Dark Horses',
     category: 'football',
     categoryLabel: 'World Cup',
     authorId: 'elvis',
     publishedAt: '2026-06-08T11:00:00Z',
+    updatedAt: '2026-10-18T09:00:00Z',
     isWorldCup: true,
     tags: ['World Cup', 'Analysis', 'Brazil', 'France', 'Argentina'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Argentina_national_football_team_-_1_-_2022.jpg/1280px-Argentina_national_football_team_-_1_-_2022.jpg',
@@ -594,6 +716,7 @@ const RAW: RawArticle[] = [
     summary:
       'Defending champions Argentina, France and Brazil headline the favourites — but several dark horses could spring a surprise.',
     body: `
+      <p><strong>Update, 18 October 2026:</strong> this preview was published before the tournament. Spain won the World Cup, beating Argentina 1–0 after extra time in the final. England beat France 6–4 in the third-place play-off. The original preview follows unchanged, and a section at the end looks at what it got right and wrong.</p>
       <p>As the 2026 World Cup gets under way, the usual heavyweights once again lead the betting — but the expanded format and gruelling North American summer could level the playing field more than at any tournament in memory. Here is a clear-eyed look at the favourites, the genuine dark horses, and the structural factors that could decide where the trophy ends up.</p>
 
       <h2>The Favourites</h2>
@@ -614,20 +737,26 @@ const RAW: RawArticle[] = [
       <h2>Our Read</h2>
       <p>The smart money still sits with the established powers — Argentina, France and Brazil — but the combination of an extra round, brutal conditions and a host nation with home advantage makes 2026 unusually open. If a surprise package reaches the latter stages, few should be shocked.</p>
 
+      <h2>Looking Back: What This Preview Got Right and Wrong</h2>
+      <p>The semi-finalists were all from our list of favourites: Spain, Argentina, France and England. Spain beat France 2–0 in their semi-final, and Argentina beat England 2–1. There was no real surprise package in the last four.</p>
+      <p>We were wrong about the order. We put Spain in the second tier, behind Argentina, France and Brazil. They went on to win the trophy and conceded only one goal in eight matches, according to CBS News' report on the final. Brazil did not reach the semi-finals.</p>
+      <p>The history section above aged worst. Spain became the first European team to win a World Cup played in the Americas. The streak we called a "historical edge for South American contenders" ended in the final, against a South American side.</p>
+      <p>The point about squad depth held up. Spain's winner in the final came from Ferran Torres, who started on the bench and came on in the 62nd minute.</p>
+
       <h2>Frequently Asked Questions</h2>
-      <h3>Who are the favourites for the 2026 World Cup?</h3>
+      <h3>Who won the 2026 World Cup?</h3>
+      <p>Spain, who beat Argentina 1–0 after extra time in the final on 19 July 2026. It was their second title, after 2010.</p>
+      <h3>Who were the favourites before the tournament?</h3>
       <p>Defending champions Argentina, along with France, Brazil, Spain, England and Germany.</p>
-      <h3>Could a host nation win?</h3>
-      <p>The USA are the most likely host to make a deep run, with home advantage a genuine factor, though winning the whole tournament would be a major surprise.</p>
       <h3>Has a European team ever won a World Cup in the Americas?</h3>
-      <p>No — every World Cup held in the Americas has been won by a South American nation, a streak the 2026 favourites will try to break.</p>
+      <p>Yes, but only once. Spain did it in 2026. Before that, every World Cup held in the Americas had been won by a South American nation.</p>
 
       <h2>Key Takeaways</h2>
       <ul>
-        <li>Argentina, France and Brazil head a familiar list of favourites; Spain and England are the strongest "nearly" sides.</li>
-        <li>Morocco, the USA, Portugal and the Netherlands lead a credible group of dark horses.</li>
-        <li>No European team has ever won a World Cup in the Americas — a historical edge for South American contenders.</li>
-        <li>Heat, travel, altitude and rotation over up to eight games could decide the destiny of the trophy.</li>
+        <li>All four semi-finalists (Spain, Argentina, France and England) came from the pre-tournament list of favourites.</li>
+        <li>Spain, ranked here behind Argentina, France and Brazil, won the trophy.</li>
+        <li>Spain's win ended the run of South American champions at World Cups held in the Americas.</li>
+        <li>Squad depth mattered: the winning goal in the final came from a substitute.</li>
       </ul>
     `,
   },
@@ -732,12 +861,25 @@ const RAW: RawArticle[] = [
         url: 'https://www.fifa.com/en/articles/article-fifa-world-cup-2026-mexico-canada-usa-new-format-tournament-football-soccer',
         note: 'Official explanation of the 48-team format and round of 32',
       },
+      {
+        publisher: 'CBS News',
+        title: 'Spain wins 2026 FIFA World Cup with grueling 1-0 victory over Argentina',
+        url: 'https://www.cbsnews.com/news/2026-fifa-world-cup-final-spain-argentina-sunday/',
+        note: 'Report on the final, 19 July 2026',
+      },
+      {
+        publisher: 'theScore',
+        title: 'England defeats France in 10-goal World Cup thriller to claim 3rd place',
+        url: 'https://www.thescore.com/news/3567778',
+        note: 'Third-place play-off report, 18 July 2026',
+      },
     ],
     title: 'World Cup 2026 Key Dates: Opening Match, Group Stage and the Final',
     category: 'football',
     categoryLabel: 'World Cup',
     authorId: 'elvis',
     publishedAt: '2026-06-10T09:00:00Z',
+    updatedAt: '2026-10-18T09:00:00Z',
     isWorldCup: true,
     tags: ['World Cup', 'Schedule', 'Fixtures', 'Dates'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Azteca_Stadium_-_panoramio.jpg/1280px-Azteca_Stadium_-_panoramio.jpg',
@@ -766,6 +908,15 @@ const RAW: RawArticle[] = [
       </ul>
       <p>One subtlety worth noting: as the rounds progress, the gaps between matches lengthen, giving the surviving teams more recovery time but also longer to stew on the pressure. The deeper a team goes, the more rest it earns — a reward that can matter enormously in the summer heat.</p>
 
+      <h2>How the Final Week Played Out</h2>
+      <p>The schedule above held. These are the results of the last four matches:</p>
+      <ul>
+        <li><strong>Semi-final, 14 July</strong>: France 0–2 Spain.</li>
+        <li><strong>Semi-final, 15 July</strong>: England 1–2 Argentina.</li>
+        <li><strong>Third-place play-off, 18 July</strong>: England 6–4 France, at Hard Rock Stadium, Miami Gardens. Bukayo Saka scored a hat-trick. It was the first time England had won a third-place play-off.</li>
+        <li><strong>Final, 19 July</strong>: Spain 1–0 Argentina after extra time, at MetLife Stadium. Ferran Torres scored in the 106th minute. Argentina played extra time with ten men after Enzo Fernández was sent off for a second yellow card in stoppage time.</li>
+      </ul>
+
       <h2>Why This Calendar Is Different</h2>
       <p>The headline change is volume. A team that reaches the final will play <strong>up to eight matches</strong> — one more than the seven required in the 32-team era. Combined with long-haul travel between host cities spread across a continent and temperatures that can climb sharply in June and July, the physical demand on squads is unprecedented. This is why several venues with air-conditioned, roofed stadiums are likely to be favoured for the hottest afternoon kick-offs, and why squad depth and rotation may decide the tournament as much as raw quality.</p>
 
@@ -778,11 +929,14 @@ const RAW: RawArticle[] = [
       <h3>How many matches are there in total?</h3>
       <p>104 — up from 64 in 2022 — because of the expansion to 48 teams and the added round of 32.</p>
       <h3>How many games will the winners play?</h3>
-      <p>Up to eight, one more than in the previous 32-team format.</p>
+      <p>Eight, one more than in the previous 32-team format. Spain played eight matches on the way to the title.</p>
+      <h3>Who won the 2026 World Cup final?</h3>
+      <p>Spain beat Argentina 1–0 after extra time at MetLife Stadium on 19 July 2026.</p>
 
       <h2>Key Takeaways</h2>
       <ul>
         <li>The tournament spans 39 days, 11 June to 19 July, with 104 matches — the biggest World Cup ever.</li>
+        <li>Spain won the final 1–0 after extra time against Argentina; England took third place.</li>
         <li>The Estadio Azteca opens proceedings; MetLife Stadium hosts the final.</li>
         <li>An extra knockout round and continental travel make scheduling, rest and squad depth decisive.</li>
       </ul>`,
@@ -796,21 +950,30 @@ const RAW: RawArticle[] = [
         url: 'https://www.fifa.com/en/articles/article-fifa-world-cup-2026-mexico-canada-usa-new-format-tournament-football-soccer',
         note: 'Official explanation of the 48-team format and round of 32',
       },
+      {
+        publisher: 'CBS News',
+        title: 'Spain wins 2026 FIFA World Cup with grueling 1-0 victory over Argentina',
+        url: 'https://www.cbsnews.com/news/2026-fifa-world-cup-final-spain-argentina-sunday/',
+        note: 'Report on the 2026 final',
+      },
     ],
-    title: 'Every World Cup Winner: A Complete History from 1930 to 2022',
+    // Slug pinned to the original URL: the title now runs to 2026.
+    slug: 'every-world-cup-winner-a-complete-history-from-1930-to-2022',
+    title: 'Every World Cup Winner: A Complete History from 1930 to 2026',
     category: 'football',
     categoryLabel: 'World Cup',
     authorId: 'elvis',
     publishedAt: '2026-06-07T09:00:00Z',
+    updatedAt: '2026-10-18T09:00:00Z',
     isWorldCup: true,
     tags: ['World Cup', 'History', 'Records', 'Brazil', 'Argentina'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/FIFA_World_Cup_Trophy_%28Ank_Kumar%2C_Infosys_Limited%29_02.jpg/1280px-FIFA_World_Cup_Trophy_%28Ank_Kumar%2C_Infosys_Limited%29_02.jpg',
     imageAlt: 'The FIFA World Cup trophy, football’s greatest prize',
     imageCredit: 'Photo: Ank Kumar / CC BY-SA 4.0 via Wikimedia Commons',
     summary:
-      'Eight nations have lifted the trophy across 22 tournaments. Here is the full roll of World Cup champions and the records that define them.',
+      'Eight nations have lifted the trophy across 23 tournaments, with Spain adding a second star in 2026. Here is the full roll of World Cup champions and the records that define them.',
     body: `
-      <p>Since the first tournament in Uruguay in 1930, only <strong>eight nations</strong> have lifted the FIFA World Cup across 22 editions. It is one of sport's most exclusive clubs — and a reminder of how hard the trophy is to win. As the 2026 edition begins, here is the complete history of the champions, the eras that shaped the competition, and the records that define it.</p>
+      <p>Since the first tournament in Uruguay in 1930, only <strong>eight nations</strong> have lifted the FIFA World Cup across 23 editions. It is one of sport's most exclusive clubs — and a reminder of how hard the trophy is to win. Here is the complete history of the champions, the eras that shaped the competition, and the records that define it. <em>Updated 18 October 2026 to include Spain's win at the 2026 tournament.</em></p>
 
       <h2>The Complete Roll of Champions</h2>
       <ul>
@@ -820,8 +983,8 @@ const RAW: RawArticle[] = [
         <li><strong>Argentina — 3</strong> (1978, 1986, 2022)</li>
         <li><strong>France — 2</strong> (1998, 2018)</li>
         <li><strong>Uruguay — 2</strong> (1930, 1950)</li>
+        <li><strong>Spain — 2</strong> (2010, 2026)</li>
         <li><strong>England — 1</strong> (1966)</li>
-        <li><strong>Spain — 1</strong> (2010)</li>
       </ul>
 
       <h2>The Early Years (1930–1950)</h2>
@@ -836,31 +999,35 @@ const RAW: RawArticle[] = [
       <h2>The European Streak — and Argentina's Answer (2006–2022)</h2>
       <p>The 21st century opened with a remarkable run of four consecutive European champions: Italy (2006), Spain (2010), Germany (2014) and France (2018). Spain's win was historic — their first-ever title, built on the tiki-taka era of Barcelona and the national side. Then, in 2022, Argentina ended the European run by beating France on penalties after a 3–3 classic in Qatar, delivering Lionel Messi the one prize that had eluded him and arguably settling his place among the immortals.</p>
 
+      <h2>Spain's Second Star (2026)</h2>
+      <p>The first 48-team World Cup ended with Spain beating Argentina 1–0 after extra time at MetLife Stadium in New Jersey on 19 July 2026. Ferran Torres scored the only goal in the 106th minute. Argentina missed the chance to become the first team to retain the trophy since Brazil in 1958 and 1962. Spain's win broke a long-standing pattern: before 2026, every World Cup held in the Americas had been won by a South American team.</p>
+
       <h2>Records to Know</h2>
       <ul>
         <li>Brazil are the only nation to appear at every World Cup finals tournament.</li>
         <li>Only eight different countries have ever won; just four of them have won more than twice.</li>
         <li>Every champion to date has come from either Europe or South America.</li>
-        <li>No host nation has won since France in 1998 — and no European side has ever won in the Americas.</li>
+        <li>No host nation has won since France in 1998.</li>
+        <li>Spain are the only European side to win a World Cup held in the Americas (2026).</li>
       </ul>
 
       <h2>Can a Ninth Nation Break Through?</h2>
-      <p>For decades the list barely changed, but the gap between the elite and the rest has narrowed. Croatia have reached two of the last three finals or semi-finals; Morocco became the first African and Arab nation to reach a semi-final in 2022. With 48 teams competing in 2026 and more nations gaining tournament experience, the prospect of a ninth name eventually joining this list feels more plausible than at any point in the competition's history.</p>
+      <p>For decades the list barely changed, but the gap between the elite and the rest has narrowed. Croatia have reached two of the last three finals or semi-finals; Morocco became the first African and Arab nation to reach a semi-final in 2022. The first 48-team edition in 2026 did not produce a new name, though: all four semi-finalists (Spain, Argentina, France and England) were former champions. The next chance for a ninth winner is 2030.</p>
 
       <h2>Frequently Asked Questions</h2>
       <h3>Who has won the most World Cups?</h3>
       <p>Brazil, with five titles (1958, 1962, 1970, 1994, 2002).</p>
       <h3>Who are the current World Cup holders?</h3>
-      <p>Argentina, who won in 2022 — their third title.</p>
+      <p>Spain, who won in 2026, their second title after 2010.</p>
       <h3>How many different countries have won the World Cup?</h3>
-      <p>Eight: Brazil, Germany, Italy, Argentina, France, Uruguay, England and Spain.</p>
+      <p>Eight: Brazil, Germany, Italy, Argentina, France, Uruguay, Spain and England.</p>
 
       <h2>Key Takeaways</h2>
       <ul>
         <li>Just eight nations have ever won the World Cup; Brazil lead with five.</li>
         <li>Europe and South America have shared every title in history.</li>
-        <li>No host has won since 1998, and no European team has triumphed in the Americas.</li>
-        <li>With 48 teams in 2026, the door is increasingly open for a ninth name to join the list.</li>
+        <li>Spain won in 2026, becoming the first European team to win a World Cup in the Americas.</li>
+        <li>The 48-team format has not yet produced a ninth champion.</li>
       </ul>
     `,
   },
@@ -1607,12 +1774,31 @@ const RAW: RawArticle[] = [
         url: 'https://www.fifa.com/en/articles/article-fifa-world-cup-2026-mexico-canada-usa-new-format-tournament-football-soccer',
         note: 'Official explanation of the 48-team format and round of 32',
       },
+      {
+        publisher: 'CBS Sports',
+        title: 'Lionel Messi announces international retirement: Argentina star won 2022 World Cup and was runner up in 2026',
+        url: 'https://www.cbssports.com/soccer/news/lionel-messi-retirement-argentina-2022-world-cup-s-runner-2026/',
+        note: 'Retirement announcement, 31 August 2026',
+      },
+      {
+        publisher: 'ESPN',
+        title: 'Argentina legend Lionel Messi announces international retirement',
+        url: 'https://www.espn.com/soccer/story/_/id/49266819/lionel-messi-argentina-international-retirement-world-cup-copa-america',
+        note: 'Background to the decision',
+      },
+      {
+        publisher: 'NBC Sports',
+        title: '2026 World Cup award winners: Golden Boot, Golden Ball, Best Young Player, Golden Glove',
+        url: 'https://www.nbcsports.com/soccer/news/2026-world-cup-award-winners-golden-boot-golden-ball-best-young-player-golden-glove',
+        note: 'Messi’s eight goals and Silver Ball in 2026',
+      },
     ],
     title: 'Lionel Messi: The World Cup Journey to Glory in 2022',
     category: 'football',
     categoryLabel: 'World Cup',
     authorId: 'elvis',
     publishedAt: '2026-06-09T10:00:00Z',
+    updatedAt: '2026-10-18T09:00:00Z',
     isWorldCup: true,
     isTrending: true,
     tags: ['World Cup', 'Lionel Messi', 'Argentina', 'Feature'],
@@ -1632,12 +1818,15 @@ const RAW: RawArticle[] = [
       <p>The final against France is regarded as one of the greatest ever played. Argentina led 2-0, were pegged back to 2-2, went ahead in extra time, were caught again at 3-3 by a Kylian Mbappé hat-trick, and finally won 4-2 on penalties. Messi scored twice in the final and was named the tournament's best player.</p>
       <h2>What It Meant for His Legacy</h2>
       <p>The title completed the set. Added to his club honours and record number of Ballon d'Or awards, the World Cup silenced the last argument against him and, for many, settled the "greatest of all time" debate in his favour.</p>
+      <h2>The Last Chapter: 2026</h2>
+      <p><em>Added 18 October 2026.</em> Messi played a sixth World Cup in 2026 and came close to a second title. He scored eight goals, finishing second in the scoring race behind Kylian Mbappé, and captained Argentina to the final. There they lost 1–0 to Spain after extra time, with Ferran Torres scoring in the 106th minute. Messi was given the Silver Ball as the tournament's second-best player, behind Spain's Rodri.</p>
+      <p>On 31 August 2026 he announced on social media that he was retiring from the Argentina national team. He continues to play club football for Inter Miami.</p>
       <h2>Messi's World Cup, by the Numbers</h2>
       <ul>
-        <li>5 World Cups contested (2006–2022).</li>
-        <li>13 World Cup goals — among the highest in history.</li>
-        <li>2 Golden Ball awards (best player) — in 2014 and 2022.</li>
-        <li>1 World Cup title, plus a runners-up medal in 2014.</li>
+        <li>6 World Cups contested (2006–2026).</li>
+        <li>21 World Cup goals, second on the all-time list behind Kylian Mbappé (22).</li>
+        <li>2 Golden Ball awards (best player), in 2014 and 2022, plus the Silver Ball in 2026.</li>
+        <li>1 World Cup title (2022), plus runners-up medals in 2014 and 2026.</li>
       </ul>
             <h2>The Long Wait and Argentina's Expectations</h2>
       <p>Few players have carried a nation's hopes quite like Messi carried Argentina's. In a country that reveres its footballing history, the pressure to deliver a senior international trophy followed him for well over a decade. The burden was sharpened by a run of painful final defeats: beaten in the 2014 World Cup final, Argentina also lost consecutive Copa América finals in the middle of that decade, moments that led Messi at one point to step away from the national team. For years, the debate raged over whether he could translate his club brilliance onto the international stage.</p>
@@ -1652,12 +1841,14 @@ const RAW: RawArticle[] = [
       <h3>When did Messi win the World Cup?</h3>
       <p>In 2022, captaining Argentina to victory over France in the final.</p>
       <h3>How many World Cup goals does Messi have?</h3>
-      <p>13, scored across five tournaments.</p>
+      <p>21, scored across six tournaments from 2006 to 2026.</p>
+      <h3>Has Messi retired from international football?</h3>
+      <p>Yes. He announced his retirement from the Argentina national team on 31 August 2026, six weeks after losing the 2026 final to Spain.</p>
       <h2>Key Takeaways</h2>
       <ul>
         <li>Messi endured years of near-misses, most painfully the 2014 final.</li>
         <li>His 2022 triumph capped one of football's great individual stories.</li>
-        <li>The trophy cemented his place among the sport's all-time greats.</li>
+        <li>He reached a third final in 2026, losing to Spain, and retired from international football that August.</li>
       </ul>
     `,
   },
@@ -1676,12 +1867,25 @@ const RAW: RawArticle[] = [
         url: 'https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/teams',
         note: 'Official list of qualified teams',
       },
+      {
+        publisher: 'The National',
+        title: 'Cristiano Ronaldo got off the mark at the 2026 World Cup with two goals in Portugal’s 5-0 win over Uzbekistan',
+        url: 'https://www.thenationalnews.com/sport/world-cup-2026/2026/06/24/cristiano-ronaldo-six-world-cups/',
+        note: 'Ronaldo becomes the first player to score at six World Cups',
+      },
+      {
+        publisher: 'NBC Bay Area',
+        title: 'Spain vs Portugal: score and Cristiano Ronaldo’s World Cup exit',
+        url: 'https://www.nbcbayarea.com/world-cup/spain-portugal-score-cristiano-ronaldo/4109553/',
+        note: 'Round-of-16 report, 6 July 2026',
+      },
     ],
     title: 'Cristiano Ronaldo at the World Cup: Records and the 2026 Question',
     category: 'football',
     categoryLabel: 'World Cup',
     authorId: 'elvis',
     publishedAt: '2026-06-08T10:00:00Z',
+    updatedAt: '2026-10-18T09:00:00Z',
     isWorldCup: true,
     isTrending: true,
     tags: ['World Cup', 'Cristiano Ronaldo', 'Portugal', 'Feature'],
@@ -1705,6 +1909,9 @@ const RAW: RawArticle[] = [
       </ul>
       <h2>The 2026 Question</h2>
       <p>By 2026 Ronaldo will be 41 — an age at which even legends rarely compete at the very top. Whether he features, and in what role, is one of the tournament's compelling subplots. Win or lose, his sheer longevity at the elite level — still scoring regularly years after most peers retired — is itself one of sport's remarkable stories.</p>
+      <h2>The Answer: How 2026 Went</h2>
+      <p><em>Added 18 October 2026.</em> Ronaldo did play, and he added one more record. He scored twice in Portugal's 5–0 group win over Uzbekistan, in the 6th and 39th minutes, and became the first player to score at six different World Cups.</p>
+      <p>The trophy still escaped him. Portugal went out in the round of 16 on 6 July, beaten 1–0 by Spain, the eventual champions, through a stoppage-time goal from Mikel Merino. Ronaldo had said before the tournament that 2026 would be his last World Cup.</p>
             <h2>Longevity Built on Professionalism</h2>
       <p>That Ronaldo remains a serious footballer into his forties owes much to a famous dedication to fitness and preparation. Throughout his career he has been renowned for a meticulous approach to training, diet, recovery and conditioning — habits often cited by teammates and coaches as the reason he has sustained elite performance far longer than most. In a sport where the physical demands typically force even great players into retirement in their mid-thirties, his continued sharpness is a study in modern athletic professionalism.</p>
       <h2>A Career of Goalscoring Milestones</h2>
@@ -1718,12 +1925,14 @@ const RAW: RawArticle[] = [
       <h3>Has Cristiano Ronaldo ever won the World Cup?</h3>
       <p>No. It is the one major trophy missing from his career, despite winning Euro 2016 and the Nations League with Portugal.</p>
       <h3>How many World Cups has Ronaldo played in?</h3>
-      <p>Five (2006–2022), scoring in each — 2026 could be his sixth.</p>
+      <p>Six (2006–2026), and he scored in every one of them. No other player has scored at six World Cups.</p>
+      <h3>How far did Portugal go in 2026?</h3>
+      <p>The round of 16, where they lost 1–0 to Spain.</p>
       <h2>Key Takeaways</h2>
       <ul>
-        <li>Ronaldo holds the rare record of scoring at five different World Cups.</li>
+        <li>Ronaldo is the only player to score at six different World Cups, a record he set in 2026.</li>
         <li>The World Cup remains the one major honour to elude him.</li>
-        <li>2026, at age 41, may be his final shot at the trophy.</li>
+        <li>His final World Cup ended in the round of 16 against the eventual champions, Spain.</li>
       </ul>
     `,
   },
@@ -1802,37 +2011,58 @@ const RAW: RawArticle[] = [
         url: 'https://www.fifa.com/en/articles/article-fifa-world-cup-2026-mexico-canada-usa-new-format-tournament-football-soccer',
         note: 'Official explanation of the 48-team format and round of 32',
       },
+      {
+        publisher: 'Wikipedia',
+        title: 'List of FIFA World Cup top goalscorers',
+        url: 'https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_top_goalscorers',
+        note: 'All-time table including 2026, with match and tournament counts',
+      },
+      {
+        publisher: 'NBC Sports',
+        title: '2026 World Cup award winners: Golden Boot, Golden Ball, Best Young Player, Golden Glove',
+        url: 'https://www.nbcsports.com/soccer/news/2026-world-cup-award-winners-golden-boot-golden-ball-best-young-player-golden-glove',
+        note: 'Mbappé’s Golden Boot and the 2026 scoring race',
+      },
+      {
+        publisher: 'theScore',
+        title: 'England defeats France in 10-goal World Cup thriller to claim 3rd place',
+        url: 'https://www.thescore.com/news/3567778',
+        note: 'Match in which Mbappé took the all-time record',
+      },
     ],
     title: 'The Greatest World Cup Goalscorers of All Time',
     category: 'football',
     categoryLabel: 'World Cup',
     authorId: 'elvis',
     publishedAt: '2026-06-06T10:00:00Z',
+    updatedAt: '2026-10-18T09:00:00Z',
     isWorldCup: true,
-    tags: ['World Cup', 'Records', 'History'],
+    tags: ['World Cup', 'Records', 'History', 'Kylian Mbappé', 'Lionel Messi'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/FIFA_WC-qualification_2014_-_Austria_vs._Germany_2012-09-11_-_Miroslav_Klose_01.JPG/1280px-FIFA_WC-qualification_2014_-_Austria_vs._Germany_2012-09-11_-_Miroslav_Klose_01.JPG',
     imageAlt: 'Miroslav Klose playing for Germany',
     imageCredit: 'Photo: Michael Kranewitter / CC BY-SA 3.0 via Wikimedia Commons',
     summary:
-      'Who has scored the most goals in World Cup history? From Klose to Ronaldo and Müller, here are the tournament’s deadliest finishers.',
+      'Kylian Mbappé now holds the World Cup scoring record with 22 goals, one ahead of Lionel Messi. Both passed Miroslav Klose’s 16 at the 2026 tournament.',
     body: `
-      <p>Scoring at a World Cup writes a player into football folklore. Doing it repeatedly, across multiple tournaments, is what separates the legends from the rest. Here are the deadliest finishers in the history of the competition — and the man best placed to challenge the record.</p>
-      <h2>The All-Time Leader: Miroslav Klose (16)</h2>
-      <p>Germany's Miroslav Klose holds the record with <strong>16 goals</strong>, scored across four tournaments from 2002 to 2014. Remarkably consistent rather than explosive, Klose finished his World Cup career as a world champion in Brazil, overtaking the previous record holder along the way.</p>
+      <p>Scoring at a World Cup writes a player into football folklore. Doing it repeatedly, across multiple tournaments, is what separates the legends from the rest. Here are the deadliest finishers in the history of the competition.</p>
+      <p><strong>Update, 18 October 2026:</strong> this list was first published before the 2026 World Cup, when Miroslav Klose's 16 goals was the record. Kylian Mbappé and Lionel Messi both passed him during the tournament, and the article has been rewritten to reflect the new order.</p>
+      <h2>The All-Time Leader: Kylian Mbappé (22)</h2>
+      <p>France's Kylian Mbappé came into the 2026 tournament with 12 World Cup goals and left with <strong>22</strong>. His 10 goals in eight matches won him the Golden Boot for the second tournament running, which no player had done before. He took the record outright with two goals against England in the third-place play-off, which France lost 6–4. He has played 22 World Cup matches, one goal per game, across 2018, 2022 and 2026.</p>
       <h2>The Chasing Pack</h2>
       <ul>
+        <li><strong>Lionel Messi (Argentina) — 21:</strong> he scored eight times in 2026 and led Argentina to the final. He announced his retirement from international football on 31 August 2026, so 21 is his final total.</li>
+        <li><strong>Miroslav Klose (Germany) — 16:</strong> the record holder from 2014 until 2026, with goals across four tournaments from 2002 to 2014.</li>
         <li><strong>Ronaldo (Brazil) — 15:</strong> the original "R9", a two-time World Cup winner who held the record before Klose.</li>
         <li><strong>Gerd Müller (Germany) — 14:</strong> a ruthless poacher who set the bar at the 1970 and 1974 tournaments.</li>
         <li><strong>Just Fontaine (France) — 13:</strong> astonishingly, all in a single tournament (1958) — a single-edition record that still stands.</li>
-        <li><strong>Lionel Messi (Argentina) — 13:</strong> still active, having moved up the list with his 2022 title run.</li>
         <li><strong>Pelé (Brazil) — 12:</strong> a three-time champion whose tally came largely as a teenager and young man.</li>
       </ul>
       <h2>Golden Boot vs All-Time Tally</h2>
-      <p>It is worth distinguishing two things: the <strong>Golden Boot</strong> goes to the top scorer at a single tournament, while the all-time list rewards sustained excellence across many. Fontaine's 13-in-one-tournament is the ultimate single-edition feat; Klose's 16 is the ultimate career achievement.</p>
-      <h2>Can Anyone Break the Record?</h2>
-      <p>The man most likely to chase Klose is France's <strong>Kylian Mbappé</strong>, who already has 12 World Cup goals — including a hat-trick in the 2022 final — while still in his twenties. If he stays fit and France keep qualifying deep, the all-time record could realistically fall within the next decade.</p>
-      <h2>Why the Record Endures</h2>
-      <p>Reaching the summit requires more than finishing ability. It demands the longevity to appear at three or four World Cups and the form to score in each. That combination is rare — which is why Klose's 16 may stand for a very long time.</p>
+      <p>It is worth distinguishing two things: the <strong>Golden Boot</strong> goes to the top scorer at a single tournament, while the all-time list rewards sustained excellence across many. Fontaine's 13 in one tournament is still the single-edition record. Mbappé's 10 in 2026 came close, but he needed eight matches to Fontaine's six.</p>
+      <h2>Can Anyone Catch Mbappé?</h2>
+      <p>Mbappé will be 31 at the 2030 World Cup, so he is well placed to add to his total. Messi, the only player within touching distance, has retired from international football. The next three names on the list, Klose, Ronaldo and Müller, are long retired.</p>
+      <h2>Why the Record Stood So Long</h2>
+      <p>Klose's 16 lasted 12 years. Reaching the summit requires more than finishing ability: it demands the longevity to appear at three or four World Cups and the form to score in each. Mbappé reached 22 in only three tournaments, which shows how unusual his record is.</p>
             <h2>What It Takes to Climb the List</h2>
       <p>Topping the all-time World Cup scoring charts is as much about endurance as finishing. A player must remain fit, in form and part of a qualifying nation across three or four tournaments spread over a dozen years or more. That requires avoiding serious injury at four-year intervals, maintaining peak sharpness deep into a career, and playing for a country good enough to keep reaching the finals. It is the combination of talent and longevity — not goals alone — that separates the record holders from the merely prolific.</p>
       <h2>A Changing Tournament</h2>
@@ -1840,18 +2070,20 @@ const RAW: RawArticle[] = [
       <h2>Poachers and Complete Forwards</h2>
       <p>The great World Cup scorers have arrived in different guises. Some were classic poachers — specialists in and around the six-yard box whose instinct for the right position turned half-chances into goals. Others were complete forwards who dropped deep, created for teammates and scored from range as well as close in. Both types populate the top of the list, a reminder that there is no single blueprint for scoring at the highest level; ruthless efficiency and all-round brilliance have each proved capable of piling up goals.</p>
       <h2>How Modern Formats Could Reshape the Records</h2>
-      <p>The expansion of the World Cup to 48 teams from 2026, with an additional knockout round, means the teams that go furthest will play more matches than in previous eras. Over a career, that extra game or two per tournament could give the leading modern forwards more opportunities to score than their predecessors ever had. If the trend continues, long-standing marks that once looked untouchable may come under pressure — provided a player has the longevity to take advantage across several tournaments.</p>
+      <p>The expansion of the World Cup to 48 teams from 2026 added a knockout round, so the teams that go furthest now play eight matches instead of seven. The first 48-team tournament showed the effect straight away: both Mbappé and Messi passed Klose's 16 in 2026, and both their teams played eight matches.</p>
 
       <h2>Frequently Asked Questions</h2>
       <h3>Who has scored the most World Cup goals ever?</h3>
-      <p>Miroslav Klose of Germany, with 16 goals.</p>
+      <p>Kylian Mbappé of France, with 22 goals. He passed Lionel Messi (21) at the 2026 tournament.</p>
       <h3>Who scored the most goals in a single World Cup?</h3>
       <p>Just Fontaine of France, with 13 at the 1958 tournament.</p>
+      <h3>Who won the 2026 Golden Boot?</h3>
+      <p>Kylian Mbappé, with 10 goals. He also won it in 2022, the first player to win it at consecutive tournaments.</p>
       <h2>Key Takeaways</h2>
       <ul>
-        <li>Klose (16) leads the all-time list; Fontaine holds the single-tournament record (13).</li>
-        <li>Messi (13) remains an active member of the chasing pack.</li>
-        <li>Mbappé is the most likely active player to one day break the record.</li>
+        <li>Mbappé (22) leads the all-time list, ahead of Messi (21) and Klose (16).</li>
+        <li>Fontaine still holds the single-tournament record (13).</li>
+        <li>Messi's total is final after his international retirement; Mbappé could add more in 2030.</li>
       </ul>
     `,
   },
@@ -1870,12 +2102,25 @@ const RAW: RawArticle[] = [
         url: 'https://www.fifa.com/en/articles/article-fifa-world-cup-2026-mexico-canada-usa-new-format-tournament-football-soccer',
         note: 'Official explanation of the 48-team format and round of 32',
       },
+      {
+        publisher: 'CBS Sports',
+        title: 'Lionel Messi announces international retirement: Argentina star won 2022 World Cup and was runner up in 2026',
+        url: 'https://www.cbssports.com/soccer/news/lionel-messi-retirement-argentina-2022-world-cup-s-runner-2026/',
+        note: 'Messi’s retirement announcement, 31 August 2026',
+      },
+      {
+        publisher: 'NBC Bay Area',
+        title: 'Spain vs Portugal: score and Cristiano Ronaldo’s World Cup exit',
+        url: 'https://www.nbcbayarea.com/world-cup/spain-portugal-score-cristiano-ronaldo/4109553/',
+        note: 'Portugal’s round-of-16 exit, 6 July 2026',
+      },
     ],
     title: 'Could 2026 Be the Last World Cup for Messi and Ronaldo?',
     category: 'football',
     categoryLabel: 'World Cup',
     authorId: 'elvis',
     publishedAt: '2026-06-05T10:00:00Z',
+    updatedAt: '2026-10-18T09:00:00Z',
     isWorldCup: true,
     tags: ['World Cup', 'Lionel Messi', 'Cristiano Ronaldo', 'Analysis'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/FWC_2018_-_Group_D_-_ARG_v_ISL_-_Messi_penalty_kick.jpg/1280px-FWC_2018_-_Group_D_-_ARG_v_ISL_-_Messi_penalty_kick.jpg',
@@ -1884,6 +2129,7 @@ const RAW: RawArticle[] = [
     summary:
       'Both icons are in the twilight of their careers. The 2026 World Cup could be the final tournament for two of the greatest players ever.',
     body: `
+<p><strong>Update, 18 October 2026: yes, it was.</strong> Ronaldo became the first player to score at six World Cups, but Portugal went out in the round of 16, losing 1–0 to Spain on 6 July. He had said beforehand that 2026 would be his last World Cup. Messi reached the final and lost 1–0 to Spain after extra time on 19 July. On 31 August he announced his retirement from the Argentina national team. The original analysis, written before the tournament, follows.</p>
 <p>The 2026 World Cup arrives at a poignant moment for football. It may be the last time supporters see Lionel Messi and Cristiano Ronaldo — the two players who defined a generation — grace the game's biggest stage. For more than fifteen years they set the standards by which everyone else was measured. Now, in the twilight of their careers, a final tournament together would feel like the closing of an era.</p>
 <h2>The Age Factor</h2>
 <p>Time is the one opponent neither man can beat indefinitely. By the time the tournament kicks off, Ronaldo will be 41 and Messi will be well into his late thirties. Sustaining elite international form at that age is extraordinarily rare; the physical demands of a summer World Cup, played in the heat of North America across long distances, would test even players half their age. That difficulty is exactly what lends every possible appearance a heightened sense of occasion.</p>
@@ -1903,9 +2149,11 @@ const RAW: RawArticle[] = [
 <p>Yes. He captained Argentina to victory in 2022, completing his set of major honours. Ronaldo has never won the tournament.</p>
 <h3>Where do Messi and Ronaldo play their club football now?</h3>
 <p>Messi plays in Major League Soccer in the United States, while Ronaldo plays in Saudi Arabia.</p>
+<h3>How did Messi and Ronaldo do at the 2026 World Cup?</h3>
+<p>Messi's Argentina lost the final to Spain, and Ronaldo's Portugal lost to Spain in the round of 16. Messi has since retired from international football.</p>
 <h2>Key Takeaways</h2>
 <ul>
-<li>2026 could be the final World Cup for both Lionel Messi and Cristiano Ronaldo.</li>
+<li>2026 was the final World Cup for both Lionel Messi and Cristiano Ronaldo, and Spain ended both of their campaigns.</li>
 <li>Their ages make sustained elite form a genuine challenge, adding to the sense of occasion.</li>
 <li>Messi arrives as a world champion with nothing to prove; Ronaldo still chases his one missing prize.</li>
 <li>For a generation of fans, the tournament marks the closing of a defining football era.</li>
