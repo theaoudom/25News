@@ -3,6 +3,9 @@ import { siteConfig } from '@/shared/config/site';
 import { CATEGORIES } from '@/domain/entities/Category';
 import { articleService } from '@/di/container';
 
+// Regenerate hourly so scheduled articles join the sitemap once published.
+export const revalidate = 3600;
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = siteConfig.url;
   const now = new Date();

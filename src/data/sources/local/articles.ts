@@ -445,7 +445,7 @@ const RAW: RawArticle[] = [
     category: 'sports',
     categoryLabel: 'Formula 1',
     authorId: 'elvis',
-    publishedAt: '2026-10-18T12:00:00Z',
+    publishedAt: '2026-10-18T08:00:00Z',
     tags: ['Formula 1', 'Kimi Antonelli', 'Mercedes', 'Championship'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/EurobrunER189_RaceHistoryOnTrack_HH2011.jpg/1280px-EurobrunER189_RaceHistoryOnTrack_HH2011.jpg',
     imageAlt: 'A Formula One car on track',
@@ -546,7 +546,7 @@ const RAW: RawArticle[] = [
     category: 'football',
     categoryLabel: 'Champions League',
     authorId: 'elvis',
-    publishedAt: '2026-10-18T12:30:00Z',
+    publishedAt: '2026-10-18T08:15:00Z',
     tags: ['Football', 'Champions League', 'Aston Villa', 'Analysis'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Crowd_at_Dora_Stadium.jpg/1280px-Crowd_at_Dora_Stadium.jpg',
     imageAlt: 'A football crowd at a stadium',
@@ -635,7 +635,7 @@ const RAW: RawArticle[] = [
     category: 'football',
     categoryLabel: 'Premier League',
     authorId: 'elvis',
-    publishedAt: '2026-10-18T13:00:00Z',
+    publishedAt: '2026-10-19T08:00:00Z',
     tags: ['Football', 'Premier League', 'Manchester City', 'Enzo Maresca'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Etihad_Stadium.jpg/1280px-Etihad_Stadium.jpg',
     imageAlt: 'The Etihad Stadium, home of Manchester City',
@@ -643,7 +643,7 @@ const RAW: RawArticle[] = [
     summary:
       'A 3–2 win over Ipswich made Enzo Maresca the first manager to win his first seven Premier League games in charge of a club. How City have handled life after Guardiola, and what the table says.',
     body: `
-      <p>Manchester City's 3–2 win over Ipswich Town on 17 October made Enzo Maresca the first manager in Premier League history to win his first seven league matches in charge of a club. Phil Foden scored once and Erling Haaland twice. City have 21 points from 21, six clear at the top. For a club that lost Pep Guardiola in the summer, the transition could hardly have gone better on the domestic front.</p>
+      <p>Manchester City's 3–2 win over Ipswich Town on 17 October made Enzo Maresca the first manager in Premier League history to win his first seven league matches in charge of a club. Phil Foden scored once and Erling Haaland twice. City have 21 points from 21 and, after Saturday's games, were six clear of Arsenal at the top. For a club that lost Pep Guardiola in the summer, the transition could hardly have gone better on the domestic front.</p>
 
       <h2>Breaking a Shared Record</h2>
       <p>Six straight wins at the start of a Premier League reign had been done before. The previous record was shared by three managers, including Guardiola himself and Carlo Ancelotti. Maresca matched them with a 3–0 win at Anfield on 11 October, where Haaland, Jérémy Doku and Rayan Cherki scored. The Ipswich game took him clear on his own.</p>
@@ -657,7 +657,7 @@ const RAW: RawArticle[] = [
       <p>City's season is running alongside a serious off-field case. Al Jazeera reported before the Liverpool match that City had been found guilty of serious breaches of Premier League financial rules, and that the club was appealing. Maresca said publicly he expected City to win that appeal. We will report on the outcome when it is decided. For now it has not affected results on the pitch.</p>
 
       <h2>The Top of the Table</h2>
-      <p>After seven rounds (Arsenal and some others had a game in hand at the time of writing):</p>
+      <p>After Saturday 17 October's games (Arsenal and several others still had a match to play that weekend):</p>
       <ul>
         <li><strong>Manchester City</strong>: 21 points from 7 games</li>
         <li><strong>Arsenal</strong>: 15 from 6</li>
@@ -681,7 +681,7 @@ const RAW: RawArticle[] = [
       <h2>Key Takeaways</h2>
       <ul>
         <li>Maresca's City have won all seven league games, a new record for the start of a managerial reign.</li>
-        <li>They lead Arsenal by six points, though Arsenal had a game in hand.</li>
+        <li>After Saturday's games they led Arsenal by six points, with Arsenal still to play.</li>
         <li>The handover from Guardiola has been smooth on the pitch; the only defeat came against PSG in Europe.</li>
         <li>An appeal against a ruling on financial breaches hangs over the club's season.</li>
       </ul>
@@ -721,7 +721,7 @@ const RAW: RawArticle[] = [
     category: 'esports',
     categoryLabel: 'League of Legends',
     authorId: 'elvis',
-    publishedAt: '2026-10-18T13:30:00Z',
+    publishedAt: '2026-10-18T08:30:00Z',
     tags: ['Esports', 'League of Legends', 'Worlds 2026', 'T1', 'Preview'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/League_of_Legends_Main_Stage.jpg/1280px-League_of_Legends_Main_Stage.jpg',
     imageAlt: 'A League of Legends tournament stage',
@@ -755,7 +755,7 @@ const RAW: RawArticle[] = [
       </ul>
 
       <h2>The Last Ticket: Karmine Corp vs MVK</h2>
-      <p>The final Swiss spot goes to the winner of the Play-In decider on 18 October between Karmine Corp, the LEC's third team, and MVK Esports from the LCP. Karmine Corp have looked the strongest team in Los Angeles. They edged Cloud9 KIA 3–2 and then swept MVK 3–0. MVK came back through the lower bracket, beating FURIA 3–1. FURIA and Cloud9 KIA are out.</p>
+      <p>The final Swiss spot goes to the winner of today's Play-In decider (18 October) between Karmine Corp, the LEC's third team, and MVK Esports from the LCP. Karmine Corp have looked the strongest team in Los Angeles. They edged Cloud9 KIA 3–2 and then swept MVK 3–0. MVK came back through the lower bracket, beating FURIA 3–1. FURIA and Cloud9 KIA are out.</p>
 
       <h2>The Favourites</h2>
       <p><strong>T1</strong> arrive as the third LCK seed, which is a familiar position for them: they have often done better at Worlds than their domestic record suggested. Four straight titles would be unprecedented. <strong>Gen.G</strong> won the LCK season and are the most consistent team in the world over the past few years, but still lack a recent Worlds title. <strong>Hanwha Life</strong> won MSI this year, so they have already beaten the best teams in the world at an international event in 2026. Of the Chinese teams, <strong>Anyone's Legend</strong> come in as the LPL's top seed and <strong>Bilibili Gaming</strong> have the most experience of deep runs.</p>
@@ -819,7 +819,7 @@ const RAW: RawArticle[] = [
     category: 'football',
     categoryLabel: 'Football',
     authorId: 'elvis',
-    publishedAt: '2026-10-18T14:00:00Z',
+    publishedAt: '2026-10-21T08:00:00Z',
     tags: ['Football', 'Lionel Messi', 'Argentina', 'Feature'],
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/c8/Lionel_Messi_WC2022.jpg',
     imageAlt: 'Lionel Messi playing for Argentina',
@@ -908,7 +908,7 @@ const RAW: RawArticle[] = [
     category: 'football',
     categoryLabel: 'World Cup',
     authorId: 'elvis',
-    publishedAt: '2026-10-18T09:00:00Z',
+    publishedAt: '2026-10-18T07:30:00Z',
     isWorldCup: true,
     isFeatured: true,
     tags: ['World Cup', 'Spain', 'Argentina', 'Analysis', 'Review'],

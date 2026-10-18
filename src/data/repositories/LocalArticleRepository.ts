@@ -4,6 +4,10 @@ import type { ArticleQuery, ArticleRepository } from '@/domain/repositories/Arti
 import { LOCAL_ARTICLES } from '@/data/sources/local/articles';
 import { stripHtml } from '@/shared/utils/text';
 
+function isPublished(article: Article, now = Date.now()): boolean {
+  return Date.parse(article.publishedAt) <= now;
+}
+
 /**
  * ArticleRepository backed by typed local data. All reads are in-memory and
  * synchronous under the hood but exposed as Promises to match the interface,
@@ -24,6 +28,16 @@ export class LocalArticleRepository implements ArticleRepository {
     this.byId = new Map(this.articles.map((a) => [a.id, a]));
   }
 
+  /**
+   * Articles whose publish time has passed. Checked per call rather than in
+   * the constructor so a scheduled (future-dated) article appears on the next
+   * ISR revalidation after its publish time, without a redeploy.
+   */
+  private get published(): Article[] {
+    const now = Date.now();
+    return this.articles.filter((a) => isPublished(a, now));
+  }
+
   private applyQuery(list: Article[], q?: ArticleQuery): Article[] {
     let result = list;
     if (q?.category) result = result.filter((a) => a.category === q.category);
@@ -42,20 +56,22 @@ export class LocalArticleRepository implements ArticleRepository {
   }
 
   async list(query?: ArticleQuery): Promise<ArticleSummary[]> {
-    return this.applyQuery(this.articles, query).map(toArticleSummary);
+    return this.applyQuery(this.published, query).map(toArticleSummary);
   }
 
   async getBySlug(slug: string): Promise<Article | null> {
-    return this.bySlug.get(slug) ?? null;
+    const article = this.bySlug.get(slug);
+    return article && isPublished(article) ? article : null;
   }
 
   async getById(id: string): Promise<Article | null> {
-    return this.byId.get(id) ?? null;
+    const article = this.byId.get(id);
+    return article && isPublished(article) ? article : null;
   }
 
   async search(term: string, query?: ArticleQuery): Promise<ArticleSummary[]> {
     const needle = term.toLowerCase();
-    const scope = this.applyQuery(this.articles, query);
+    const scope = this.applyQuery(this.published, query);
     return scope
       .filter((a) => {
         const haystack = [
@@ -73,12 +89,12 @@ export class LocalArticleRepository implements ArticleRepository {
   }
 
   async allSlugs(): Promise<{ slug: string; updatedAt: string }[]> {
-    return this.articles.map((a) => ({ slug: a.slug, updatedAt: a.updatedAt }));
+    return this.published.map((a) => ({ slug: a.slug, updatedAt: a.updatedAt }));
   }
 
   async related(article: Article, limit = 3): Promise<ArticleSummary[]> {
     const tagSet = new Set(article.tags.map((t) => t.toLowerCase()));
-    const scored = this.articles
+    const scored = this.published
       .filter((a) => a.id !== article.id)
       .map((a) => {
         let score = 0;
