@@ -413,6 +413,189 @@ const RAW: RawArticle[] = [
       `,
   },
   {
+    id: 'f1-2026-sao-paulo-preview',
+    slug: 'sao-paulo-grand-prix-2026-preview-the-fight-for-second-and-mercedes-title-chance',
+    sources: [
+      {
+        publisher: 'Wikipedia',
+        title: '2026 São Paulo Grand Prix',
+        url: 'https://en.wikipedia.org/wiki/2026_S%C3%A3o_Paulo_Grand_Prix',
+        note: 'Round, circuit, race distance, standings and constructors’ permutations',
+      },
+      {
+        publisher: 'Crash.net',
+        title: 'What time is the next F1 race? Brazil GP dates and full schedule',
+        url: 'https://www.crash.net/f1/news/1109311/1/what-time-next-f1-race-brazil-gp-dates-and-full-schedule',
+        note: 'Session times and early weather forecast',
+      },
+      {
+        publisher: 'McLaren',
+        title: 'Preview: The 2026 São Paulo Grand Prix',
+        url: 'https://www.mclaren.com/racing/formula-1/2026/sao-paulo-grand-prix/preview/',
+        note: 'Weekend schedule',
+      },
+      {
+        publisher: 'RacingNews365',
+        title: '2026 F1 championship standings after the Mexico City Grand Prix',
+        url: 'https://racingnews365.com/2026-f1-championship-standings-after-the-mexico-city-grand-prix',
+        note: 'Drivers’ standings after round 19',
+      },
+    ],
+    title: 'São Paulo Grand Prix 2026 Preview: The Fight for Second and Mercedes’ Title Chance',
+    category: 'sports',
+    categoryLabel: 'Formula 1',
+    authorId: 'elvis',
+    publishedAt: '2026-11-05T08:00:00Z',
+    tags: ['Formula 1', 'São Paulo Grand Prix', 'Interlagos', 'Mercedes', 'Max Verstappen'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/EurobrunER189_RaceHistoryOnTrack_HH2011.jpg/1280px-EurobrunER189_RaceHistoryOnTrack_HH2011.jpg',
+    imageAlt: 'A Formula One car on track',
+    imageCredit: 'Photo: DoomWarrior / CC BY-SA 3.0 via Wikimedia Commons',
+    summary:
+      'Kimi Antonelli is already champion, but Interlagos can still decide something: Mercedes can seal the constructors’ title, and four drivers are within 16 points of second place.',
+    body: `
+      <p>The drivers' title was settled in Mexico, where Kimi Antonelli became the youngest champion in Formula 1 history. That does not make this weekend's São Paulo Grand Prix a formality. Mercedes can clinch the constructors' championship at Interlagos, and the fight for second place in the drivers' standings is the tightest it has been all year.</p>
+
+      <h2>The Weekend at a Glance</h2>
+      <ul>
+        <li><strong>Round:</strong> 20 of 23</li>
+        <li><strong>Circuit:</strong> Autódromo José Carlos Pace (Interlagos), 4.309 km</li>
+        <li><strong>Race:</strong> Sunday 8 November, 71 laps, 17:00 UTC (14:00 local time)</li>
+        <li><strong>Qualifying:</strong> Saturday 7 November, 18:00 UTC</li>
+        <li><strong>Format:</strong> a standard weekend with three practice sessions and no sprint</li>
+      </ul>
+      <p>The early forecast is changeable. Crash.net reports a dry Friday, possible thundery showers on Saturday and drizzle for Sunday's race. Rain at Interlagos has a habit of turning the order upside down.</p>
+
+      <h2>Mercedes Can Win the Constructors' Title</h2>
+      <p>Mercedes lead Ferrari by 126 points, 630 to 504. Four rounds remain, and none of them is a sprint, so the most a team can score is 43 points per race, from a one-two finish. That leaves 172 points on the table.</p>
+      <p>After Brazil, only 129 will be left. Mercedes can therefore wrap up their first constructors' title since 2021 by outscoring Ferrari by at least three points on Sunday. Anything less and the fight moves on to Las Vegas.</p>
+
+      <h2>The Fight for Second</h2>
+      <p>Behind Antonelli on 380, four drivers are separated by just 16 points:</p>
+      <ul>
+        <li><strong>Max Verstappen (Red Bull)</strong>: 261</li>
+        <li><strong>Lewis Hamilton (Ferrari)</strong>: 259</li>
+        <li><strong>George Russell (Mercedes)</strong>: 250</li>
+        <li><strong>Charles Leclerc (Ferrari)</strong>: 245</li>
+      </ul>
+      <p>Verstappen jumped from fourth to second by winning in Mexico. Hamilton was only 0.8 seconds behind him at the flag, after taking his first pole position for Ferrari. A single race win is worth 25 points, so any of these four could be second by Sunday evening.</p>
+
+      <h2>Our Read</h2>
+      <p>Second place in the championship does not come with a trophy, but it matters to the drivers involved. For Verstappen it would be a strong finish to a season in which Red Bull sit only third in the constructors' standings. For Hamilton it would be his first top-two finish since 2021, and his pole and podium in Mexico suggest Ferrari are closing in late in the year. For Mercedes, the target is simpler: three points more than Ferrari, and the double is done. If it rains on Sunday, as forecast, none of this is predictable.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <h3>When is the 2026 São Paulo Grand Prix?</h3>
+      <p>Sunday 8 November 2026, starting at 17:00 UTC (14:00 in São Paulo).</p>
+      <h3>Is there a sprint race in Brazil this year?</h3>
+      <p>No. It is a standard weekend with three practice sessions, qualifying and the Grand Prix.</p>
+      <h3>Can Mercedes win the constructors' title in Brazil?</h3>
+      <p>Yes, if they outscore Ferrari by at least three points.</p>
+
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>The São Paulo Grand Prix is round 20 of 23, with the race on 8 November.</li>
+        <li>Mercedes lead Ferrari by 126 points and can clinch the constructors' title at Interlagos.</li>
+        <li>Verstappen, Hamilton, Russell and Leclerc are within 16 points in the fight for second.</li>
+        <li>Rain is forecast for race day.</li>
+      </ul>
+      <p><em>Schedule, standings and permutations are from the sources below. The "Our Read" section is analysis.</em></p>
+    `,
+  },
+  {
+    id: 'ucl-2026-27-md4-psg-villarreal',
+    slug: 'villarreal-0-6-psg-four-goals-in-17-minutes-sets-a-champions-league-record',
+    sources: [
+      {
+        publisher: 'ESPN',
+        title: 'PSG score UCL-record 4 goals in first 17 minutes at Villarreal',
+        url: 'https://www.espn.com/soccer/story/_/id/50371706/psg-villarreal-champions-league-record-goals',
+        note: 'The record, previous holder and PSG’s scoring run',
+      },
+      {
+        publisher: 'ESPN',
+        title: 'Villarreal 0-6 PSG (Nov 3, 2026) Game Analysis',
+        url: 'https://www.espn.com/soccer/report/_/gameId/401915309',
+        note: 'Match report and scorers',
+      },
+      {
+        publisher: 'Sofascore',
+        title: 'Villarreal 0-6 PSG: Champions League clinic in Spain',
+        url: 'https://www.sofascore.com/news/villarreal-0-6-psg-champions-league-clinic-in-spain',
+        note: 'Match statistics',
+      },
+      {
+        publisher: 'Ahram Online',
+        title: 'UEFA Champions League results & fixtures (League phase)',
+        url: 'https://english.ahram.org.eg/NewsContent/6/55/581509/Sports/World/UEFA-Champions-League-results-amp;-fixtures-League.aspx',
+        note: 'Tuesday’s Matchday 4 results',
+      },
+      {
+        publisher: 'Paris Fans',
+        title: 'Champions League - Tuesday’s results from Matchday 4',
+        url: 'https://en.parisfans.fr/champions-league-tuesdays-results-from-matchday-4.html',
+        note: 'Tuesday’s Matchday 4 results',
+      },
+    ],
+    title: 'Villarreal 0–6 PSG: Four Goals in 17 Minutes Sets a Champions League Record',
+    category: 'football',
+    categoryLabel: 'Champions League',
+    authorId: 'elvis',
+    publishedAt: '2026-11-05T08:15:00Z',
+    tags: ['Football', 'Champions League', 'PSG', 'Villarreal', 'Luis Enrique'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Crowd_at_Dora_Stadium.jpg/1280px-Crowd_at_Dora_Stadium.jpg',
+    imageAlt: 'A football crowd at a stadium',
+    imageCredit: 'Photo: TrickyH / CC BY-SA 4.0 via Wikimedia Commons',
+    summary:
+      'Paris Saint-Germain were 4–0 up at Villarreal after 17 minutes, the fastest four goals in Champions League history, and a 17-year-old debutant scored the sixth. How it happened.',
+    body: `
+      <p>Paris Saint-Germain beat Villarreal 6–0 at the Estadio de la Cerámica on Tuesday 3 November, and the game was effectively over after 17 minutes. By then PSG were four goals up, the fastest any team has reached four goals in a Champions League match. According to ESPN, the previous record belonged to Real Madrid, who needed 20 minutes to score four against Dinamo Zagreb in 2011.</p>
+
+      <h2>How the Goals Came</h2>
+      <ul>
+        <li><strong>9'</strong> João Neves, from a corner</li>
+        <li><strong>12'</strong> Désiré Doué</li>
+        <li><strong>13'</strong> Senny Mayulu</li>
+        <li><strong>17'</strong> Fabián Ruiz</li>
+        <li><strong>50'</strong> Fabián Ruiz, his second</li>
+        <li><strong>78'</strong> David Boly, assisted by Neves</li>
+      </ul>
+      <p>Villarreal made the early damage worse themselves. ESPN reported that the first three goals all came from mistakes while playing out from the back or from losing the ball in their own half.</p>
+      <p>The last goal was the most memorable for one player. David Boly, a 17-year-old defender, came off the bench for his Champions League debut and scored four minutes later.</p>
+
+      <h2>The Numbers</h2>
+      <ul>
+        <li><strong>Possession:</strong> PSG 71%</li>
+        <li><strong>Accurate passes:</strong> PSG 677, Villarreal 234</li>
+        <li><strong>Shots:</strong> PSG 22 (12 on target), Villarreal 14 (2 on target)</li>
+      </ul>
+
+      <h2>Four Games, Four Wins</h2>
+      <p>PSG have now won all four of their league-phase matches, and they have scored at least four goals in every one. ESPN says no team had done that in four consecutive Champions League games before. The run includes a 4–2 win at Manchester City in October and a 4–2 win over Barcelona in Paris.</p>
+
+      <h2>Elsewhere on Tuesday</h2>
+      <p>Bayern Munich won 2–0 away at Atlético Madrid, Barcelona beat Aston Villa 3–0, and Manchester United came through a five-goal game against Roma to win 3–2. Inter won 3–0 at Feyenoord. The rest of Matchday 4 is played on Wednesday 4 November, including Manchester City's trip to RB Leipzig and Arsenal's visit to Slavia Prague.</p>
+
+      <h2>Our Read</h2>
+      <p>Scoring four in 17 minutes says as much about Villarreal's approach as about PSG. Playing out from the back against a team that presses this well is a risk, and on Tuesday it was punished almost every time. Still, PSG's run is not a one-off. Scoring four or more against Manchester City and Barcelona as well as Villarreal suggests Luis Enrique's side are the form team in Europe. The bigger test comes in the knockout rounds, but in the league phase nobody has looked close to them.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <h3>What record did PSG set against Villarreal?</h3>
+      <p>They scored four goals in 17 minutes, the fastest any team has reached four goals in a Champions League match.</p>
+      <h3>Who scored for PSG?</h3>
+      <p>João Neves, Désiré Doué, Senny Mayulu, Fabián Ruiz (two) and David Boly.</p>
+      <h3>Who is David Boly?</h3>
+      <p>A 17-year-old PSG defender who scored on his Champions League debut, four minutes after coming on.</p>
+
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>PSG beat Villarreal 6–0 and were 4–0 up after 17 minutes, a Champions League record.</li>
+        <li>Fabián Ruiz scored twice, and 17-year-old David Boly scored on his debut.</li>
+        <li>PSG have won all four league-phase games, scoring at least four goals each time.</li>
+        <li>The rest of Matchday 4 is played on Wednesday 4 November.</li>
+      </ul>
+      <p><em>Results and statistics are from the sources below. The "Our Read" section is analysis.</em></p>
+    `,
+  },
+  {
     id: 'f1-2026-antonelli-champion-mexico',
     slug: 'kimi-antonelli-is-formula-1-world-champion-how-mexico-settled-the-2026-title',
     sources: [
