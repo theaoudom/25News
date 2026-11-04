@@ -20,9 +20,10 @@ export const AUTHORS: Record<string, Author> = {
     kind: 'person',
     role: 'Founder & Editor',
     bio:
-      'Elvis founded 26News and writes and edits its football, FIFA World Cup and esports ' +
-      'coverage. He works from primary records — club and governing-body statements and ' +
-      'official competition rules — alongside published reporting, and lists the sources ' +
+      'I’m Elvis, the founder of 26News. I love travel, research and sharing what I find, ' +
+      'and this site is where the sharing happens: football, the FIFA World Cup, Formula 1 ' +
+      'and esports. I work from primary records — club and governing-body statements and ' +
+      'official competition rules — alongside published reporting, and list the sources ' +
       `behind every news story. Corrections and story tips are welcome at ${siteConfig.contactEmail}.`,
     avatarUrl: '/images/authors/avatar.svg',
     url: `${siteConfig.url}/about`,

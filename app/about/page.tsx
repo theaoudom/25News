@@ -44,11 +44,15 @@ export default function AboutPage() {
       <p>
         26News is written and edited by <strong>Elvis</strong>, who founded the site. It is
         independently owned and operated — not a wire service, and not a newsroom of
-        correspondents. Every article carries his byline because he writes and edits all of it,
-        which is a plainer description of how the site works than a masthead would be.
+        correspondents. Every article carries Elvis&apos;s byline because Elvis writes and edits
+        all of it, which is a plainer description of how the site works than a masthead would be.
       </p>
       <p>
-        You can reach him directly at{' '}
+        In Elvis&apos;s words: &ldquo;I love travel, research and sharing what I find.&rdquo;
+        26News is where the research gets shared.
+      </p>
+      <p>
+        You can reach Elvis directly at{' '}
         <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a> — corrections
         included.
       </p>
