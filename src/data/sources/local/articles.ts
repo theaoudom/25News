@@ -413,6 +413,264 @@ const RAW: RawArticle[] = [
       `,
   },
   {
+    id: 'f1-2026-antonelli-champion-mexico',
+    slug: 'kimi-antonelli-is-formula-1-world-champion-how-mexico-settled-the-2026-title',
+    sources: [
+      {
+        publisher: 'Wikipedia',
+        title: '2026 Mexico City Grand Prix',
+        url: 'https://en.wikipedia.org/wiki/2026_Mexico_City_Grand_Prix',
+        note: 'Race result, penalties, clinch scenario and standings',
+      },
+      {
+        publisher: 'RaceFans',
+        title: '2026 Mexican Grand Prix race result and championship points',
+        url: 'https://www.racefans.net/2026/11/01/2026-mexican-grand-prix-race-result-and-championship-points/',
+        note: 'Classification and points, 1 November 2026',
+      },
+      {
+        publisher: 'RacingNews365',
+        title: '2026 F1 championship standings after the Mexico City Grand Prix',
+        url: 'https://racingnews365.com/2026-f1-championship-standings-after-the-mexico-city-grand-prix',
+        note: 'Drivers’ standings after round 19',
+      },
+      {
+        publisher: 'RacingNews365',
+        title: 'Multiple late penalties readjust 2026 F1 championship standings after the Mexico City Grand Prix',
+        url: 'https://racingnews365.com/adjusted-2026-f1-championship-standings-after-the-mexico-city-grand-prix-penalty',
+        note: 'Post-race penalties for Piastri and both Alpines',
+      },
+    ],
+    title: 'Kimi Antonelli Is Formula 1 World Champion: How Mexico Settled the 2026 Title',
+    category: 'sports',
+    categoryLabel: 'Formula 1',
+    authorId: 'elvis',
+    publishedAt: '2026-11-04T10:00:00Z',
+    tags: ['Formula 1', 'Kimi Antonelli', 'Mercedes', 'Championship', 'Mexico City Grand Prix'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/EurobrunER189_RaceHistoryOnTrack_HH2011.jpg/1280px-EurobrunER189_RaceHistoryOnTrack_HH2011.jpg',
+    imageAlt: 'A Formula One car on track',
+    imageCredit: 'Photo: DoomWarrior / CC BY-SA 3.0 via Wikimedia Commons',
+    summary:
+      'Third place behind Max Verstappen and Lewis Hamilton in Mexico City was enough. Antonelli, aged 20, is the youngest drivers’ champion in Formula 1 history, with four rounds still to run.',
+    body: `
+      <p>Kimi Antonelli is the 2026 Formula 1 world champion. The Mercedes driver finished third at the Mexico City Grand Prix on 1 November, behind Max Verstappen and Lewis Hamilton, and that sealed the title with four rounds still to go. He is 20 years old, which makes him the youngest drivers' champion in the sport's history. The record had belonged to Sebastian Vettel, who was 23 when he won his first title in 2010.</p>
+
+      <h2>How the Title Was Decided</h2>
+      <p>When we looked at the maths before Austin, Antonelli could not yet win the championship on his own results. By the time he arrived in Mexico, his lead over teammate George Russell had grown to 123 points. The condition was simple: if neither Russell nor Hamilton won the race, Antonelli was champion, wherever he finished.</p>
+      <p>Hamilton came closest to stopping it. He took pole position, his first since the 2023 Hungarian Grand Prix and his first for Ferrari, and finished 0.799 seconds behind the winner. Verstappen won the race, Hamilton was second, and the title was settled. Antonelli made sure of the podium anyway, crossing the line four seconds behind Verstappen.</p>
+
+      <h2>A Messy Race Behind the Podium</h2>
+      <p>The rest of the race was untidy, and the stewards were busy:</p>
+      <ul>
+        <li><strong>Valtteri Bottas</strong> crashed into the barriers after a suspension failure, which brought out the safety car and then a red flag.</li>
+        <li><strong>George Russell</strong> received a ten-second penalty for a collision with Isack Hadjar.</li>
+        <li><strong>Charles Leclerc</strong> got five seconds for leaving the track and gaining an advantage at the first chicane. Both Hamilton and Verstappen complained that the penalty was too lenient.</li>
+        <li><strong>Oscar Piastri</strong> crossed the line seventh but dropped out of the points after a post-race ten-second penalty for his collision with Arvid Lindblad, who retired.</li>
+        <li><strong>Both Alpine drivers</strong>, Pierre Gasly and Franco Colapinto, were penalised after the race for not slowing under yellow flags.</li>
+      </ul>
+      <p>Those penalties reshuffled the lower points places. One driver gained: Ryō Hirakawa scored his first Formula 1 points on his debut.</p>
+
+      <h2>The Standings After Round 19</h2>
+      <ul>
+        <li><strong>Kimi Antonelli (Mercedes)</strong>: 380, champion</li>
+        <li><strong>Max Verstappen (Red Bull)</strong>: 261</li>
+        <li><strong>Lewis Hamilton (Ferrari)</strong>: 259</li>
+        <li><strong>George Russell (Mercedes)</strong>: 250</li>
+        <li><strong>Charles Leclerc (Ferrari)</strong>: 245</li>
+      </ul>
+      <p>The win moved Verstappen from fourth to second, and the fight for second place behind Antonelli is now the closest contest left. Four drivers are separated by 16 points. In the constructors' championship Mercedes have 630 points, 126 ahead of Ferrari on 504, with Red Bull third on 382.</p>
+
+      <h2>Our Read</h2>
+      <p>Antonelli did not win the title in Mexico so much as confirm it. A lead of more than 100 points with six races left, which is where he stood after Singapore, comes from a season of consistency rather than a single result. The more interesting story now is behind him. Verstappen, Hamilton, Russell and Leclerc are close enough that second place could change hands at every remaining round. For Mercedes, the constructors' title is close but not yet confirmed.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <h3>When did Kimi Antonelli win the 2026 F1 title?</h3>
+      <p>At the Mexico City Grand Prix on 1 November 2026, the 19th of 23 rounds. He finished third.</p>
+      <h3>Is Antonelli the youngest F1 champion?</h3>
+      <p>Yes. He won the title aged 20, beating Sebastian Vettel's record from 2010.</p>
+      <h3>Who won the 2026 Mexico City Grand Prix?</h3>
+      <p>Max Verstappen won for Red Bull, ahead of Lewis Hamilton and Kimi Antonelli.</p>
+
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Antonelli clinched the 2026 drivers' title in Mexico City with four rounds left.</li>
+        <li>At 20, he is the youngest world champion in Formula 1 history.</li>
+        <li>Verstappen won the race from Hamilton, who started from pole.</li>
+        <li>Only 16 points separate second-placed Verstappen from Leclerc in fifth.</li>
+      </ul>
+      <p><em>Results and standings are from the sources below. The "Our Read" section is analysis.</em></p>
+    `,
+  },
+  {
+    id: 'pl-2026-27-city-back-to-back-defeats',
+    slug: 'after-the-record-two-defeats-in-a-row-for-maresca-s-manchester-city',
+    sources: [
+      {
+        publisher: 'Sky Sports',
+        title: 'Aston Villa vs Manchester City',
+        url: 'https://skysports.com/football/aston-villa-vs-manchester-city/559515',
+        note: 'Match page, Aston Villa 2–1 Manchester City, 24 October 2026',
+      },
+      {
+        publisher: 'Irish Examiner',
+        title: 'Nicolas Jackson scores twice as Aston Villa end Man City’s winning start',
+        url: 'https://www.irishexaminer.com/sport/soccer/arid-41928587.html',
+        note: 'Match report',
+      },
+      {
+        publisher: 'Sky Sports',
+        title: 'Man City vs Brighton report',
+        url: 'https://www.skysports.com/football/man-city-vs-brighton/report/559531',
+        note: 'Manchester City 0–1 Brighton, 31 October 2026',
+      },
+      {
+        publisher: 'Sports Mole',
+        title: 'Brighton haunt Man City as Arsenal receive Premier League Halloween treat',
+        url: 'https://www.sportsmole.co.uk/football/man-city/result/brighton-haunt-man-city-as-arsenal-receive-premier-league-halloween-treat_608142.html',
+        note: 'Scorer and minute of Brighton’s goal',
+      },
+      {
+        publisher: 'Wikipedia',
+        title: '2026–27 Premier League',
+        url: 'https://en.wikipedia.org/wiki/2026%E2%80%9327_Premier_League',
+        note: 'League table as of 2 November 2026',
+      },
+    ],
+    title: 'After the Record: Two Defeats in a Row for Maresca’s Manchester City',
+    category: 'football',
+    categoryLabel: 'Premier League',
+    authorId: 'elvis',
+    publishedAt: '2026-11-04T10:15:00Z',
+    tags: ['Football', 'Premier League', 'Manchester City', 'Enzo Maresca', 'Arsenal'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Etihad_Stadium.jpg/1280px-Etihad_Stadium.jpg',
+    imageAlt: 'The Etihad Stadium, home of Manchester City',
+    imageCredit: 'Photo: Cléria De Souza / CC BY 2.0 via Wikimedia Commons',
+    summary:
+      'Two weeks after Enzo Maresca set a Premier League record with seven straight wins, City have lost to Aston Villa and Brighton. Arsenal are top. What went wrong, and how much it matters.',
+    body: `
+      <p>Two weeks ago we wrote about Enzo Maresca becoming the first manager to win his first seven Premier League games in charge of a club. Since then Manchester City have lost twice: 2–1 at Aston Villa on 24 October, then 1–0 at home to Brighton on 31 October. It is the first time City have lost back-to-back league games under Maresca. Arsenal have taken over at the top.</p>
+
+      <h2>Villa Park: Jackson Ends the Run</h2>
+      <p>Nicolas Jackson scored both of Villa's goals. The first came inside six minutes, and the second around the hour mark, after Erling Haaland had headed City level early in the second half. Several reports described both goals as coming from City mistakes rather than from Villa opening them up. Unai Emery's side had not lost since 12 September.</p>
+      <p>Between the two defeats, City beat AEK Athens 5–1 in the Champions League. The problems have been in the league.</p>
+
+      <h2>The Etihad: Brighton Hold On</h2>
+      <p>Against Brighton, Yasin Ayari scored in the 11th minute and City could not find an equaliser. They had 20 shots to Brighton's seven, and five on target to Brighton's three. Losing at home despite dominating the ball is unusual for City, but this was the result of failing to score, not of being outplayed.</p>
+
+      <h2>The Table After Nine Games</h2>
+      <ul>
+        <li><strong>Arsenal</strong>: 24 points (W8 L1)</li>
+        <li><strong>Manchester City</strong>: 21 (W7 L2)</li>
+        <li><strong>Brighton</strong>: 19 (W6 D1 L2)</li>
+        <li><strong>Chelsea</strong>: 16</li>
+        <li><strong>Liverpool</strong>: 15</li>
+        <li><strong>Brentford</strong>: 14</li>
+      </ul>
+      <p>City have outscored Arsenal, 20 goals to 14. Arsenal have conceded only five, half as many as City. Brighton, three points behind City, have the best goal difference in the top six at +17.</p>
+
+      <h2>Our Read</h2>
+      <p>Two defeats do not undo seven wins, and a three-point gap after nine games is small. The two results are worth separating, though. At Villa Park, City made mistakes and were punished, which is the kind of problem a coaching staff can fix. Against Brighton, they created plenty and scored nothing, which happens to every side over a season. What matters more is the pattern: City have now conceded ten league goals in nine games. Arsenal's defence has been far tighter, and over a season that difference tends to show. City's appeal against the ruling on financial breaches also remains unresolved, and we will report on it when it is decided.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <h3>Who has beaten Manchester City in the Premier League this season?</h3>
+      <p>Aston Villa (2–1 on 24 October) and Brighton (1–0 on 31 October).</p>
+      <h3>Who is top of the Premier League?</h3>
+      <p>Arsenal, with 24 points from nine games, three ahead of City.</p>
+      <h3>Who scored Brighton's winner at the Etihad?</h3>
+      <p>Yasin Ayari, in the 11th minute.</p>
+
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>City lost to Villa and Brighton after winning their first seven league games under Maresca.</li>
+        <li>Nicolas Jackson scored twice at Villa Park; Yasin Ayari scored Brighton's winner.</li>
+        <li>Arsenal lead the table by three points after nine games.</li>
+        <li>City's attack is the best in the top two, but their defence has conceded twice as many as Arsenal's.</li>
+      </ul>
+      <p><em>Results and the table are from the sources below. The "Our Read" section is analysis.</em></p>
+    `,
+  },
+  {
+    id: 'lol-worlds-2026-quarterfinals',
+    slug: 'worlds-2026-quarter-finals-invictus-gaming-reach-first-semi-final-since-2019',
+    sources: [
+      {
+        publisher: 'esports.net',
+        title: 'Invictus Gaming beat Top Esports 3-1 to reach first Worlds semifinal since 2019',
+        url: 'https://www.esports.net/news/gaming/invictus-gaming-beat-top-esports-3-1-to-reach-first-worlds-semifinal-since-2019/',
+        note: 'Quarter-final result and the ZUIAN visa absence',
+      },
+      {
+        publisher: 'Dot Esports',
+        title: 'Worlds 2026 Knockout Stage Day 1 results and recap',
+        url: 'https://dotesports.com/league-of-legends/news/worlds-2026-knockout-day-1-results',
+        note: 'Quarter-final recap, 3 November 2026',
+      },
+      {
+        publisher: 'Wikipedia',
+        title: '2026 League of Legends World Championship',
+        url: 'https://en.wikipedia.org/wiki/2026_League_of_Legends_World_Championship',
+        note: 'Swiss records, bracket, schedule, venues and prize pool',
+      },
+      {
+        publisher: 'Earlygame',
+        title: 'TES Defeat iG 3-1 in LPL Regional Finals to Qualify for Worlds Swiss Stage',
+        url: 'https://earlygame.com/news/lol/top-esports-defeat-invictus-gaming-and-secure-lpl-seed-3-for-worlds',
+        note: 'The September regional final between the same teams',
+      },
+    ],
+    title: 'Worlds 2026 Quarter-Finals: Invictus Gaming Reach First Semi-Final Since 2019',
+    category: 'esports',
+    categoryLabel: 'League of Legends',
+    authorId: 'elvis',
+    publishedAt: '2026-11-04T10:30:00Z',
+    tags: ['Esports', 'League of Legends', 'Worlds 2026', 'Invictus Gaming', 'T1'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/League_of_Legends_Main_Stage.jpg/1280px-League_of_Legends_Main_Stage.jpg',
+    imageAlt: 'A League of Legends tournament stage',
+    imageCredit: 'Photo: Hilary Murugu / CC BY-SA 4.0 via Wikimedia Commons',
+    summary:
+      'Invictus Gaming beat Top Esports 3–1 in Allen, Texas, to reverse September’s LPL result. The full quarter-final schedule, who is left, and whether T1 can win a fourth title in a row.',
+    body: `
+      <p>The knockout stage of the 2026 League of Legends World Championship began on 3 November in Allen, Texas, with an all-Chinese quarter-final. Invictus Gaming beat Top Esports 3–1 to reach the semi-finals for the first time since 2019. The 2018 world champions are now two series from a second title.</p>
+
+      <h2>A Reversal of September</h2>
+      <p>The same two teams met in September in the LPL regional finals, with a Worlds place at stake. Top Esports won that series 3–1 and took China's third seed, while Invictus had to go through the lower bracket to claim the fourth. In Texas, the result went the other way.</p>
+      <p>Top Esports have played the whole tournament without their starting top laner, ZUIAN, who had visa problems. Bai "369" Jia-Hao stepped in at short notice. That should not take credit away from Invictus, but it is part of the story.</p>
+
+      <h2>Who Is Left</h2>
+      <p>Eight teams came through the Swiss stage. Dplus KIA and Gen.G were the only two to go 3–0. The quarter-finals, all at the Credit Union of Texas Event Center:</p>
+      <ul>
+        <li><strong>3 November</strong>: Top Esports 1–3 Invictus Gaming</li>
+        <li><strong>4 November</strong>: Gen.G vs LYON</li>
+        <li><strong>5 November</strong>: Dplus KIA vs Bilibili Gaming</li>
+        <li><strong>6 November</strong>: Karmine Corp vs T1</li>
+      </ul>
+      <p>The semi-finals are on 7 and 8 November, also in Allen. Invictus will face the winner of Gen.G and LYON. The final is at the Barclays Center in Brooklyn on 14 November, a best-of-five. The winner takes US$1 million from a base prize pool of US$5 million.</p>
+
+      <h2>The Favourites Who Did Not Make It</h2>
+      <p>The Swiss stage, which we previewed in October, removed several big names. Hanwha Life Esports, who won MSI in 2026, went out with a 2–3 record. G2 Esports and Team Liquid, the LEC and LCS summer champions, both finished 1–3. That leaves LYON and Karmine Corp as the only teams from outside Korea and China still standing.</p>
+
+      <h2>Our Read</h2>
+      <p>T1 are the defending champions and have won the last three World Championships, but they were not among the 3–0 teams this time, and they face Karmine Corp in the last quarter-final. On Swiss-stage form, Gen.G and Dplus KIA have been the strongest sides. Invictus are the first team into the semi-finals, but their path from here probably runs through Gen.G. We will update this article as the remaining quarter-finals are played.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <h3>When is the Worlds 2026 final?</h3>
+      <p>Saturday 14 November 2026 at the Barclays Center in Brooklyn, New York, starting at 19:00 UTC.</p>
+      <h3>Who won the first Worlds 2026 quarter-final?</h3>
+      <p>Invictus Gaming, who beat Top Esports 3–1 on 3 November.</p>
+      <h3>When did Invictus Gaming last win Worlds?</h3>
+      <p>In 2018.</p>
+
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Invictus Gaming beat Top Esports 3–1 to reach their first Worlds semi-final since 2019.</li>
+        <li>Top Esports played the tournament without their regular top laner because of visa problems.</li>
+        <li>MSI champions Hanwha Life were knocked out in the Swiss stage.</li>
+        <li>T1, chasing a fourth straight title, play Karmine Corp on 6 November.</li>
+      </ul>
+      <p><em>Results and schedule are from the sources below. The "Our Read" section is analysis.</em></p>
+    `,
+  },
+  {
     id: 'f1-2026-antonelli-austin-title',
     slug: 'can-kimi-antonelli-win-the-f1-title-in-austin-the-maths-explained',
     sources: [
