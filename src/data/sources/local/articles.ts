@@ -501,6 +501,240 @@ const RAW: RawArticle[] = [
     `,
   },
   {
+    id: 'lol-worlds-2026-semifinals-set',
+    slug: 'worlds-2026-semi-finals-set-gen-g-vs-invictus-gaming-and-t1-vs-bilibili-gaming',
+    sources: [
+      {
+        publisher: 'GosuGamers',
+        title: 'Invictus Gaming defeat Top Esports to become the first semifinalists at Worlds 2026',
+        url: 'https://www.gosugamers.net/lol/news/79470-invictus-gaming-defeat-top-esports-to-become-the-first-semifinalists-at-worlds-2026',
+        note: 'First quarter-final and the 369 stand-in',
+      },
+      {
+        publisher: 'esports.net',
+        title: 'Invictus Gaming beat Top Esports 3-1 to reach first Worlds semifinal since 2019',
+        url: 'https://www.esports.net/news/gaming/invictus-gaming-beat-top-esports-3-1-to-reach-first-worlds-semifinal-since-2019/',
+        note: 'Quarter-final score and the ZUIAN visa absence',
+      },
+      {
+        publisher: 'GosuGamers',
+        title: 'Gen.G sweep LYON out of Worlds 2026 to advance to the semifinals',
+        url: 'https://www.gosugamers.net/lol/news/79472-gen-g-sweep-lyon-out-of-worlds-2026-to-advance-to-the-semifinals',
+        note: 'Second quarter-final',
+      },
+      {
+        publisher: 'Inven Global',
+        title: 'Gen.G shuts out LYON 3-0 to face IG in semifinals',
+        url: 'https://www.invenglobal.com/articles/28159/geng-shuts-out-lyon-3-0-to-face-ig-in-semifinals',
+        note: 'Score, venue and Game 3 detail',
+      },
+      {
+        publisher: 'GosuGamers',
+        title: 'Bilibili Gaming sweep Dplus KIA to advance to Worlds 2026 semifinals',
+        url: 'https://www.gosugamers.net/lol/news/79476-bilibili-gaming-sweep-dplus-kia-to-advance-to-worlds-2026-semifinals',
+        note: 'Third quarter-final',
+      },
+      {
+        publisher: 'GameDaily',
+        title: 'Worlds 2026: Bilibili Gaming Sweep Dplus Kia, Advance to Semifinals',
+        url: 'https://gamedaily.com/games/lol-worlds-2026-quarterfinals-blg-vs-dk',
+        note: 'Third quarter-final',
+      },
+      {
+        publisher: 'GosuGamers',
+        title: 'T1 defeat Karmine Corp to advance to Worlds 2026 semifinals',
+        url: 'https://www.gosugamers.net/lol/news/79481-t1-defeat-karmine-corp-to-advance-to-worlds-2026-semifinals',
+        note: 'Fourth quarter-final and the T1–BLG semi-final',
+      },
+      {
+        publisher: 'Inven Global',
+        title: 'DK vs. BLG Matchup and More: Quarterfinal Draw Results',
+        url: 'https://www.invenglobal.com/articles/27983/dk-vs-blg-matchup-and-more-quarterfinal-draw-results',
+        note: 'Bracket, semi-final dates and final date',
+      },
+      {
+        publisher: 'Wikipedia',
+        title: '2026 League of Legends World Championship',
+        url: 'https://en.wikipedia.org/wiki/2026_League_of_Legends_World_Championship',
+        note: 'Venues, schedule and prize pool',
+      },
+    ],
+    title: 'Worlds 2026 Semi-Finals Set: Gen.G vs Invictus Gaming and T1 vs Bilibili Gaming',
+    category: 'esports',
+    categoryLabel: 'League of Legends',
+    authorId: 'elvis',
+    publishedAt: '2026-11-07T06:00:00Z',
+    tags: ['Esports', 'League of Legends', 'Worlds 2026', 'T1', 'Gen.G', 'Bilibili Gaming', 'Invictus Gaming'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/League_of_Legends_Main_Stage.jpg/1280px-League_of_Legends_Main_Stage.jpg',
+    imageAlt: 'A League of Legends tournament stage',
+    imageCredit: 'Photo: Hilary Murugu / CC BY-SA 4.0 via Wikimedia Commons',
+    summary:
+      'Two sweeps, one upset and a champion still standing: Gen.G and Bilibili Gaming both won 3–0, Invictus Gaming beat Top Esports, and T1 got past Karmine Corp. All four quarter-finals and what comes next.',
+    body: `
+      <p>The four quarter-finals of the 2026 League of Legends World Championship are done, and the last four is two Korean teams against two Chinese teams. Gen.G play Invictus Gaming, and defending champions T1 play Bilibili Gaming. Europe's last two teams, LYON and Karmine Corp, are both out.</p>
+
+      <h2>The Quarter-Final Results</h2>
+      <p>All four series were best-of-five, played at the Credit Union of Texas Event Center in Allen, Texas. Dates are local time in Texas; in Korea each match fell on the following day.</p>
+      <ul>
+        <li><strong>3 November</strong>: Invictus Gaming 3–1 Top Esports</li>
+        <li><strong>4 November</strong>: Gen.G 3–0 LYON</li>
+        <li><strong>5 November</strong>: Bilibili Gaming 3–0 Dplus KIA</li>
+        <li><strong>6 November</strong>: T1 beat Karmine Corp</li>
+      </ul>
+
+      <h2>Invictus Turn September Around</h2>
+      <p>The opening quarter-final was a rematch of September's LPL regional final, which Top Esports had won 3–1. This time Invictus won by the same score in a four-game series and reached the semi-finals for the first time since 2019. Top Esports played the whole tournament with Bai "369" Jia-Hao standing in for their top laner ZUIAN, who could not travel because of visa problems.</p>
+
+      <h2>Gen.G Shut Out LYON</h2>
+      <p>Gen.G, one of only two teams to go 3–0 in the Swiss stage, did not drop a game against LYON. LYON were Europe's best hope of a semi-finalist, but the LCK side were in control throughout the series.</p>
+
+      <h2>Bilibili Sweep the Other 3–0 Team</h2>
+      <p>The quarter-final draw paired the Swiss stage's 3–0 teams against teams that had come through at 3–2. That gave Dplus KIA, the other perfect Swiss-stage side, a meeting with Bilibili Gaming. BLG swept them 3–0, so both of the Swiss stage's unbeaten teams met different fates: Gen.G went through, and DK went home.</p>
+
+      <h2>T1 Still Standing</h2>
+      <p>T1, the champions in each of the last three years, beat LEC side Karmine Corp in the last quarter-final and are the fourth team into the semi-finals. Their run towards a fourth title in a row continues against Bilibili Gaming.</p>
+
+      <h2>What Comes Next</h2>
+      <ul>
+        <li><strong>Semi-finals, 7 and 8 November (8 and 9 November in Korea)</strong>: Gen.G vs Invictus Gaming, and T1 vs Bilibili Gaming</li>
+        <li><strong>Final, 14 November</strong>: Barclays Center, Brooklyn, New York, at 19:00 UTC (4:00 on 15 November in Korea)</li>
+      </ul>
+
+      <h2>Our Read</h2>
+      <p>On form, Gen.G look like the team to beat. They went 3–0 in the Swiss stage and then swept their quarter-final. The T1–BLG semi-final is harder to call. BLG have just swept Dplus KIA, the other unbeaten team from the Swiss stage, while T1 were not among the 3–0 sides this year. Their experience in best-of-five series at Worlds, with three titles in a row, is the strongest argument for them. Invictus have the least to lose. Their run is already their best since 2019, and as the September regional final showed, results between these teams can turn quickly.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <h3>Who is in the Worlds 2026 semi-finals?</h3>
+      <p>Gen.G, Invictus Gaming, T1 and Bilibili Gaming. Gen.G play Invictus, and T1 play BLG.</p>
+      <h3>When and where is the Worlds 2026 final?</h3>
+      <p>Saturday 14 November 2026 at the Barclays Center in Brooklyn, New York, starting at 19:00 UTC.</p>
+      <h3>Is T1 still in Worlds 2026?</h3>
+      <p>Yes. T1 beat Karmine Corp in the quarter-finals and face Bilibili Gaming in the semi-finals.</p>
+      <h3>Which teams were knocked out in the quarter-finals?</h3>
+      <p>Top Esports, LYON, Dplus KIA and Karmine Corp.</p>
+
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Gen.G (3–0 against LYON) and Bilibili Gaming (3–0 against Dplus KIA) both won without dropping a game.</li>
+        <li>Invictus Gaming beat Top Esports 3–1 to reach their first semi-final since 2019.</li>
+        <li>Defending champions T1 beat Karmine Corp and play Bilibili Gaming next.</li>
+        <li>No team from outside Korea and China reached the last four.</li>
+        <li>The final is on 14 November at the Barclays Center in Brooklyn.</li>
+      </ul>
+      <p><em>Results and schedule are from the sources below. The "Our Read" section is analysis.</em></p>
+    `,
+  },
+  {
+    id: 'ucl-2026-27-md4-roundup',
+    slug: 'champions-league-matchday-4-lens-1-9-como-liverpool-beaten-in-istanbul-every-result',
+    sources: [
+      {
+        publisher: 'UEFA',
+        title: '2026/27 Champions League: All the league phase fixtures and results',
+        url: 'https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/',
+        note: 'Matchday 4 results and the Matchday 5 and 6 dates',
+      },
+      {
+        publisher: 'UEFA',
+        title: 'Champions League league phase fixtures and results by team',
+        url: 'https://www.uefa.com/uefachampionsleague/news/02a8-2176fa83582b-d99f0b27f405-1000--champions-league-league-phase-fixtures-and-results-by-team/',
+        note: 'Matchday 4 results by club',
+      },
+      {
+        publisher: 'ESPN',
+        title: 'UEFA Champions League Schedule',
+        url: 'https://www.espn.com/soccer/schedule/_/league/uefa.champions',
+        note: 'Wednesday 4 November results',
+      },
+      {
+        publisher: 'Paris Fans',
+        title: 'Champions League - Matchday 4 results and standings',
+        url: 'https://en.parisfans.fr/champions-league-matchday-4-results-and-standings-2.html',
+        note: 'Results from both nights',
+      },
+      {
+        publisher: '112.ua',
+        title: 'UEFA Champions League 2026/27: Fenerbahçe beats Liverpool, Real wins in Athens',
+        url: 'https://112.ua/en/liga-cempioniv-uefa-202627-rezultati-4-go-turu-matciv-4-listopada-2026-roku-195982',
+        note: 'Fenerbahçe v Liverpool and AEK v Real Madrid',
+      },
+    ],
+    title: 'Champions League Matchday 4: Lens 1–9 Como, Liverpool Beaten in Istanbul and Every Result',
+    category: 'football',
+    categoryLabel: 'Champions League',
+    authorId: 'elvis',
+    publishedAt: '2026-11-07T06:15:00Z',
+    tags: ['Football', 'Champions League', 'Como', 'Liverpool', 'Manchester City', 'Arsenal', 'Real Madrid'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/2/2a/Crowd_wembley_FAT_08.jpg',
+    imageAlt: 'Football fans fill a stadium',
+    imageCredit: 'Photo via Wikimedia Commons (public domain)',
+    summary:
+      'Como scored nine in France, Fenerbahçe beat Liverpool 3–2 and Manchester City, Arsenal and Real Madrid all won away. The full Matchday 4 results, what they mean and when the league phase resumes.',
+    body: `
+      <p>Matchday 4 of the 2026/27 Champions League produced 18 games over two nights, 3 and 4 November. Tuesday belonged to Paris Saint-Germain, who were 4–0 up at Villarreal after 17 minutes, a record we covered separately. Wednesday brought the biggest scoreline of the season so far: Lens 1–9 Como.</p>
+
+      <h2>Nine Goals for Como</h2>
+      <p>Como won 9–1 away at Lens on Wednesday night. It is the only result of the round in which a team scored more than six, and the eight-goal margin was the widest of the week, ahead even of PSG's 6–0 in Villarreal.</p>
+
+      <h2>Liverpool Lose in Istanbul</h2>
+      <p>Fenerbahçe beat Liverpool 3–2 in Istanbul. Liverpool scored twice away from home and still went back with nothing, the only English club to lose on Wednesday.</p>
+
+      <h2>Away Wins for City, Arsenal and Real Madrid</h2>
+      <p>Manchester City won 3–2 at RB Leipzig. It was a welcome result for Enzo Maresca's side, who came into the game after two defeats in a row. Arsenal won 2–1 at Slavia Prague, and Real Madrid won 3–2 at AEK Athens. All three won by a single goal.</p>
+      <p>On Tuesday, Manchester United beat Roma 3–2, but Aston Villa lost 3–0 at Barcelona. That made it three wins and two defeats for the five English clubs in action this week.</p>
+
+      <h2>Wednesday 4 November: All Results</h2>
+      <ul>
+        <li>RB Leipzig 2–3 Manchester City</li>
+        <li>Slavia Prague 1–2 Arsenal</li>
+        <li>Fenerbahçe 3–2 Liverpool</li>
+        <li>AEK Athens 2–3 Real Madrid</li>
+        <li>Porto 4–1 Napoli</li>
+        <li>Borussia Dortmund 2–1 Real Betis</li>
+        <li>PSV 1–2 Club Brugge</li>
+        <li>Lens 1–9 Como</li>
+        <li>Viking 4–1 Sabah</li>
+      </ul>
+
+      <h2>Tuesday 3 November: All Results</h2>
+      <ul>
+        <li>Villarreal 0–6 Paris Saint-Germain</li>
+        <li>Atlético Madrid 0–2 Bayern Munich</li>
+        <li>Barcelona 3–0 Aston Villa</li>
+        <li>Manchester United 3–2 Roma</li>
+        <li>Feyenoord 0–3 Inter</li>
+        <li>Galatasaray 2–0 Stuttgart</li>
+        <li>Shakhtar Donetsk 0–1 Sporting CP</li>
+        <li>Bodø/Glimt 0–0 Lille</li>
+        <li>LASK 4–0 Slovan Bratislava</li>
+      </ul>
+
+      <h2>What Comes Next</h2>
+      <p>The league phase now pauses for almost three weeks. Matchday 5 is on Tuesday 24 and Wednesday 25 November, and Matchday 6 on 8 and 9 December.</p>
+
+      <h2>Our Read</h2>
+      <p>The away results were the story of the week. Nine of the 18 games were won by the visiting side, including the two biggest wins of the round: Como in Lens and PSG at Villarreal. For Liverpool, a defeat in Istanbul is not fatal in a 36-team league phase, but conceding three away from home is the kind of result that can push a team out of the top eight and into the play-off round. City's win in Leipzig matters more for the mood around the club than for the table. After two straight defeats, winning a five-goal game away from home is exactly what Maresca needed.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <h3>What was the score in Lens vs Como?</h3>
+      <p>Lens 1–9 Como, on Wednesday 4 November 2026.</p>
+      <h3>Who beat Liverpool in the Champions League?</h3>
+      <p>Fenerbahçe, 3–2 in Istanbul on Matchday 4.</p>
+      <h3>When is Champions League Matchday 5?</h3>
+      <p>Tuesday 24 and Wednesday 25 November 2026.</p>
+
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Como won 9–1 at Lens, the biggest score of Matchday 4.</li>
+        <li>Fenerbahçe beat Liverpool 3–2 in Istanbul.</li>
+        <li>Manchester City, Arsenal and Real Madrid all won away by one goal.</li>
+        <li>Nine of the 18 matches were away wins.</li>
+        <li>Matchday 5 is on 24 and 25 November.</li>
+      </ul>
+      <p><em>Results and dates are from the sources below. The "Our Read" section is analysis.</em></p>
+    `,
+  },
+  {
     id: 'ucl-2026-27-md4-psg-villarreal',
     slug: 'villarreal-0-6-psg-four-goals-in-17-minutes-sets-a-champions-league-record',
     sources: [
