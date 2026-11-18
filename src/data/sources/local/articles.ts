@@ -413,6 +413,131 @@ const RAW: RawArticle[] = [
       `,
   },
   {
+    id: 'ucl-2026-27-md5-preview',
+    slug: 'champions-league-matchday-5-preview-brugge-vs-liverpool-city-vs-napoli-and-the-race-for-the-top-eight',
+    sources: [
+      {
+        publisher: 'UEFA',
+        title: '2026/27 Champions League: All the league phase fixtures and results',
+        url: 'https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/',
+        note: 'Matchday 5 fixtures and kick-off times, league phase dates',
+      },
+      {
+        publisher: 'Wikipedia',
+        title: '2026–27 UEFA Champions League league phase',
+        url: 'https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Champions_League_league_phase',
+        note: 'Qualification rules and the table after Matchday 4',
+      },
+      {
+        publisher: 'NBC Sports',
+        title: 'UEFA Champions League 2026-27 league phase table: Latest standings',
+        url: 'https://www.nbcsports.com/soccer/news/uefa-champions-league-2026-27-league-phase-table-latest-standings',
+        note: 'Table after Matchday 4',
+      },
+    ],
+    title: 'Champions League Matchday 5 Preview: Brugge vs Liverpool, City vs Napoli and the Race for the Top Eight',
+    category: 'football',
+    categoryLabel: 'Champions League',
+    authorId: 'elvis',
+    publishedAt: '2026-11-20T06:00:00Z',
+    tags: ['Football', 'Champions League', 'Liverpool', 'Manchester City', 'Arsenal', 'Manchester United', 'Club Brugge'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/2/2a/Crowd_wembley_FAT_08.jpg',
+    imageAlt: 'Football fans fill a stadium',
+    imageCredit: 'Photo via Wikimedia Commons (public domain)',
+    summary:
+      'Nine teams are level on 9 points just above and below the top-eight line. Matchday 5 on 24 and 25 November includes a direct meeting of two of them, Club Brugge and Liverpool. All 18 fixtures, the table and what is at stake.',
+    body: `
+      <p>The Champions League league phase returns on Tuesday 24 and Wednesday 25 November after a break of almost three weeks. With four of the eight matchdays played, the table is very tight. Paris Saint-Germain and Real Madrid have won all four of their games, but behind them nine teams are level on 9 points. Only the top eight go straight to the round of 16, so Matchday 5 will start to separate them.</p>
+
+      <h2>What Is at Stake</h2>
+      <p>There are 36 teams in one league table, and each plays eight games. When the league phase ends on 27 January 2027:</p>
+      <ul>
+        <li><strong>1st to 8th:</strong> go straight to the round of 16</li>
+        <li><strong>9th to 24th:</strong> play a two-legged knockout play-off for the other eight places</li>
+        <li><strong>25th to 36th:</strong> are out of European competition</li>
+      </ul>
+
+      <h2>The Table After Matchday 4</h2>
+      <p>The top of the table, with points:</p>
+      <ol>
+        <li>Paris Saint-Germain, 12</li>
+        <li>Real Madrid, 12</li>
+        <li>Arsenal, 10</li>
+        <li>Como, 9</li>
+        <li>Barcelona, 9</li>
+        <li>Aston Villa, 9</li>
+        <li>Manchester City, 9</li>
+        <li>Liverpool, 9</li>
+        <li>Club Brugge, 9</li>
+        <li>Sporting CP, 9</li>
+        <li>Real Betis, 9</li>
+        <li>Borussia Dortmund, 9</li>
+      </ol>
+      <p>Every team from fourth to twelfth has 9 points. Bayern Munich are 13th with 8 points after two wins and two draws. Manchester United are 17th with 6 points. Slovan Bratislava are bottom, the only team without a point.</p>
+
+      <h2>Tuesday 24 November</h2>
+      <p>Times are in UTC. Add one hour for Central European Time.</p>
+      <ul>
+        <li>Bodø/Glimt vs LASK, 17:45</li>
+        <li>Galatasaray vs Aston Villa, 17:45</li>
+        <li>Arsenal vs Borussia Dortmund, 20:00</li>
+        <li>Como vs AEK Athens, 20:00</li>
+        <li>Feyenoord vs Porto, 20:00</li>
+        <li>Manchester City vs Napoli, 20:00</li>
+        <li>RB Leipzig vs Lens, 20:00</li>
+        <li>Real Madrid vs PSV Eindhoven, 20:00</li>
+        <li>Slovan Bratislava vs Real Betis, 20:00</li>
+      </ul>
+
+      <h2>Wednesday 25 November</h2>
+      <ul>
+        <li>Sabah vs Barcelona, 17:45</li>
+        <li>Slavia Prague vs Villarreal, 17:45</li>
+        <li>Atlético Madrid vs Viking, 20:00</li>
+        <li>Club Brugge vs Liverpool, 20:00</li>
+        <li>Inter vs Stuttgart, 20:00</li>
+        <li>Shakhtar Donetsk vs Fenerbahçe, 20:00</li>
+        <li>Lille vs Bayern Munich, 20:00</li>
+        <li>Paris Saint-Germain vs Roma, 20:00</li>
+        <li>Sporting CP vs Manchester United, 20:00</li>
+      </ul>
+
+      <h2>Five Games to Watch</h2>
+      <h3>Club Brugge vs Liverpool</h3>
+      <p>This is the only game of the round between two teams level on 9 points. Liverpool are eighth and Brugge ninth, and they also have the same goal difference. The winner moves to 12 points and takes a big step towards the top eight. Liverpool come into it after their 3–2 defeat at Fenerbahçe on Matchday 4.</p>
+      <h3>Arsenal vs Borussia Dortmund</h3>
+      <p>Arsenal are third and still unbeaten, with three wins and a draw in Munich. Dortmund are 12th but also have 9 points, so a win in London would lift them straight into the fight for the top eight.</p>
+      <h3>Manchester City vs Napoli</h3>
+      <p>City are seventh after winning 3–2 in Leipzig. Napoli have only 3 points and are 27th, below the play-off places. They lost 4–1 in Porto last time and need a result to stay in the top 24.</p>
+      <h3>Sporting CP vs Manchester United</h3>
+      <p>Sporting are tenth with 9 points. United are 17th with 6 after beating Roma 3–2 on Matchday 4. A win in Lisbon would put United level with Sporting and close to the top eight.</p>
+      <h3>Galatasaray vs Aston Villa</h3>
+      <p>Villa are sixth but lost 3–0 at Barcelona last time. Galatasaray are 18th with 6 points and are playing at home, where they beat Stuttgart 2–0 on Matchday 4.</p>
+
+      <h2>Our Read</h2>
+      <p>After Matchday 5, three games remain. A team in the top eight with 12 points will be in a strong position, and a team still on 9 will be at real risk of falling into the play-offs. That is why Brugge vs Liverpool matters so much: there are no other points on offer between direct rivals in the 9-point group this week. The other clubs on 9 mostly play teams lower in the table, such as Como against AEK Athens and Real Betis at bottom club Slovan Bratislava, so anyone who slips will lose ground quickly. Bayern Munich, on 8 points, travel to Lille, who have only 1. A win there would take Bayern to 11 points.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <h3>When is Champions League Matchday 5?</h3>
+      <p>Tuesday 24 and Wednesday 25 November 2026. Most games start at 20:00 UTC, with two early games each night at 17:45 UTC.</p>
+      <h3>How many teams qualify directly for the round of 16?</h3>
+      <p>Eight. Teams in 9th to 24th go into a knockout play-off, and 25th to 36th are eliminated.</p>
+      <h3>Who is top of the Champions League table?</h3>
+      <p>Paris Saint-Germain and Real Madrid, both on 12 points from four wins. PSG are ahead on goal difference.</p>
+      <h3>When does the league phase end?</h3>
+      <p>On Wednesday 27 January 2027, after Matchday 8. Matchday 6 is on 8 and 9 December.</p>
+
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Matchday 5 is on 24 and 25 November, with 18 games.</li>
+        <li>PSG and Real Madrid lead on 12 points; nine teams are level on 9 points.</li>
+        <li>Club Brugge vs Liverpool is a direct meeting of the 8th and 9th placed teams.</li>
+        <li>Only the top eight go straight to the round of 16.</li>
+      </ul>
+      <p><em>Fixtures, the table and the rules are from the sources below. The "Our Read" section is analysis.</em></p>
+    `,
+  },
+  {
     id: 'lol-worlds-2026-final-blg-champions',
     slug: 'bilibili-gaming-win-worlds-2026-how-blg-beat-gen-g-3-1-in-brooklyn',
     sources: [
