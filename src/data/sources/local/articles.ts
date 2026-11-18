@@ -441,9 +441,9 @@ const RAW: RawArticle[] = [
     authorId: 'elvis',
     publishedAt: '2026-11-20T06:00:00Z',
     tags: ['Football', 'Champions League', 'Liverpool', 'Manchester City', 'Arsenal', 'Manchester United', 'Club Brugge'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/2/2a/Crowd_wembley_FAT_08.jpg',
-    imageAlt: 'Football fans fill a stadium',
-    imageCredit: 'Photo via Wikimedia Commons (public domain)',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/b/bc/Bruges_Jan_Breydel_Stadium_1.jpg',
+    imageAlt: 'The Jan Breydel Stadium, home of Club Brugge',
+    imageCredit: 'Photo: Валерий Дед / CC BY 3.0 via Wikimedia Commons',
     summary:
       'Nine teams are level on 9 points just above and below the top-eight line. Matchday 5 on 24 and 25 November includes a direct meeting of two of them, Club Brugge and Liverpool. All 18 fixtures, the table and what is at stake.',
     body: `
@@ -572,9 +572,9 @@ const RAW: RawArticle[] = [
     authorId: 'elvis',
     publishedAt: '2026-11-19T06:00:00Z',
     tags: ['Esports', 'League of Legends', 'Worlds 2026', 'Bilibili Gaming', 'Gen.G', 'T1', 'Knight'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/League_of_Legends_Main_Stage.jpg/1280px-League_of_Legends_Main_Stage.jpg',
-    imageAlt: 'A League of Legends tournament stage',
-    imageCredit: 'Photo: Hilary Murugu / CC BY-SA 4.0 via Wikimedia Commons',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Barclays_Center_2024.jpg/1280px-Barclays_Center_2024.jpg',
+    imageAlt: 'The Barclays Center arena in Brooklyn, New York',
+    imageCredit: 'Photo: CityLimitsJunction / CC0 via Wikimedia Commons',
     summary:
       'Bilibili Gaming are world champions for the first time. They lost the opening game of the final, then won three in a row against Gen.G, ending four straight years of Korean titles.',
     body: `
@@ -662,9 +662,9 @@ const RAW: RawArticle[] = [
     authorId: 'elvis',
     publishedAt: '2026-11-19T06:15:00Z',
     tags: ['Formula 1', 'São Paulo Grand Prix', 'Lando Norris', 'Mercedes', 'Max Verstappen', 'Las Vegas Grand Prix'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/EurobrunER189_RaceHistoryOnTrack_HH2011.jpg/1280px-EurobrunER189_RaceHistoryOnTrack_HH2011.jpg',
-    imageAlt: 'A Formula One car on track',
-    imageCredit: 'Photo: DoomWarrior / CC BY-SA 3.0 via Wikimedia Commons',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Lando_Norris_2025_Italian_Grand_Prix_qualifying.jpg/1280px-Lando_Norris_2025_Italian_Grand_Prix_qualifying.jpg',
+    imageAlt: 'Lando Norris in his McLaren during qualifying',
+    imageCredit: 'Photo: Eustace Bagge / CC BY 4.0 via Wikimedia Commons',
     summary:
       'Lando Norris won a rain-hit race at Interlagos from pole, Max Verstappen drove from 21st to second, and Mercedes sealed their first constructors’ title since 2021. What it means before Las Vegas.',
     body: `
@@ -763,9 +763,9 @@ const RAW: RawArticle[] = [
     authorId: 'elvis',
     publishedAt: '2026-11-05T08:00:00Z',
     tags: ['Formula 1', 'São Paulo Grand Prix', 'Interlagos', 'Mercedes', 'Max Verstappen'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/EurobrunER189_RaceHistoryOnTrack_HH2011.jpg/1280px-EurobrunER189_RaceHistoryOnTrack_HH2011.jpg',
-    imageAlt: 'A Formula One car on track',
-    imageCredit: 'Photo: DoomWarrior / CC BY-SA 3.0 via Wikimedia Commons',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/2025_Singapore_GP_-_Mercedes_-_Kimi_Antonelli_-_FP2.jpg/1280px-2025_Singapore_GP_-_Mercedes_-_Kimi_Antonelli_-_FP2.jpg',
+    imageAlt: 'A Mercedes Formula 1 car on track at night in Singapore',
+    imageCredit: 'Photo: Liauzh / CC BY-SA 4.0 via Wikimedia Commons',
     summary:
       'Kimi Antonelli is already champion, but Interlagos can still decide something: Mercedes can seal the constructors’ title, and four drivers are within 16 points of second place.',
     body: `
@@ -881,9 +881,9 @@ const RAW: RawArticle[] = [
     authorId: 'elvis',
     publishedAt: '2026-11-07T06:00:00Z',
     tags: ['Esports', 'League of Legends', 'Worlds 2026', 'T1', 'Gen.G', 'Bilibili Gaming', 'Invictus Gaming'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/League_of_Legends_Main_Stage.jpg/1280px-League_of_Legends_Main_Stage.jpg',
-    imageAlt: 'A League of Legends tournament stage',
-    imageCredit: 'Photo: Hilary Murugu / CC BY-SA 4.0 via Wikimedia Commons',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Summoner%27s_Cup_at_the_2015_League_of_Legends_World_Championship_group_stage_%28124786835%29.jpg/1280px-Summoner%27s_Cup_at_the_2015_League_of_Legends_World_Championship_group_stage_%28124786835%29.jpg',
+    imageAlt: 'The Summoner’s Cup, the League of Legends World Championship trophy',
+    imageCredit: 'Photo: Bruce Liu / CC BY-SA 3.0 via Wikimedia Commons',
     summary:
       'Two sweeps, one upset and a champion still standing: Gen.G and Bilibili Gaming both won 3–0, Invictus Gaming beat Top Esports, and T1 got past Karmine Corp. All four quarter-finals and what comes next.',
     body: `
@@ -981,9 +981,9 @@ const RAW: RawArticle[] = [
     authorId: 'elvis',
     publishedAt: '2026-11-07T06:15:00Z',
     tags: ['Football', 'Champions League', 'Como', 'Liverpool', 'Manchester City', 'Arsenal', 'Real Madrid'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/2/2a/Crowd_wembley_FAT_08.jpg',
-    imageAlt: 'Football fans fill a stadium',
-    imageCredit: 'Photo via Wikimedia Commons (public domain)',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/%C5%9E%C3%BCkr%C3%BC_Saraco%C4%9Flu_Stadium.jpg/1280px-%C5%9E%C3%BCkr%C3%BC_Saraco%C4%9Flu_Stadium.jpg',
+    imageAlt: 'Fenerbahçe’s Şükrü Saracoğlu Stadium in Istanbul',
+    imageCredit: 'Photo: Yigitylnz / CC BY-SA 4.0 via Wikimedia Commons',
     summary:
       'Como scored nine in France, Fenerbahçe beat Liverpool 3–2 and Manchester City, Arsenal and Real Madrid all won away. The full Matchday 4 results, what they mean and when the league phase resumes.',
     body: `
@@ -1091,9 +1091,9 @@ const RAW: RawArticle[] = [
     authorId: 'elvis',
     publishedAt: '2026-11-05T08:15:00Z',
     tags: ['Football', 'Champions League', 'PSG', 'Villarreal', 'Luis Enrique'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Crowd_at_Dora_Stadium.jpg/1280px-Crowd_at_Dora_Stadium.jpg',
-    imageAlt: 'A football crowd at a stadium',
-    imageCredit: 'Photo: TrickyH / CC BY-SA 4.0 via Wikimedia Commons',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/El_Madrigal_Stadium_02.jpg/1280px-El_Madrigal_Stadium_02.jpg',
+    imageAlt: 'Villarreal’s home stadium, the Estadio de la Cerámica, formerly El Madrigal',
+    imageCredit: 'Photo: Raquel Guerra / CC BY 2.0 via Wikimedia Commons',
     summary:
       'Paris Saint-Germain were 4–0 up at Villarreal after 17 minutes, the fastest four goals in Champions League history, and a 17-year-old debutant scored the sixth. How it happened.',
     body: `
@@ -1180,9 +1180,9 @@ const RAW: RawArticle[] = [
     authorId: 'elvis',
     publishedAt: '2026-11-04T10:00:00Z',
     tags: ['Formula 1', 'Kimi Antonelli', 'Mercedes', 'Championship', 'Mexico City Grand Prix'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/EurobrunER189_RaceHistoryOnTrack_HH2011.jpg/1280px-EurobrunER189_RaceHistoryOnTrack_HH2011.jpg',
-    imageAlt: 'A Formula One car on track',
-    imageCredit: 'Photo: DoomWarrior / CC BY-SA 3.0 via Wikimedia Commons',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/2026_Chinese_GP_-_Mercedes_-_Kimi_Antonelli_-_Qualifying.jpg/1280px-2026_Chinese_GP_-_Mercedes_-_Kimi_Antonelli_-_Qualifying.jpg',
+    imageAlt: 'Kimi Antonelli driving his Mercedes in qualifying at the 2026 Chinese Grand Prix',
+    imageCredit: 'Photo: Liauzh / CC BY 4.0 via Wikimedia Commons',
     summary:
       'Third place behind Max Verstappen and Lewis Hamilton in Mexico City was enough. Antonelli, aged 20, is the youngest drivers’ champion in Formula 1 history, with four rounds still to run.',
     body: `
@@ -1357,9 +1357,9 @@ const RAW: RawArticle[] = [
     authorId: 'elvis',
     publishedAt: '2026-10-18T08:00:00Z',
     tags: ['Formula 1', 'Kimi Antonelli', 'Mercedes', 'Championship'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/EurobrunER189_RaceHistoryOnTrack_HH2011.jpg/1280px-EurobrunER189_RaceHistoryOnTrack_HH2011.jpg',
-    imageAlt: 'A Formula One car on track',
-    imageCredit: 'Photo: DoomWarrior / CC BY-SA 3.0 via Wikimedia Commons',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Circuit_of_the_americas_cota_%2852781066233%29.jpg/1280px-Circuit_of_the_americas_cota_%2852781066233%29.jpg',
+    imageAlt: 'The Circuit of the Americas in Austin, Texas',
+    imageCredit: 'Photo: Zach Catanzareti Photo / CC BY 2.0 via Wikimedia Commons',
     summary:
       'Antonelli leads Mercedes teammate George Russell by 102 points with six races left. He can become champion at the United States Grand Prix on 25 October, but only if three things happen at once.',
     body: `
@@ -1633,9 +1633,9 @@ const RAW: RawArticle[] = [
     authorId: 'elvis',
     publishedAt: '2026-10-18T08:30:00Z',
     tags: ['Esports', 'League of Legends', 'Worlds 2026', 'T1', 'Preview'],
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/League_of_Legends_Main_Stage.jpg/1280px-League_of_Legends_Main_Stage.jpg',
-    imageAlt: 'A League of Legends tournament stage',
-    imageCredit: 'Photo: Hilary Murugu / CC BY-SA 4.0 via Wikimedia Commons',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/2015_League_of_Legends_World_Championship_group_stage_%28123772787%29.jpg/1280px-2015_League_of_Legends_World_Championship_group_stage_%28123772787%29.jpg',
+    imageAlt: 'Team banners and the trophy stand at the League of Legends World Championship venue',
+    imageCredit: 'Photo: Bruce Liu / CC BY-SA 3.0 via Wikimedia Commons',
     summary:
       'Sixteen teams, five rounds, eight places in the knockouts. The Worlds 2026 Swiss stage starts in Texas on 23 October, with T1 chasing a fourth straight title.',
     body: `
