@@ -413,6 +413,197 @@ const RAW: RawArticle[] = [
       `,
   },
   {
+    id: 'lol-worlds-2026-final-blg-champions',
+    slug: 'bilibili-gaming-win-worlds-2026-how-blg-beat-gen-g-3-1-in-brooklyn',
+    sources: [
+      {
+        publisher: 'Wikipedia',
+        title: '2026 League of Legends World Championship final',
+        url: 'https://en.wikipedia.org/wiki/2026_League_of_Legends_World_Championship_final',
+        note: 'Score, venue, Finals MVP, route to the final and records',
+      },
+      {
+        publisher: 'KeenGamer',
+        title: 'Bilibili Gaming Beat Gen.G 3-1 to Win Worlds 2026',
+        url: 'https://www.keengamer.com/articles/features/reportages/bilibili-gaming-beat-gen-g-3-1-to-win-worlds-2026/',
+        note: 'Game-by-game detail, rosters, prize money and the T1 series streak',
+      },
+      {
+        publisher: 'GGRecon',
+        title: 'BLG knock out T1 at Worlds 2026, face Gen.G on November 14',
+        url: 'https://www.ggrecon.com/articles/blg-beat-t1-worlds-2026-final-geng/',
+        note: 'Semi-final result against T1',
+      },
+      {
+        publisher: 'GosuGamers',
+        title: 'Gen.G sweep IG to become first team to advance to the Worlds 2026 grand finals',
+        url: 'https://www.gosugamers.net/lol/news/79482-gen-g-sweep-ig-to-become-first-team-to-advance-to-the-worlds-2026-grand-finals',
+        note: 'Semi-final result against Invictus Gaming',
+      },
+    ],
+    title: 'Bilibili Gaming Win Worlds 2026: How BLG Beat Gen.G 3–1 in Brooklyn',
+    category: 'esports',
+    categoryLabel: 'League of Legends',
+    authorId: 'elvis',
+    publishedAt: '2026-11-19T06:00:00Z',
+    tags: ['Esports', 'League of Legends', 'Worlds 2026', 'Bilibili Gaming', 'Gen.G', 'T1', 'Knight'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/League_of_Legends_Main_Stage.jpg/1280px-League_of_Legends_Main_Stage.jpg',
+    imageAlt: 'A League of Legends tournament stage',
+    imageCredit: 'Photo: Hilary Murugu / CC BY-SA 4.0 via Wikimedia Commons',
+    summary:
+      'Bilibili Gaming are world champions for the first time. They lost the opening game of the final, then won three in a row against Gen.G, ending four straight years of Korean titles.',
+    body: `
+      <p>Bilibili Gaming are the 2026 League of Legends world champions. On 14 November at the Barclays Center in Brooklyn, the LPL side beat Gen.G 3–1 to win the first World Championship in the organisation's history. It is the first title for a Chinese team since EDward Gaming in 2021, and it ends a run of four straight LCK champions from 2022 to 2025.</p>
+
+      <h2>The Final, Game by Game</h2>
+      <p>The final was best-of-five and played under Fearless Draft, which stops either team picking a champion it has already used in the series.</p>
+      <ul>
+        <li><strong>Game 1, Gen.G win (38:59):</strong> Gen.G won comfortably, 19 kills to 4, and BLG were a game down.</li>
+        <li><strong>Game 2, BLG win (53:16):</strong> This was the longest game of the tournament and the turning point of the series. BLG won it 19–14 with Knight on Cassiopeia.</li>
+        <li><strong>Game 3, BLG win (37:39):</strong> Knight played Viktor, and BLG won it 20–8.</li>
+        <li><strong>Game 4, BLG win (42:58):</strong> On Twisted Fate, Knight helped BLG to a 21–11 kill lead before they took Gen.G's Nexus to finish the series.</li>
+      </ul>
+
+      <h2>Knight Is Finals MVP</h2>
+      <p>Mid laner Zhuo "Knight" Ding was named Finals MVP for his three wins on Cassiopeia, Viktor and Twisted Fate. It is his first Worlds title. He is also only the third player to have been Finals MVP at both Worlds and the Mid-Season Invitational, after Faker and Zeus. For bot laner Park "Viper" Do-hyeon it is a second world title, following his win with EDward Gaming in 2021.</p>
+      <p>The winning roster was Bin (top), Xun (jungle), Knight (mid), Viper (bot) and ON (support). BLG take $1,000,000 from the $5,000,000 prize pool, and Gen.G receive $800,000.</p>
+
+      <h2>Through Four LCK Teams</h2>
+      <p>BLG's route to the trophy went through all four Korean teams at the tournament:</p>
+      <ul>
+        <li><strong>Swiss stage:</strong> beat MSI champions Hanwha Life Esports 2–0 in a final-round decider</li>
+        <li><strong>Quarter-final, 5 November:</strong> beat Dplus KIA 3–0</li>
+        <li><strong>Semi-final, 8 November:</strong> beat T1 3–1</li>
+        <li><strong>Final, 14 November:</strong> beat Gen.G 3–1</li>
+      </ul>
+      <p>The semi-final win over T1 was historic. It was the first time T1 had lost a best-of-five knockout series to an LPL team at Worlds, ending a streak of 13 straight series wins over Chinese opposition that began with the 2013 final. It also ended T1's bid for a fourth title in a row. In the other semi-final, on 7 November, Gen.G swept Invictus Gaming 3–0.</p>
+
+      <h2>Our Read</h2>
+      <p>When we previewed the semi-finals, Gen.G looked like the team to beat, and they went on to sweep both of their knockout series without dropping a game. That made the first game of the final look like a continuation of their form. The tournament turned in Game 2. BLG had to win a 53-minute game to stay alive, and from then on they were the better team. Fearless Draft rewards depth of champion pool, and Knight winning on three very different mid laners in three games is a good illustration of why. For Gen.G, it is a first final under their current name and their first since 2017, but they will see it as a missed chance.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <h3>Who won Worlds 2026?</h3>
+      <p>Bilibili Gaming, who beat Gen.G 3–1 in the final on 14 November 2026 at the Barclays Center in Brooklyn, New York.</p>
+      <h3>Who was the Worlds 2026 Finals MVP?</h3>
+      <p>BLG's mid laner Knight, for his games on Cassiopeia, Viktor and Twisted Fate.</p>
+      <h3>Is this BLG's first world title?</h3>
+      <p>Yes. It is the organisation's first World Championship and the first for an LPL team since 2021.</p>
+      <h3>How did T1 go out of Worlds 2026?</h3>
+      <p>T1 lost 3–1 to Bilibili Gaming in the semi-finals on 8 November.</p>
+
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Bilibili Gaming beat Gen.G 3–1 to win their first World Championship.</li>
+        <li>BLG lost Game 1, then won the next three, including a 53-minute Game 2.</li>
+        <li>Knight was Finals MVP; Viper won his second world title.</li>
+        <li>BLG beat all four LCK teams on the way, ending four straight years of Korean champions.</li>
+        <li>Their semi-final win was the first time T1 had lost a Worlds knockout series to an LPL team.</li>
+      </ul>
+      <p><em>Results, rosters and prize money are from the sources below. The "Our Read" section is analysis.</em></p>
+    `,
+  },
+  {
+    id: 'f1-2026-sao-paulo-result',
+    slug: 'sao-paulo-gp-2026-norris-wins-in-the-wet-as-mercedes-clinch-the-constructors-title',
+    sources: [
+      {
+        publisher: 'Wikipedia',
+        title: '2026 São Paulo Grand Prix',
+        url: 'https://en.wikipedia.org/wiki/2026_S%C3%A3o_Paulo_Grand_Prix',
+        note: 'Qualifying, grid, classification and penalties',
+      },
+      {
+        publisher: 'Sky Sports',
+        title: 'Sao Paulo GP: Lando Norris wins wet race for McLaren as Mercedes seal 2026 F1 Constructors’ Championship in Brazil',
+        url: 'https://www.skysports.com/f1/news/13609694/sao-paulo-gp-lando-norris-wins-wet-race-for-mclaren-as-mercedes-seal-2026-f1-constructors-championship-in-brazil',
+        note: 'Race report and Mercedes’ ninth title',
+      },
+      {
+        publisher: 'RacingNews365',
+        title: '2026 F1 standings after Sao Paulo Grand Prix',
+        url: 'https://racingnews365.com/2026-f1-championship-standings-after-sao-paulo-grand-prix',
+        note: 'Drivers’ and constructors’ standings after the race',
+      },
+      {
+        publisher: 'Wikipedia',
+        title: '2026 Las Vegas Grand Prix',
+        url: 'https://en.wikipedia.org/wiki/2026_Las_Vegas_Grand_Prix',
+        note: 'Date, start time and circuit for the next round',
+      },
+    ],
+    title: 'São Paulo GP 2026: Norris Wins in the Wet as Mercedes Clinch the Constructors’ Title',
+    category: 'sports',
+    categoryLabel: 'Formula 1',
+    authorId: 'elvis',
+    publishedAt: '2026-11-19T06:15:00Z',
+    tags: ['Formula 1', 'São Paulo Grand Prix', 'Lando Norris', 'Mercedes', 'Max Verstappen', 'Las Vegas Grand Prix'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/EurobrunER189_RaceHistoryOnTrack_HH2011.jpg/1280px-EurobrunER189_RaceHistoryOnTrack_HH2011.jpg',
+    imageAlt: 'A Formula One car on track',
+    imageCredit: 'Photo: DoomWarrior / CC BY-SA 3.0 via Wikimedia Commons',
+    summary:
+      'Lando Norris won a rain-hit race at Interlagos from pole, Max Verstappen drove from 21st to second, and Mercedes sealed their first constructors’ title since 2021. What it means before Las Vegas.',
+    body: `
+      <p>The rain we mentioned in our preview did arrive at Interlagos. Lando Norris won the São Paulo Grand Prix from pole for McLaren, 14.602 seconds ahead of Max Verstappen, who started 21st. Mercedes did not reach the podium, but fourth and fifth places for George Russell and Kimi Antonelli were enough to win the constructors' championship with three races to spare.</p>
+
+      <h2>The Result</h2>
+      <ol>
+        <li>Lando Norris (McLaren)</li>
+        <li>Max Verstappen (Red Bull), +14.602s</li>
+        <li>Isack Hadjar (Red Bull), +24.485s</li>
+        <li>George Russell (Mercedes)</li>
+        <li>Kimi Antonelli (Mercedes)</li>
+        <li>Oscar Piastri (McLaren)</li>
+        <li>Liam Lawson (Racing Bulls)</li>
+        <li>Charles Leclerc (Ferrari), after a five-second penalty</li>
+        <li>Lewis Hamilton (Ferrari), one lap down</li>
+        <li>Nico Hülkenberg (Audi), one lap down</li>
+      </ol>
+
+      <h2>How the Race Unfolded</h2>
+      <p>The race started on intermediate tyres. Norris made a poor start from pole and fell to third on the first lap, with Antonelli taking the lead. As the track dried, Hamilton was the first driver to switch to slick tyres, at the end of lap 14. Norris stopped on lap 16 and Antonelli a lap later, and Norris came out just ahead. From there he controlled the race, including the late switch back to intermediates when rain returned in the closing laps.</p>
+      <p>Antonelli's afternoon fell apart. He struggled to keep temperature in his tyres, spun at Turn 1 and was passed by both Red Bulls. Verstappen was tenth by lap 3 and kept climbing. He was helped by Russell spinning in the pit lane, and Red Bull told Hadjar to let him through on lap 38.</p>
+      <p>Verstappen and Hamilton both started at the back because of grid penalties for exceeding their engine part allowance. Hamilton recovered from 20th to ninth. On lap 70 of 71, Leclerc and Lawson made contact. Leclerc got a five-second penalty, which dropped him behind Lawson.</p>
+
+      <h2>Mercedes Are Champions</h2>
+      <p>Mercedes needed to outscore Ferrari by three points to clinch the title, and they outscored them by 16. They now lead Ferrari 652 to 510, a 142-point gap with only 129 points left. It is Mercedes' ninth constructors' title and their first since the run of eight in a row from 2014 to 2021, which puts them level with Williams on the all-time list. With Antonelli already drivers' champion, Mercedes have both titles for the first time since 2020.</p>
+
+      <h2>The Standings</h2>
+      <p>Drivers' championship, top six:</p>
+      <ol>
+        <li>Kimi Antonelli (Mercedes), 390, champion</li>
+        <li>Max Verstappen (Red Bull), 279</li>
+        <li>George Russell (Mercedes), 262</li>
+        <li>Lewis Hamilton (Ferrari), 261</li>
+        <li>Charles Leclerc (Ferrari), 249</li>
+        <li>Lando Norris (McLaren), 246</li>
+      </ol>
+      <p>Constructors' championship, top four: Mercedes 652, Ferrari 510, Red Bull 415, McLaren 398.</p>
+
+      <h2>Next: Las Vegas</h2>
+      <p>The Las Vegas Grand Prix is on Saturday 21 November, starting at 20:00 local time (04:00 UTC on Sunday 22 November). It is 50 laps of the 6.201 km street circuit. After that, only Qatar (29 November) and Abu Dhabi (6 December) remain.</p>
+
+      <h2>Our Read</h2>
+      <p>Before Brazil, the fight for second place in the championship was the closest in the standings. Verstappen has now opened up a gap. His lead over Russell is 17 points, with Hamilton one point further back, and he gained that ground from 21st on the grid in a wet race. That is the kind of drive that decides close fights. With 75 points available in the last three races, second place is not settled, but Verstappen is clearly in the strongest position. For Norris, a win from pole is a reminder that McLaren can still win races in a season that has belonged to Mercedes.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <h3>Who won the 2026 São Paulo Grand Prix?</h3>
+      <p>Lando Norris of McLaren, from pole, ahead of Max Verstappen and Isack Hadjar.</p>
+      <h3>Have Mercedes won the 2026 constructors' championship?</h3>
+      <p>Yes. They clinched it in Brazil and lead Ferrari by 142 points, with 129 left.</p>
+      <h3>When is the 2026 Las Vegas Grand Prix?</h3>
+      <p>Saturday 21 November 2026 at 20:00 local time, which is 04:00 UTC on Sunday 22 November.</p>
+
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Norris won a wet São Paulo Grand Prix from pole by 14.602 seconds.</li>
+        <li>Verstappen finished second from 21st on the grid and leads the fight for second by 17 points.</li>
+        <li>Mercedes won their ninth constructors' title, their first since 2021.</li>
+        <li>Three rounds remain: Las Vegas, Qatar and Abu Dhabi.</li>
+      </ul>
+      <p><em>Results, standings and schedule are from the sources below. The "Our Read" section is analysis.</em></p>
+    `,
+  },
+  {
     id: 'f1-2026-sao-paulo-preview',
     slug: 'sao-paulo-grand-prix-2026-preview-the-fight-for-second-and-mercedes-title-chance',
     sources: [
