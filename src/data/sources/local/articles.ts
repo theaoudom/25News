@@ -413,6 +413,105 @@ const RAW: RawArticle[] = [
       `,
   },
   {
+    id: 'f1-2026-las-vegas-preview',
+    slug: 'las-vegas-grand-prix-2026-preview-verstappen-chases-a-third-win-on-the-strip',
+    sources: [
+      {
+        publisher: 'Formula 1',
+        title: 'NEED TO KNOW: The most important facts, stats and trivia ahead of the 2026 Las Vegas Grand Prix',
+        url: 'https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-las-vegas-grand-prix.6ynxQ4e9Z7F1o2Uijhh1FK',
+        note: 'Past winners, poles, lap record, Pirelli tyre notes and team targets',
+      },
+      {
+        publisher: 'Wikipedia',
+        title: '2026 Las Vegas Grand Prix',
+        url: 'https://en.wikipedia.org/wiki/2026_Las_Vegas_Grand_Prix',
+        note: 'Session times, circuit length, tyre compounds and standings before the race',
+      },
+      {
+        publisher: 'ESPN',
+        title: 'Las Vegas Grand Prix 2026: Race start time, how to watch, full schedule, predictions',
+        url: 'https://www.espn.com/f1/story/_/id/50389130/las-vegas-grand-prix-2026-race-f1-start-s-how-watch-schedule-tv-channel-live-stream-predictions',
+        note: 'Weather forecast and Verstappen’s 2026 record',
+      },
+    ],
+    title: 'Las Vegas Grand Prix 2026 Preview: Verstappen Chases a Third Win on the Strip',
+    category: 'sports',
+    categoryLabel: 'Formula 1',
+    authorId: 'elvis',
+    publishedAt: '2026-11-20T06:15:00Z',
+    tags: ['Formula 1', 'Las Vegas Grand Prix', 'Max Verstappen', 'Lando Norris', 'George Russell', 'Red Bull', 'McLaren'],
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/2025_Singapore_GP_-_Red_Bull_-_Max_Verstappen_-_FP1.jpg/1280px-2025_Singapore_GP_-_Red_Bull_-_Max_Verstappen_-_FP1.jpg',
+    imageAlt: 'Max Verstappen driving his Red Bull under the lights during practice for the 2025 Singapore Grand Prix',
+    imageCredit: 'Photo: Liauzh / CC BY-SA 4.0 via Wikimedia Commons',
+    summary:
+      'Both 2026 titles are already decided, but Las Vegas still matters: Verstappen leads the fight for second, Red Bull and McLaren are close for third, and it is cold on the Strip. Times, tyres and what to watch.',
+    body: `
+      <p>Mercedes have already won both championships, but the Las Vegas Grand Prix still has plenty to play for. It is round 22 of 24 and the first race since Lando Norris won in the wet in Brazil. Max Verstappen has won here twice, and he arrives leading the fight for second place in the drivers' standings.</p>
+
+      <h2>When Is It?</h2>
+      <p>Las Vegas is a night race. Local time is UTC-8, so most sessions fall on the next day in UTC.</p>
+      <ul>
+        <li>Practice 1: Thursday 19 November, 16:30 local (00:30 UTC Friday)</li>
+        <li>Practice 2: Thursday 19 November, 20:00 local (04:00 UTC Friday)</li>
+        <li>Practice 3: Friday 20 November, 16:30 local (00:30 UTC Saturday)</li>
+        <li>Qualifying: Friday 20 November, 20:00 local (04:00 UTC Saturday)</li>
+        <li>Race: Saturday 21 November, 20:00 local (04:00 UTC Sunday 22 November)</li>
+      </ul>
+      <p>The race is 50 laps of the 6.201 km Las Vegas Strip Circuit, a total of 309.958 km.</p>
+
+      <h2>What Is Still at Stake</h2>
+      <p>Kimi Antonelli is champion with 390 points. Behind him, the fight for second is open:</p>
+      <ol>
+        <li>Max Verstappen (Red Bull), 279</li>
+        <li>George Russell (Mercedes), 262</li>
+        <li>Lewis Hamilton (Ferrari), 261</li>
+        <li>Charles Leclerc (Ferrari), 249</li>
+        <li>Lando Norris (McLaren), 246</li>
+      </ol>
+      <p>That is five drivers within 33 points, with 75 points left for any one driver over the last three races. In the constructors' standings, Mercedes are champions and Ferrari (510) look safe in second. The closer fight is for third: Red Bull have 415 points and McLaren 398, a gap of 17.</p>
+
+      <h2>The Track</h2>
+      <p>The circuit runs along the Strip, past the Bellagio and the Sphere. It has long straights and slow corners, so teams cut downforce for speed. Formula 1's own preview points to the braking zone from Turn 6 into Turn 7 and to Turn 12, which sits between two long straights, as key places on the lap. The run from pole to the first braking point is only 160 metres.</p>
+      <p>The weather is a big factor. ESPN's forecast is cold, between 10 and 14°C. Cold air and a smooth street surface make it hard to get heat into the tyres, and that makes the cars feel nervous.</p>
+
+      <h2>Tyres and Strategy</h2>
+      <p>Pirelli is bringing its three softest compounds: C3 as the hard, C4 as the medium and C5 as the soft. Pirelli expects one stop to be the fastest plan on paper, and says even the soft could work as a race tyre. It also warns about graining and flat spots under braking. The undercut is less powerful here than at most tracks. A pit stop costs around 20 seconds.</p>
+      <p>Safety cars are common. In the three races so far, there was a full Safety Car in one and a Virtual Safety Car in two.</p>
+
+      <h2>Past Winners</h2>
+      <ul>
+        <li>2023: Max Verstappen (Red Bull), from pole sitter Charles Leclerc</li>
+        <li>2024: George Russell (Mercedes), from pole</li>
+        <li>2025: Max Verstappen (Red Bull), from pole sitter Lando Norris</li>
+      </ul>
+      <p>Verstappen also holds the lap record, a 1:33.365.</p>
+
+      <h2>Team News</h2>
+      <p>Formula 1 reports that Oscar Piastri is set for a 10-place grid penalty at this race. In first practice, Ryo Hirakawa drives Oliver Bearman's Haas and Dino Beganovic drives Lewis Hamilton's Ferrari. Rafael Camara replaces Esteban Ocon at Haas for the whole weekend.</p>
+
+      <h2>Our Read</h2>
+      <p>Verstappen is the man to watch. He has won two of the three races here, he has three wins and 12 podiums this year, and he just drove from 21st to second in Brazil. A third Vegas win would make second place in the championship very hard to take from him. Russell, the 2024 winner, is the most likely driver to stop him. For McLaren, Norris has form after Brazil, but Piastri's penalty makes it harder for the team to close the 17-point gap to Red Bull. Expect cold tyres to cause mistakes in qualifying, and do not be surprised by a safety car.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <h3>What time does the 2026 Las Vegas Grand Prix start?</h3>
+      <p>Saturday 21 November at 20:00 local time, which is 04:00 UTC on Sunday 22 November.</p>
+      <h3>Who has won the Las Vegas Grand Prix?</h3>
+      <p>Max Verstappen in 2023 and 2025, and George Russell in 2024.</p>
+      <h3>How many races are left in the 2026 season?</h3>
+      <p>Three: Las Vegas, Qatar (29 November) and Abu Dhabi (6 December).</p>
+
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>The race starts at 04:00 UTC on Sunday 22 November.</li>
+        <li>Verstappen leads the fight for second by 17 points from Russell.</li>
+        <li>Red Bull lead McLaren by 17 points in the fight for third.</li>
+        <li>Pirelli brings C3, C4 and C5, and cold weather will make tyre warm-up hard.</li>
+      </ul>
+      <p><em>Times, standings, tyre choices and statistics are from the sources below. The "Our Read" section is analysis.</em></p>
+    `,
+  },
+  {
     id: 'ucl-2026-27-md5-preview',
     slug: 'champions-league-matchday-5-preview-brugge-vs-liverpool-city-vs-napoli-and-the-race-for-the-top-eight',
     sources: [
